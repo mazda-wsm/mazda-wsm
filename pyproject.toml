@@ -1,0 +1,14 @@
+[project]
+name = "custom-scraper"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.10"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "bs4>=0.0.2",
+    "httpx>=0.28.1",
+    "markdownify>=1.1.0",
+    "mkdocs>=1.6.1",
+    "python-slugify>=8.0.4",
+    "pyyaml>=6.0.2",
+]
