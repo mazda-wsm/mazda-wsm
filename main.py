@@ -78,34 +78,10 @@ class WSMMarkdownConverter(TableConverter):
                         prefix += '../'
                         path = path.parent
                     el.attrs['href'] = prefix + str(PurePath(self.article_map[href]).relative_to(path)) + fragment
-                    # if 'table' in parent_tags:
-                    #     # The extra `../` is MkDocs-specific, and actually breaks viewing Markdown locally!
-                    #     el.attrs['href'] = '../' + el.attrs['href'].replace('.md', '')
                 else:
                     raise UnseenLinkError(href)
-            return super().convert_a(el, text, parent_tags)
-        elif name := el.get('name'):
-            return f'[](){{: #{name}}}'
-            # if not el.next_sibling:
-            #     return super().convert_a(el, f'{{: #{name}}}', parent_tags)
-            # else:
-            #     while el.next_sibling:
-            #         el = el.next_sibling
-            #         if isinstance(el, NavigableString):
-            #             continue
-            #
-            #         if el.get_text().strip():
-            #             break
-            #
-            #         if [1 for descendant in el.descendants if isinstance(descendant, Tag) and descendant.name in ["img"]]:
-            #             break
-            #     else:
-            #         return f'[](){{: id="{name}"}}'
-            #
-            #     el.append(Tag(name="a", attrs={"name": name}))
-            #     return ""
-        else:
-            raise NotImplementedError(f"What kind of anchor is this!? Check {self.filename}...")
+
+        return super().convert_a(el, text, parent_tags)
 
     def convert_img(self, el, text, parent_tags):
         src = el.get('src')

@@ -1,7 +1,7 @@
-import re
 from dataclasses import dataclass
 from io import StringIO
 
+from bs4.element import NavigableString, Tag
 from markdownify import MarkdownConverter
 
 
@@ -164,6 +164,31 @@ class TableConverter(MarkdownConverter):
         self._current_row += 1
         self._current_col = 0
         return '|' + text + '\n'
+
+    def convert_a(self, el, text, parent_tags):
+        if el.get('href'):
+            return super().convert_a(el, text, parent_tags)
+        elif name := el.get('name'):
+            if not el.next_sibling:
+                return super().convert_a(el, f'{{: #{name}}}', parent_tags)
+            else:
+                while el.next_sibling:
+                    el = el.next_sibling
+                    if isinstance(el, NavigableString):
+                        continue
+
+                    if el.get_text().strip():
+                        break
+
+                    if [1 for descendant in el.descendants if isinstance(descendant, Tag) and descendant.name in ["img"]]:
+                        break
+                else:
+                    return f'[](){{: id="{name}"}}'
+
+                el.insert(1, Tag(name="a", attrs={"name": name}))
+                return ""
+        else:
+            raise NotImplementedError(f"Anchor without `href` or `name` found!")
 
     def _reset_table(self):
         self._current_row = 0
