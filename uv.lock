@@ -89,8 +89,10 @@ dependencies = [
     { name = "aiofiles" },
     { name = "bs4" },
     { name = "httpx" },
+    { name = "markdown-grids" },
     { name = "markdownify" },
     { name = "mkdocs" },
+    { name = "mkdocs-terminal" },
     { name = "python-slugify" },
     { name = "pyyaml" },
 ]
@@ -100,8 +102,10 @@ requires-dist = [
     { name = "aiofiles", specifier = ">=24.1.0" },
     { name = "bs4", specifier = ">=0.0.2" },
     { name = "httpx", specifier = ">=0.28.1" },
+    { name = "markdown-grids", specifier = ">=1.0.0" },
     { name = "markdownify", specifier = ">=1.1.0" },
     { name = "mkdocs", specifier = ">=1.6.1" },
+    { name = "mkdocs-terminal", specifier = ">=4.7.0" },
     { name = "python-slugify", specifier = ">=8.0.4" },
     { name = "pyyaml", specifier = ">=6.0.2" },
 ]
@@ -195,6 +199,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d7/c2/4ab49206c17f75cb08d6311171f2d65798988db4360c4d1485bd0eedd67c/markdown-3.8.2.tar.gz", hash = "sha256:247b9a70dd12e27f67431ce62523e675b866d254f900c4fe75ce3dda62237c45", size = 362071, upload-time = "2025-06-19T17:12:44.483Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/96/2b/34cc11786bc00d0f04d0f5fdc3a2b1ae0b6239eef72d3d345805f9ad92a1/markdown-3.8.2-py3-none-any.whl", hash = "sha256:5c83764dbd4e00bdd94d85a19b8d55ccca20fe35b2e678a1422b380324dd5f24", size = 106827, upload-time = "2025-06-19T17:12:42.994Z" },
+]
+
+[[package]]
+name = "markdown-grids"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markdown" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f6/a6/87e316f09cb4044214e5ea34b4d6421e41fb3e90bab2a1ecf2137b5a8072/markdown_grids-1.0.0.tar.gz", hash = "sha256:bd1d8472649d528348fc91ff58fbbd68b2d0b0e09a6f3ab154cdd786eaf661e3", size = 5295, upload-time = "2023-12-02T22:17:31.563Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ba/5c/d81385c1d24fa73ad9d409505d814dbcaeec233c4a5a9fd5ed45e3d422a5/markdown_grids-1.0.0-py3-none-any.whl", hash = "sha256:f45dad17006eab6f9a3f282091cae522a90dc773838f4aea255ca66b73333227", size = 5870, upload-time = "2023-12-02T22:17:33.366Z" },
 ]
 
 [[package]]
@@ -316,6 +332,22 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-terminal"
+version = "4.7.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jinja2" },
+    { name = "markdown" },
+    { name = "mkdocs" },
+    { name = "pygments" },
+    { name = "pymdown-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/95/41/0d4ab5fcee2030f4800f0925ccbc03531d44f89686ad07db83cf2fd77854/mkdocs_terminal-4.7.0.tar.gz", hash = "sha256:9a8abcc560d66974a3fcfac9381167c7a3d52add1c30403b8cf35b3d2b10362e", size = 619993, upload-time = "2024-12-17T05:19:18.725Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1d/98/062d03109576f3dc5a27bb3a2a74bea9b59aa4ed5d2b9b12f98a15a09fd8/mkdocs_terminal-4.7.0-py3-none-any.whl", hash = "sha256:6a223bcef762728f5bcdba045b4acabc3d119ae9215160693f45be8a09889815", size = 641970, upload-time = "2024-12-17T05:19:17.034Z" },
+]
+
+[[package]]
 name = "packaging"
 version = "25.0"
 source = { registry = "https://pypi.org/simple" }
@@ -340,6 +372,28 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/fe/8b/3c73abc9c759ecd3f1f7ceff6685840859e8070c4d947c93fae71f6a0bf2/platformdirs-4.3.8.tar.gz", hash = "sha256:3d512d96e16bcb959a814c9f348431070822a6496326a4be0911c40b5a74c2bc", size = 21362, upload-time = "2025-05-07T22:47:42.121Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/fe/39/979e8e21520d4e47a0bbe349e2713c0aac6f3d853d0e5b34d76206c439aa/platformdirs-4.3.8-py3-none-any.whl", hash = "sha256:ff7059bb7eb1179e2685604f4aaf157cfd9535242bd23742eadc3c13542139b4", size = 18567, upload-time = "2025-05-07T22:47:40.376Z" },
+]
+
+[[package]]
+name = "pygments"
+version = "2.19.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b0/77/a5b8c569bf593b0140bde72ea885a803b82086995367bf2037de0159d924/pygments-2.19.2.tar.gz", hash = "sha256:636cb2477cec7f8952536970bc533bc43743542f70392ae026374600add5b887", size = 4968631, upload-time = "2025-06-21T13:39:12.283Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c7/21/705964c7812476f378728bdf590ca4b771ec72385c533964653c68e86bdc/pygments-2.19.2-py3-none-any.whl", hash = "sha256:86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b", size = 1225217, upload-time = "2025-06-21T13:39:07.939Z" },
+]
+
+[[package]]
+name = "pymdown-extensions"
+version = "10.16"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markdown" },
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1a/0a/c06b542ac108bfc73200677309cd9188a3a01b127a63f20cadc18d873d88/pymdown_extensions-10.16.tar.gz", hash = "sha256:71dac4fca63fabeffd3eb9038b756161a33ec6e8d230853d3cecf562155ab3de", size = 853197, upload-time = "2025-06-21T17:56:36.974Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/98/d4/10bb14004d3c792811e05e21b5e5dcae805aacb739bd12a0540967b99592/pymdown_extensions-10.16-py3-none-any.whl", hash = "sha256:f5dd064a4db588cb2d95229fc4ee63a1b16cc8b4d0e6145c0899ed8723da1df2", size = 266143, upload-time = "2025-06-21T17:56:35.356Z" },
 ]
 
 [[package]]
