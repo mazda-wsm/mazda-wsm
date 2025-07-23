@@ -85,7 +85,25 @@ class WSMMarkdownConverter(TableConverter):
                     raise UnseenLinkError(href)
             return super().convert_a(el, text, parent_tags)
         elif name := el.get('name'):
-            return super().convert_a(el, f'<a name="{name}"></a>{text}', parent_tags)
+            return f'[](){{: #{name}}}'
+            # if not el.next_sibling:
+            #     return super().convert_a(el, f'{{: #{name}}}', parent_tags)
+            # else:
+            #     while el.next_sibling:
+            #         el = el.next_sibling
+            #         if isinstance(el, NavigableString):
+            #             continue
+            #
+            #         if el.get_text().strip():
+            #             break
+            #
+            #         if [1 for descendant in el.descendants if isinstance(descendant, Tag) and descendant.name in ["img"]]:
+            #             break
+            #     else:
+            #         return f'[](){{: id="{name}"}}'
+            #
+            #     el.append(Tag(name="a", attrs={"name": name}))
+            #     return ""
         else:
             raise NotImplementedError(f"What kind of anchor is this!? Check {self.filename}...")
 
@@ -278,6 +296,7 @@ class WSMScraper:
             "markdown_extensions": [
                 "sane_lists",
                 "attr_list",
+                "def_list",
                 "grids"
             ],
             "site_name": f"Mazda WSM // {model} ({self.wsm_id})",
