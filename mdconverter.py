@@ -26,75 +26,84 @@ class Cell:
     def new(cls):
         return cls(colspan=0, rowspan=0, size=0, text="")
 
+    @classmethod
+    def blank(cls):
+        return cls(colspan=0, rowspan=0, size=0, text="")
+
+class Grid:
+    def __init__(self):
+        self._cells: list[list[Cell]] = [[]]
+
+    @property
+    def empty(self):
+        return len(self._cells) == 0 or len(self._cells[0]) == 0
+
+    @property
+    def col_count(self):
+        return len(self._cells[0])
+
+    @property
+    def row_count(self):
+        return len(self._cells)
+
+    def _add_column(self) -> None:
+        for row in self._cells:
+            row.append(Cell.blank())
+
+    def _add_row(self) -> None:
+        self._cells.append([Cell.blank() for _ in range(self.col_count)])
+
+    def cell(self, row: int, col: int) -> Cell:
+        while row >= self.row_count:
+            self._add_row()
+
+        while col >= self.col_count:
+            self._add_column()
+
+        return self._cells[row][col]
+
+    def set(self, row: int, col: int, cell: Cell) -> None:
+        while row >= self.row_count:
+            self._add_row()
+
+        while col >= self.col_count:
+            self._add_column()
+
+        self._cells[row][col] = cell
+
 class TableConverter(MarkdownConverter):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self._current_row: int = 0
+        self._current_col: int = 0
+        self._current_table: Grid = Grid()
 
     def convert_table(self, el, text, parent_tags):
-        if 'table' in parent_tags:
+        if 'table' in parent_tags or not self._current_table.col_count:
             text = text.strip().strip('|')
 
             if '|' not in text:
-                return re.sub(r"^\(\d+,\d+,\d+\)", "", text, count=1)
+                self._reset_table()
+                return text
 
             raise NotImplementedError("Nested tables are not supported")
 
-        def get_cell_metadata(cell):
-            match = re.match(r"^\((?P<colspan>\d+),(?P<rowspan>\d+),(?P<size>\d+)\)(?P<value>.*)", cell)
-            return Cell(
-                int(match.group("colspan")),
-                int(match.group("rowspan")),
-                int(match.group("size")),
-                match.group("value"))
-
-        lines = text.strip().splitlines()
-        rows = len(lines)
-        columns = sum([get_cell_metadata(cell).colspan for cell in lines[0].strip('|').split('|')])
-        cells: list[list[Cell]] = []
-        for _ in range(rows):
-            row = []
-            for _ in range(columns):
-                row.append(Cell.new())
-            cells.append(row)
-
-        row_sizes = [0] * rows
-        for row, line in enumerate(lines):
-            col = 0
-            for cell in line.strip('|').split('|'):
-                data = get_cell_metadata(cell)
-
-                while cells[row][col].spans_up or cells[row][col].spans_left:
-                    row_sizes[row] += cells[row][col].size
-                    col += 1
-
-                cells[row][col] = data
-                row_sizes[row] += cells[row][col].size
-
-                for i in range(1, data.colspan):
-                    cells[row][col + i].spans_left = cells[row][col]
-
-                for i in range(1, data.rowspan):
-                    cells[row + i][col].spans_up = cells[row][col]
-                    cells[row + i][col].size = cells[row][col].size
-
-                col += 1
-
         column_sizes = []
-        for col in range(columns):
+        for col in range(self._current_table.col_count):
             max_col_size = 0
-            for row in range(rows):
-                if cells[row][col].size > max_col_size:
-                    max_col_size = cells[row][col].size
+            for row in range(self._current_table.row_count):
+                if self._current_table.cell(row, col).size > max_col_size:
+                    max_col_size = self._current_table.cell(row, col).size
             column_sizes.append(max_col_size)
 
         result = StringIO()
-        for row in range(rows):
+        for row in range(self._current_table.row_count):
             data_line = ''
             top_border = ''
             bottom_border = ''
 
-            for col in range(columns):
-                cell = cells[row][col]
+            for col in range(self._current_table.col_count):
+                cell = self._current_table.cell(row, col)
                 if not cell.spans_left:
                     data_line     += '|' + cell.text.ljust(column_sizes[col])
                     top_border    += '+' + '-' * column_sizes[col]
@@ -103,7 +112,7 @@ class TableConverter(MarkdownConverter):
                     data_line   += ' ' * (column_sizes[col] + 1)
                     top_border  += '-' * (column_sizes[col] + 1)
 
-                    if row < rows - 1 and not cells[row + 1][col].spans_left:
+                    if row < self._current_table.row_count - 1 and not self._current_table.cell(row + 1, col).spans_left:
                         bottom_border += '+' + '-' * column_sizes[col]
                     else:
                         bottom_border += '-' * (column_sizes[col] + 1)
@@ -114,21 +123,36 @@ class TableConverter(MarkdownConverter):
 
             if row == 0:
                 print(top_border, file=result)
-                bottom_border = bottom_border.replace('-', '=')
+                if self._current_table.row_count > 1:
+                    bottom_border = bottom_border.replace('-', '=')
             print(data_line, file=result)
             print(bottom_border, file=result)
 
-        return result.getvalue()
+        self._reset_table()
 
-    @staticmethod
-    def _convert_cell(el, text):
+        return '\n\n' + result.getvalue()
+
+    def _convert_cell(self, el, text):
         colspan = rowspan = 1
         if 'colspan' in el.attrs and el['colspan'].isdigit():
             colspan = int(el['colspan'])
         if 'rowspan' in el.attrs and el['rowspan'].isdigit():
             rowspan = int(el['rowspan'])
-        gross_value = ' ' + text.strip().replace('\n', ' ') + ' '
-        return f'({colspan},{rowspan},{len(gross_value)})' + gross_value + '|'
+        text = ' ' + text.strip().replace('\n', ' ') + ' '
+
+        while self._current_table.cell(self._current_row, self._current_col).spans_up:
+            self._current_col += 1
+
+        self._current_table.set(self._current_row, self._current_col, Cell(colspan, rowspan, len(text), text))
+
+        for i in range(1, colspan):
+            self._current_table.cell(self._current_row, self._current_col + i).spans_left = True
+
+        for i in range(1, rowspan):
+            self._current_table.cell(self._current_row + i, self._current_col).spans_up = True
+
+        self._current_col += colspan
+        return text
 
     def convert_td(self, el, text, parent_tags):
         return self._convert_cell(el, text)
@@ -137,4 +161,15 @@ class TableConverter(MarkdownConverter):
         return self._convert_cell(el, text)
 
     def convert_tr(self, el, text, parent_tags):
+        self._current_row += 1
+        self._current_col = 0
         return '|' + text + '\n'
+
+    def _reset_table(self):
+        self._current_row = 0
+        self._current_col = 0
+        self._current_table = Grid()
+
+    def convert(self, html):
+        self._reset_table()
+        return super().convert(html)
