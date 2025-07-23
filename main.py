@@ -3,7 +3,6 @@ import logging
 import os
 import re
 from asyncio import Queue, TaskGroup
-from dataclasses import dataclass
 from pathlib import Path, PurePath
 
 import aiofiles
@@ -51,30 +50,9 @@ def listify_dict(d: dict) -> list:
 
     return result
 
-@dataclass
-class Cell:
-    colspan: int
-    rowspan: int
-    size: int
-    text: str
-    spans_left: bool = False
-    spans_up: bool = False
-
-    @property
-    def spans_right(self) -> bool:
-        return self.colspan > 1
-
-    @property
-    def spans_down(self) -> bool:
-        return self.rowspan > 1
-
-    @classmethod
-    def new(cls):
-        return cls(colspan=0, rowspan=0, size=0, text="")
-
 class WSMMarkdownConverter(TableConverter):
     def __init__(self, article_map: dict[str, str], nav: dict, breadcrumbs: list[str], filename: str, **kwargs):
-        super().__init__(**kwargs)
+        super().__init__(keep_inline_images_in=['td'], **kwargs)
         self.article_map = article_map
         self.nav = nav
         self.breadcrumbs = breadcrumbs
