@@ -1,0 +1,3656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Engine Technical Data - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/engine/node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../../left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../../left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a> ➭ <a href="../../../node_A01_0002/">ENGINE</a> ➭ <a href="../../node_A01_0004/">TECHNICAL DATA</a> ➭ <a href="./">ENGINE TECHNICAL DATA</a></p>
+<p><a href="" id="id015000800100"></a>ENGINE TECHNICAL DATA</p>
+<hr />
+<p>id015000800100</p>
+<p>Except TRIBUTE (L.H.D.) Face-lifted model</p>
+<table>
+<thead>
+<tr>
+<th colspan="7">
+<p>Item</p>
+</th>
+<th colspan="4">
+<p>Engine</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>
+<p>L8</p>
+</td>
+<td>
+<p>LF</p>
+</td>
+<td>
+<p>L3</p>
+</td>
+<td>
+<p>L5</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Cylinder head</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Cylinder head gasket contact surfaces distortion</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>0.10 {0.004}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Manifold contact surfaces distortion</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>0.10 {0.004}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum grinding</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.15 {0.006}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Valve clearance [Engine cold]</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>0.22—0.28 {0.0087—0.0110}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>0.27—0.33 {0.0106—0.0130}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Valve and valve guide</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve stem diameter</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>5.470—5.485 {0.2154—0.2159}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>5.465—5.480 {0.2152—0.2157}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Minimum</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>5.470 {0.2154}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>5.465 {0.2152}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve stem to guide clearance</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>0.024—0.069 {0.0009—0.0027}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>0.029—0.074 {0.0012—0.0029}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Maximum</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.10 {0.004}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.10 {0.004}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve length</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>102.99—103.79 {4.055—4.086}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>104.25—105.05 {4.105—4.135}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Minimum</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>102.99 {4.055}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>104.25 {4.105}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve guide inner diameter</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>5.509—5.539 {0.2169—0.2180}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>5.509—5.539 {0.2169—0.2180}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve guide protrusion height</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>12.2—12.8 {0.481—0.503}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>12.2—12.8 {0.481—0.503}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve head margin thickness</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Minimum</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>1.85 {0.0728}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>2.05 {0.0807}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Valve seat</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve seat contact width</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>1.2—1.6 {0.048—0.062}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>1.2—1.6 {0.048—0.062}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="5">
+<p>Valve seat angle</p>
+</td>
+<td>
+<p>(°)</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>45</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>45</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve seat sinking  (Valve protrusion height)</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td colspan="4">
+<p>40.64—41.44 {1.600—1.631}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td colspan="4">
+<p>40.50—41.30 {1.595—1.625}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Valve spring</p>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<p>Out-of-square</p>
+</td>
+<td colspan="2">
+<p>(°)</p>
+</td>
+<td colspan="4">
+<p>2.0</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Standard height</p>
+</td>
+<td colspan="3">
+<p>(mm {in} [pressing force N {kgf, lbf})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>Valve spring with pink paint mark: 30.2 {1.19} [388.7 {39.64, 87.38}]</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="4">
+<p>Except above: 28.68 {1.129} [390 {39.76, 87.67}]</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Oil control valve (OCV) (With variable valve timing mechanism)</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Coil resistance [20 °C {68 °F}]</p>
+</td>
+<td>
+<p>(ohm)</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td>
+<p>—</p>
+</td>
+<td colspan="3">
+<p>6.9—7.9</p>
+</td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Camshaft</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Camshaft runout</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>0.03 {0.0012}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Cam lobe height</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td>
+<p>40.79 {1.606}</p>
+</td>
+<td colspan="2">
+<p>42.12 {1.659}</p>
+</td>
+<td>
+<p>42.44 {1.671}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td>
+<p>41.08 {1.618}</p>
+</td>
+<td></td>
+<td colspan="2">
+<p>41.08 {1.618}</p>
+</td>
+<td>
+<p>41.18 {1.622}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Minimum</p>
+</td>
+<td>
+<p>IN</p>
+</td>
+<td></td>
+<td>
+<p>40.67 {1.601}</p>
+</td>
+<td colspan="2">
+<p>42.01 {1.653}</p>
+</td>
+<td>
+<p>42.33 {1.666}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>EX</p>
+</td>
+<td></td>
+<td>
+<p>40.96 {1.612}</p>
+</td>
+<td colspan="2">
+<p>40.96 {1.612}</p>
+</td>
+<td>
+<p>41.06 {1.616}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Journal diameter</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>24.96—24.98 {0.9827—0.9834}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Minimum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>24.95 {0.982}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Journal oil clearance</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>0.04—0.08 {0.002—0.003}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.09 {0.0035}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>End play</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>0.09—0.24 {0.0035—0.0094}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.25 {0.0098}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Tappet</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Tappet bore diameter</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>31.000—31.030 {1.2205—1.2216}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Tappet diameter</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>30.970—30.980 {1.2193—1.2196}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Tappet-to-Tappet bore oil clearance</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>0.02—0.06 {0.0008—0.0023}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.15 {0.006}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Cylinder block</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Cylinder head gasket contact surfaces distortion</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>0.10 {0.004}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Cylinder bore diameter  [Measure the cylinder bore at 42 mm  {1.65 in} below the top surface]</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td>
+<p>82.940—83.090 {3.2653—3.2712}</p>
+</td>
+<td colspan="2">
+<p>87.440—87.590 {3.4425—3.4484}</p>
+</td>
+<td>
+<p>88.940—89.090 {3.5016—3.5074}</p>
+</td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Piston</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Piston diameter</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td>
+<p>82.965—82.995 {3.2664—3.2675}</p>
+</td>
+<td colspan="2">
+<p>87.465—87.495 {3.4435—3.4446}</p>
+</td>
+<td>
+<p>88.965—88.995 {3.5026—3.5037}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Piston-to-cylinder clearance</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>0.025—0.045 {0.0010—0.0017}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.11 {0.0043}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Piston ring</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Piston ring-to-ring groove clearance</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>Top</p>
+</td>
+<td colspan="4">
+<p>0.04—0.08 {0.0016—0.0031}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Second</p>
+</td>
+<td colspan="4">
+<p>0.03—0.07 {0.0012—0.0027}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Oil (rail)</p>
+</td>
+<td colspan="4">
+<p>0.06—0.15 {0.0024—0.0059}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Maximum</p>
+</td>
+<td>
+<p>Top</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.17 {0.0067}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>Second</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.15 {0.0059}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>End gap  (measured in cylinder)</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td>
+<p>Standard</p>
+</td>
+<td>
+<p>Top</p>
+</td>
+<td>
+<p>0.15—0.30 {0.006—0.011}</p>
+</td>
+<td colspan="2">
+<p>0.16—0.31 {0.007—0.012}</p>
+</td>
+<td>
+<p>0.16—0.26 {0.0063—0.010}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Second</p>
+</td>
+<td>
+<p>0.32—0.47 {0.013—0.018}</p>
+</td>
+<td></td>
+<td colspan="2">
+<p>0.33—0.48 {0.013—0.018}</p>
+</td>
+<td>
+<p>0.31—0.46 {0.013—0.018}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Oil (rail)</p>
+</td>
+<td colspan="3">
+<p>0.20—0.70 {0.0079—0.0275}</p>
+</td>
+<td></td>
+<td>
+<p>0.15—0.40 {0.006—0.015}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>1.0 {0.0393}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Connecting rod and connecting rod bearing</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Connecting rod side clearance</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>0.14—0.36 {0.0056—0.0141}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.435 {0.0172}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Connecting rod bearing size</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="2">
+<p>1.498—1.522 {0.0589—0.0599}</p>
+</td>
+<td>
+<p>1.496—1.520 {0.0589—0.0598}</p>
+</td>
+<td>
+<p>1.497—1.521 {0.05894—0.05988}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.25 {0.01} Oversize</p>
+</td>
+<td></td>
+<td colspan="2">
+<p>1.623—1.629 {0.0639—0.0641}</p>
+</td>
+<td>
+<p>1.621—1.627 {0.0639—0.0640}</p>
+</td>
+<td>
+<p>1.622—1.628 {0.06386—0.06409}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.50 {0.02} Oversize</p>
+</td>
+<td></td>
+<td colspan="2">
+<p>1.748—1.754 {0.06882—0.06905}</p>
+</td>
+<td>
+<p>1.746—1.752 {0.06875—0.06897}</p>
+</td>
+<td>
+<p>1.747—1.753 {0.06878—0.06901}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Connecting rod bearing oil clearance</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>0.026—0.052 {0.0011—0.0020}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.1 {0.0039}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Crankshaft</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Crankshaft runout</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>0.05 {0.0019}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Main journal diameter</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>51.980—52.000 {2.0465—2.0472}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.25 {0.01} Oversize</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>51.730—51.750 {2.0367—2.0374}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.50 {0.02} Oversize</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>51.480—51.500 {2.0268—2.0275}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Main journal oil clearance</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>0.016—0.039 {0.0007—0.0013}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.10 {0.0039}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Main journal out of round</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>0.05 {0.0019}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Upper main bearing size</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>2.501—2.522 {0.09847—0.09929}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.25 {0.01} Oversize</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>2.623—2.629 {0.1033—0.1035}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.50 {0.02} Oversize</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>2.748—2.754 {0.1082—0.1084}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Lower main bearing size</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>2.501—2.529 {0.09847—0.09956}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.25 {0.01} Oversize</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>2.624—2.630 {0.1034—0.1035}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.50 {0.02} Oversize</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>2.749—2.755 {0.1082—0.1084}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Crank pin diameter</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="2">
+<p>46.980—47.000 {1.8497—1.8503}</p>
+</td>
+<td>
+<p>49.980—50.000 {1.9677—1.9685}</p>
+</td>
+<td>
+<p>51.980—52.000 {2.0465—2.0472}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.25 {0.01} Oversize</p>
+</td>
+<td></td>
+<td colspan="2">
+<p>46.730—46.750 {1.8398—1.8405}</p>
+</td>
+<td>
+<p>49.730—49.750 {1.9579—1.9586}</p>
+</td>
+<td>
+<p>51.730—51.750 {2.0367—2.0374}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>0.50 {0.02} Oversize</p>
+</td>
+<td></td>
+<td colspan="2">
+<p>46.480—46.500 {1.8300—1.8307}</p>
+</td>
+<td>
+<p>49.480—49.500 {1.9481—1.9488}</p>
+</td>
+<td>
+<p>51.480—51.500 {2.0268—2.0275}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Crank pin off - round</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>0.05 {0.019}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Crankshaft end play</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>0.22—0.45 {0.0087—0.0177}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td></td>
+<td colspan="4">
+<p>0.55 {0.0019}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Front oil seal</p>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<p>Pushing distance of the front oil seal  [from the edge of the engine front cover]</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="4">
+<p>0—0.5 {0—0.019}</p>
+</td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Bolt</p>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<p>Cylinder head bolt (With washer) length</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>149.2—149.8 {5.875—5.897}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>150.5 {5.925}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="5">
+<p>Cylinder head bolt (Without washer) length</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>145.2—145.8 {5.72—5.74}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>146.5 {5.77}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="5">
+<p>Connecting rod bolt length</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>43.7—44.3 {1.73—1.74}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>45.0 {1.77}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="5">
+<p>Main bearing cap bolt length</p>
+</td>
+<td colspan="2">
+<p>Standard</p>
+</td>
+<td colspan="4">
+<p>110.0—110.6 {4.33—4.35}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="4">
+<p>111.3 {4.38}</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="11">
+<p>Balance shaft</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Gear backlash</p>
+</td>
+<td colspan="2">
+<p>(mm {in})</p>
+</td>
+<td colspan="2">
+<p>Maximum</p>
+</td>
+<td colspan="2">
+<p>—</p>
+</td>
+<td colspan="2">
+<p>0.01-0.1 {0.0004—0.0039}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>TRIBUTE (L.H.D.) Face-lifted model</p>
+<table>
+<thead>
+<tr>
+<th colspan="2">
+<p>Item</p>
+</th>
+<th>
+<p>Engine</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>
+<p>L3</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Cylinder Block</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cylinder bore diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>87.5—87.53 {3.444—3.445}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cylinder bore maximum out-of-round</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.008 {0.0003}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Main bearing bore diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>57.020—57.038 {2.244—2.245}</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Head gasket surface flatness</p>
+</td>
+<td>
+<p>0.1 mm/general {0.0003 in./general}  0.05 mm/200 x 200 {0.0019 in./7.87 x 7.87}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Piston</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Diameter (1)</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>87.5—87.51 {3.444—3.445}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Diameter (2)</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>87.51—87.52 {3.4452—3.4456}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Diameter (3)</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>87.52—87.53 {3.444—3.446}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Piston-to-bore clearance</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.025—0.045 {0.0009—0.0017}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ring groove width — top</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>1.203—1.205 {0.0473—0.0474}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ring groove width — 2nd</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>1.17—1.19 {0.0460—0.0468}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ring groove width — oil</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>2.501—2.503 {0.0984—0.0985}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Piston skirt coating thickness</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.008—0.020 {0.0003—0.0007}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Piston Pin</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>20.995—21.0 {0.8266—0.8268}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>59.6—60.4 {2.346—2.377}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Piston-to-pin clearance</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.008—0.016 {0.0003—0.0006}</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Pin-to-rod clearance</p>
+</td>
+<td>
+<p>Press fit</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Cylinder Head</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve lift at zero lash (exhaust)</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>7.4 {0.2913}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve lift at zero lash (intake)</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>7.9 {0.311}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve guide diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>5.509—5.539 {0.216—0.218}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve seat width — intake/exhaust</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.99—1.84 {0.038—0.072}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve seat angle</p>
+</td>
+<td>
+<p>(°)</p>
+</td>
+<td>
+<p>45</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve seat runout</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.075 {0.0029}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve lash adjuster bore diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>31.00—31.03 {1.220—1.221}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cam bore diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>25.015—25.040 {0.984—0.985}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve head diameter — intake</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>34.85—35.15 {1.372—1.383}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve head diameter — exhaust</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>29.85—30.15 {1.175—1.187}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve stem diameter — intake</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>5.470—5.485 {0.2153—0.2159}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve stem diameter — exhaust</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>5.465—5.480 {0.2151—0.2157}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve stem-to-guide clearance — intake</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.0027 {0.0009}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve stem-to-guide clearance — exhaust</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.0029 {0.0011}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve face runout</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.05 {0.001 in}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Valve face angle</p>
+</td>
+<td>
+<p>(°)</p>
+</td>
+<td>
+<p>45</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve Spring — Compression Pressure</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Intake and exhaust (installed)</p>
+</td>
+<td>
+<p>(N {kgf, lbs})</p>
+</td>
+<td>
+<p>172.4 {17.576, 38.667}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Intake (valve open) 8.9 mm (0.35 in) of lift</p>
+</td>
+<td>
+<p>(N {kgf, lbs})</p>
+</td>
+<td>
+<p>432.5 {44.105, 97.032}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Exhaust (valve open) 7.4 mm of lift</p>
+</td>
+<td>
+<p>(N {kgf, lbs})</p>
+</td>
+<td>
+<p>416.1 {42.426, 93.338}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Free length</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>44.92 {1.768}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Assembled height</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>37.9 {1.492}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Crankshaft</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Main bearing journal diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>51.980—52.000 {2.046—2.047}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Production repair</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>51.730—51.750 {2.036—2.037}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Main bearing clearance</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.019—0.035 {0.0007—0.0013}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Connecting rod journal diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>49.980—50.000 {1.967—1.968}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Production repair</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>49.730—49.750 {1.957—1.958}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>End play</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.22—0.43 {0.008—0.016}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Rings</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Width — top</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>1.17—1.185 {0.0460—0.0466}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Width — 2nd</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>1.197—1.199 {0.0471—0.0472}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Width — oil</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>2.38—2.45 {0.093—0.096}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ring gap (in bore) — top</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.16—0.31 {0.006—0.012}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ring gap (in bore) — 2nd</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.33—0.48 {0.012—0.018}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ring gap (in bore) — oil</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.2—0.7 {0.007—0.027}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Valve Tappet</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>30.97—30.98 {1.2192—1.2196}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Tappet-to-valve clearance — intake</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.22— 0.28 {0.008—0.011}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Tappet-to-valve clearance — exhaust</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.27—0.33 {0.010—0.013}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Tappet-to-bore clearance</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.02—0.06 {0.0007—0.0023}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Camshaft</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lobe lift — intake</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>8.24999 {0.32}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lobe lift — exhaust</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>7.80007 {0.307}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Runout (1) No. 3 Journal — Supported by No. 1 and No. 5 journals.</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.03 {0.001}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Thrust clearance</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.09—0.24 {0.003—0.009}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Journal diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>24.96—24.98 {0.982—0.983}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Journal-to-bore clearance</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.035—0.080 {0.001—0.003}</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Connecting Rod</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bearing clearance</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.027—0.052 {0.001—0.002}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bearing thickness</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>1.496—1.520 {0.058—0.059}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Crank bore diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>53.025—53.045 {2.087—2.088}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pin bore diameter</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>20.965—20.985 {0.825—0.826}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length (center-to-center)</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>154.8 {6.094}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Side clearance</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>1.95—3.05 {0.076—0.120}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Axial clearance</p>
+</td>
+<td>
+<p>(mm {in})</p>
+</td>
+<td>
+<p>0.14—0.36 {0.005—0.014}</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

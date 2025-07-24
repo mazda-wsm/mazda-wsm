@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Drive-By-Wire Control Operation [L8, LF] - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../../left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#wp1025486">DRIVE-BY-WIRE CONTROL OPERATION [L8, LF]</a></li>
+        <li><a href="#idle-speed-control">Idle Speed Control</a></li><li><a href="#accelerator-control">Accelerator Control</a></li><li><a href="#traction-control">Traction Control</a></li><li><a href="#cruise-control-with-cruise-control-system">Cruise Control (With Cruise Control System)</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0002/">ENGINE</a> ➭ <a href="../../node_S02_0016/">CONTROL SYSTEM[L8, LF]</a> ➭ <a href="./">DRIVE-BY-WIRE CONTROL OPERATION [L8, LF]</a></p>
+<h1 id="wp1025486"><strong>DRIVE-BY-WIRE CONTROL OPERATION [L8, LF]</strong></h1>
+<hr />
+<p>id0140i7170600</p>
+<p>{: #wp1059783}</p>
+<h2 id="idle-speed-control"><strong id="wp1061425">Idle Speed Control</strong></h2>
+<p id="wp1059793">• Controls the throttle valve opening angle so that it is close to the target idle speed calculated by the PCM.</p>
+<p id="wp1059807">• The PCM calculates the target throttle opening angle by adding each type of correction to the basic duty value which is the basis of the throttle valve opening angle, and then sends a duty signal to the throttle valve actuator. The basic duty value is determined by the target engine speed.</p>
+<p id="wp1059817">• Each type of correction is as follows.</p>
+<p><strong id="wp1059827">Correction</strong></p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>Correction</strong> {: #wp1059941}</p>
+</th>
+<th>
+<p><strong>Purpose</strong> {: #wp1059943}</p>
+</th>
+<th>
+<p><strong>Condition</strong> {: #wp1059945}</p>
+</th>
+<th>
+<p><strong>Amount of Correction</strong> {: #wp1059947}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Correction {: #wp1059835}</p>
+</td>
+<td>
+<p>Target {: #wp1059837}</p>
+</td>
+<td>
+<p>Conditions {: #wp1059893}</p>
+</td>
+<td>
+<p>Correction amount {: #wp1059896}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>A/C load correction {: #wp1059970}</p>
+</td>
+<td>
+<p>Prevents decrease in idle speed due to A/C operation. {: #wp1059973}</p>
+</td>
+<td>
+<p>A/C is operating. {: #wp1059976}</p>
+</td>
+<td>
+<p>A/C operation time→correction {: #wp1059979}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Electrical load correction {: #wp1059983}</p>
+</td>
+<td>
+<p>Prevents decrease in idle speed due to electrical load operation. {: #wp1059986}</p>
+</td>
+<td>
+<p>Idle speed during electrical load operation and under any condition during driving {: #wp1059989}</p>
+</td>
+<td>
+<p>High electrical load→large correction {: #wp1059992}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>D-range correction (AT) {: #wp1059996}</p>
+</td>
+<td>
+<p>Prevents decrease in idle speed due to shifting into D-range {: #wp1059999}</p>
+</td>
+<td>
+<p>D-range signal is input. {: #wp1060002}</p>
+</td>
+<td>
+<p>Low idle speed when shifted to D range→large correction {: #wp1060005}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Dashpot correction {: #wp1060009}</p>
+</td>
+<td>
+<p>Prevents decrease in idle speed due to insufficient intake air amount during deceleration. {: #wp1060012}</p>
+</td>
+<td>
+<p>Decelerated {: #wp1060015}</p>
+</td>
+<td>
+<p>High engine speed→large correction {: #wp1060018}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Correction at engine start {: #wp1060153}</p>
+</td>
+<td>
+<p>Prevents decrease in idle speed after engine start. {: #wp1060156}</p>
+</td>
+<td>
+<p>After cranking and engine start {: #wp1060159}</p>
+</td>
+<td>
+<p>Low ECT→large correction {: #wp1060162}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hot engine restart correction {: #wp1060186}</p>
+</td>
+<td>
+<p>Prevents decrease in idle speed from hot engine restart. {: #wp1060189}</p>
+</td>
+<td>
+<p>Just after cranking and engine start when the ECT is 60 °C {140 °F} or more the IAT is 50 °C {122 °F} or more {: #wp1060192}</p>
+</td>
+<td>
+<p>High intake airflow temperature→large correction {: #wp1060195}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Feedback correction A {: #wp1060235}</p>
+</td>
+<td>
+<p>Sets idle speed to target engine speed. {: #wp1060238}</p>
+</td>
+<td>
+<p>Idle speed during idling (vehicle is stopped) is over or under the target engine speed (except during test mode when the engine speed is 300 rpm or less). {: #wp1060241}</p>
+</td>
+<td>
+<p>Actual idle speed {: #wp1060244}  Target engine speed or less→volume increase correction {: #wp1060270}  Target engine speed or more→volume decrease correction {: #wp1060276}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Feedback correction B {: #wp1060280}</p>
+</td>
+<td>
+<p>Sets to the target engine speed when the idle speed has decreased in the range not corrected by feedback correction A, and prevents a decrease in idle speed. {: #wp1060283}</p>
+</td>
+<td>
+<p>During deceleration at fully closed throttle, the engine speed is the target engine speed or more and when the feedback correction A is not performed (except during test mode). {: #wp1060286}</p>
+</td>
+<td>
+<p>Large difference between actual idle speed and target engine speed→large correction {: #wp1060289}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Engaged coasting clutch volume increase correction {: #wp1060313}</p>
+</td>
+<td>
+<p>Reduces shock when the transaxle coasting clutch is engaged. {: #wp1060316}</p>
+</td>
+<td>
+<p>When coasting clutch is engaged. {: #wp1060319}</p>
+</td>
+<td>
+<p>High vehicle speed→large correction {: #wp1060322}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Learning correction {: #wp1060346}</p>
+</td>
+<td>
+<p>Stores intake air volume changes based on differences between engines and changes due to aged deterioration, and feedback. {: #wp1060349}</p>
+</td>
+<td>
+<p>During feedback correction A when ECT is 85 °C {185 °F} or more. {: #wp1060352}</p>
+</td>
+<td>
+<p>During idling→average value of feedback correction A {: #wp1060355}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="accelerator-control"><strong id="wp1060389">Accelerator Control</strong></h2>
+<p id="wp1060399">• Controls the throttle valve opening angle through control of the throttle valve actuator, according to the amount of AP depression.</p>
+<p id="wp1060413">• The PCM controls the throttle valve actuator so that the actual throttle valve opening angle is close to the target throttle valve opening angle.</p>
+<p id="wp1060423">• The final throttle valve opening angle is determined by the sum of the target throttle opening angle during idling and the target throttle valve opening angle during regular driving.</p>
+<p id="wp1060433">• The target throttle valve opening angle during regular driving is determined based on the transmission gear position, the amount of AP depression and the engine speed. If the target throttle opening angle is at the fixed value or less during regular driving, the PCM switches to idle speed control.</p>
+<p id="wp1060443">• The PCM sets the throttle valve to the fully-closed position when the ignition switch is on or off and executes the idle position learning function to learn the throttle valve position. Due to this, changes in the throttle valve opening angle due to age deterioration are corrected.</p>
+<p id="wp1060454">• When the ignition switch is off, a main relay on request is output and the fully-closed learning function is executed. (See <a href="../../main-relay-control-operation-l8-lf/id0140i7112000/#wp1025486">MAIN RELAY CONTROL OPERATION [L8, LF]</a>.)</p>
+<h2 id="traction-control"><strong id="wp1060473">Traction Control</strong></h2>
+<p id="wp1060483">• The PCM calculates the target throttle valve opening angle by the torque up/down request signal from the DSC HU/CM and TCM and the engine speed.</p>
+<h2 id="cruise-control-with-cruise-control-system"><strong id="wp1060501">Cruise Control (With Cruise Control System)</strong></h2>
+<p id="wp1060511">• Calculates the throttle valve opening angle based on the deviation of the actual vehicle speed from the set vehicle speed which was set with the cruise control switch and sends a duty signal to the throttle valve actuator.</p>
+<p>• The PCM controls the actual vehicle speed so that it is close to the set vehicle speed.{: #wp1060525}</p>
+<p><img alt="" src="../../../../../images/E5U140ZW5501.png" /></p>
+<p id="wp1060564">• The cruise control includes the cruise control operation condition and the cruise control stop condition.</p>
+<h3 id="cruise-control-operation-condition"><strong id="wp1060574">Cruise control operation condition</strong></h3>
+<p id="wp1060612">• When all of the following conditions are met, execution of the cruise control system is enabled (cruise control standby status).
+{: #wp1060584}- Cruise control ON OFF switch: ON
+{: #wp1060598}- Vehicle speed: More than 27 km/h {17 mph}</p>
+<h3 id="cruise-control-stop-condition"><strong id="wp1060627">Cruise control stop condition</strong></h3>
+<p id="wp1060766">• When any of the following conditions are met even while in cruise control, the PCM stops the cruise control and clears the set vehicle speed.
+{: #wp1060637}- Ignition switch: OFF
+{: #wp1060651}- Cruise control ON OFF switch: OFF
+{: #wp1060665}• When any of the following conditions are met even while in cruise control, the PCM stops the cruise control while storing the set vehicle speed.
+{: #wp1060675}- Cruise control CANCEL switch: ON
+{: #wp1060689}- Neutral switch (MT) or CPP switch (MT): ON
+{: #wp1060703}- TR switch (AT) P/N position switch: ON
+{: #wp1060713}- Vehicle speed: Less than 22.5 km/h {13.9 mph}
+{: #wp1060725}- Brake switch: ON
+{: #wp1060740}- The actual vehicle speed is 15 km/h {9.3 mph} or more lower than the set vehicle speed during cruise control (ascending).
+{: #wp1060750}- Condition where actual vehicle speed is 15 km/h {9.3 mph} or more lower than the set vehicle speed continues for 60 s or more even when the RES/+ switch is on.</p>
+<h3 id="cruise-control-function"><strong id="wp1060785">Cruise control function</strong></h3>
+<p id="wp1060795">• The cruise control includes accelerating, coasting, resume, tap-down, tap-up and downshift functions (AT).</p>
+<p>**Function List</p>
+<p>+-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| <strong>Function</strong> {: #wp1060877}   | <strong>Contents</strong> {: #wp1060879}                                                                                                                                                                                                                                                                                                                                                                                                          |
++===============================+======================================================================================================================================================================================================================================================================================================================================================================================================================================+
+| Accelerating {: #wp1060819}   | • When any of the following conditions are met while driving in cruise control and when the RES/+ switch is continuously pressed, the PCM gradually increases the set vehicle speed. {: #wp1060821}  - Except during resume operation {: #wp1060941}- The RES/+ switch is on one time or more during resume operation. {: #wp1060955}                                                                                                |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Coasting {: #wp1060894}       | • When the SET/- switch is continuously pressed, the PCM gradually decreases the set vehicle speed. {: #wp1060897}                                                                                                                                                                                                                                                                                                                   |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Resume {: #wp1060901}         | • When the RES/+ switch signal is input to the PCM during regular driving (cruise control is stopped) and the previously set vehicle speed is stored in the PCM, the PCM sets the set vehicle speed to the previously set vehicle speed and begins control. {: #wp1060904}                                                                                                                                                           |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Tap down {: #wp1061007}       | • When all of the following conditions are met while driving in cruise control, the PCM decreases the set vehicle speed by 1.6 km/h {1.0 mph} and controls the throttle valve actuator. {: #wp1061010}  - During cruise control {: #wp1061040}- RES/+ switch off {: #wp1061054}- The RES/+ switch switches from off to on {: #wp1061067}- When actual vehicle speed is lower (set vehicle speed +2.0 km/h {+1.2 mph}) {: #wp1061080} |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Tap-up {: #wp1061097}         | • When all of the following conditions are met, the PCM increases the set vehicle speed by 1.6 km/h {1.0 mph} and controls the throttle valve actuator so that the vehicle speed is close to the set vehicle speed. {: #wp1061100}  - During cruise control {: #wp1061131}- The RES/+ switch switches from off to on {: #wp1061145}                                                                                                  |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Downshift (AT) {: #wp1061156} | • When the following conditions are met, a downshift signal is sent to the TCM via CAN. {: #wp1061159}  - RES/+ switch on {: #wp1061183}- Target vehicle acceleration is not reached {: #wp1061200}                                                                                                                                                                                                                                  |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+**{: #wp1060811}</p>
+<p><a href="" id="wp1061310"></a></p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Fuel Injection Control Operation [L8, LF] - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../../left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0002/">ENGINE</a> ➭ <a href="../../node_S02_0016/">CONTROL SYSTEM[L8, LF]</a> ➭ <a href="./">FUEL INJECTION CONTROL OPERATION [L8, LF]</a></p>
+<p><a href="" id="id0140i7101900"></a>FUEL INJECTION CONTROL OPERATION [L8, LF]</p>
+<hr />
+<p>id0140i7101900</p>
+<p><a href="" id="d5e014000000n230001"></a>Operation</p>
+<p><a href="" id="d5e014000000n230002"></a>Injection timing</p>
+<p>•  There is synchronized fuel injection, which performs fuel injection by the setting of the crankshaft position, and non-synchronized fuel injection which performs fuel injection when the condition for fuel injection is met regardless of the crankshaft position.</p>
+<p>Synchronized fuel injection</p>
+<p>•  The crankshaft rotation is synchronized by each intake and exhaust stroke of the cylinders, and fuel injection is performed by the fuel injection timing and the injection amount corresponding to the input signals of the following sensors.</p>
+<p>―  CKP sensor, MAF sensor, ECT sensor, IAT sensor</p>
+<p>Non-synchronized fuel injection</p>
+<p>•  The crankshaft rotation is not synchronized and fuel injection is performed by the injection timing and injection amount as triggered by the input signals of the following sensors.</p>
+<p>―  TP sensor, MAF sensor, ECT sensor, IAT sensor</p>
+<p>Relation between synchronized and non-synchronized fuel injection</p>
+<p>•  If synchronized and non-synchronized fuel injection happen to occur together, fuel is injected by adding the fuel injection timing of both.</p>
+<p><a href="" id="d5e014000000n230003"></a>Injection Time</p>
+<p>•  The PCM calculates the fuel injection amount according to the engine operation conditions as the fuel injection time and energizes the fuel injectors.</p>
+<p>Fuel injector energization time and operation conditions</p>
+<p>•  The fuel injectors cause an operation delay with the start of energization from the PCM. The PCM calculates the fuel injection time by adding the non-injection time (ineffective injection time) with the actual injection time (effective injection time), and energizes the fuel injectors for this time.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><img alt="" src="../../../../../images/c3u0140s014.png" /> c3u0140s014</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>•  The fuel injection time is based on the following formula:</p>
+<p>Fuel injection time = effective injection time + ineffective injection time</p>
+<p>Ineffective injection time</p>
+<p>―  The fuel injectors cause a delay in operation due to a delay in the build-up of operation current from coil inductance with the start of energization, and by the mass of the needle valve and plunger, and spring resistance. This delay is the ineffective injection time.</p>
+<p>―  The non-injection time is affected by the change in battery voltage. Accordingly, the PCM sets the non-injection time according to the battery voltage</p>
+<p>Effective injection time</p>
+<p>―  The fuel injector opening valve time which is the actual fuel injection time is called the effective injection amount.</p>
+<p><a href="" id="d5e014000000n230004"></a>Determination of Effective Injection Time</p>
+<p>•  The PCM divides the engine operation conditions into control zones according to engine speed and engine load and determines the effective injection time at each control zone to perform optimum air/fuel ratio control in all engine driving ranges.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><img alt="" src="../../../../../images/c3u0140s015.png" /> c3u0140s015</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="" id="d5e014000000n230005"></a>Start zone</p>
+<p>Purpose</p>
+<p>•  Improved engine startability</p>
+<p>Operation condition</p>
+<p>•  When engine speed is 500 rpm or less.</p>
+<p>Determination of fuel injection time</p>
+<p>•  According to engine coolant temperature (ECT sensor) and engine speed (CKP sensor)</p>
+<p><a href="" id="d5e014000000n230006"></a>Feedback Zone</p>
+<p>Purpose</p>
+<p>•  Improved fuel economy</p>
+<p>•  Improved exhaust gas purification</p>
+<p>Control condition</p>
+<p>•  During engine operation other than high load volume increase zone and engine start zone.</p>
+<p>Determination of fuel injection time</p>
+<p>•  During normal driving, the amounts of various correction types are added to the basic injection time to set to the theoretical air/fuel ratio.</p>
+<p><a href="" id="d5e014000000n230007"></a>High load volume increase zone</p>
+<p>Purpose</p>
+<p>•  Improved driveability</p>
+<p>•  TWC protection</p>
+<p>Control condition</p>
+<p>•  Either the charging efficiency or the throttle valve opening angle is a fixed value or more.</p>
+<p>Determination of fuel injection time</p>
+<p>•  Corrections are added to the basic injection amount and the high load coefficient is calculated according to the engine speed, mass intake airflow amount and the throttle valve opening angle.</p>
+<p><a href="" id="d5e014000000n230008"></a>Excessive speed fuel cut zone</p>
+<p>Purpose</p>
+<p>•  Engine protection</p>
+<p>Control conditions</p>
+<p>•  When the engine speed is 7,000 rpm or more (WOT).</p>
+<p>•  When engine speed is 5,500 rpm or more and the engine coolant temperature is approx. -15 °C {5 °F} or less.</p>
+<p>•  When the following conditions continue for 5 min or more:</p>
+<p>―  Vehicle is stopped.</p>
+<p>―  Engine speed is 1,500 rpm or more.</p>
+<p>―  Engine coolant temperature is approx. 40 °C {104 °F}.</p>
+<p>•  When the following conditions continue for 2 min or more:</p>
+<p>―  Vehicle is stopped.</p>
+<p>―  Engine speed is 3,000 rpm or more.</p>
+<p>―  Engine coolant temperature is approx. 40 °C {104 °F}.</p>
+<p>•  When the following conditions continue for 10 s or more:</p>
+<p>―  Vehicle is stopped.</p>
+<p>―  Engine speed is 6,500 rpm or more.</p>
+<p>―  Engine coolant temperature is approx. 40 °C {104 °F}.</p>
+<p>Note•  The PCM determines that the driver continues to unintentionally depress the accelerator pedal</p>
+<p>Determination of fuel injection time</p>
+<p>•  Fuel injection time is set to 0 (fuel cut).</p>
+<p><a href="" id="d5e014000000n230009"></a>Deceleration fuel cut zone</p>
+<p>Purpose</p>
+<p>•  Improved fuel economy</p>
+<p>•  Prevents overheating of the catalytic converter</p>
+<p>Control conditions</p>
+<p>•  When the engine conditions are as follows (10 s or longer after engine start):</p>
+<p>―  Fully closed throttle valve</p>
+<p>―  When the engine speed is at set value or more (differs depending on the ECT) (charging efficiency at fixed value or more, mass airflow sensor normal)</p>
+<p>Determination of fuel injection time</p>
+<p>•  The fuel injection time is set to 0 (fuel cut).</p>
+<p><a href="" id="d5e014000000n230010"></a>Calculation method list for fuel injection time</p>
+<p>A: Fuel injection time base, B: Correction for fuel injection time</p>
+<table>
+<thead>
+<tr>
+<th colspan="3">
+<p>Contents  (Fuel injection time, calculation method, or determination method)</p>
+</th>
+<th colspan="5">
+<p>Control zone</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>
+<p><img alt="" src="../../../../../images/b3e0140t053.png" /></p>
+</td>
+<td>
+<p><img alt="" src="../../../../../images/b3e0140t054.png" /></p>
+</td>
+<td>
+<p><img alt="" src="../../../../../images/b3e0140t055.png" /></p>
+</td>
+<td>
+<p><img alt="" src="../../../../../images/b3e0140t056.png" /></p>
+</td>
+<td>
+<p><img alt="" src="../../../../../images/b3e0140t057.png" /></p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Injection time at start</p>
+</td>
+<td>
+<p>Set value according to engine coolant temperature (low engine coolant temperature→long injection time)</p>
+</td>
+<td>
+<p>A</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Basic injection time</p>
+</td>
+<td>
+<p>Basic injection time = charging efficiency x fuel flow coefficient</p>
+</td>
+<td></td>
+<td>
+<p>A</p>
+</td>
+<td>
+<p>A</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Fuel cut</p>
+</td>
+<td>
+<p>Fuel injection time = 0</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<p>A</p>
+</td>
+<td>
+<p>A</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Ineffective injection time</p>
+</td>
+<td>
+<p>Set time according to injector performance</p>
+</td>
+<td>
+<p>A</p>
+</td>
+<td>
+<p>A</p>
+</td>
+<td>
+<p>A</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Volume increase correction at engine start</p>
+</td>
+<td>
+<p>Purpose: Maintains stability of engine speed just after engine start  Correction condition  •  Specified time according to engine coolant temperature directly after engine start  Correction amount  •  Low engine coolant temperature→large correction  •  Low intake air temperature→large correction</p>
+</td>
+<td>
+<p>B</p>
+</td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>A/F sensor feedback correction</p>
+</td>
+<td>
+<p>Purpose: Controls air/fuel ratio to the theoretical air/fuel ratio  Correction condition  •  When engine coolant temperature is at set value or more  Correction amount  •  A/F sensor current value 0 mA or less→volume decrease correction  •  A/F sensor current value 0 mA or more→volume increase correction</p>
+</td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>HO2S feedback correction</p>
+</td>
+<td>
+<p>Purpose: Corrects feedback amount according to deterioration of A/F sensor and catalytic converter  Correction condition  •  Engine coolant temperature is at set value or more  •  Engine speed is 500—4,250 rpm  •  Charging efficiency is 10—80%  Correction amount  •  According to HO2S electromotive force→correction</p>
+</td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>D-range correction  (AT)</p>
+</td>
+<td>
+<p>Purpose: Ensures engine speed stability during D-range shifting  Correction condition  •  Throttle valve fully-closed and shifted into D range  Correction amount  •  Low engine coolant temperature→large correction</p>
+</td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>High load volume increase correction</p>
+</td>
+<td>
+<p>Purpose: Improved engine output, decrease of exhaust gas temperature  Correction condition  •  According to engine speed when the throttle valve opening angle is the fixed value or more, otherwise, according to engine speed and charging efficiency  Correction amount  •  High engine speed, high charging efficiency→large correction</p>
+</td>
+<td></td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Warm-up volume increase correction</p>
+</td>
+<td>
+<p>Purpose: When engine coolant temperature is low, maintains combustion stability  Correction condition  •  While at set engine coolant temperature  Correction amount  •  High charging efficiency, low engine coolant temperature→large correction</p>
+</td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>A/C load increase correction</p>
+</td>
+<td>
+<p>Purpose: Maintains engine speed stability during A/C operation  Correction condition  •  A/C is operating  Correction amount  •  Low engine coolant temperature→large correction</p>
+</td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Acceleration increase correction</p>
+</td>
+<td>
+<p>Purpose: Corrects fuel injection delay during acceleration to ensure drive stability  Correction condition  •  When acceleration amount (change in the amount of charging efficiency) is at set value or more  Correction amount  •  Low engine coolant temperature→large correction  •  Large acceleration amount→large correction</p>
+</td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Deceleration volume increase correction</p>
+</td>
+<td>
+<p>Purpose: Ensures engine speed stability after fuel cut recovery  Correction condition  •  When recovery from fuel cut  Correction amount  •  Low engine speed→large correction</p>
+</td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Learning correction</p>
+</td>
+<td>
+<p>Purpose: Corrects deviation in air/fuel ratio from changes due to aged deterioration of mechanical devices  Correction condition  •  Under any condition except purge control  Correction amount  •  Learning value based on average of feedback correction value</p>
+</td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Intake air pressure correction</p>
+</td>
+<td>
+<p>Purpose: Corrects ineffective charging time deviation from change in intake manifold vacuum  Correction condition  •  Under any condition except start zone  Correction amount  •  More intake manifold vacuum→large correction</p>
+</td>
+<td></td>
+<td>
+<p>B</p>
+</td>
+<td>
+<p>B</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a href="" id="d5e014000000n230011"></a>Fuel cut</p>
+<p>•  Includes fuel cut under the following conditions except fuel cut at excessive engine speed according to engine operation and deceleration fuel cut.</p>
+<p><a href="" id="d5e014000000n230012"></a>Sensor damage fuel cut</p>
+<p>Purpose</p>
+<p>•  To prevent engine damage from abnormal ignition due to a malfunction input of a cylinder identification or the engine speed signal.</p>
+<p>Control condition</p>
+<p>•  When damage to the crankshaft position sensor or camshaft position sensor is detected.</p>
+<p><a href="" id="d5e014000000n230013"></a>Dechoke control</p>
+<p>Purpose</p>
+<p>•  To improve engine starting startability when spark plugs are flooded.</p>
+<p>Control conditions</p>
+<p>•  When cranking close to fully-open throttle valve</p>
+<p><a href="" id="d5e014000000n230014"></a>Fuel cut during immobilizer system activation</p>
+<p>Purpose</p>
+<p>•  To prevent vehicle theft</p>
+<p>Execution conditions</p>
+<p>•  When an engine stop request signal is received from the immobilizer system, the PCM force-stops the fuel injectors. Therefore the engine stops.</p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

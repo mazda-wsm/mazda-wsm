@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>DTC Detection Logic And Conditions [L8, LF] - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../../left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0002/">ENGINE</a> ➭ <a href="../../node_S02_0004/">ON-BOARD DIAGNOSTIC[L8, LF]</a> ➭ <a href="./">DTC DETECTION LOGIC AND CONDITIONS [L8, LF]</a></p>
+<p><a href="" id="id0102b1100300"></a>DTC DETECTION LOGIC AND CONDITIONS [L8, LF]</p>
+<hr />
+<p>id0102b1100300</p>
+<p>B1342 PCM malfunction</p>
+<p>•  Malfunction in the PCM internal circuit.</p>
+<p>P0011 CMP timing over-advanced</p>
+<p>•  The actual valve timing is over-advanced by 15 ° from the target valve timing for specified period when the oil control valve (OCV) is controlled in the maximum valve timing retard condition.</p>
+<p>Monitoring condition</p>
+<p>―  Engine coolant temperature is above 63 °C {145.4 °F}</p>
+<p>P0012 CMP timing over-retarded</p>
+<p>•  Actual valve timing is over-retarded by 10 ° from the target valve timing for specified period when the oil control valve (OCV) system control is within the feedback range.</p>
+<p>Monitoring condition</p>
+<p>―  Engine coolant temperature is above 63 °C {145.4 °F}</p>
+<p>P0030 A/F sensor heater control circuit problem</p>
+<p>•  The PCM monitors the A/F sensor impedance when under the A/F sensor heater control for 410 s. If the impedance is more than 44 ohms, the PCM determines that there is a A/F sensor heater control circuit problem.</p>
+<p>P0031 A/F sensor heater circuit low input</p>
+<p>•  The PCM monitors the A/F sensor heater control voltage when the PCM turns the A/F sensor heater off. If the control voltage exceeds 50% of the battery voltage, the PCM determines that the A/F sensor heater control circuit voltage is low.</p>
+<p>P0032 A/F sensor heater circuit high input</p>
+<p>•  The PCM monitors the A/F sensor heater control voltage when the PCM turns the A/F sensor heater on. If the control voltage is less than 50% of the battery voltage, the PCM determines that the A/F sensor heater control circuit voltage is high.</p>
+<p>P0037 HO2S heater circuit low input</p>
+<p>•  The PCM monitors the HO2S heater control voltage when the PCM turns the HO2S heater off. If the control voltage exceeds 25% of the battery voltage, the PCM determines that the HO2S heater control circuit voltage is low.</p>
+<p>P0038 HO2S heater circuit high input</p>
+<p>•  The PCM monitors the HO2S heater control voltage when the PCM turns the HO2S heater on. If the control voltage is less than 57% of the battery voltage, the PCM determines that the HO2S heater control circuit voltage is high.</p>
+<p>P0069 Manifold absolute pressure/atmospheric pressure correlation</p>
+<p>•  PCM monitors differences between intake manifold vacuum and atmospheric pressure. If the difference is below –12 kPa {–90 mmHg, –3.5 inHg} or above 12 kPa {90 mmHg, 3.5 inHg} when the following conditions are met, the PCM determines that there is a MAP sensor performance problem.</p>
+<p>MONITORING CONDITION</p>
+<p>―  12—15 s from when ignition switch is turned off.</p>
+<p>―  Intake air temperature is above -10°C {14°F}.</p>
+<p>―  Engine coolant temperature is above 70°C {158°F}.</p>
+<p>P0101 MAF sensor circuit range/performance problem</p>
+<p>•  PCM monitors mass intake air flow amount when the engine is running.</p>
+<p>―  If the mass intake air flow amount is above 44 l/s for 5 s and the engine speed is below 2,000 rpm with the engine running, the PCM determines that the detected mass intake air flow amount is too high.</p>
+<p>―  If the mass intake air flow amount is below 2—43 l/s (The value depends on engine speed.) for 5 s and the engine speed is above 1,000 rpm with the engine running and the throttle opening angle above 50 %, the PCM determines that detected the mass intake air flow amount is too low.</p>
+<p>P0102 MAF sensor circuit low input</p>
+<p>•  The PCM monitors input voltage from the MAF sensor when the engine running. If the input voltage is below 0.21 V, the PCM determines that the MAF circuit has a malfunction.</p>
+<p>P0103 MAF sensor circuit high input</p>
+<p>•  The PCM monitors the input voltage from the MAF sensor when the engine running. If the input voltage is above 4.9 V, the PCM determines that the MAF circuit has a malfunction.</p>
+<p>P0107 MAP sensor circuit low input</p>
+<p>•  The PCM monitors the input voltage from the MAP sensor when intake air temperature is above –10 °C {14 °F}. If the input voltage is below 0.1 V, the PCM determines that the MAP sensor circuit has a malfunction.</p>
+<p>MONITORING CONDITIONS</p>
+<p>―  Calculated load: 13—32 %</p>
+<p>P0108 MAP sensor circuit high input</p>
+<p>•  The PCM monitors the input voltage from the MAP sensor when intake air temperature is above –10 °C {14 °F}. If input the voltage is above 4.92 V, the PCM determines that the MAP sensor circuit has a malfunction.</p>
+<p>MONITORING CONDITIONS</p>
+<p>―  Calculated load: 13—32 %</p>
+<p>P0111 IAT sensor circuit range/performance problem</p>
+<p>•  If the intake air temperature is higher than the engine coolant temperature by 40 °C {72 °F} for 60 s with key on, the PCM determines that there is a IAT sensor performance problem.</p>
+<p>P0112 IAT sensor circuit low input</p>
+<p>•  The PCM monitors the IAT sensor signal. If the PCM detects that the IAT sensor voltage is below 0.16 V, the PCM determines that the IAT sensor circuit has a malfunction.</p>
+<p>P0113 IAT sensor circuit high input</p>
+<p>•  The PCM monitors the IAT sensor signal. If the PCM detects that the IAT sensor voltage is above 4.84 V, the PCM determines that IAT sensor circuit has a malfunction.</p>
+<p>P0117 ECT sensor circuit low input</p>
+<p>•  The PCM monitors the ECT sensor signal at PCM terminal 2AH. If the PCM detects the ECT sensor voltage below 0.2 V, the PCM determines that the ECT sensor circuit has malfunction.</p>
+<p>P0118 ECT sensor circuit high input</p>
+<p>•  The PCM monitors the ECT sensor signal at PCM terminal 2AH. If the PCM detects the ECT sensor voltage is above 4.58 V, the PCM determines that the ECT sensor circuit has malfunction.</p>
+<p>P0122 TP sensor No.1 circuit low input</p>
+<p>•  If the PCM detects that the TP sensor No.1 voltage is below 0.1 V while the engine is running, the PCM determines that the TP sensor No.1 circuit has a malfunction.</p>
+<p>P0123 TP sensor No.1 circuit high input</p>
+<p>•  If the PCM detects the TP sensor No.1 voltage is to be above 4.9 V after ignition switch to the ON position, PCM determines that TP sensor No.1 circuit has a malfunction.</p>
+<p>P0125 Excessive time to enter closed loop fuel control</p>
+<p>•  The PCM monitors the ECT sensor signal at PCM terminal 2AH after engine is started while the engine is cold. If the engine coolant temperature does not reach the expected temperature for specified period, the PCM determines that it has taken an excessive amount of time for the engine coolant temperature to reach the temperature necessary to start closed-loop fuel control.</p>
+<p>P0130 A/F sensor circuit problem</p>
+<p>•  The PCM monitors the A/F sensor impedance when under the A/F sensor heater control. If the impedance is more than 500 ohms, the PCM determines that there is a A/F sensor circuit problem.</p>
+<p>P0131 A/F sensor circuit low input</p>
+<p>•  The PCM monitors the input voltage from the A/F sensor and the A/F sensor output current when the engine is running. If the input voltage is less than 1.8 V or the output current is less than –5 mA, the PCM determines that the A/F sensor circuit voltage is low.</p>
+<p>P0132 A/F sensor circuit high input</p>
+<p>•  The PCM monitors the input voltage from the A/F sensor and the A/F sensor output current when the engine is running. If the input voltage is more than 3.8 V or the output current is more than 5 mA, the PCM determines that the A/F sensor circuit voltage is high.</p>
+<p>P0133 A/F sensor circuit problem</p>
+<p>•  A/F sensor malfunction is detected by measuring of the average frequency of A/F sensor signal, time required to pass from rich to lean, time required to pass from lean to rich. If the average frequency of A/F sensor signal is more than the threshold value, the PCM determines that there is the A/F sensor circuit problem.</p>
+<p>MONITORING CONDITIONS</p>
+<p>―  A/F sensor heater, HO2S heater, A/F sensor, HO2S, and TWC Repair Verification Drive Mode</p>
+<p>―  Following conditions are met:</p>
+<p>•  Engine speed is 1,750—3,500 rpm.</p>
+<p>•  Charging efficiency is 19—63 % (at engine speed 2,500 rpm).</p>
+<p>•  Engine coolant temperature is above 70 °C {158 °F}</p>
+<p>•  A/F sensor heater monitor is completed.</p>
+<p>•  Fuel system loop status is closed loop fuel control.</p>
+<p>P0134 A/F sensor no activity detected</p>
+<p>•  The PCM monitors the A/F sensor element impedance when the following conditions are met. If the A/F sensor element impedance is 80 ohms or more, the PCM determines that A/F sensor is not activated.</p>
+<p>MONITORING CONDITIONS</p>
+<p>―  A/F sensor heater, HO2S heater, A/F sensor, HO2S and TWC Repair Verification Drive Mode</p>
+<p>―  Following conditions are met</p>
+<p>•  Time from engine start is above 30 s (ECT when engine start is 20 °C {68 °F}).</p>
+<p>P0138 HO2S circuit high input</p>
+<p>•  The PCM monitors input voltage from HO2S. If the input voltage from the HO2S is above 1.2 V for 0.8 s, the PCM determines that circuit input is high.</p>
+<p>P0140 HO2S no activity detected</p>
+<p>•  The PCM monitors the input voltage from the HO2S when the following conditions are met. Under the following monitoring conditions, if the input voltage from the HO2S does not even exceed 0.55 V  though the short term fuel trim is controlled up to 20.5 % for 9.6 s, the PCM determines that sensor circuit is not activated.</p>
+<p>MONITORING CONDITIONS</p>
+<p>―  A/F sensor heater, HO2S heater, A/F sensor, HO2S and TWC repair verification drive mode</p>
+<p>―  Following conditions are met for above 20.8 s</p>
+<p>•  Engine speed is above 1,500 rpm.</p>
+<p>•  Engine coolant temperature is above 70 °C {158 °F}.</p>
+<p>P0222 TP sensor No.2 circuit low input</p>
+<p>•  If PCM detects TP sensor No.2 voltage is to be below 0.1 V after the ignition switch to the ON position, the PCM determines that TP circuit has a malfunction.</p>
+<p>P0223 TP sensor No.2 circuit high input</p>
+<p>•  If the PCM detects the TP sensor No.2 voltage is to be above 4.9 V after the ignition switch to the ON position, the PCM determines that the TP circuit has a malfunction.</p>
+<p>P0300 Random misfire detected</p>
+<p>•  The PCM monitors CKP sensor input signal interval time. The PCM calculates change of interval time for each cylinder. If change of interval time exceeds preprogrammed criteria, the PCM detects misfire in the corresponding cylinder. While the engine is running, the PCM counts number of misfires that occurred at 200 crankshaft revolutions and 1,000 crankshaft revolutions and calculates misfire ratio for each crankshaft revolution. If the ratio exceeds the preprogrammed criteria, the PCM determines that a misfire, which can damage catalytic converter or affect emission performance, has occurred.</p>
+<p>P0301, P0302, P0303, P0304 Cylinder No.1, No.2, No.3, No.4 misfire detected</p>
+<p>•  The PCM monitors CKP sensor input signal interval time. The PCM calculates the change of interval time for each cylinder. If the change of interval time exceeds the preprogrammed criteria, the PCM detects a misfire in the corresponding cylinder. While the engine is running, the PCM counts number of misfires that occurred at 200 crankshaft revolutions and 1,000 crankshaft revolutions and calculates misfire ratio for each crankshaft revolution. If the ratio exceeds the preprogrammed criteria, the PCM determines that a misfire, which can damage catalytic converter or affect emission performance, has occurred.</p>
+<p>P0327 KS circuit low input</p>
+<p>•  The PCM monitors input signal from the KS when the engine is running. If the input voltage is below 0.01 V the PCM determines that the KS circuit has a malfunction.</p>
+<p>P0328 KS circuit high input</p>
+<p>•  The PCM monitors the input signal from the KS when the engine is running. If the input voltage is above 4.58 V the PCM determines that KS circuit has a malfunction.</p>
+<p>P0335 CKP sensor circuit problem</p>
+<p>•  If the PCM does not receive the input voltage from the CKP sensor for 4.2 s while the MAF is 1.95 g/s {0.25 lb/min.} or above, the PCM determines that the CKP sensor circuit has a malfunction.</p>
+<p>•  If a malfunction is detected in the input pulse pattern from the CKP sensor.</p>
+<p>P0340 CMP sensor circuit problem</p>
+<p>•  The PCM monitors the input voltage from the CMP sensor when the engine is running. If the PCM does not receive the input voltage from the CMP sensor while the PCM receives the input signal from the CKP sensor, the PCM determines that the CMP sensor circuit has a malfunction.</p>
+<p>•  If a malfunction is detected in the input pulse pattern from the CMP sensor.</p>
+<p>P0403 EGR valve (stepping motor) circuit problem</p>
+<p>•  The PCM monitors the EGR valve control signal voltage and current. If the following conditions are met, the PCM determines that there is the EGR control circuit problem.</p>
+<p>―  The PCM turns the EGR valve off, but the voltage of the EGR valve control signal remains low.</p>
+<p>―  The PCM turns the EGR valve on, but the current of the EGR valve control signal remains high.</p>
+<p>P0421 Warm up catalyst system efficiency below threshold</p>
+<p>•  PCM compares number of A/F sensor and HO2S inversions for a predetermined time. PCM monitors number of inversions rear side performs while front side inverts for a specified number of times when the following monitoring conditions are met, PCM detects inversion ratio. If inversion ratio is below threshold, PCM determines that catalyst has deteriorated.</p>
+<p>MONITORING CONDITION</p>
+<p>―  ECT: more than 70 °C {158 °F}</p>
+<p>―  Calculated TWC temperature: more than 400 °C {752 °F}</p>
+<p>―  Engine speed: 1,500— 3,000 rpm</p>
+<p>―  LOAD: 15— 48 % (at engine speed 2,000 rpm)</p>
+<p>―  Time with purge control system does not operate: more than 3 s</p>
+<p>P0443 Purge solenoid valve circuit problem</p>
+<p>•  The PCM monitors the purge solenoid valve control signal voltage and current. If the following conditions are met, the PCM determines that there is the purge solenoid valve control circuit problem.</p>
+<p>―  The PCM turns the purge solenoid valve off, but the voltage of the purge solenoid valve control signal remains low.</p>
+<p>―  The PCM turns the purge solenoid valve on, but the current of the purge solenoid valve control signal remains high.</p>
+<p>P0480 Cooling fan relay No.1 control circuit malfunction</p>
+<p>•  The PCM monitors the cooling fan relay No.1 control signal voltage and current. If the following conditions are met, the PCM determines that there is the cooling fan relay No.1 control circuit problem.</p>
+<p>―  The PCM turns the cooling fan relay No.1 off, but the voltage of the cooling fan relay No.1 control signal remains low.</p>
+<p>―  The PCM turns the cooling fan relay No.1 on, but the current of the cooling fan relay No.1 control signal remains high.</p>
+<p>P0481 Cooling fan relay No.2 control circuit malfunction</p>
+<p>•  The PCM monitors the cooling fan relay No.2 control signal voltage and current. If the following conditions are met, the PCM determines that there is the cooling fan relay No.2 control circuit problem.</p>
+<p>―  The PCM turns the cooling fan relay No.2 off, but the voltage of the cooling fan relay No.2 control signal remains low.</p>
+<p>―  The PCM turns the cooling fan relay No.2 on, but the current of the cooling fan relay No.2 control signal remains high.</p>
+<p>P0482 Cooling fan relay No.3 control circuit malfunction</p>
+<p>•  The PCM monitors the cooling fan relay No.3 control signal voltage and current. If the following conditions are met, the PCM determines that there is the cooling fan relay No.3 control circuit problem.</p>
+<p>―  The PCM turns the cooling fan relay No.3 off, but the voltage of the cooling fan relay No.3 control signal remains low.</p>
+<p>―  The PCM turns the cooling fan relay No.3 on, but the current of the cooling fan relay No.3 control signal remains high.</p>
+<p>P0500 VSS circuit problem</p>
+<p>•  If an error in the wheel speed signal from the ABS/DSC HU/CM is detected by CAN when the following conditions are met:</p>
+<p>―  Neutral switch and clutch pedal position switch are OFF</p>
+<p>―  Load is above40 %</p>
+<p>―  Engine speed is 2,000 rpm or above</p>
+<p>―  Brake switch is OFF</p>
+<p>―  Shift lever position (P, N, R position) (AT)</p>
+<p>P0505 Idle speed control system problem</p>
+<p>•  The PCM cannot control idle speed toward target idle speed while KOER self test.</p>
+<p>P0506 Idle speed control system RPM lower than expected</p>
+<p>•  Actual idle speed is lower than expected by 100 rpm for 14 s, when brake pedal is depressed (brake switch is on) and steering wheel is held straight ahead (power steering pressure (PSP) switch is off).</p>
+<p>P0507 Idle speed control system RPM higher than expected</p>
+<p>•  Actual idle speed is higher than expected by 200 rpm for 14 s, when the brake pedal is depressed (brake switch is on) and steering wheel is held straight ahead (power steering pressure (PSP) switch is off).</p>
+<p>P0550 PSP switch circuit malfunction</p>
+<p>•  The PCM monitors PSP switch signal at PCM terminal 2T. If input voltage is low voltage (switch stays on) for 1 min when the VSS is above 60.0 km/h {37.4 mph} and ECT is above 60 °C {140 °F}, the PCM determines that PSP switch circuit has malfunction.</p>
+<p>P0564 Cruise control switch circuit malfunction</p>
+<p>•  The PCM monitors the cruise control switch signal at PCM terminal 1AQ. If he PCM detects that any one of following switches (ON OFF, SET/-, SET/COAST, RES/+) remains on for 2 min, the PCM determines that the cruise control switch circuit has a malfunction.</p>
+<p>P0571 Brake switch circuit problem</p>
+<p>•  The PCM monitors switching in conjunction with brake switches No.1 and No.2. If either No.1 or No.2 do not switch for a continuous five times even though either No.1 or No.2 is switched from off to on or from on to off, P0571 is detected.</p>
+<p>P0601 PCM memory check sum error</p>
+<p>•  PCM internal memory check sum error</p>
+<p>P0602 PCM programming error</p>
+<p>•  No configuration data in the PCM</p>
+<p>P0604 PCM random access memory (RAM) error</p>
+<p>•  PCM internal RAM malfunction.</p>
+<p>P0606 PCM processor</p>
+<p>•  The PCM internal CPU malfunction</p>
+<p>P0610 PCM vehicle options error</p>
+<p>•  PCM data configuration error</p>
+<p>P0638 Throttle actuator control circuit range/performance problem</p>
+<p>•  The PCM compares the actual TP with the target TP when the engine is running. If the difference is more than the specification, the PCM determines that there is a throttle actuator control circuit range/performance problem.</p>
+<p>P0661 Variable intake air solenoid valve circuit low input</p>
+<p>•  The PCM monitors the variable intake air solenoid valve control signal. If the PCM turns variable intake air solenoid valve off but voltage at PCM terminal still remains low, the PCM determines that variable intake air solenoid valve circuit has malfunction.</p>
+<p>P0662 Variable intake air solenoid valve circuit high input</p>
+<p>•  The PCM monitors the variable intake air solenoid valve control signal at PCM terminal. If the PCM turns variable intake air solenoid valve on but voltage at PCM terminal still remains high, the PCM determines that the variable intake air solenoid valve circuit has malfunction.</p>
+<p>P0703 Brake switch input circuit problem</p>
+<p>•  The PCM monitors changes in input voltage from the brake switch No.1. If the PCM does not the voltage changes while alternately accelerating and decelerating 8 times, the PCM determines that the brake switch No.1 circuit has a malfunction.</p>
+<p>P0704 Clutch pedal position (CPP) switch input circuit problem</p>
+<p>•  The PCM monitors changes in input voltage from the CPP switch. If the PCM does not detect the voltage changes while the vehicle runs with vehicle speed above 30 km/h {19 mph} and stops 8 times alternately, the PCM determines that the CPP switch circuit has a malfunction.</p>
+<p>P0850 Neutral switch input circuit problem</p>
+<p>•  The PCM monitors changes in input voltage from the neutral switch. If the PCM does not detect the voltage changes while driving the vehicle at a vehicle speed above 30 km/h {19 mph}and clutch pedal turns press and depress 10 times repeatedly, the PCM determines that the neutral switch circuit has a malfunction</p>
+<p>P1260 Immobilizer system problem</p>
+<p>•  The instrument cluster detects an immobilizer system malfunction.</p>
+<p>P2009 Variable tumble solenoid valve circuit low input</p>
+<p>•  The PCM monitors the variable tumble solenoid valve control signal. If the PCM turns variable tumble solenoid valve off but voltage at PCM terminal still remains low, the PCM determines that variable tumble solenoid valve circuit has malfunction.</p>
+<p>P2010 Variable tumble solenoid valve circuit high input</p>
+<p>•  The PCM monitors the variable tumble solenoid valve control signal at PCM terminal. If the PCM turns variable tumble solenoid valve on but voltage at PCM terminal still remains high, the PCM determines that the variable tumble solenoid valve circuit has malfunction.</p>
+<p>P2088 Oil control valve (OCV) circuit low</p>
+<p>•  The PCM monitors the OCV voltage. If the PCM detects the OCV control voltage (calculated from the OCV) is below the threshold voltage (calculated from the battery positive voltage), the PCM determines that the OCV circuit has a malfunction.</p>
+<p>P2089 Oil control valve (OCV) circuit high</p>
+<p>•  The PCM monitors the OCV voltage. If the PCM detects that the OCV control voltage (calculated from the OCV) is above the threshold voltage (calculated from battery positive voltage), the PCM determines that the OCV circuit has a malfunction.</p>
+<p>P2096 Target A/F feedback system too lean</p>
+<p>•  The PCM monitors the target A/F fuel trim when under the target A/F feedback control. If the fuel trim is more than the specification, the PCM determines that the target A/F feedback system is too lean.</p>
+<p>P2097 Target A/F feedback system too rich</p>
+<p>•  The PCM monitors the target A/F fuel trim when under the target A/F feedback control. If the fuel trim is less than specification, the PCM determines that the target A/F feedback system is too rich.</p>
+<p>P2101 Throttle actuator circuit range/performance</p>
+<p>•  The PCM monitors the input voltage from the drive-by-wire relay when the PCM turns the drive-by-wire relay on. If the input voltage is less than 5.0 V, the PCM determines that the drive-by-wire relay control circuit voltage is low.</p>
+<p>•  The PCM monitors the input voltage from the drive-by-wire relay when the PCM turns the drive-by-wire relay off. If the input voltage is more than 5.0 V the PCM determines that the drive-by-wire relay control circuit voltage is high.</p>
+<p>P2107 Throttle actuator control module processor error</p>
+<p>•  Throttle actuator control module internal processor error</p>
+<p>P2108 Throttle actuator control module performance error</p>
+<p>•  PCM internal malfunction.</p>
+<p>P2109 TP sensor minimum stop range/performance problem</p>
+<p>•  The PCM monitors the minimum TP when the closed TP learning is completed. If the TP is less than 6.03% or more than 18.7%, the PCM determines that there is a TP sensor minimum stop range/performance problem.</p>
+<p>P2112 Throttle actuator control system range/performance problem</p>
+<p>•  The PCM monitors the throttle actuator control duty ratio when the engine is running. If the duty ratio is more than 95%, the PCM determines that there is a throttle actuator control system range/performance problem.</p>
+<p>P2119 Throttle actuator control throttle body range/performance problem</p>
+<p>•  The PCM compares the actual TP with initial setting TP when the ignition switch is off. If the difference is less than the specification, the PCM determines that there is a throttle actuator control circuit range/performance problem.</p>
+<p>P2122 APP sensor No.1 circuit low input</p>
+<p>•  The PCM monitors the input voltage from APP sensor No.1 when the engine is running. If the input voltage is less than 0.35 V, the PCM determines that the APP sensor No.1 circuit input voltage is low.</p>
+<p>P2123 APP sensor No.1 circuit high input</p>
+<p>•  The PCM monitors the input voltage from APP sensor No.1 when the engine is running. If the input voltage is above 4.8 V, the PCM determines that the APP sensor No.1 circuit input voltage is high.</p>
+<p>P2127 APP sensor No.2 circuit low input</p>
+<p>•  The PCM monitors the input voltage from APP sensor No.2 when the engine is running. If the input voltage is less than 0.35 V, the PCM determines that the APP sensor No.2 circuit has a malfunction.</p>
+<p>P2128 APP sensor No.2 circuit high input</p>
+<p>•  The PCM monitors the input voltage from APP sensor No.2 when the engine is running. If the input voltage is more than4.8 V, the PCM determines that the APP sensor No.2 circuit has a malfunction.</p>
+<p>P2135 TP sensor No.1/No.2 voltage correlation problem</p>
+<p>•  The PCM compares the input voltage from TP sensor No.1 with the input voltage from TP sensor No.2 when the engine is running. If the difference is more than the specification, the PCM determines that there is a TP sensor No.1/No.2 voltage correlation problem.</p>
+<p>P2138 APP sensor No.1/No.2 voltage correlation problem</p>
+<p>•  The PCM compares the input voltage from APP sensor No.1 with the input voltage from APP sensor No.2 when the engine is running. If the difference is more than the specification, the PCM determines that there is an APP sensor No.1/No.2 angle correlation problem.</p>
+<p>P2177 Fuel system too lean at off idle</p>
+<p>•  PCM monitors short term fuel trim (SHRTFT), long term fuel trim (LONGFT) during closed loop fuel control at off-idle. If the LONGFT and the sum total of these fuel trims exceed preprogrammed criteria. PCM determines that fuel system is too lean at off-idle.</p>
+<p>P2178 Fuel system too rich at off idle</p>
+<p>•  PCM monitors short term fuel trim (SHRTFT), long term fuel trim (LONGFT) during closed loop fuel control at off-idle. If the LONGFT and the sum total of these fuel trims exceed preprogrammed criteria. PCM determines that fuel system is too rich at off-idle.</p>
+<p>P2187 Fuel system too lean at idle</p>
+<p>•  PCM monitors short term fuel trim (SHRTFT) and long term fuel trim (LONGFT) during closed loop fuel control at idle. If the LONGFT and the sum total of these fuel trims exceed preprogrammed criteria. PCM determines that fuel system is too lean at idle.</p>
+<p>P2188 Fuel system too rich at idle</p>
+<p>•  PCM monitors short term fuel trim (SHRTFT), long term fuel trim (LONGFT) during closed loop fuel control at idle. If the LONGFT and the sum total of these fuel trims exceed preprogrammed criteria. PCM determines that fuel system is too rich at idle.</p>
+<p>P2195 A/F sensor signal stuck lean</p>
+<p>•  The PCM monitors the A/F sensor output current when the following conditions are met. If the average output current is more than 1.2 A for 25 s, the PCM determines that the A/F sensor signal remains lean.</p>
+<p>MONITORING CONDITION</p>
+<p>―  ECT: more than 70 °C {158 °F}</p>
+<p>―  Engine speed: 1,000—3,200 rpm</p>
+<p>―  MAF amount: 6—80 g/s {0.80—10.58 lb/min}</p>
+<p>―  Target A/F feedback system status: feedback control</p>
+<p>―  Output voltage from the HO2S: more than 0.2 V</p>
+<p>P2196 A/F sensor signal stuck rich</p>
+<p>•  The PCM monitors the A/F sensor output current when the following conditions are met. If the average output current is less than 0.85 A for 25 s, the PCM determines that the A/F sensor signal remains rich.</p>
+<p>MONITORING CONDITION</p>
+<p>―  ECT: more than 70 °C {158 °F}</p>
+<p>―  Engine speed: 1,000—3,200 rpm</p>
+<p>―  MAF amount: 6—80 g/s {0.80—10.58 lb/min}</p>
+<p>―  Target A/F feedback system status: feedback control</p>
+<p>―  Output voltage from the HO2S: less than 0.7 V</p>
+<p>P2228 BARO sensor circuit low input</p>
+<p>•  PCM monitors input voltage from BARO sensor. If input voltage is below 2.1 V, PCM determines that BARO sensor circuit has malfunction.</p>
+<p>P2229 BARO sensor circuit high input</p>
+<p>•  PCM monitors input voltage from BARO sensor. If input voltage is above 4.0 V, PCM determines that BARO sensor circuit has malfunction.</p>
+<p>P2502 Charging system voltage problem</p>
+<p>•  PCM judges generator output voltage is above 17 V or battery voltage is below 11 V during engine running.</p>
+<p>P2503 Charging system voltage low</p>
+<p>•  PCM needs more than 20 A from generator, and judges generator output voltage to be below 8.5 V during engine running.</p>
+<p>P2504 Charging system voltage high</p>
+<p>•  PCM judges generator output voltage is above 18.5 V or battery voltage is above 16.0 V during engine running.</p>
+<p>P2507 PCM B+ voltage low</p>
+<p>•  The PCM monitors the voltage of back-up battery positive terminal. If the PCM detects battery positive terminal voltage below 2.5 V for 2 s, the PCM determines that the backup voltage circuit has a malfunction.</p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

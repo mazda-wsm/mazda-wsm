@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>On-Board Diagnostic Function - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../../left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../engine/node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#wp1025486">ON-BOARD DIAGNOSTIC FUNCTION</a></li>
+        <li><a href="#self-malfunction-diagnostic-function">Self-Malfunction Diagnostic Function</a></li><li><a href="#piddata-monitoring-function">PID/Data Monitoring Function</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0051/">RESTRAINTS</a> ➭ <a href="../../node_S02_0053/">ON-BOARD DIAGNOSTIC</a> ➭ <a href="./">ON-BOARD DIAGNOSTIC FUNCTION</a></p>
+<h1 id="wp1025486"><strong>ON-BOARD DIAGNOSTIC FUNCTION</strong></h1>
+<hr />
+<p>id080200100500</p>
+<p>{: #wp1058562}</p>
+<h2 id="self-malfunction-diagnostic-function"><strong id="wp1062739">Self-Malfunction Diagnostic Function</strong></h2>
+<h3 id="malfunction-detection-function"><strong id="wp1058573">Malfunction detection function</strong></h3>
+<p id="wp1058583">• Detects overall malfunctions in the air bag system-related parts.</p>
+<h3 id="fail-safe-function"><strong id="wp1058598">Fail-safe function</strong></h3>
+<p id="wp1058609">• If the SAS control module performance/function cannot be maintained due to any cause, the fail-safe function stops air bag system control and flashes the air bag system warning light to prevent the air bags from operating (deploying) accidentally.</p>
+<h3 id="memory-function"><strong id="wp1058626">Memory function</strong></h3>
+<p id="wp1058636">• Stores malfunctions in the air bag system-related parts detected by the malfunction detection function, and the stored malfunction contents are not cleared even if the ignition switch is turned to the LOCK position or the negative battery cable is disconnection.</p>
+<h3 id="display-function"><strong id="wp1058651">Display function</strong></h3>
+<p id="wp1058661">• When the malfunction detection function detects a malfunction, the air bag system warning light illuminates to advise the driver. Using the external tester communication function, DTCs can be output to the DLC-2 via the K-Line.</p>
+<p>**DTC table</p>
+<p>+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+| <strong>DTC</strong> {: #wp1058815}                                                                                                                                                                               | <strong>System malfunction location</strong> {: #wp1058823}                                                     |
++====================================================================+=================================================================================================================================+====================================================================================================+
+| <strong>Mazda Modular Diagnostic System (M-MDS) display</strong> {: #wp1058951} | <strong>Air bag system warning light</strong> {: #wp1058954}                                                                                 |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+|                                                                    | <strong>Flashing pattern</strong> {: #wp1058938}                                                       | <strong>Priority ranking</strong> {: #wp1058944} |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1047 {: #wp1058685}                                               | 22 {: #wp1058687}                               | {: #wp1058743}                          | 6 {: #wp1058746}                    | Driver-side side air bag module assembly incorrect {: #wp1058749}                                  |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B104B {: #wp1058850}                                               | 63 {: #wp1058853}                               | {: #wp1058856}                          | 11 {: #wp1058859}                   | Driver-side side air bag sensor assembly incorrect {: #wp1058862}                                  |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B104C {: #wp1058866}                                               | 64 {: #wp1058869}                               | {: #wp1058872}                          | 12 {: #wp1058875}                   | Passenger-side side air bag sensor assembly incorrect {: #wp1058878}                               |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B104D {: #wp1058882}                                               | 42 {: #wp1058885}                               | {: #wp1058888}                          | 10 {: #wp1058891}                   | Crash zone sensor assembly incorrect {: #wp1058894}                                                |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B104F {: #wp1058898}                                               | 64 {: #wp1058901}                               | {: #wp1058904}                          | 12 {: #wp1058907}                   | Passenger-side air bag sensor system internal circuit disabled {: #wp1058910}                      |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1051 {: #wp1058914}                                               | 63 {: #wp1058917}                               | {: #wp1058920}                          | 11 {: #wp1058923}                   | Driver-side side air bag sensor system internal circuit disabled {: #wp1058926}                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1055 {: #wp1059191}                                               | 23 {: #wp1059194}                               | {: #wp1059197}                          | 7 {: #wp1059200}                    | Passenger-side side air bag module assembly incorrect {: #wp1059203}                               |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1058 {: #wp1059240}                                               | 19 {: #wp1059243}                               | {: #wp1059246}                          | 4 {: #wp1059249}                    | Driver-side air bag module assembly incorrect {: #wp1059252}                                       |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2228 {: #wp1059309}                                               |                                                 |                                         |                                     |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2230 {: #wp1059293}                                               |                                                 |                                         |                                     |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2232 {: #wp1059277}                                               |                                                 |                                         |                                     |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2234 {: #wp1059261}                                               |                                                 |                                         |                                     |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1059 {: #wp1059373}                                               | 21 {: #wp1059376}                               | {: #wp1059379}                          | 5 {: #wp1059382}                    | Passenger-side air bag module assembly incorrect {: #wp1059385}                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2229 {: #wp1059442}                                               |                                                 |                                         |                                     |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2231 {: #wp1059426}                                               |                                                 |                                         |                                     |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2233 {: #wp1059410}                                               |                                                 |                                         |                                     |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2235 {: #wp1059394}                                               |                                                 |                                         |                                     |                                                                                                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1318 {: #wp1059516}                                               | - {: #wp1059519}                                | Continuously illuminated {: #wp1059522} | - {: #wp1059525}                    | SAS control module power supply voltage decreases (less than 9 V) {: #wp1059528}                   |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1342 {: #wp1059557}                                               | 12 {: #wp1059560}                               | {: #wp1059563}                          | 3 {: #wp1059566}                    | SAS control module {: #wp1059569}                                                                  |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1869 {: #wp1059605}                                               | - {: #wp1059608}                                | Continuously illuminated {: #wp1059611} | - {: #wp1059614}                    | Air bag system warning light circuit open {: #wp1059617}                                           |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+|                                                                    | - {: #wp1059624}                                | Does not illuminate {: #wp1059627}      | - {: #wp1059630}                    | Air bag system warning light circuit short to body ground {: #wp1059633}                           |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1871 {: #wp1059682}                                               | 56 {: #wp1059685}                               | {: #wp1059688}                          | 12 {: #wp1059691}                   | Passenger air bag deactivation (PAD) switch system circuit disabled {: #wp1059694}                 |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1877 {: #wp1059730}                                               | 33 {: #wp1059733}                               | {: #wp1059736}                          | 8 {: #wp1059739}                    | Driver-side pre-tensioner seat belt circuit resistance high {: #wp1059742}                         |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1878 {: #wp1059767}                                               |                                                 |                                         |                                     | Driver-side pre-tensioner seat belt circuit short to power supply {: #wp1059779}                   |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1879 {: #wp1059751}                                               |                                                 |                                         |                                     | Driver-side pre-tensioner seat belt circuit short to body ground {: #wp1059763}                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1881 {: #wp1059836}                                               | 34 {: #wp1059839}                               | {: #wp1059842}                          | 9 {: #wp1059845}                    | Passenger-side pre-tensioner seat belt circuit resistance high {: #wp1059848}                      |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1882 {: #wp1059873}                                               |                                                 |                                         |                                     | Passenger-side pre-tensioner seat belt circuit short to power supply {: #wp1059885}                |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1883 {: #wp1059857}                                               |                                                 |                                         |                                     | Passenger-side pre-tensioner seat belt circuit short to body ground {: #wp1059869}                 |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1884 {: #wp1059942}                                               | 18 {: #wp1059945}                               | {: #wp1059948}                          | 13 {: #wp1059951}                   | Passenger air bag deactivation (PAD) indicator circuit open or short to body ground {: #wp1059954} |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1885 {: #wp1059990}                                               | 33 {: #wp1059993}                               | {: #wp1059996}                          | 8 {: #wp1059999}                    | Driver-side pre-tensioner seat belt circuit resistance low {: #wp1060002}                          |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1886 {: #wp1060040}                                               | 34 {: #wp1060043}                               | {: #wp1060046}                          | 9 {: #wp1060049}                    | Passenger-side pre-tensioner seat belt circuit resistance low {: #wp1060052}                       |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1916 {: #wp1060090}                                               | 19 {: #wp1060093}                               | {: #wp1060096}                          | 4 {: #wp1060099}                    | Driver-side air bag module circuit short to power supply {: #wp1060102}                            |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1925 {: #wp1060139}                                               | 21 {: #wp1060142}                               | {: #wp1060145}                          | 5 {: #wp1060148}                    | Passenger-side air bag module circuit short to power supply {: #wp1060151}                         |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1932 {: #wp1060188}                                               | 19 {: #wp1060191}                               | {: #wp1060194}                          | 4 {: #wp1060197}                    | Driver-side air bag module circuit resistance high {: #wp1060200}                                  |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1933 {: #wp1060247}                                               | 21 {: #wp1060250}                               | {: #wp1060253}                          | 5 {: #wp1060256}                    | Passenger-side air bag module circuit resistance high {: #wp1060259}                               |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1934 {: #wp1060296}                                               | 19 {: #wp1060299}                               | {: #wp1060302}                          | 4 {: #wp1060305}                    | Driver-side air bag module circuit resistance low {: #wp1060308}                                   |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1935 {: #wp1060345}                                               | 21 {: #wp1060348}                               | {: #wp1060351}                          | 5 {: #wp1060354}                    | Passenger-side air bag module circuit resistance low {: #wp1060357}                                |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1936 {: #wp1060394}                                               | 19 {: #wp1060397}                               | {: #wp1060400}                          | 4 {: #wp1060403}                    | Driver-side air bag module circuit short to body ground {: #wp1060406}                             |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1938 {: #wp1060443}                                               | 21 {: #wp1060446}                               | {: #wp1060449}                          | 5 {: #wp1060452}                    | Passenger-side air bag module circuit short to body ground {: #wp1060455}                          |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1992 {: #wp1060492}                                               | 22 {: #wp1060495}                               | {: #wp1060498}                          | 6 {: #wp1060501}                    | Driver-side side air bag module circuit short to power supply {: #wp1060504}                       |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1993 {: #wp1060545}                                               |                                                 |                                         |                                     | Driver-side side air bag module circuit short to body ground {: #wp1060557}                        |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1994 {: #wp1060529}                                               |                                                 |                                         |                                     | Driver-side side air bag module circuit resistance high {: #wp1060541}                             |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1995 {: #wp1060513}                                               |                                                 |                                         |                                     | Driver-side side air bag module circuit resistance low {: #wp1060525}                              |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1996 {: #wp1060622}                                               | 23 {: #wp1060625}                               | {: #wp1060628}                          | 7 {: #wp1060631}                    | Passenger-side side air bag module circuit short to power supply {: #wp1060634}                    |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1997 {: #wp1060675}                                               |                                                 |                                         |                                     | Passenger-side side air bag module circuit short to body ground {: #wp1060687}                     |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1998 {: #wp1060659}                                               |                                                 |                                         |                                     | Passenger-side side air bag module circuit resistance high {: #wp1060671}                          |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B1999 {: #wp1060643}                                               |                                                 |                                         |                                     | Passenger-side side air bag module circuit resistance low {: #wp1060655}                           |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2226 {: #wp1060752}                                               | 42 {: #wp1060755}                               | {: #wp1060758}                          | 10 {: #wp1060761}                   | Crash zone sensor system internal circuit disabled {: #wp1060764}                                  |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2227 {: #wp1060773}                                               |                                                 |                                         |                                     | Crash zone sensor system communication error {: #wp1060785}                                        |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2477 {: #wp1060826}                                               | 54 {: #wp1060829}                               | {: #wp1060832}                          | 1 {: #wp1060835}                    | Configuration error {: #wp1060838}                                                                 |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2856 {: #wp1060874}                                               | 42 {: #wp1060877}                               | {: #wp1060880}                          | 10 {: #wp1060883}                   | Crash zone sensor system communication data error {: #wp1060886}                                   |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2867 {: #wp1060932}                                               | 31 {: #wp1060935}                               | {: #wp1060938}                          | 2 {: #wp1060941}                    | Poor connection of any SAS control module connectors {: #wp1060944}                                |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2886 {: #wp1060980}                                               | 64 {: #wp1060983}                               | {: #wp1060986}                          | 12 {: #wp1060989}                   | Passenger-side air bag sensor system communication data error {: #wp1060992}                       |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| B2887 {: #wp1061029}                                               | 63 {: #wp1061032}                               | {: #wp1061035}                          | 11 {: #wp1061038}                   | Driver-side air bag sensor system communication data error {: #wp1061041}                          |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| U2017 {: #wp1061078}                                               | 63 {: #wp1061081}                               | {: #wp1061084}                          | 11 {: #wp1061087}                   | Driver-side side air bag sensor system communication error {: #wp1061090}                          |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+| U2018 {: #wp1061127}                                               | 64 {: #wp1061130}                               | {: #wp1061133}                          | 12 {: #wp1061136}                   | Passenger-side side air bag sensor system communication error {: #wp1061139}                       |
++--------------------------------------------------------------------+-------------------------------------------------+-----------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+**{: #wp1058677}</p>
+<h2 id="piddata-monitoring-function"><strong id="wp1061178">PID/Data Monitoring Function</strong></h2>
+<p id="wp1061190">• By using the PID/data monitoring function, the monitored item of the input/output signal, as set on the SAS control module, can be freely selected and read out in real-time.</p>
+<p id="wp1061209">• The Mazda Modular Diagnostic System (M-MDS) is used to read out PID/data monitor information.</p>
+<p><strong id="wp1061222">PID/data monitor table</strong></p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>PID name (definition)</strong> {: #wp1061338}</p>
+</th>
+<th>
+<p><strong>Unit/Condition</strong> {: #wp1061340}</p>
+</th>
+<th>
+<p><strong>Operation Condition (Reference)</strong> {: #wp1061342}</p>
+</th>
+<th>
+<p><strong>Terminal</strong> {: #wp1061344}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>CCNT_RCM {: #wp1061232}  (Number of continuous DTCs) {: #wp1061450}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1061234}</li>
+</ul>
+</td>
+<td>
+<p>• DTCs detected: 1-255 {: #wp1061290}  • No DTCs detected: 0 {: #wp1061476}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1061293}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>CR2D_Comm {: #wp1061367}  (Driver-side side air bag sensor system communication data error) {: #wp1061498}</p>
+</td>
+<td>
+<p>OK/ {: #wp1061370}  FAULT {: #wp1061511}</p>
+</td>
+<td>
+<p>• Sensor normal: OK {: #wp1061373}  • Sensor communication malfunction: FAULT {: #wp1061530}</p>
+</td>
+<td>
+<p>2C, 2F {: #wp1061376}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CR2D_Inter {: #wp1061380}  (Driver-side side air bag sensor system internal circuit disabled) {: #wp1061552}</p>
+</td>
+<td>
+<p>OK/ {: #wp1061383}  FAULT {: #wp1061565}</p>
+</td>
+<td>
+<p>• Sensor normal: OK {: #wp1061386}  • Sensor internal malfunction: FAULT {: #wp1061584}</p>
+</td>
+<td>
+<p>2C, 2F {: #wp1061389}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CR2D_Mount {: #wp1061393}  (Driver-side side air bag sensor assembly incorrect) {: #wp1061606}</p>
+</td>
+<td>
+<p>OK/ {: #wp1061396}  FAULT {: #wp1061619}</p>
+</td>
+<td>
+<p>• Sensor normal: OK {: #wp1061399}  • Sensor Install malfunction: FAULT {: #wp1061638}</p>
+</td>
+<td>
+<p>2C, 2F {: #wp1061402}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CR2D_Short {: #wp1061406}  (Driver-side side air bag sensor system communication error) {: #wp1061660}</p>
+</td>
+<td>
+<p>OK/ {: #wp1061409}  FAULT {: #wp1061673}</p>
+</td>
+<td>
+<p>• Sensor normal: OK {: #wp1061412}  • Sensor open or short circuit: FAULT {: #wp1061692}</p>
+</td>
+<td>
+<p>2C, 2F {: #wp1061415}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CR2P_Comm {: #wp1061705}  (Passenger-side side air bag sensor system communication data error) {: #wp1061727}</p>
+</td>
+<td>
+<p>OK/ {: #wp1061708}  FAULT {: #wp1061740}</p>
+</td>
+<td>
+<p>• Sensor normal: OK {: #wp1061711}  • Sensor communication malfunction: FAULT {: #wp1061759}</p>
+</td>
+<td>
+<p>2X, 2AA {: #wp1061714}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CR2P_Inter {: #wp1061772}  (Passenger-side side air bag sensor system internal circuit disabled) {: #wp1061794}</p>
+</td>
+<td>
+<p>OK/ {: #wp1061775}  FAULT {: #wp1061807}</p>
+</td>
+<td>
+<p>• Sensor normal: OK {: #wp1061778}  • Sensor internal malfunction: FAULT {: #wp1061826}</p>
+</td>
+<td>
+<p>2X, 2AA {: #wp1061781}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CR2P_Mount {: #wp1061839}  (Passenger-side side air bag sensor assembly incorrect) {: #wp1061861}</p>
+</td>
+<td>
+<p>OK/ {: #wp1061842}  FAULT {: #wp1061874}</p>
+</td>
+<td>
+<p>• Sensor normal: OK {: #wp1061845}  • Sensor Install malfunction: FAULT {: #wp1061893}</p>
+</td>
+<td>
+<p>2X, 2AA {: #wp1061848}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CR2P_Short {: #wp1061906}  (Passenger-side side air bag sensor system communication error) {: #wp1061928}</p>
+</td>
+<td>
+<p>OK/ {: #wp1061909}  FAULT {: #wp1061941}</p>
+</td>
+<td>
+<p>• Sensor normal: OK {: #wp1061912}  • Sensor open or short circuit: FAULT {: #wp1061960}</p>
+</td>
+<td>
+<p>2X, 2AA {: #wp1061915}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IGN_V_2 {: #wp1061973}  (IG1 voltage) {: #wp1061997}</p>
+</td>
+<td>
+<p>V {: #wp1061976}</p>
+</td>
+<td>
+<p>Ignition switch is at ON: B+ {: #wp1061979}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1061982}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>I_PAD_SW {: #wp1062017}  (PAD switch status) {: #wp1062041}</p>
+</td>
+<td>
+<p>On/ {: #wp1062020}  Off {: #wp1062053}</p>
+</td>
+<td>
+<p>• PAD switch is at PASS AIRBAG ON position: On {: #wp1062023}  • PAD switch is at PASS AIRBAG OFF position: Off {: #wp1062072}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1062026}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>RES_AB_D {: #wp1062085}  (Driver-side air bag module resistance) {: #wp1062109}</p>
+</td>
+<td>
+<p>ohm {: #wp1062088}</p>
+</td>
+<td>
+<p>Under any condition: 1.5-4.7 ohms {: #wp1062091}</p>
+</td>
+<td>
+<p>1A, 1D {: #wp1062094}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RES_AB_P {: #wp1062131}  (Passenger-side air bag module resistance) {: #wp1062155}</p>
+</td>
+<td>
+<p>ohm {: #wp1062134}</p>
+</td>
+<td>
+<p>Under any condition: 1.3-4.7 ohms {: #wp1062137}</p>
+</td>
+<td>
+<p>1S, 1V {: #wp1062140}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RES_PT_D {: #wp1062177}  (Driver-side pre-tensioner seat belt resistance) {: #wp1062201}</p>
+</td>
+<td>
+<p>ohm {: #wp1062180}</p>
+</td>
+<td>
+<p>Under any condition: 1.3-4.7 ohms {: #wp1062183}</p>
+</td>
+<td>
+<p>2A, 2D {: #wp1062186}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RES_PT_P {: #wp1062224}  (Passenger-side pre-tensioner seat belt resistance) {: #wp1062248}</p>
+</td>
+<td>
+<p>ohm {: #wp1062227}</p>
+</td>
+<td>
+<p>Under any condition: 1.3-4.7 ohms {: #wp1062230}</p>
+</td>
+<td>
+<p>2V, 2Y {: #wp1062233}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RES_SAB_D {: #wp1062271}  (Driver-side side air bag module resistance) {: #wp1062295}</p>
+</td>
+<td>
+<p>ohm {: #wp1062274}</p>
+</td>
+<td>
+<p>Under any condition: 1.3-4.7 ohms {: #wp1062277}</p>
+</td>
+<td>
+<p>2G, 2J {: #wp1062280}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RES_SAB_P {: #wp1062317}  (Passenger-side side air bag module resistance) {: #wp1062341}</p>
+</td>
+<td>
+<p>ohm {: #wp1062320}</p>
+</td>
+<td>
+<p>Under any condition: 1.3-4.7 ohms {: #wp1062323}</p>
+</td>
+<td>
+<p>2P, 2S {: #wp1062326}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="" id="wp1062466"></a></p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

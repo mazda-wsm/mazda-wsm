@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>DTC P0883 [Sj6A-EL] - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/engine/node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#wp1025486">DTC P0883 [SJ6A-EL]</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../left_menu_S07/">Troubleshooting</a> ➭ <a href="../../node_S07_0002/">TRANSMISSION/TRANSAXLE</a> ➭ <a href="./">DTC P0883 [SJ6A-EL]</a></p>
+<h1 id="wp1025486"><strong>DTC P0883 [SJ6A-EL]</strong></h1>
+<hr />
+<p>id050208802900</p>
+<p>{: #wp1059781}</p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>DTC P0883</strong> <a href="" id="wp1059842"></a>}{: #wp1061348</p>
+</th>
+<th>
+<p><strong>TCM B+ low (less than 11 V)</strong> {: #wp1059844}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>DETECTION CONDITION</strong> {: #wp1059784}</p>
+</td>
+<td>
+<p>• Voltage of <strong>less than 11 V</strong> detected at TCM terminal 1AD when engine is running. {: #wp1059786} <strong id="wp1059918">Diagnostic support note:</strong>}  • The MIL does not illuminate if the TCM detects the above malfunction condition during the first drive cycle. {: #wp1059928}  • A PENDING CODE is not available. {: #wp1059938}  • FREEZE FRAME DATA is available. {: #wp1059948}  • The AT warning light not illuminates. {: #wp1059958}  • The DTC is stored in the TCM memory. {: #wp1059968</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>POSSIBLE CAUSE</strong> {: #wp1059859}</p>
+</td>
+<td>
+<p>• Melted ROOM 15 A fuse {: #wp1059862}  • Open circuit in wiring harness between ROOM 15 A fuse and TCM terminal 1AD {: #wp1060000}  • Short to ground in wiring harness between ROOM 15 A fuse and TCM terminal 1AD {: #wp1060010}  • Poor connection of TCM connector {: #wp1060020}  • Alternator malfunction {: #wp1060030}  • TCM malfunction {: #wp1060040}</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>{: #wp1059866}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong id="wp1060066">Diagnostic procedure</strong></p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>STEP</strong> {: #wp1060180}</p>
+</th>
+<th colspan="2">
+<p><strong>INSPECTION</strong> {: #wp1060182}</p>
+</th>
+<th>
+<p><strong>ACTION</strong> {: #wp1060186}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 {: #wp1060074}</p>
+</td>
+<td>
+<p><strong id="wp1060076">VERIFY FREEZE FRAME DATA HAS BEEN RECORDED</strong>}  • Has the FREEZE FRAME DATA been recorded? {: #wp1060288</p>
+</td>
+<td>
+<p>Yes {: #wp1060132}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1060135}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1060215}</p>
+</td>
+<td>
+<p>Record the FREEZE FRAME DATA on the repair order, then go to the next step. {: #wp1060218}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2 {: #wp1060222}</p>
+</td>
+<td>
+<p><strong id="wp1060225">VERIFY RELATED REPAIR INFORMATION AVAILABILITY</strong>}  • Verify related Service Bulletins and/or on-line repair information availability. {: #wp1060332}  • Is any related repair information available? {: #wp1060349</p>
+</td>
+<td>
+<p>Yes {: #wp1060228}</p>
+</td>
+<td>
+<p>Perform repair or diagnosis according to the available repair information. {: #wp1060231}  • If the vehicle is not repaired, go to the next step. {: #wp1060369}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1060241}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1060244}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 {: #wp1060248}</p>
+</td>
+<td>
+<p><strong id="wp1060251">INSPECT FUSE</strong>}  • Turn the ignition switch to the LOCK position. {: #wp1060416}  • Inspect ROOM 15 A fuse for malfunction. {: #wp1060430}  • Is it normal? {: #wp1060440</p>
+</td>
+<td>
+<p>Yes {: #wp1060254}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1060257}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1060397}</p>
+</td>
+<td>
+<p>• If fuse has been melted, go to the next step. {: #wp1060400}  • If fuse is not installed correctly, install it correctly, then go to Step 8. {: #wp1060478}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 {: #wp1060486}</p>
+</td>
+<td>
+<p><strong id="wp1060489">INSPECT VOLTAGE OF POWER SUPPLY CIRCUIT</strong>  • Is the voltage }  • Inspect for voltage TCM terminal 1AD (wiring harness-side). {: #wp1060524<strong>B+</strong>? {: #wp1060539}</p>
+</td>
+<td>
+<p>Yes {: #wp1060492}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1060495}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1060505}</p>
+</td>
+<td>
+<p>Go to Step 6. {: #wp1060508}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5 {: #wp1060577}</p>
+</td>
+<td>
+<p><strong id="wp1060580">INSPECT TCM CONNECTOR FOR POOR CONNECTION</strong>}  • Turn the ignition switch to the LOCK position. {: #wp1060623}  • Disconnect the TCM connector. {: #wp1060637}  • Inspect for poor connection at TCM terminals 1AD (such as damaged/pulled-out pins, corrosion). {: #wp1060647}  • Is terminal normal? {: #wp1060660</p>
+</td>
+<td>
+<p>Yes {: #wp1060583}</p>
+</td>
+<td>
+<p>Go to Step 8. {: #wp1060586}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1060598}</p>
+</td>
+<td>
+<p>Repair or replace the connector and/or terminal, then go to Step 8. {: #wp1060601}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6 {: #wp1060690}</p>
+</td>
+<td>
+<p><strong id="wp1060693">INSPECT POWER SUPPLY CIRCUIT FOR SHORT TO GROUND</strong>}  • Disconnect the positive battery cable. {: #wp1060736}  • Inspect for continuity between the fuse terminals and body ground. {: #wp1060750}  - ROOM 15 A fuse terminal and body ground {: #wp1060760}  • Is there continuity? {: #wp1060774</p>
+</td>
+<td>
+<p>Yes {: #wp1060696}</p>
+</td>
+<td>
+<p>Repair or replace the wiring harness and install new fuse, then go to Step 8. {: #wp1060699}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1060711}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1060714}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7 {: #wp1060802}</p>
+</td>
+<td>
+<p><strong id="wp1060805">INSPECT POWER SUPPLY CIRCUIT FOR OPEN CIRCUIT</strong>}  • Inspect for continuity between TCM terminal and fuse terminals (wiring harness-side). {: #wp1060848}  - Terminal 1AD and ROOM IG 15 A fuse {: #wp1060863}  • Is there continuity? {: #wp1060877</p>
+</td>
+<td>
+<p>Yes {: #wp1060808}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1060811}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1060823}</p>
+</td>
+<td>
+<p>Repair or replace the harness, then go to the next step. {: #wp1060826}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8 {: #wp1060905}</p>
+</td>
+<td>
+<p><strong id="wp1060908">VERIFY TROUBLESHOOTING OF DTC P0883 COMPLETED</strong>}  • Make sure to reconnect all the disconnected connectors. {: #wp1060951}  • Clear the DTC from the memory using the M-MDS. {: #wp1060965}  • Start the engine and warm it up completely. {: #wp1060976}  • Is same DTC present? {: #wp1060986</p>
+</td>
+<td>
+<p>Yes {: #wp1060911}</p>
+</td>
+<td>
+<p>Replace the TCM, then go to the next step. {: #wp1060914}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/tcm-removal-installation-sj6a-el/id051311250800/#wp1025486">TCM REMOVAL/INSTALLATION [SJ6A-EL]</a>.) {: #wp1061006}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1060926}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1060929}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>9 {: #wp1061028}</p>
+</td>
+<td>
+<p><strong id="wp1061031">VERIFY AFTER REPAIR PROCEDURE</strong>  (See }  • Perform the "After Repair Procedure". {: #wp1061082<a href="../../after-repair-procedure-sj6a-el/id050208800400/#wp1025486">AFTER REPAIR PROCEDURE [SJ6A-EL]</a>.) {: #wp1061100}  • Are any DTCs present? {: #wp1061114}</p>
+</td>
+<td>
+<p>Yes {: #wp1061034}</p>
+</td>
+<td>
+<p>Go to the applicable DTC inspection. {: #wp1061037}  (See <a href="../../dtc-table-sj6a-el/id050208800500/#wp1025486">DTC TABLE [SJ6A-EL]</a>.) {: #wp1061138}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1061051}</p>
+</td>
+<td>
+<p>Troubleshooting completed. {: #wp1061054}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="" id="wp1061272"></a></p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

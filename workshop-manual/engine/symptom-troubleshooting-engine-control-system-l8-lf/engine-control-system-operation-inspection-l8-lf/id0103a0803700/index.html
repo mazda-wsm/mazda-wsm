@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Engine Control System Operation Inspection [L8, LF] - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../../left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/engine/node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-guide/body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#wp1025486">ENGINE CONTROL SYSTEM OPERATION INSPECTION [L8, LF]</a></li>
+        <li><a href="#main-relay-operation-inspection">Main Relay Operation Inspection</a></li><li><a href="#intake-manifold-vacuum-inspection">Intake Manifold Vacuum Inspection</a></li><li><a href="#electronic-throttle-control-system-inspection">Electronic Throttle Control System Inspection</a></li><li><a href="#variable-intake-air-control-operation-inspection">Variable Intake air Control Operation Inspection</a></li><li><a href="#variable-tumble-control-operation-inspection">Variable Tumble Control Operation Inspection</a></li><li><a href="#fuel-injector-operation-inspection">Fuel Injector Operation Inspection</a></li><li><a href="#fuel-cut-control-system-inspection">Fuel Cut Control System Inspection</a></li><li><a href="#fuel-pump-operation-inspection">Fuel Pump Operation Inspection</a></li><li><a href="#fuel-pump-control-system-inspection">Fuel Pump Control System Inspection</a></li><li><a href="#spark-test">Spark Test</a></li><li><a href="#egr-control-system-inspection">EGR Control System Inspection</a></li><li><a href="#purge-control-system-inspection">Purge Control System Inspection</a></li><li><a href="#ac-cut-off-control-system-inspection">A/C Cut-off Control System Inspection</a></li><li><a href="#cooling-fan-control-system-inspection">Cooling Fan Control System Inspection</a></li><li><a href="#variable-valve-timing-control-system-operation-inspection">Variable Valve Timing Control System Operation Inspection</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../../left_menu_S01/">Workshop Manual</a> ➭ <a href="../../../node_S01_0002/">ENGINE</a> ➭ <a href="../../node_S01_0004/">SYMPTOM TROUBLESHOOTING[ENGINE CONTROL SYSTEM (L8, LF)]</a> ➭ <a href="./">ENGINE CONTROL SYSTEM OPERATION INSPECTION [L8, LF]</a></p>
+<h1 id="wp1025486"><strong>ENGINE CONTROL SYSTEM OPERATION INSPECTION [L8, LF]</strong></h1>
+<hr />
+<p>id0103a0803700</p>
+<p>{: #wp1059779}</p>
+<h2 id="main-relay-operation-inspection"><strong id="wp1065602">Main Relay Operation Inspection</strong></h2>
+<ol>
+<li id="wp1059789">Verify that the main relay clicks when the ignition switch is turned to ON position and off.</li>
+</ol>
+<p id="wp1059799">• If there is no operation sound, inspect the following.</p>
+<ul>
+<li id="wp1059845">Main relay (See <a href="../../../../body-accessories/power-systems/relay-inspection/id092100800300/#wp1025486">RELAY INSPECTION</a>.)
+{: #wp1059813}- Wiring harness and connector between battery positive terminal and main relay terminal A
+{: #wp1059835}- Wiring harness and connector between PCM terminal 1Q and main relay terminal E</li>
+</ul>
+<h2 id="intake-manifold-vacuum-inspection"><strong id="wp1059855">Intake Manifold Vacuum Inspection</strong></h2>
+<p id="wp1059865">1.• Verify that the intake air hoses are installed securely.</p>
+<ol start="2">
+<li>
+<p id="wp1059875">Disconnect the vacuum hose connecting the intake manifold and the purge solenoid valve (purge solenoid valve side) and install the vacuum gauge.</p>
+</li>
+<li>
+<p id="wp1059885">Warm up the engine.</p>
+</li>
+<li>
+<p id="wp1059895">Measure the intake manifold vacuum while idling (no load) using the vacuum gauge. (See <a href="../../../intake-air-system-l8-lf/intake-manifold-vacuum-inspection-l8-lf/id0113a3801500/#wp1025486">INTAKE MANIFOLD VACUUM INSPECTION [L8, LF]</a>.)</p>
+</li>
+</ol>
+<p id="wp1059913">• If not within the specification, perform the following inspections.</p>
+<ul>
+<li id="wp1059949">Compression pressure (See <a href="../../../mechanical-l8-lf/compression-inspection-l8-lf/id0110a9800300/#wp1025486">COMPRESSION INSPECTION [L8, LF]</a>.)
+{: #wp1059927}- Air intake</li>
+</ul>
+<p id="wp1060013">• Each hose installation part
+{: #wp1059959}• Throttle body installation part
+{: #wp1059973}• Fuel injector installation part
+{: #wp1059983}• PCV valve installation part
+{: #wp1059993}• Dynamic chamber installation port
+{: #wp1060003}• Intake manifold installation part</p>
+<h2 id="electronic-throttle-control-system-inspection"><strong id="wp1060023">Electronic Throttle Control System Inspection</strong></h2>
+<h3 id="engine-coolant-temperature-compensation-inspection"><strong id="wp1060033">Engine coolant temperature compensation inspection</strong></h3>
+<ol>
+<li>
+<p id="wp1060043">Connect the M-MDS to the DLC-2.</p>
+</li>
+<li>
+<p id="wp1060055">Access the following PIDs:</p>
+</li>
+</ol>
+<p id="wp1060089">• ECT
+{: #wp1060065}• IAT
+{: #wp1060079}• RPM</p>
+<ol start="3">
+<li>
+<p id="wp1060099">Verify that the engine is cold, then start the engine.</p>
+</li>
+<li>
+<p id="wp1060109">Verify that the engine speed decreases as the engine warms up.</p>
+</li>
+</ol>
+<p id="wp1060119">• If the engine speed does not decrease or decreases slowly, inspect the following:</p>
+<ul>
+<li id="wp1060171">ECT sensor and related wiring harness
+{: #wp1060133}(See <a href="../../../control-system-l8-lf/engine-coolant-temperature-ect-sensor-inspection-l8-lf/id0140i7802000/#wp1025486">ENGINE COOLANT TEMPERATURE (ECT) SENSOR INSPECTION [L8, LF]</a>.)
+{: #wp1060147}- Electronic throttle body and related wiring harness
+{: #wp1060161}(See <a href="../../../intake-air-system-l8-lf/throttle-body-inspection-l8-lf/id0113a3802600/#wp1025486">THROTTLE BODY INSPECTION [L8, LF]</a>.)</li>
+</ul>
+<h3 id="load-compensation-inspection"><strong id="wp1060185">Load compensation inspection</strong></h3>
+<ol>
+<li>
+<p id="wp1060195">Start the engine and idle it.</p>
+</li>
+<li>
+<p id="wp1060205">Connect the M-MDS to the DLC-2.</p>
+</li>
+<li>
+<p id="wp1060217">Verify that P0506 or P0507 is not displayed.</p>
+</li>
+</ol>
+<p id="wp1060241">• If P0506 or P0507 are displayed, perform DTC inspection.
+{: #wp1060227}(See <a href="../../../on-board-diagnostic-l8-lf/dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.)</p>
+<ol start="4">
+<li id="wp1060255">Access the RPM PID.</li>
+</ol>
+<p><strong><em>*Note</em></strong>*{: #wp1060265}</p>
+<p id="wp1065482">• Excludes temporary idle speed drop just after the loads are turned on.</p>
+<ol start="5">
+<li id="wp1060283">Verify that the engine speed is within the specification under each load condition. (See<a href="../../../mechanical-l8-lf/engine-tune-up-l8-lf/id0110a9800600/#wp1025486">ENGINE TUNE-UP [L8, LF]</a>.)</li>
+</ol>
+<p id="wp1060301">• If load condition is not as specified, inspect the following:</p>
+<ul>
+<li id="wp1060383">A/C switch and related wiring harness
+{: #wp1060315}(See <a href="../../../../heater-ventilation-air-conditioning/control-system/climate-control-unit-inspection-manual-air-conditioner/id0740008022a2/#wp1025486">CLIMATE CONTROL UNIT INSPECTION [MANUAL AIR CONDITIONER]</a>.)
+{: #wp1060331}(See <a href="../../../../heater-ventilation-air-conditioning/control-system/climate-control-unit-inspection-full-auto-air-conditioner/id0740008022a1/#wp1025486">CLIMATE CONTROL UNIT INSPECTION [FULL-AUTO AIR CONDITIONER]</a>.)
+{: #wp1060345}- Fan switch and related wiring harness
+{: #wp1060359}(See <a href="../../../../heater-ventilation-air-conditioning/control-system/climate-control-unit-inspection-manual-air-conditioner/id0740008022a2/#wp1025486">CLIMATE CONTROL UNIT INSPECTION [MANUAL AIR CONDITIONER]</a>.)
+{: #wp1060369}(See <a href="../../../../heater-ventilation-air-conditioning/control-system/climate-control-unit-inspection-full-auto-air-conditioner/id0740008022a1/#wp1025486">CLIMATE CONTROL UNIT INSPECTION [FULL-AUTO AIR CONDITIONER]</a>.)</li>
+</ul>
+<h3 id="throttle-position-tp-sweep-inspection"><strong id="wp1060397">Throttle position (TP) sweep inspection</strong></h3>
+<ol>
+<li>
+<p id="wp1060407">Connect the M-MDS to the DLC-2.</p>
+</li>
+<li>
+<p id="wp1060419">Turn the ignition switch to the ON position.</p>
+</li>
+<li>
+<p id="wp1060429">Verify that none of the following DTC are displayed:</p>
+</li>
+</ol>
+<p id="wp1060462">• P0122, P0123, P0222, P0223, P0638, P2101, P2107, P2108, P2109, P2112, P2119, P2122, P2123, P2127, P2128, P2135, P2138</p>
+<ul>
+<li id="wp1060470">If any one DTC is displayed, perform DTC inspection.</li>
+</ul>
+<ol start="4">
+<li>
+<p id="wp1060484">Access TP PID.</p>
+</li>
+<li>
+<p id="wp1060494">Verify that the PID reading is within the CTP value. (See <a href="../../../control-system-l8-lf/pcm-inspection-l8-lf/id0140i7802500/#wp1025486">PCM INSPECTION [L8, LF]</a>.)</p>
+</li>
+</ol>
+<p id="wp1060512">• If the PID reading is out of range, perform the following:</p>
+<ul>
+<li id="wp1060540">Remove the air duct from the throttle valve body.
+{: #wp1060526}- Verify that the throttle valve opens when the accelerator pedal is depressed.</li>
+</ul>
+<p id="wp1060564">• If the throttle valve opens, inspect the throttle position sensor and related wiring harness.
+{: #wp1060550}• If the throttle valve does not open, inspect the throttle actuator control motor and related wiring harness.</p>
+<ol start="6">
+<li id="wp1060574">Gradually depress the throttle pedal and verify that the PID reading increases accordingly.</li>
+</ol>
+<p id="wp1060584">• If the PID reading drops momentarily, inspect the following:</p>
+<ul>
+<li id="wp1060598">Throttle position sensor</li>
+</ul>
+<ol start="7">
+<li id="wp1060612">Fully depress the throttle pedal and verify that the PID reading is within WOT value. (See <a href="../../../control-system-l8-lf/pcm-inspection-l8-lf/id0140i7802500/#wp1025486">PCM INSPECTION [L8, LF]</a>.)</li>
+</ol>
+<p id="wp1060630">• If the PID reading is out of range, perform the followings:</p>
+<ul>
+<li id="wp1060658">Remove the air duct from throttle valve body.
+{: #wp1060644}- Verify that the throttle valve opens when throttle pedal is depressed.</li>
+</ul>
+<p id="wp1060682">• If the throttle valve opens, inspect the throttle position sensor and related wiring harness.
+{: #wp1060668}• If the throttle valve does not open, inspect the throttle actuator control motor and related wiring harness.</p>
+<h2 id="variable-intake-air-control-operation-inspection"><strong id="wp1060692">Variable Intake air Control Operation Inspection</strong></h2>
+<ol>
+<li>
+<p id="wp1060702">Start the engine.</p>
+</li>
+<li>
+<p id="wp1060712">Inspect the rod operation. (See <a href="../../../intake-air-system-l8-lf/variable-intake-air-shutter-valve-actuator-inspection-l8-lf/id0113a3803000/#wp1025486">VARIABLE INTAKE AIR SHUTTER VALVE ACTUATOR INSPECTION [L8, LF]</a>.)</p>
+</li>
+</ol>
+<p id="wp1060766">• If the rod operation is not as specified, inspect as follows.
+{: #wp1060730}(1) Stop the engine.
+{: #wp1060744}(2) Connect M-MDS to the DLC-2.
+{: #wp1060754}(3) Verify that DTC P0661 or P0662 is not displayed.</p>
+<p id="wp1060776">• If DTC P0661 or P0662 is shown, perform the DTC inspection. (See <a href="../../../on-board-diagnostic-l8-lf/dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.)</p>
+<p id="wp1060808">(4) Turn the ignition switch to the ON position.
+{: #wp1060798}(5) Turn the variable intake-air control solenoid valve from on to off using the IMTV PID and verify that operation sound of the solenoid valve is heard.</p>
+<p id="wp1060819">• If the operation sound is heard, inspect the following.</p>
+<ul>
+<li id="wp1060865">Vacuum hose and vacuum chamber for looseness or damage
+{: #wp1060833}- Shutter valve actuator (See <a href="../../../intake-air-system-l8-lf/variable-intake-air-shutter-valve-actuator-inspection-l8-lf/id0113a3803000/#wp1025486">VARIABLE INTAKE AIR SHUTTER VALVE ACTUATOR INSPECTION [L8, LF]</a>.)
+{: #wp1060847}- Shutter valve stuck open or close</li>
+</ul>
+<p id="wp1060875">• If the operation sound is not heard, inspect the following.</p>
+<ul>
+<li id="wp1060885">Variable intake air solenoid valve (See <a href="../../../intake-air-system-l8-lf/variable-intake-air-solenoid-valve-inspection-l8-lf/id0113a3802800/#wp1025486">VARIABLE INTAKE AIR SOLENOID VALVE INSPECTION [L8, LF]</a>.)</li>
+</ul>
+<h2 id="variable-tumble-control-operation-inspection"><strong id="wp1060907">Variable Tumble Control Operation Inspection</strong></h2>
+<ol>
+<li>
+<p id="wp1060917">Connect the M-MDS to the DLC-2.</p>
+</li>
+<li>
+<p id="wp1060929">Access ECT PID.</p>
+</li>
+<li>
+<p id="wp1060939">Verify that ECT PID is <strong>below 60</strong> °<strong>C {140</strong> °<strong>F}</strong>.</p>
+</li>
+<li>
+<p id="wp1060965">Start the engine.</p>
+</li>
+<li>
+<p id="wp1060975">Inspect rod operation. (See <a href="../../../intake-air-system-l8-lf/variable-tumble-shutter-valve-actuator-inspection-l8-lf/id0113a3803100/#wp1025486">VARIABLE TUMBLE SHUTTER VALVE ACTUATOR INSPECTION [L8, LF]</a>.)</p>
+</li>
+</ol>
+<p id="wp1061007">• If the rod operation is not specified, inspect as follows.
+{: #wp1060993}(1) Verify that DTC No. P2009 or P2010 is not displayed.</p>
+<p id="wp1061017">• If DTC No. P2009 or P2010 are shown, perform the DTC inspection. (See <a href="../../../on-board-diagnostic-l8-lf/dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.)</p>
+<p id="wp1061049">(2) Turn the ignition switch to the ON position.
+{: #wp1061039}(3) Turn the variable tumble solenoid valve from on to off using the IMRC PID and verify that operation sound of the solenoid valve is heard.</p>
+<p id="wp1061059">• If the operation sound is heard, inspect the following.</p>
+<ul>
+<li id="wp1061105">Vacuum hose and vacuum chamber for looseness or damage
+{: #wp1061073}- Shutter valve actuator (See <a href="../../../intake-air-system-l8-lf/variable-tumble-shutter-valve-actuator-inspection-l8-lf/id0113a3803100/#wp1025486">VARIABLE TUMBLE SHUTTER VALVE ACTUATOR INSPECTION [L8, LF]</a>.)
+{: #wp1061087}- Shutter valve stuck open or close</li>
+</ul>
+<p id="wp1061115">• If the operation sound is not heard, inspect the following.</p>
+<ul>
+<li id="wp1061125">Variable tumble solenoid valve (See <a href="../../../intake-air-system-l8-lf/variable-tumble-solenoid-valve-inspection-l8-lf/id0113a3802900/#wp1025486">VARIABLE TUMBLE SOLENOID VALVE INSPECTION [L8, LF]</a>.)</li>
+</ul>
+<h2 id="fuel-injector-operation-inspection"><strong id="wp1061147">Fuel Injector Operation Inspection</strong></h2>
+<h3 id="if-simulation-function-of-m-mds-is-used"><strong id="wp1061157">If simulation function of M-MDS is used:</strong></h3>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>STEP</strong> <a href="" id="wp1061277"></a>}{: #wp1061168</p>
+</th>
+<th>
+<p><strong>INSPECTION</strong> {: #wp1061279}</p>
+</th>
+<th>
+<p><strong>RESULTS</strong> {: #wp1061281}</p>
+</th>
+<th>
+<p><strong>ACTION</strong> {: #wp1061283}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 {: #wp1061171}</p>
+</td>
+<td>
+<p>Start the engine and warm it up until normal operating temperature. {: #wp1061173}  Connect the M-MDS to DLC-2. {: #wp1061390}  Select the INJ#1, INJ#2, INJ#3, and INJ#4 PIDs. {: #wp1061398}  Turn the fuel injector from on to off using the PIDs for each cylinder. {: #wp1061412}  Does the engine speed drop? {: #wp1061418}</p>
+</td>
+<td>
+<p>Yes {: #wp1061229}</p>
+</td>
+<td>
+<p>Fuel injector work properly. {: #wp1061232}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1061312}</p>
+</td>
+<td>
+<p><strong>Engine speed does not drop any cylinders:</strong> {: #wp1061315}  Go to the next step. {: #wp1061448}  <strong>Engine speed drop some cylinders:</strong> {: #wp1061454}  Go to Step 3. {: #wp1061464}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2 {: #wp1061319}</p>
+</td>
+<td>
+<p>Perform the Main Relay Operation Inspection. {: #wp1061322}  (See<a href="./#wp1065602">Main Relay Operation Inspection</a>.) {: #wp1061480}  Does the main relay work properly? {: #wp1061494}</p>
+</td>
+<td>
+<p>Yes {: #wp1061325}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1061328}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1061338}</p>
+</td>
+<td>
+<p>Repair or replace malfunctioning parts. {: #wp1061341}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 {: #wp1061345}</p>
+</td>
+<td>
+<p>Inspect the fuel injector for suspected cylinder. {: #wp1061348}  (See<a href="../../../fuel-system-l8-lf/fuel-injector-inspection-l8-lf/id0114a3800700/#wp1025486">FUEL INJECTOR INSPECTION [L8, LF]</a>.) {: #wp1061549}  Is the fuel injector okay? {: #wp1061563}</p>
+</td>
+<td>
+<p>Yes {: #wp1061351}</p>
+</td>
+<td>
+<p>Inspect the following for suspected cylinder: {: #wp1061354}  • Fuel injector power and/or GND systems related harness and connectors. {: #wp1061579}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1061524}</p>
+</td>
+<td>
+<p>Replace the fuel injector. {: #wp1061527}  (See<a href="../../../fuel-system-l8-lf/fuel-injector-removal-installation-l8-lf/id0114a3800600/#wp1025486">FUEL INJECTOR REMOVAL/INSTALLATION [L8, LF]</a>.) {: #wp1061605}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 {: #wp1061617}</p>
+</td>
+<td>
+<p>Perform KOER self-test function using M-MDS. {: #wp1061620}  (See<a href="../../../on-board-diagnostic-l8-lf/koeo-koer-self-test-l8-lf/id0102b1801200/#wp1025486">KOEO/KOER SELF TEST [L8, LF]</a>.) {: #wp1061681}  Are DTC P0201, P0202, P0203 and/or P0204 present? {: #wp1061695}</p>
+</td>
+<td>
+<p>Yes {: #wp1061623}</p>
+</td>
+<td>
+<p>Go to appropriate DTC test. {: #wp1061626}  (See<a href="../../../on-board-diagnostic-l8-lf/dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.) {: #wp1061713}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1061642}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1061645}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5 {: #wp1061735}</p>
+</td>
+<td>
+<p>Inspect the fuel injector for suspected cylinder. {: #wp1061738}  (See<a href="../../../fuel-system-l8-lf/fuel-injector-inspection-l8-lf/id0114a3800700/#wp1025486">FUEL INJECTOR INSPECTION [L8, LF]</a>.) {: #wp1061813}  Is the fuel injector okay? {: #wp1061827}</p>
+</td>
+<td>
+<p>Yes {: #wp1061741}</p>
+</td>
+<td>
+<p>Inspect the following for suspected cylinder: {: #wp1061744}  • PCM terminals (pulled-out pins, corrosion) {: #wp1061843}  • Fuel injector terminals (pulled-out pins, corrosion) {: #wp1061858}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1061764}</p>
+</td>
+<td>
+<p>Replace the fuel injector. {: #wp1061767}  (See <a href="../../../fuel-system-l8-lf/fuel-injector-removal-installation-l8-lf/id0114a3800600/#wp1025486">FUEL INJECTOR REMOVAL/INSTALLATION [L8, LF]</a>.) {: #wp1061879}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="if-simulation-function-of-m-mds-is-not-used"><strong id="wp1061907">If simulation function of M-MDS is not used:</strong></h3>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>STEP</strong> <a href="" id="wp1062027"></a>}{: #wp1061918</p>
+</th>
+<th>
+<p><strong>INSPECTION</strong> {: #wp1062029}</p>
+</th>
+<th>
+<p><strong>RESULTS</strong> {: #wp1062031}</p>
+</th>
+<th>
+<p><strong>ACTION</strong> {: #wp1062033}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 {: #wp1061921}</p>
+</td>
+<td>
+<p>While cranking the engine, inspect for fuel injector operation sound at each cylinder using a soundscope. {: #wp1061923}  Is operation sound heard? {: #wp1062140}</p>
+</td>
+<td>
+<p>Yes {: #wp1061979}</p>
+</td>
+<td>
+<p>Fuel injector operation is normal. {: #wp1061982}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1062062}</p>
+</td>
+<td>
+<p><strong>All cylinders no heard:</strong>  {: #wp1062065}  Go to the next step. {: #wp1062170}  <strong>Some cylinders no heard:</strong>  {: #wp1062176}  Go to Step 3. {: #wp1062186}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2 {: #wp1062069}</p>
+</td>
+<td>
+<p>Perform the main relay operation inspection. {: #wp1062072}  Is main relay operation normal? {: #wp1062202}</p>
+</td>
+<td>
+<p>Yes {: #wp1062075}</p>
+</td>
+<td>
+<p>Inspect following: {: #wp1062078}  • Fuel injector power system related wiring harness and connectors {: #wp1062218}  • PCM connectors {: #wp1062232}  • Fuel injector GND and related wiring harness and connectors {: #wp1062242}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1062088}</p>
+</td>
+<td>
+<p>Repair or replace the malfunctioning part. {: #wp1062091}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 {: #wp1062095}</p>
+</td>
+<td>
+<p>Change fuel injector connector of not operating fuel injector and operating fuel injector. {: #wp1062098}  Is operation sound heard? {: #wp1062285}</p>
+</td>
+<td>
+<p>Yes {: #wp1062101}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1062104}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1062266}</p>
+</td>
+<td>
+<p>Replace fuel injector. {: #wp1062269}  (See <a href="../../../fuel-system-l8-lf/fuel-injector-inspection-l8-lf/id0114a3800700/#wp1025486">FUEL INJECTOR INSPECTION [L8, LF]</a>.) {: #wp1062311}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 {: #wp1062323}</p>
+</td>
+<td>
+<p>Are wiring harness and connectors of not operation fuel injector normal? (Open or short circuit) {: #wp1062326}</p>
+</td>
+<td>
+<p>Yes {: #wp1062329}</p>
+</td>
+<td>
+<p>Inspect PCM terminal voltage of fuel injector signal. {: #wp1062332}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1062344}</p>
+</td>
+<td>
+<p>Repair or replace the malfunctioning part. {: #wp1062347}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fuel-cut-control-system-inspection"><strong id="wp1062391">Fuel Cut Control System Inspection</strong></h2>
+<ol>
+<li>
+<p id="wp1062401">Warm up the engine and idle it.</p>
+</li>
+<li>
+<p id="wp1062411">Turn off the electrical loads and A/C switch.</p>
+</li>
+<li>
+<p id="wp1062423">Connect the M-MDS to the DLC-2.</p>
+</li>
+<li>
+<p id="wp1062435">Access RPM and FUELPW1 PIDs.</p>
+</li>
+<li>
+<p id="wp1062445">Monitor both PIDs while performing the following steps.</p>
+</li>
+</ol>
+<p id="wp1062506">(1) Depress the accelerator pedal and increase the engine speed to <strong>4,000 rpm</strong>.
+{: #wp1062455}(2) Release the accelerator pedal (brake pedal is not depressed) and verify that the fuel injector duration time is <strong>0 ms.</strong>, and <strong>2-5 ms.</strong> when the engine speed drops below <strong>1,300 rpm</strong>.</p>
+<p id="wp1062515">• If not as specified, inspect the following.</p>
+<ul>
+<li id="wp1062551">ECT sensor and related wiring harness (See <a href="../../../control-system-l8-lf/engine-coolant-temperature-ect-sensor-inspection-l8-lf/id0140i7802000/#wp1025486">ENGINE COOLANT TEMPERATURE (ECT) SENSOR INSPECTION [L8, LF]</a>.)
+{: #wp1062529}- Neutral/clutch pedal position switch and related wiring harness (See <a href="../../../control-system-l8-lf/clutch-pedal-position-cpp-switch-inspection-l8-lf/id0140i7801600/#wp1025486">CLUTCH PEDAL POSITION (CPP) SWITCH INSPECTION [L8, LF]</a>.)</li>
+</ul>
+<h2 id="fuel-pump-operation-inspection"><strong id="wp1062571">Fuel Pump Operation Inspection</strong></h2>
+<ol>
+<li>
+<p id="wp1062581">Connect the M-MDS to the DLC-2.</p>
+</li>
+<li>
+<p id="wp1062593">Remove the fuel-filler cap.</p>
+</li>
+<li>
+<p id="wp1062604">Turn the ignition switch to the ON position.</p>
+</li>
+<li>
+<p id="wp1062614">Turn the fuel pump relay from off to on using the FP PID and inspect if the operation sound is heard.</p>
+</li>
+</ol>
+<p id="wp1062624">• If no operation sounds is heard, proceed to next step.</p>
+<ol start="5">
+<li id="wp1062638">Measure the voltage at wiring harness-side fuel pump terminal B.</li>
+</ol>
+<p><strong id="wp1062649">Specification</strong><strong id="wp1062663">B+ (Ignition switch is ON position)</strong></p>
+<p id="wp1062675">• If the voltage is as specified, inspect the following.</p>
+<ul>
+<li id="wp1062713">Fuel pump continuity
+{: #wp1062689}- Fuel pump GND
+{: #wp1062703}- Wiring harness between fuel pump relay and PCM terminal 1H</li>
+</ul>
+<p id="wp1062723">• If not as specified, inspect the following.</p>
+<ul>
+<li id="wp1062759">Fuel pump relay (See <a href="../../../../body-accessories/power-systems/relay-inspection/id092100800300/#wp1025486">RELAY INSPECTION</a>.)
+{: #wp1062737}- Wiring harness and connector (Main relay-fuel pump relay-fuel pump)</li>
+</ul>
+<h2 id="fuel-pump-control-system-inspection"><strong id="wp1062771">Fuel Pump Control System Inspection</strong></h2>
+<ol>
+<li>
+<p id="wp1062781">Connect the M-MDS to the DLC-2.</p>
+</li>
+<li>
+<p id="wp1062793">Turn the ignition switch to the ON position.</p>
+</li>
+<li>
+<p id="wp1062803">Access FP PID.</p>
+</li>
+<li>
+<p id="wp1062813">Turn the fuel pump relay from off to on and inspect if the operation sound of the fuel pump relay is heard.</p>
+</li>
+</ol>
+<p id="wp1062837">• If no operation sound is heard, inspect the fuel pump relay.
+{: #wp1062823}• If the fuel pump relay is normal, inspect the following.</p>
+<ul>
+<li id="wp1062847">Wiring harnesses and connectors (Main relay-fuel pump relay-PCM)</li>
+</ul>
+<h2 id="spark-test"><strong id="wp1062863">Spark Test</strong></h2>
+<ol>
+<li>
+<p id="wp1062873">Remove the fuel pump relay.</p>
+</li>
+<li>
+<p id="wp1062883">Verify that each ignition coil and connector is connected properly.</p>
+</li>
+<li>
+<p id="wp1062893">Inspect the ignition system in the following procedure.</p>
+</li>
+</ol>
+<p><strong id="wp1062903">Warning</strong></p>
+<p id="wp1065483">• High voltage in the ignition system can cause strong electrical shock which can result in serious injury. Avoid direct contact to the vehicle body during the following spark test.</p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>STEP</strong> <a href="" id="wp1063030"></a>}{: #wp1062921</p>
+</th>
+<th colspan="2">
+<p><strong>INSPECTION</strong> {: #wp1063032}</p>
+</th>
+<th>
+<p><strong>ACTION</strong> {: #wp1063036}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 {: #wp1062924}</p>
+</td>
+<td>
+<p>• Disconnect the ignition coil from spark plugs. {: #wp1062926}  • Remove the spark plugs. {: #wp1063146}  - Verify that the spark plugs do not have carbon deposits. {: #wp1063156}  • Are the spark plugs normal? {: #wp1063170}</p>
+</td>
+<td>
+<p>Yes {: #wp1062982}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1062985}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1063065}</p>
+</td>
+<td>
+<p>Perform no-load racing at 4,000 rpm for 2 min, 2 times to burn off the carbon deposits. {: #wp1063068}  Repeat Step 1. {: #wp1063201}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2 {: #wp1063072}</p>
+</td>
+<td>
+<p>• Inspect the spark plugs for damage, wear, and proper plug gap. {: #wp1063075}  • Are the spark plugs normal? {: #wp1063225}</p>
+</td>
+<td>
+<p>Yes {: #wp1063078}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1063081}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1063091}</p>
+</td>
+<td>
+<p>Replace spark plugs, then go to the next step. {: #wp1063094}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 {: #wp1063098}</p>
+</td>
+<td>
+<p>• Reconnect the spark plugs to the ignition coil. {: #wp1063101}  • Ground the spark plugs to the engine. {: #wp1063286}  • Is a strong blue spark visible at each cylinder while cranking the engine? {: #wp1063296}</p>
+</td>
+<td>
+<p>Yes {: #wp1063104}</p>
+</td>
+<td>
+<p>Ignition system is normal. {: #wp1063107}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1063259}</p>
+</td>
+<td>
+<p><strong id="wp1063262">Some cylinders do not spark:</strong> }  • Go to the next step. {: #wp1063330<strong id="wp1063340">All cylinders do not spark:</strong>}  • Go to Step 5. {: #wp1063350</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 {: #wp1063358}</p>
+</td>
+<td>
+<p>• Inspect following wiring harnesses for open or short circuit: {: #wp1063361}  - Ignition coil No.1 terminal C-PCM terminal 2BA {: #wp1063404}- Ignition coil No.2 terminal C-PCM terminal 2AW {: #wp1063420}- Ignition coil No.3 terminal C-PCM terminal 2AX {: #wp1063432}- Ignition coil No.4 terminal C-PCM terminal 2AT {: #wp1063444}  • Are wiring harnesses normal? {: #wp1063456}</p>
+</td>
+<td>
+<p>Yes {: #wp1063364}</p>
+</td>
+<td>
+<p>Inspect and replace ignition coil. {: #wp1063367}  (See <a href="../../../ignition-system-l8-lf/ignition-coil-inspection-l8-lf/id0118a3800300/#wp1025486">IGNITION COIL INSPECTION [L8, LF]</a>.) {: #wp1063476}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1063377}</p>
+</td>
+<td>
+<p>Repair or replace the malfunctioning part, then return to Step.1. {: #wp1063380}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5 {: #wp1063498}</p>
+</td>
+<td>
+<p>• Measure the voltage at terminal A in each ignition coils. {: #wp1063501}  • Is voltage reading <strong>B+</strong> ? {: #wp1063552}</p>
+</td>
+<td>
+<p>Yes {: #wp1063504}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1063507}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1063519}</p>
+</td>
+<td>
+<p>Inspect power supply circuit of ignition coils. {: #wp1063522}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6 {: #wp1063590}</p>
+</td>
+<td>
+<p>• Verify continuity between each ignition coils terminal B and battery negative post. {: #wp1063593}  • Is there any continuity? {: #wp1063652}</p>
+</td>
+<td>
+<p>Yes {: #wp1063596}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1063599}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1063613}</p>
+</td>
+<td>
+<p>Inspect GND circuit of ignition coils. {: #wp1063616}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7 {: #wp1063680}</p>
+</td>
+<td>
+<p>• Does PCM connector or ignition coil connectors have poor connection? {: #wp1063683}</p>
+</td>
+<td>
+<p>Yes {: #wp1063686}</p>
+</td>
+<td>
+<p>Repair or replace connector, then return to Step.1. {: #wp1063689}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1063703}</p>
+</td>
+<td>
+<p>Go to the next step. {: #wp1063706}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8 {: #wp1063760}</p>
+</td>
+<td>
+<p>• Are following parts normal? {: #wp1063763}  - CKP sensor and crankshaft pulley {: #wp1063822}</p>
+</td>
+<td>
+<p>Yes {: #wp1063766}</p>
+</td>
+<td>
+<p>Inspect for open or short circuit in wiring harness and connector of CKP sensor. {: #wp1063769}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>
+<p>No {: #wp1063783}</p>
+</td>
+<td>
+<p>Repair or replace the malfunctioning part, then return to Step.1. {: #wp1063786}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="egr-control-system-inspection"><strong id="wp1063860">EGR Control System Inspection</strong></h2>
+<ol>
+<li id="wp1063870">Crank the engine and verify that EGR valve operation (initial operation) sound is heard.</li>
+</ol>
+<p id="wp1063880">• If the operation sound is not heard, connect M-MDS to the DLC-2 and verify that the DTC P0403 is shown. Perform the DTC inspection. (See <a href="../../../on-board-diagnostic-l8-lf/dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.)</p>
+<ol start="2">
+<li>
+<p id="wp1063904">Start the engine and run it at idle.</p>
+</li>
+<li>
+<p id="wp1063934">Increase the step value of EGR valve from <strong>0</strong> to <strong>52</strong> using SEGRP PID.</p>
+</li>
+<li>
+<p id="wp1063945">Operate the EGR valve and inspect if the engine speed becomes unstable or the engine stalls.</p>
+</li>
+</ol>
+<p id="wp1064038">• If the engine speed will not change, proceed to following.
+{: #wp1063955}(1) Stop the engine.
+{: #wp1063969}(2) Remove the EGR valve.
+{: #wp1063979}(3) Connect the EGR valve connector.
+{: #wp1063989}(4) Turn the ignition switch to the ON position.
+{: #wp1063999}(5) Increase the step value of EGR valve from <strong>0</strong> to <strong>52</strong> using SEGRP PID.
+{: #wp1064029}(6) Inspect the EGR operation.</p>
+<p id="wp1064062">• If the EGR valve is operated, clean the EGR valve and reinspect from Step 2.
+{: #wp1064048}• If the EGR valve will not operate, replace the EGR valve and reinspect from Step 2.</p>
+<ol start="5">
+<li>
+<p id="wp1064072">Start the engine and warm it up completely.</p>
+</li>
+<li>
+<p id="wp1064082">Access the following PIDs.</p>
+</li>
+</ol>
+<p id="wp1064136">• ECT
+{: #wp1064092}• RPM
+{: #wp1064106}• SEGRP
+{: #wp1064116}• TP
+{: #wp1064126}• VSS</p>
+<ol start="7">
+<li>
+<p id="wp1064146">Idle the vehicle and verify that the SEGRP value is <strong>0</strong>.</p>
+</li>
+<li>
+<p id="wp1064165">Put the vehicle in drive.</p>
+</li>
+<li>
+<p id="wp1064175">Depress the accelerator pedal and verify that the SEGRP value is increased.</p>
+</li>
+</ol>
+<p id="wp1064185">• If the SEGRP value will not increase, inspect the VSS, APP1, APP2, TP and ECT PIDs. (See <a href="../../../control-system-l8-lf/pcm-inspection-l8-lf/id0140i7802500/#wp1025486">PCM INSPECTION [L8, LF]</a>.)</p>
+<ol start="10">
+<li id="wp1064207">Stop the vehicle and verify that the SEGRP value is returned <strong>0</strong>.</li>
+</ol>
+<h2 id="purge-control-system-inspection"><strong id="wp1064226">Purge Control System Inspection</strong></h2>
+<ol>
+<li>
+<p id="wp1064236">Start the engine.</p>
+</li>
+<li>
+<p id="wp1064246">Disconnect the vacuum hose between the purge valve and the charcoal canister.</p>
+</li>
+<li>
+<p id="wp1064256">Put a finger to the purge valve and verify that there is no vacuum applied when the engine is cold.</p>
+</li>
+</ol>
+<p id="wp1064266">• If there is a vacuum, inspect the following.</p>
+<ul>
+<li id="wp1064295">Wiring harness and connectors (Purge valve-PCM terminal 2C)
+{: #wp1064280}- Purge valve</li>
+</ul>
+<ol start="4">
+<li>
+<p id="wp1064305">Start the engine and warm it up completely.</p>
+</li>
+<li>
+<p id="wp1064315">Stop the engine.</p>
+</li>
+<li>
+<p id="wp1064325">Connect the M-MDS to the DLC-2 and verify that the DTC P0443 is shown. Perform the DTC inspection. (See <a href="../../../on-board-diagnostic-l8-lf/dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.)</p>
+</li>
+<li>
+<p id="wp1064345">Turn the ignition switch to the ON position.</p>
+</li>
+<li>
+<p id="wp1064355">Access ECT PID.</p>
+</li>
+<li>
+<p id="wp1064365">Verify that the engine coolant temperature is <strong>above 78</strong> °<strong>C {173</strong> °<strong>F}</strong>.</p>
+</li>
+</ol>
+<p id="wp1064391">• If M-MDS indicates <strong>below 78</strong> °<strong>C {173</strong> °<strong>F}</strong>, perform the ECT sensor inspection.</p>
+<ol start="10">
+<li>
+<p id="wp1064422">Access EVAPCP PID.</p>
+</li>
+<li>
+<p id="wp1064432">Increase the duty value of the purge valve to <strong>50%</strong> and inspect if the operation sound of the valve is heard.</p>
+</li>
+</ol>
+<p id="wp1064468">• If the operation sound is heard, inspect for the loose or damaged vacuum hose. (Intake manifold-purge valve-charcoal canister)
+{: #wp1064452}• If the operation sound is not heard, perform the purge valve inspection.</p>
+<h2 id="ac-cut-off-control-system-inspection"><strong id="wp1064478">A/C Cut-off Control System Inspection</strong></h2>
+<ol>
+<li>
+<p id="wp1064491">Start the engine.</p>
+</li>
+<li>
+<p id="wp1064501">Turn the A/C switch and fan switch on.</p>
+</li>
+<li>
+<p id="wp1064513">Verify that the A/C compressor magnetic clutch actuates.</p>
+</li>
+</ol>
+<p id="wp1064525">• If it does not actuate, go to symptom troubleshooting "No.23 A/C does not work sufficiently".</p>
+<ol start="4">
+<li id="wp1064545">Fully open the throttle valve and verify that the A/C compressor magnetic clutch does not actuate for <strong>2-5 s</strong>.</li>
+</ol>
+<p id="wp1064626">• If it actuates, inspect as follows.
+{: #wp1064568}(1) Connect the M-MDS to the DLC-2.
+{: #wp1064582}(2) Turn the A/C switch off.
+{: #wp1064594}(3) Turn the ignition switch to the ON position.
+{: #wp1064606}(4) Access ACCS PID.
+{: #wp1064616}(5) Turn the A/C relay from off to on and inspect if the operation sound of the relay is heard.</p>
+<p id="wp1064652">• If the operation sound is heard, inspect APP1, APP2, PIDs.
+{: #wp1064638}• If the operation sound is not heard, inspect following.</p>
+<ul>
+<li id="wp1064692">A/C relay
+{: #wp1064662}- Open circuit or short to GND in wiring harness and connectors (Ignition switch-A/C relay-PCM terminal 1I)
+{: #wp1064678}- A/C related parts</li>
+</ul>
+<h2 id="cooling-fan-control-system-inspection"><strong id="wp1064704">Cooling Fan Control System Inspection</strong></h2>
+<h3 id="if-simulation-function-of-m-mds-is-used_1"><strong id="wp1064714">If simulation function of M-MDS is used:</strong></h3>
+<ol>
+<li>
+<p id="wp1064725">Connect the M-MDS to DLC-2.</p>
+</li>
+<li>
+<p id="wp1064737">Start the engine and warm it up to normal operating temperature.</p>
+</li>
+<li>
+<p id="wp1064747">Perf Verify that the DTC P0480, P0481 or P0482 is not shown and cooling fan operating while the KOER self-test.orm the KOER self-test. (See <a href="../../../on-board-diagnostic-l8-lf/koeo-koer-self-test-l8-lf/id0102b1801200/#wp1025486">KOEO/KOER SELF TEST [L8, LF]</a>.)</p>
+</li>
+<li>
+<p id="wp1064767">Verify that the DTC P0480, P0481 or P0482 is not shown and cooling fan operating while the KOER self-test.</p>
+</li>
+</ol>
+<p id="wp1064859">• If the DTC P0480 is shown, perform the DTC troubleshooting procedure. (See <a href="../../../on-board-diagnostic-l8-lf/dtc-p0480-l8-lf/id0102b1807400/#wp1025486">DTC P0480 [L8, LF]</a>.) (See <a href="../../../on-board-diagnostic-l8-lf/dtc-p0481-l8-lf/id0102b1815200/#wp1025486">DTC P0481 [L8, LF]</a>.) (See <a href="../../../on-board-diagnostic-l8-lf/dtc-p0482-l8-lf/id0102b1807800/#wp1025486">DTC P0482 [L8, LF]</a>.)
+{: #wp1064810}• If the cooling fans do not operate while KOER self-test, proceed the followings:
+{: #wp1064818}(1) Inspect the cooling fan motor and wiring harness between cooling fan motor and GND.
+{: #wp1064829}(2) Select FAN1, FAN2 and FAN3 PIDs.
+{: #wp1064839}(3) Turn ignition switch off and disconnect the cooling fan motor connector.
+{: #wp1064849}(4) Verify that each cooling fan relay operating sound is heard, when turn each cooing fan relay to on from off using simulation function of FAN1, FAN2 and FAN3 PIDs.</p>
+<p id="wp1064883">• If the operation sound is not heard, inspect for suspected cooling fan relay is stuck open or close.
+{: #wp1064869}• If the operation sound is heard, inspect wiring harness and connector between all cooling fan relays and cooling fan motor.</p>
+<h3 id="if-simulation-function-of-m-mds-is-not-used_1"><strong id="wp1064893">If simulation function of M-MDS is not used:</strong></h3>
+<ol>
+<li>
+<p id="wp1064904">Connect the M-MDS to DLC-2.</p>
+</li>
+<li>
+<p id="wp1064916">Start the engine and warm it up to normal operating temperature.</p>
+</li>
+<li>
+<p id="wp1064926">Perform the KOER self-test. (See <a href="../../../on-board-diagnostic-l8-lf/koeo-koer-self-test-l8-lf/id0102b1801200/#wp1025486">KOEO/KOER SELF TEST [L8, LF]</a>.)</p>
+</li>
+<li>
+<p id="wp1064945">Verify that the DTC P0480, P0481 or P0482 is not shown and cooling fan operating while the KOER self-test.</p>
+</li>
+</ol>
+<p id="wp1065037">• If the DTC P0480 is shown, perform the DTC troubleshooting procedure. (See <a href="../../../on-board-diagnostic-l8-lf/dtc-p0480-l8-lf/id0102b1807400/#wp1025486">DTC P0480 [L8, LF]</a>.) (See <a href="../../../on-board-diagnostic-l8-lf/dtc-p0481-l8-lf/id0102b1815200/#wp1025486">DTC P0481 [L8, LF]</a>.) (See <a href="../../../on-board-diagnostic-l8-lf/dtc-p0482-l8-lf/id0102b1807800/#wp1025486">DTC P0482 [L8, LF]</a>.)
+{: #wp1064988}• If the cooling fans do not operate while KOER self-test, proceed the followings:
+{: #wp1064996}(1) Inspect the cooling fan motor and wiring harness between cooling fan motor and GND.
+{: #wp1065007}(2) Turn the ignition switch to off.
+{: #wp1065017}(3) Disconnect ECT sensor connector.
+{: #wp1065027}(4) Verify that the operation sound heard form all cooling fan relays (No.1, No.2 and No.3), when the ignition switch to ON position.</p>
+<p id="wp1065061">• If the operation sound is not heard, inspect for suspected cooling fan relay is stuck open or close.
+{: #wp1065047}• If the operation sound is heard, inspect wiring harness and connector between all cooling fan relays and cooling fan motor.</p>
+<p id="wp1065081">(5) Turn the ignition switch off and disconnect the ECT sensor connector.
+{: #wp1065071}(6) Reconnect the ECT sensor and clear the DTC from PCM memory using the M-MDS.</p>
+<h2 id="variable-valve-timing-control-system-operation-inspection"><strong id="wp1065092">Variable Valve Timing Control System Operation Inspection</strong></h2>
+<h3 id="if-simulation-function-of-m-mds-is-used_2"><strong id="wp1065102">If simulation function of M-MDS is used:</strong></h3>
+<ol>
+<li>
+<p id="wp1065113">Warm up the engine to normal operating temperature.</p>
+</li>
+<li>
+<p id="wp1065123">Connect the M-MDS to DLC-2.</p>
+</li>
+<li>
+<p id="wp1065135">Start the engine and run it at idle.</p>
+</li>
+<li>
+<p id="wp1065145">Select VT DUTY1 PID.</p>
+</li>
+<li>
+<p id="wp1065155">Increase the oil control valve (OCV) duty value and verify that the engine idles roughly or stalls.</p>
+</li>
+</ol>
+<p id="wp1065179">• If as specified, inspect the timing chain component (valve timing deviation).
+{: #wp1065165}• If not as specified, go to the next step.</p>
+<ol start="6">
+<li>
+<p id="wp1065189">Remove the oil control valve (OCV) with connector is connected.</p>
+</li>
+<li>
+<p id="wp1065199">Turn the ignition switch to the ON position.</p>
+</li>
+<li>
+<p id="wp1065209">Select VT DUTY1 PID.</p>
+</li>
+<li>
+<p id="wp1065219">Increase the oil control valve (OCV) duty value and verify that the spool valve operates in the advance direction.</p>
+</li>
+</ol>
+<p id="wp1065229">• If as specified, inspect the following hydraulic passage for clogging and/or leakage.</p>
+<ul>
+<li id="wp1065271">Oil pressure switch - oil control valve (OCV)
+{: #wp1065245}- Oil control valve (OCV) - camshaft
+{: #wp1065260}- Camshaft internal passage</li>
+</ul>
+<p id="wp1065281">• If not as specified, inspect the following:</p>
+<ul>
+<li id="wp1065305">Oil control valve (OCV) operation
+{: #wp1065291}- Harness and connectors for open or short (Oil control valve (OCV) - PCM terminal 2E)</li>
+</ul>
+<ol start="10">
+<li id="wp1065316">If they are okay, replace the intake camshaft pulley (with a built-in variable valve timing actuator).</li>
+</ol>
+<p><a href="" id="wp1065484"></a></p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

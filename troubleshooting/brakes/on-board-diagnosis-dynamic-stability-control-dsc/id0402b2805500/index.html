@@ -1,0 +1,2856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>On-Board Diagnosis [Dynamic Stability Control (DSC)] - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/engine/node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../left_menu_S07/">Troubleshooting</a> ➭ <a href="../../node_S07_0001/">BRAKES</a> ➭ <a href="./">ON-BOARD DIAGNOSIS [DYNAMIC STABILITY CONTROL (DSC)]</a></p>
+<p><a href="" id="id0402b2805500"></a>ON-BOARD DIAGNOSIS [DYNAMIC STABILITY CONTROL (DSC)]</p>
+<hr />
+<p>id0402b2805500</p>
+<p><a href="" id="id0402b280550001"></a>On-Board Diagnostic (OBD) Test Description</p>
+<p>•  The OBD test inspects the integrity and function of the DSC and outputs the results when requested by the specific tests.</p>
+<p>•  On-board diagnostic test also:</p>
+<p>―  Provides a quick inspection of the DSC usually performed at the start of each diagnostic procedure.</p>
+<p>―  Provides verification after repairs to ensure that no other faults occurred during service.</p>
+<p>•  The OBD test is divided into 3 tests:</p>
+<p>―  Read/clear diagnostic results, PID monitor and record and active command modes.</p>
+<p><a href="" id="id0402b280550002"></a>Read/clear diagnostic results</p>
+<p>•  This function allows you to read or clear DTCs in the DSC HU/CM memory.</p>
+<p><a href="" id="id0402b280550003"></a>PID/Data monitor and record</p>
+<p>•  This function allows you to access certain data values, input signals, calculated values, and system status information.</p>
+<p><a href="" id="id0402b280550004"></a>Active command modes</p>
+<p>•  This function allows you to control devices through the M-MDS.</p>
+<p><a href="" id="id0402b280550005"></a>Reading DTCs Procedure</p>
+<p>1.  Connect the M-MDS to the vehicle DLC-2 connector.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><img alt="" src="../../../../images/amxzzw00002553.png" /> amxzzw00002553</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>2.   After the vehicle is identified, select the following items from the initial screen of the M-MDS.</p>
+<p>•  When using the IDS (laptop PC)</p>
+<p>1.  Select the “Toolbox” tab.</p>
+<p>2.  Select “Self Test”.</p>
+<p>3.  Select “Modules”.</p>
+<p>4.  Select “ABS”.</p>
+<p>•  When using the PDS (Pocket PC)</p>
+<p>1.  Select “Module Tests”.</p>
+<p>2.  Select “ABS”.</p>
+<p>3.  Select “Self Test”.</p>
+<p>3.  Verify the DTC according to the directions on the screen.</p>
+<p>•  If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection.</p>
+<p>4.   After completion of repairs, clear all DTCs stored in the DSC. (See <a href="#id0402b280550006">Clearing DTCs Procedures</a>.)</p>
+<p><a href="" id="id0402b280550006"></a>Clearing DTCs Procedures</p>
+<p>1.  Connect the M-MDS to the vehicle DLC-2 connector.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><img alt="" src="../../../../images/amxzzw00002553.png" /> amxzzw00002553</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>2.  After the vehicle is identified, select the following items from the initial screen of the M-MDS.</p>
+<p>•  When using the IDS (laptop PC)</p>
+<p>1.  Select the “Toolbox” tab.</p>
+<p>2.  Select “Self Test”.</p>
+<p>3.  Select “Modules”.</p>
+<p>4.  Select “ABS”.</p>
+<p>•  When using the PDS (Pocket PC)</p>
+<p>1.  Select “Module Tests”.</p>
+<p>2.  Select “ABS”.</p>
+<p>3.  Select “Self Test”.</p>
+<p>3.  Verify the DTC according to the directions on the screen.</p>
+<p>4.  Press the clear button on the DTC screen to clear the DTC.</p>
+<p>5.  Verify that no DTCs are displayed.</p>
+<p><a href="" id="id0402b280550007"></a>PID/Data Monitor and Record Procedure</p>
+<p>1.  Connect the M-MDS to the vehicle DLC-2 connector.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><img alt="" src="../../../../images/amxzzw00002553.png" /> amxzzw00002553</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>2.  After the vehicle is identified, select the following items from the initial screen of the M-MDS.</p>
+<p>•  When using the IDS (laptop PC)</p>
+<p>1.  Select the “Toolbox” tab.</p>
+<p>2.  Select “DataLogger”.</p>
+<p>3.  Select “Modules”.</p>
+<p>4.  Select “ABS”.</p>
+<p>•  When using the PDS (Pocket PC)</p>
+<p>1.  Select “Module Tests”.</p>
+<p>2.  Select “ABS”.</p>
+<p>3.  Select “DataLogger”.</p>
+<p>3.  Select the applicable PID from the PID table.</p>
+<p>4.  Verify the PID data according to the directions on the screen.</p>
+<p>Note•   The PID/Data monitor function is used for monitoring the calculated value. Therefore, if the monitored value of the output parts is not within the specification, inspection of the monitored value of input parts corresponding to applicable output part control is necessary. In addition, because the system does not display output part malfunction as abnormality in the monitored value, it is necessary to inspect the output part individually using a active command modes function.</p>
+<p><a href="" id="id0402b280550008"></a>Active Command Modes Procedure</p>
+<p>1.  Connect the M-MDS to the vehicle DLC-2 connector.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><img alt="" src="../../../../images/amxzzw00002553.png" /> amxzzw00002553</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>2.  After the vehicle is identified, select the following items from the initial screen of the M-MDS.</p>
+<p>•  When using the IDS (laptop PC)</p>
+<p>1.  Select the “Toolbox” tab.</p>
+<p>2.  Select “DataLogger”.</p>
+<p>3.  Select “Modules”.</p>
+<p>4.  Select “ABS”.</p>
+<p>•  When using the PDS (Pocket PC)</p>
+<p>1.  Select “Module Tests”.</p>
+<p>2.  Select “ABS”.</p>
+<p>3.  Select “DataLogger”.</p>
+<p>3.  Select the active command modes from the PID table.</p>
+<p>4.  Perform the active command modes, inspect the operations for each parts.</p>
+<p>•  If there is no operation sound from the relay, motor, and solenoid after the active command mode inspection is performed, it is possible that there is an open or short circuit in the wiring harness, relay, motor or solenoid, or sticking and operation malfunction.</p>
+<p><a href="" id="id0402b280550009"></a>DTC Table</p>
+<table>
+<thead>
+<tr>
+<th>
+<p>DTC</p>
+</th>
+<th>
+<p>System malfunction location</p>
+</th>
+<th>
+<p>Page</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>M-MDS</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>B1317</p>
+</td>
+<td>
+<p>Power supply system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-b1317-b1318-dynamic-stability-control/id0402b2800300/">DTC B1317, B1318 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B1318</p>
+</td>
+<td>
+<p>Power supply system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-b1317-b1318-dynamic-stability-control/id0402b2800300/">DTC B1317, B1318 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B1342</p>
+</td>
+<td>
+<p>DSC HU/CM system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-b1342-c1730-dynamic-stability-control/id0402b2800400/">DTC B1342, C1730 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B1484</p>
+</td>
+<td>
+<p>Brake switch system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-b1484-c1954-dynamic-stability-control/id0402b2800500/">DTC B1484, C1954 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B2477</p>
+</td>
+<td>
+<p>DSC HU/CM configuration</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-b2477-dynamic-stability-control/id0402b2805600/">DTC B2477 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1093</p>
+</td>
+<td>
+<p>DSC OFF switch system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1093-dynamic-stability-control/id0402b2800700/">DTC C1093 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1095</p>
+</td>
+<td>
+<p>Pump motor, motor relay system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1095-c1096-dynamic-stability-control/id0402b2805900/">DTC C1095, C1096 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1096</p>
+</td>
+<td>
+<p>Pump motor, motor relay system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1095-c1096-dynamic-stability-control/id0402b2805900/">DTC C1095, C1096 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1134</p>
+</td>
+<td>
+<p>PCM communication system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1134-dynamic-stability-control/id0402b2800900/">DTC C1134 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1141</p>
+</td>
+<td>
+<p>LF ABS sensor rotor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-dynamic-stability-control/id0402b2801000/">DTC C1141, C1142, C1143, C1144 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1142</p>
+</td>
+<td>
+<p>RF ABS sensor rotor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-dynamic-stability-control/id0402b2801000/">DTC C1141, C1142, C1143, C1144 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1143</p>
+</td>
+<td>
+<p>LR ABS sensor rotor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-dynamic-stability-control/id0402b2801000/">DTC C1141, C1142, C1143, C1144 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1144</p>
+</td>
+<td>
+<p>RR ABS sensor rotor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-dynamic-stability-control/id0402b2801000/">DTC C1141, C1142, C1143, C1144 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1145</p>
+</td>
+<td>
+<p>RF ABS wheel-speed sensor (open circuit) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-dynamic-stability-control/id0402b2801100/">DTC C1145, C1155, C1165, C1175 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1148</p>
+</td>
+<td>
+<p>RF ABS wheel-speed sensor/ABS sensor rotor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-dynamic-stability-control/id0402b2801200/">DTC C1148, C1158, C1168, C1178 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1155</p>
+</td>
+<td>
+<p>LF ABS wheel-speed sensor (open circuit) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-dynamic-stability-control/id0402b2801100/">DTC C1145, C1155, C1165, C1175 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1158</p>
+</td>
+<td>
+<p>LF ABS wheel-speed sensor/ABS sensor rotor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-dynamic-stability-control/id0402b2801200/">DTC C1148, C1158, C1168, C1178 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1165</p>
+</td>
+<td>
+<p>RR ABS wheel-speed sensor (open circuit) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-dynamic-stability-control/id0402b2801100/">DTC C1145, C1155, C1165, C1175 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1168</p>
+</td>
+<td>
+<p>RR ABS wheel-speed sensor/ABS sensor rotor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-dynamic-stability-control/id0402b2801200/">DTC C1148, C1158, C1168, C1178 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1175</p>
+</td>
+<td>
+<p>LR ABS wheel-speed sensor (open circuit) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-dynamic-stability-control/id0402b2801100/">DTC C1145, C1155, C1165, C1175 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1178</p>
+</td>
+<td>
+<p>LR ABS wheel-speed sensor/ABS sensor rotor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-dynamic-stability-control/id0402b2801200/">DTC C1148, C1158, C1168, C1178 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1186</p>
+</td>
+<td>
+<p>Valve relay system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1186-c1266-dynamic-stability-control/id0402b2806100/">DTC C1186, C1266 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1194</p>
+</td>
+<td>
+<p>LF outlet solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1198</p>
+</td>
+<td>
+<p>LF inlet solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1210</p>
+</td>
+<td>
+<p>RF outlet solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1214</p>
+</td>
+<td>
+<p>RF inlet solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1222</p>
+</td>
+<td>
+<p>ABS wheel-speed sensor (slip monitor) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1222-dynamic-stability-control/id0402b2801500/">DTC C1222 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1233</p>
+</td>
+<td>
+<p>LF ABS wheel-speed sensor (short to ground) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-dynamic-stability-control/id0402b2805800/">DTC C1233, C1234, C1235, C1236 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1234</p>
+</td>
+<td>
+<p>RF ABS wheel-speed sensor (short to ground) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-dynamic-stability-control/id0402b2805800/">DTC C1233, C1234, C1235, C1236 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1235</p>
+</td>
+<td>
+<p>RR ABS wheel-speed sensor (short to ground) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-dynamic-stability-control/id0402b2805800/">DTC C1233, C1234, C1235, C1236 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1236</p>
+</td>
+<td>
+<p>LR ABS wheel-speed sensor (short to ground) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-dynamic-stability-control/id0402b2805800/">DTC C1233, C1234, C1235, C1236 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1242</p>
+</td>
+<td>
+<p>LR outlet solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1246</p>
+</td>
+<td>
+<p>RR outlet solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1250</p>
+</td>
+<td>
+<p>LR inlet solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1254</p>
+</td>
+<td>
+<p>RR inlet solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1266</p>
+</td>
+<td>
+<p>Valve relay system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1186-c1266-dynamic-stability-control/id0402b2806100/">DTC C1186, C1266 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1279</p>
+</td>
+<td>
+<p>Combined sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1279-c1280-c1281-c1282-c1951-c1952-c1959-c2768-dynamic-stability-control/id0402b2801700/">DTC C1279, C1280, C1281, C1282, C1951, C1952, C1959, C2768 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1280</p>
+</td>
+<td>
+<p>Combined sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1279-c1280-c1281-c1282-c1951-c1952-c1959-c2768-dynamic-stability-control/id0402b2801700/">DTC C1279, C1280, C1281, C1282, C1951, C1952, C1959, C2768 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1281</p>
+</td>
+<td>
+<p>Combined sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1279-c1280-c1281-c1282-c1951-c1952-c1959-c2768-dynamic-stability-control/id0402b2801700/">DTC C1279, C1280, C1281, C1282, C1951, C1952, C1959, C2768 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1282</p>
+</td>
+<td>
+<p>Combined sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1279-c1280-c1281-c1282-c1951-c1952-c1959-c2768-dynamic-stability-control/id0402b2801700/">DTC C1279, C1280, C1281, C1282, C1951, C1952, C1959, C2768 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1288</p>
+</td>
+<td>
+<p>Brake fluid pressure sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1288-c1290-c1953-dynamic-stability-control/id0402b2801800/">DTC C1288, C1290, C1953 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1290</p>
+</td>
+<td>
+<p>Brake fluid pressure sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1288-c1290-c1953-dynamic-stability-control/id0402b2801800/">DTC C1288, C1290, C1953 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1295</p>
+</td>
+<td>
+<p>Steering angle sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1295-c1307-c1937-c1938-c1956-dynamic-stability-control/id0402b2801900/">DTC C1295, C1307, C1937, C1938, C1956 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1306</p>
+</td>
+<td>
+<p>Steering angle sensor (abnormal initialization) system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1306-dynamic-stability-control/id0402b2802000/">DTC C1306 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1307</p>
+</td>
+<td>
+<p>Steering angle sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1295-c1307-c1937-c1938-c1956-dynamic-stability-control/id0402b2801900/">DTC C1295, C1307, C1937, C1938, C1956 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1400</p>
+</td>
+<td>
+<p>RF traction control solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1410</p>
+</td>
+<td>
+<p>LF traction control solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1730</p>
+</td>
+<td>
+<p>DSC HU/CM system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-b1342-c1730-dynamic-stability-control/id0402b2800400/">DTC B1342, C1730 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1805</p>
+</td>
+<td>
+<p>Incorrect DSC HU/CM installed</p>
+</td>
+<td>
+<p>(See<a href="../../dtc-c1805-dynamic-stability-control/id0402b2802100/">DTC C1805 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1937</p>
+</td>
+<td>
+<p>Steering angle sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1295-c1307-c1937-c1938-c1956-dynamic-stability-control/id0402b2801900/">DTC C1295, C1307, C1937, C1938, C1956 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1938</p>
+</td>
+<td>
+<p>Steering angle sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1295-c1307-c1937-c1938-c1956-dynamic-stability-control/id0402b2801900/">DTC C1295, C1307, C1937, C1938, C1956 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1951</p>
+</td>
+<td>
+<p>Combined sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1279-c1280-c1281-c1282-c1951-c1952-c1959-c2768-dynamic-stability-control/id0402b2801700/">DTC C1279, C1280, C1281, C1282, C1951, C1952, C1959, C2768 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1952</p>
+</td>
+<td>
+<p>Combined sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1279-c1280-c1281-c1282-c1951-c1952-c1959-c2768-dynamic-stability-control/id0402b2801700/">DTC C1279, C1280, C1281, C1282, C1951, C1952, C1959, C2768 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1953</p>
+</td>
+<td>
+<p>Brake fluid pressure sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1288-c1290-c1953-dynamic-stability-control/id0402b2801800/">DTC C1288, C1290, C1953 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1954</p>
+</td>
+<td>
+<p>Brake switch system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-b1484-c1954-dynamic-stability-control/id0402b2800500/">DTC B1484, C1954 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1956</p>
+</td>
+<td>
+<p>Steering angle sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1295-c1307-c1937-c1938-c1956-dynamic-stability-control/id0402b2801900/">DTC C1295, C1307, C1937, C1938, C1956 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1957</p>
+</td>
+<td>
+<p>RF DSC switch solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1958</p>
+</td>
+<td>
+<p>LF DSC switch solenoid valve system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-c1400-c1410-c1957-c1958-dynamic-stability-control/id0402b2801400/">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254, C1400, C1410, C1957, C1958 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1959</p>
+</td>
+<td>
+<p>Combined sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1279-c1280-c1281-c1282-c1951-c1952-c1959-c2768-dynamic-stability-control/id0402b2801700/">DTC C1279, C1280, C1281, C1282, C1951, C1952, C1959, C2768 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1994</p>
+</td>
+<td>
+<p>DSC control system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1994-dynamic-stability-control/id0402b2802200/">DTC C1994 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C2768</p>
+</td>
+<td>
+<p>Combined sensor system</p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1279-c1280-c1281-c1282-c1951-c1952-c1959-c2768-dynamic-stability-control/id0402b2801700/">DTC C1279, C1280, C1281, C1282, C1951, C1952, C1959, C2768 [DYNAMIC STABILITY CONTROL (DSC)]</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0073</p>
+</td>
+<td>
+<p>CAN system communication error</p>
+</td>
+<td>
+<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/">MULTIPLEX COMMUNICATION SYSTEM</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0100</p>
+</td>
+<td>
+<p>Communication error to PCM</p>
+</td>
+<td>
+<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/">MULTIPLEX COMMUNICATION SYSTEM</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0155</p>
+</td>
+<td>
+<p>Communication error to instrument cluster</p>
+</td>
+<td>
+<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/">MULTIPLEX COMMUNICATION SYSTEM</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U1900</p>
+</td>
+<td>
+<p>Communication error to other module</p>
+</td>
+<td>
+<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/">MULTIPLEX COMMUNICATION SYSTEM</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U2023</p>
+</td>
+<td>
+<p>Abnormal message from PCM</p>
+</td>
+<td>
+<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/">MULTIPLEX COMMUNICATION SYSTEM</a>.)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="" id="id0402b280550010"></a>PID/DATA Monitor Table</p>
+<table>
+<thead>
+<tr>
+<th>
+<p>PID name  (definition)</p>
+</th>
+<th>
+<p>Unit/Condition</p>
+</th>
+<th>
+<p>Operation condition (reference)</p>
+</th>
+<th>
+<p>Action</p>
+</th>
+<th>
+<p>DSC HU/CM terminal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>ABS_VOLT  (System battery voltage value)</p>
+</td>
+<td>
+<p>V</p>
+</td>
+<td>
+<p>•  Ignition switch at ON: Approx. 12.2 V  •  Idling: Approx. 14.1 V</p>
+</td>
+<td>
+<p>Inspect power supply circuit.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-system-inspection/id041500800700/">DSC SYSTEM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>J</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSLF_I  (Left front inlet solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSLF_O  (Left front outlet solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSLR_I  (Left rear inlet solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSLR_O  (Left rear outlet solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSPMPRLY  (Motor relay output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Relay activated: On  •  Relay not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSRF_I  (Right front inlet solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSRF_O  (Right front outlet solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSRR_I  (Right rear inlet solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSRR_O  (Right rear outlet solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ABSVLVRLY  (Fail-safe relay output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Fail-safe relay is activated: On  •  Fail-safe relay is deactivated: Off</p>
+</td>
+<td>
+<p>Inspect DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>BOO_ABS  (Brake pedal switch input)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Brake pedal depressed: On  •  Brake pedal released: Off</p>
+</td>
+<td>
+<p>Inspect the brake switch.</p>
+</td>
+<td>
+<p>N</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CCNTABS  (Number of continuous codes)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+<td>
+<p>•  DTCs detected: 1—255  •  No DTCs detected: 0</p>
+</td>
+<td>
+<p>Perform the DTC inspection.</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LAT_ACCL</p>
+</td>
+<td>
+<p>G</p>
+</td>
+<td>
+<p>•  Vehicle stopped or driving at constant speed: 0 G  •  Cornering to right: Changes 0 G—positive  •  Cornering to left: Changes 0 G—negative</p>
+</td>
+<td>
+<p>Inspect the combined sensor.</p>
+</td>
+<td>
+<p>AI</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LF_WSPD  (Left front ABS wheel-speed sensor input)</p>
+</td>
+<td>
+<p>KPH, MPH</p>
+</td>
+<td>
+<p>•  Vehicle stopped: 0 KPH, 0 MPH  •  Vehicle running: vehicle speed</p>
+</td>
+<td>
+<p>Inspect the ABS wheel-speed sensor.</p>
+</td>
+<td>
+<p>F, E</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LR_WSPD  (Left rear ABS wheel-speed sensor input)</p>
+</td>
+<td>
+<p>KPH, MPH</p>
+</td>
+<td>
+<p>•  Vehicle stopped: 0 KPH, 0 MPH  •  Vehicle running: Vehicle speed</p>
+</td>
+<td>
+<p>Inspect the ABS wheel-speed sensor.</p>
+</td>
+<td>
+<p>G, H</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MCYLI P</p>
+</td>
+<td>
+<p>Pa, psi</p>
+</td>
+<td>
+<p>•  Brake pedal depressed: Changes according to the brake fluid pressure</p>
+</td>
+<td>
+<p>Inspect the brake fluid pressure sensor.</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PMP_MOTOR  (Pump motor output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Pump motor activated: On  •  Pump motor not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RF_WSPD  (Right front ABS wheel-speed sensor input)</p>
+</td>
+<td>
+<p>KPH, MPH</p>
+</td>
+<td>
+<p>•  Vehicle stopped: 0 KPH, 0 MPH  •  Vehicle running: vehicle speed</p>
+</td>
+<td>
+<p>Inspect the ABS wheel-speed sensor.</p>
+</td>
+<td>
+<p>M, O</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RPM  (Engine speed signal input)</p>
+</td>
+<td>
+<p>RPM</p>
+</td>
+<td>
+<p>•  Engine stopped: 0 RPM  •  Engine speed at 3,000 rpm: 3,000 RPM</p>
+</td>
+<td>
+<p>Inspect the PCM.  Inspect the instrument cluster.</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RR_WSPD  (Right rear ABS wheel-speed sensor input)</p>
+</td>
+<td>
+<p>KPH, MPH</p>
+</td>
+<td>
+<p>•  Vehicle stopped: 0 KPH, 0 MPH  •  Vehicle running: Vehicle speed</p>
+</td>
+<td>
+<p>Inspect the ABS wheel-speed sensor.</p>
+</td>
+<td>
+<p>I, L</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SWA_POS</p>
+</td>
+<td>
+<p>°</p>
+</td>
+<td>
+<p>•  Steering wheel in neutral position (not turned): 0°  •  Steering wheel turned to left: Changes 0°—negative  •  Steering wheel turned to right: Changes 0°—positive</p>
+</td>
+<td>
+<p>Inspect the steering angle sensor.</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TPI</p>
+</td>
+<td>
+<p>%</p>
+</td>
+<td>
+<p>•  Closed throttle position: 0%  •  Wide open throttle: Changes according to throttle valve opening angle</p>
+</td>
+<td>
+<p>Inspect the throttle position sensor.</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>V_STB_L  (LF stability control solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>V_STB_R  (RF stability control solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>V_TRC_L  (LF traction control solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>V_TRC_R  (RF traction control solenoid valve output state)</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td>
+<p>•  Solenoid valve activated: On  •  Solenoid valve not activated: Off</p>
+</td>
+<td>
+<p>Inspect the DSC HU/CM.  (See <a href="../../../../workshop-manual/brakes/dynamic-stability-control/dsc-hu-cm-inspection/id041500801100/">DSC HU/CM INSPECTION</a>.)</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>YAW_RATE</p>
+</td>
+<td>
+<p>°/s</p>
+</td>
+<td>
+<p>•  Vehicle stopped or driving straight: 0 °/s  •  Cornering to left: Changes 0 °/s—negative  •  Cornering to right: Changes 0 °/s—positive</p>
+</td>
+<td>
+<p>Inspect the combined sensor.</p>
+</td>
+<td>
+<p>AA</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="" id="id0402b280550011"></a>Active Command Modes Table</p>
+<table>
+<thead>
+<tr>
+<th>
+<p>Command name</p>
+</th>
+<th>
+<p>Output part</p>
+</th>
+<th>
+<p>Operation</p>
+</th>
+<th>
+<p>Operating condition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>LATACCEL</p>
+</td>
+<td>
+<p>Combined sensor (lateral acceleration) initialization</p>
+</td>
+<td>
+<p>FALSE/TRUE</p>
+</td>
+<td>
+<p>Ignition switch at ON</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LF_INLET</p>
+</td>
+<td>
+<p>LF inlet solenoid valve</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>LF_OUTLET</p>
+</td>
+<td>
+<p>LF outlet solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>LR_INLET</p>
+</td>
+<td>
+<p>LR inlet solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>LR_OUTLET</p>
+</td>
+<td>
+<p>LR outlet solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>PMP_MOTOR</p>
+</td>
+<td>
+<p>Pump motor</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>RF_INLET</p>
+</td>
+<td>
+<p>RF inlet solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>RF_OUTLET</p>
+</td>
+<td>
+<p>RF outlet solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>RR_INLET</p>
+</td>
+<td>
+<p>RR inlet solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>RR_OUTLET</p>
+</td>
+<td>
+<p>RR outlet solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>SAS_CAL</p>
+</td>
+<td>
+<p>Steering angle sensor initialization</p>
+</td>
+<td>
+<p>FALSE/TRUE</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>STAB_IND</p>
+</td>
+<td>
+<p>DSC indicator light</p>
+</td>
+<td>
+<p>On/Off</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>TRAC OFF</p>
+</td>
+<td>
+<p>DSC OFF light</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>V_STB_L</p>
+</td>
+<td>
+<p>LF stability control solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>V_STB_R</p>
+</td>
+<td>
+<p>RF stability control solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>V_TRC_L</p>
+</td>
+<td>
+<p>LF traction control solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>V_TRC_R</p>
+</td>
+<td>
+<p>RF traction control solenoid valve</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>YAWRATE</p>
+</td>
+<td>
+<p>Combined sensor (yaw rate) initialization</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

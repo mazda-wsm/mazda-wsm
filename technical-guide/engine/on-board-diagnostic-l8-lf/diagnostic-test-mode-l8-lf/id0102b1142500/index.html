@@ -1,0 +1,4248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Diagnostic Test Mode [L8, LF] - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../../left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0002/">ENGINE</a> ➭ <a href="../../node_S02_0004/">ON-BOARD DIAGNOSTIC[L8, LF]</a> ➭ <a href="./">DIAGNOSTIC TEST MODE [L8, LF]</a></p>
+<p><a href="" id="id0102b1142500"></a>DIAGNOSTIC TEST MODE [L8, LF]</p>
+<hr />
+<p>id0102b1142500</p>
+<p>•  To meet EOBD regulations, the following diagnostic test modes have been adopted.</p>
+<table>
+<thead>
+<tr>
+<th>
+<p>Diagnostic test mode</p>
+</th>
+<th>
+<p>Item</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Mode 01</p>
+</td>
+<td>
+<p>Sending diagnostic data (PID data monitor/On-board system readiness test)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mode 02</p>
+</td>
+<td>
+<p>Sending freeze frame data</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mode 03</p>
+</td>
+<td>
+<p>Sending emission-related malfunction code (DTC)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mode 04</p>
+</td>
+<td>
+<p>Clearing/resetting emission-related malfunction information</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mode 06</p>
+</td>
+<td>
+<p>Sending intermittent monitoring system test results (DMTR)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mode 07</p>
+</td>
+<td>
+<p>Sending continuous monitoring system test results (pending code)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mode 09</p>
+</td>
+<td>
+<p>Request vehicle information</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="" id="c3u010200102s020001"></a>Sending Diagnostic Data</p>
+<p><a href="" id="c3u010200102s020002"></a>PID data monitor</p>
+<p>•  The PID data monitor items are shown below.</p>
+<p>PID data monitor table</p>
+<table>
+<thead>
+<tr>
+<th>
+<p>Full names</p>
+</th>
+<th colspan="2">
+<p>Unit</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Fuel system loop status</p>
+</td>
+<td colspan="2">
+<p>Refer to list below.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LOAD</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ECT</p>
+</td>
+<td>
+<p>°C</p>
+</td>
+<td>
+<p>°F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Short term fuel trim</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Long term fuel trim</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MAP</p>
+</td>
+<td colspan="2">
+<p>kPa</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Engine speed</p>
+</td>
+<td colspan="2">
+<p>rpm</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Vehicle speed</p>
+</td>
+<td>
+<p>km/h</p>
+</td>
+<td>
+<p>mph</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Spark advance</p>
+</td>
+<td colspan="2">
+<p>°</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IAT</p>
+</td>
+<td>
+<p>°C</p>
+</td>
+<td>
+<p>°F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MAF</p>
+</td>
+<td colspan="2">
+<p>g/s</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Absolute TP</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>A/F sensor, HO2S location</p>
+</td>
+<td colspan="2">
+<p>No unit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Input voltage from HO2S</p>
+</td>
+<td colspan="2">
+<p>V</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Short term fuel trim associated with HO2S</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>OBD requirement according to vehicle design</p>
+</td>
+<td colspan="2">
+<p>No unit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Time since engine start</p>
+</td>
+<td colspan="2">
+<p>s</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Distance travelled while MIL is activated</p>
+</td>
+<td>
+<p>km</p>
+</td>
+<td>
+<p>miles</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>EGR valve control signal</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Purge solenoid valve control signal</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Number of warm‐ups since DTCs cleared</p>
+</td>
+<td colspan="2">
+<p>No unit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Distance travelled since DTCs cleared</p>
+</td>
+<td>
+<p>km</p>
+</td>
+<td>
+<p>miles</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Barometric pressure</p>
+</td>
+<td colspan="2">
+<p>kPa</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lambda</p>
+</td>
+<td colspan="2">
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>A/F sensor output current</p>
+</td>
+<td colspan="2">
+<p>mA</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Estimated catalyst converter temperature</p>
+</td>
+<td>
+<p>°C</p>
+</td>
+<td>
+<p>°F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCM voltage</p>
+</td>
+<td colspan="2">
+<p>V</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Absolute load value</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Theoretical air/fuel ratio coefficient to calculate target air/fuel ratio</p>
+</td>
+<td colspan="2">
+<p>No unit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Relative TP</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TP from TP sensor No.2</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>APP from APP sensor No.1</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>APP from APP sensor No.2</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Throttle actuator control signal</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Meaning of fuel system loop status</p>
+<p>•  The following information is displayed on the tester.</p>
+<p>―  Feedback stops: ECT is lower than the determined feedback zone.</p>
+<p>―  Feedback operating: A/F sensor, HO2S being used for feedback is normal.</p>
+<p>―  Feedback stops: Open loop due to driving condition</p>
+<p>―  Feedback stops: Open loop due to detected system fault</p>
+<p>―  Feedback operating: Malfunction occurred in HO2S system</p>
+<p><a href="" id="c3u010200102s020003"></a>On-board system readiness test</p>
+<p>•  The items supported by the on-board system readiness test are shown below.</p>
+<p>Continuous monitoring system</p>
+<p>―  A/F sensor heater</p>
+<p>―  HO2S heater</p>
+<p>―  A/F sensor</p>
+<p>―  HO2S</p>
+<p>―  Fuel system</p>
+<p>―  Misfire</p>
+<p>―  CCM</p>
+<p>Intermittent monitoring system</p>
+<p>―  A/F sensor heater</p>
+<p>―  HO2S heater</p>
+<p>―  A/F sensor</p>
+<p>―  HO2S</p>
+<p>―  Catalyst</p>
+<p>―  Engine cooling system</p>
+<p><a href="" id="c3u010200102s020004"></a>Sending Freeze Frame Data</p>
+<p>•  The Freeze Frame Data monitor items are shown below.</p>
+<p>Freeze frame data monitor table</p>
+<table>
+<thead>
+<tr>
+<th>
+<p>Full names</p>
+</th>
+<th colspan="2">
+<p>Unit</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>DTC that caused required Freeze Frame Data storage</p>
+</td>
+<td colspan="2">
+<p>No unit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fuel system loop status</p>
+</td>
+<td colspan="2">
+<p>Refer to list below.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LOAD</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ECT</p>
+</td>
+<td>
+<p>°C</p>
+</td>
+<td>
+<p>°F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Short term fuel trim</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Long term fuel trim</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MAP</p>
+</td>
+<td colspan="2">
+<p>kPa</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Engine speed</p>
+</td>
+<td colspan="2">
+<p>rpm</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Vehicle speed</p>
+</td>
+<td>
+<p>km/h</p>
+</td>
+<td>
+<p>mph</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Spark advance</p>
+</td>
+<td colspan="2">
+<p>°</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IAT</p>
+</td>
+<td>
+<p>°C</p>
+</td>
+<td>
+<p>°F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MAF</p>
+</td>
+<td colspan="2">
+<p>g/s</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Absolute TP</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Time since engine start</p>
+</td>
+<td colspan="2">
+<p>s</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>EGR valve control signal</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Purge solenoid valve control signal</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Number of warm‐ups since DTCs cleared</p>
+</td>
+<td colspan="2">
+<p>No unit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Distance travelled since DTCs cleared</p>
+</td>
+<td>
+<p>km</p>
+</td>
+<td>
+<p>miles</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Barometric pressure</p>
+</td>
+<td colspan="2">
+<p>kPa</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Estimated catalyst converter temperature</p>
+</td>
+<td>
+<p>°C</p>
+</td>
+<td>
+<p>°F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCM voltage</p>
+</td>
+<td colspan="2">
+<p>V</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Absolute load value</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Theoretical air/fuel ratio coefficient to calculate target air/fuel ratio</p>
+</td>
+<td colspan="2">
+<p>No unit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Relative TP</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TP from TP sensor No.2</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>APP from APP sensor No.1</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>APP from APP sensor No.2</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Throttle actuator control signal</p>
+</td>
+<td colspan="2">
+<p>%</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Meaning of fuel system loop status</p>
+<p>•  The following information is displayed on the tester.</p>
+<p>―  Feedback stops: ECT is lower than the determined feedback zone.</p>
+<p>―  Feedback operating: A/F sensor, HO2S being used for feedback is normal.</p>
+<p>―  Feedback stops: Open loop due to driving condition</p>
+<p>―  Feedback stops: Open loop due to detected system fault</p>
+<p>―  Feedback operating: Malfunction occurred in HO2S system</p>
+<p><a href="" id="c3u010200102s020005"></a>Sending Emission-related Malfunction Code</p>
+<p>•  The DTCs are shown below.</p>
+<p>×: Applicable</p>
+<p>—: Not applicable</p>
+<table>
+<thead>
+<tr>
+<th>
+<p>DTC No.</p>
+</th>
+<th>
+<p>Condition</p>
+</th>
+<th>
+<p>MIL</p>
+</th>
+<th>
+<p>DC</p>
+</th>
+<th>
+<p>Monitor item</p>
+</th>
+<th>
+<p>Self-test type*1</p>
+</th>
+<th>
+<p>Memory function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>B1342</p>
+</td>
+<td>
+<p>PCM malfunction</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>—</p>
+</td>
+<td>
+<p>—</p>
+</td>
+<td>
+<p>C, O</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0011*2</p>
+</td>
+<td>
+<p>CMP timing over-advanced</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0012*2</p>
+</td>
+<td>
+<p>CMP timing over-retarded</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0030</p>
+</td>
+<td>
+<p>A/F sensor heater control circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor heater, HO2S heater</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0031</p>
+</td>
+<td>
+<p>A/F sensor heater circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor heater, HO2S heater</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0032</p>
+</td>
+<td>
+<p>A/F sensor heater circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor heater, HO2S heater</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0037</p>
+</td>
+<td>
+<p>HO2S heater circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor heater, HO2S heater</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0038</p>
+</td>
+<td>
+<p>HO2S heater circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor heater, HO2S heater</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0069</p>
+</td>
+<td>
+<p>Manifold absolute pressure/atmospheric pressure correlation</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0101</p>
+</td>
+<td>
+<p>MAF sensor circuit range/performance problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0102</p>
+</td>
+<td>
+<p>MAF sensor circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0103</p>
+</td>
+<td>
+<p>MAF sensor circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0107</p>
+</td>
+<td>
+<p>MAP sensor circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0108</p>
+</td>
+<td>
+<p>MAP sensor circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0111</p>
+</td>
+<td>
+<p>IAT sensor circuit range/performance problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0112</p>
+</td>
+<td>
+<p>IAT sensor circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0113</p>
+</td>
+<td>
+<p>IAT sensor circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0117</p>
+</td>
+<td>
+<p>ECT sensor circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Engine cooling system</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0118</p>
+</td>
+<td>
+<p>ECT sensor circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Engine cooling system</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0122</p>
+</td>
+<td>
+<p>TP sensor No.1 circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0123</p>
+</td>
+<td>
+<p>TP sensor No.1 circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0125</p>
+</td>
+<td>
+<p>Excessive time to enter closed loop fuel control</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Engine cooling system</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0130</p>
+</td>
+<td>
+<p>A/F sensor circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor, HO2S</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0131</p>
+</td>
+<td>
+<p>A/F sensor circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor, HO2S</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0132</p>
+</td>
+<td>
+<p>A/F sensor circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor, HO2S</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0133</p>
+</td>
+<td>
+<p>A/F sensor circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor, HO2S</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0134</p>
+</td>
+<td>
+<p>A/F sensor no activity detected</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor, HO2S</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0138</p>
+</td>
+<td>
+<p>HO2S circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor, HO2S</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0140</p>
+</td>
+<td>
+<p>HO2S no activity detected</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor, HO2S</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0222</p>
+</td>
+<td>
+<p>TP sensor No.2 circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0223</p>
+</td>
+<td>
+<p>TP sensor No.2 circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0300</p>
+</td>
+<td>
+<p>Random misfire detected</p>
+</td>
+<td>
+<p>Flash/ON</p>
+</td>
+<td>
+<p>1 or 2</p>
+</td>
+<td>
+<p>Misfire</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0301</p>
+</td>
+<td>
+<p>Cylinder No.1 misfire detected</p>
+</td>
+<td>
+<p>Flash/ON</p>
+</td>
+<td>
+<p>1 or 2</p>
+</td>
+<td>
+<p>Misfire</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0302</p>
+</td>
+<td>
+<p>Cylinder No.2 misfire detected</p>
+</td>
+<td>
+<p>Flash/ON</p>
+</td>
+<td>
+<p>1 or 2</p>
+</td>
+<td>
+<p>Misfire</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0303</p>
+</td>
+<td>
+<p>Cylinder No.3 misfire detected</p>
+</td>
+<td>
+<p>Flash/ON</p>
+</td>
+<td>
+<p>1 or 2</p>
+</td>
+<td>
+<p>Misfire</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0304</p>
+</td>
+<td>
+<p>Cylinder No.4 misfire detected</p>
+</td>
+<td>
+<p>Flash/ON</p>
+</td>
+<td>
+<p>1 or 2</p>
+</td>
+<td>
+<p>Misfire</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0327</p>
+</td>
+<td>
+<p>KS circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0328</p>
+</td>
+<td>
+<p>KS circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0335</p>
+</td>
+<td>
+<p>CKP sensor circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0340</p>
+</td>
+<td>
+<p>CMP sensor circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0403</p>
+</td>
+<td>
+<p>EGR valve (stepping motor) circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0421</p>
+</td>
+<td>
+<p>Warm up catalyst system efficiency below threshold</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Catalyst</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0443</p>
+</td>
+<td>
+<p>Purge solenoid valve circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0480</p>
+</td>
+<td>
+<p>Cooling fan relay No.1 control circuit malfunction</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0481</p>
+</td>
+<td>
+<p>Cooling fan relay No.2 control circuit malfunction</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0482</p>
+</td>
+<td>
+<p>Cooling fan relay No.3 control circuit malfunction</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0500</p>
+</td>
+<td>
+<p>VSS circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0505</p>
+</td>
+<td>
+<p>Idle speed control system problem</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>—</p>
+</td>
+<td>
+<p>—</p>
+</td>
+<td>
+<p>R</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0506</p>
+</td>
+<td>
+<p>Idle speed control system RPM lower than expected</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0507</p>
+</td>
+<td>
+<p>Idle speed control system RPM higher than expected</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0550</p>
+</td>
+<td>
+<p>PSP switch circuit malfunction</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0564*5</p>
+</td>
+<td>
+<p>Cruise control switch circuit malfunction</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0571*5</p>
+</td>
+<td>
+<p>Brake switch circuit problem</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0601</p>
+</td>
+<td>
+<p>PCM memory check sum error</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0602</p>
+</td>
+<td>
+<p>PCM programming error</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0604</p>
+</td>
+<td>
+<p>PCM random access memory (RAM) error</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0606</p>
+</td>
+<td>
+<p>PCM processor</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0610</p>
+</td>
+<td>
+<p>PCM vehicle options error</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0638</p>
+</td>
+<td>
+<p>Throttle actuator control circuit range/performance problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0661</p>
+</td>
+<td>
+<p>Variable intake air solenoid valve circuit low input</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0662</p>
+</td>
+<td>
+<p>Variable intake air solenoid valve circuit high input</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0703</p>
+</td>
+<td>
+<p>Brake switch input circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0704*3</p>
+</td>
+<td>
+<p>Clutch pedal position (CPP) switch input circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0850*3</p>
+</td>
+<td>
+<p>Neutral switch input circuit problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P1260</p>
+</td>
+<td>
+<p>Immobilizer system problem</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C, O</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2009*4</p>
+</td>
+<td>
+<p>Variable tumble solenoid valve circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2010*4</p>
+</td>
+<td>
+<p>Variable tumble solenoid valve circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2088*2</p>
+</td>
+<td>
+<p>Oil control valve (OCV) circuit low</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2089*2</p>
+</td>
+<td>
+<p>Oil control valve (OCV) circuit high</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2096</p>
+</td>
+<td>
+<p>Target A/F feedback system too lean</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Fuel system</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2097</p>
+</td>
+<td>
+<p>Target A/F feedback system too rich</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Fuel system</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2101</p>
+</td>
+<td>
+<p>Throttle actuator circuit range/performance</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2107</p>
+</td>
+<td>
+<p>Throttle actuator control module processor error</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2108</p>
+</td>
+<td>
+<p>Throttle actuator control module performance error</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2109</p>
+</td>
+<td>
+<p>TP sensor minimum stop range/performance problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2112</p>
+</td>
+<td>
+<p>Throttle actuator control system range/performance problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2119</p>
+</td>
+<td>
+<p>Throttle actuator control throttle body range/performance problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2122</p>
+</td>
+<td>
+<p>APP sensor No.1 circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2123</p>
+</td>
+<td>
+<p>APP sensor No.1 circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2127</p>
+</td>
+<td>
+<p>APP sensor No.2 circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2128</p>
+</td>
+<td>
+<p>APP sensor No.2 circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2135</p>
+</td>
+<td>
+<p>TP sensor No.1/No.2 voltage correlation problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2138</p>
+</td>
+<td>
+<p>APP sensor No.1/No.2 voltage correlation problem</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2177</p>
+</td>
+<td>
+<p>Fuel system too lean at off idle</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Fuel system</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2178</p>
+</td>
+<td>
+<p>Fuel system too rich at off idle</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Fuel system</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2187</p>
+</td>
+<td>
+<p>Fuel system too lean at idle</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Fuel system</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2188</p>
+</td>
+<td>
+<p>Fuel system too rich at idle</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>Fuel system</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2195</p>
+</td>
+<td>
+<p>A/F sensor signal stuck lean</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor, HO2S</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2196</p>
+</td>
+<td>
+<p>A/F sensor signal stuck rich</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>A/F sensor, HO2S</p>
+</td>
+<td>
+<p>C</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2228</p>
+</td>
+<td>
+<p>BARO sensor circuit low input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2229</p>
+</td>
+<td>
+<p>BARO sensor circuit high input</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2502</p>
+</td>
+<td>
+<p>Charging system voltage problem</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2503</p>
+</td>
+<td>
+<p>Charging system voltage low</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2504</p>
+</td>
+<td>
+<p>Charging system voltage high</p>
+</td>
+<td>
+<p>OFF</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>Other</p>
+</td>
+<td>
+<p>C, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2507</p>
+</td>
+<td>
+<p>PCM B+ voltage low</p>
+</td>
+<td>
+<p>ON</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>CCM</p>
+</td>
+<td>
+<p>C, O, R</p>
+</td>
+<td>
+<p>×</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>*1  :C: CMDTC self-test, O: KOEO self-test, R: KOER self-test</p>
+<p>*2  :With variable valve timing mechanism</p>
+<p>*3  :MT</p>
+<p>*4  :With variable tumble system</p>
+<p>*5  :With power retractable hardtop (6MT, 6AT)</p>
+<p><a href="" id="c3u010200102s020007"></a>Sending Continuous Monitoring System Test Results</p>
+<p>•  These appear when a problem is detected in a monitored system.</p>
+<p><a href="" id="c3u010200102s020008"></a>1-drive cycle type</p>
+<p>•  If any problems are detected in the first drive cycle, pending codes will be stored in the PCM memory, as well as DTCs.</p>
+<p>•  After pending codes are stored, if the PCM determines that the system is normal in any future drive cycle, the PCM deletes the pending codes.</p>
+<p><a href="" id="c3u010200102s020009"></a>2-drive cycle type</p>
+<p>•  The code for a failed system is stored in the PCM memory in the first drive cycle. If the problem is not found in the second drive cycle, the PCM determines that the system returned to normal or the problem was mistakenly detected, and deletes the pending code when the ignition switch is turned to the ON position in the next drive cycle. If the problem is found in the second drive cycle too, the PCM determines that the system has failed, and stores the pending codes, and the DTCs.</p>
+<p>•  After pending codes are stored, if the PCM determines that the system is normal in any future drive cycle, the PCM deletes the pending codes.</p>
+<p><a href="" id="c3u010200102s020010"></a>DLC-2 Outline</p>
+<p>•  The DLC-2 located in the driver compartment is a service connector defined by EOBD regulations.</p>
+<p>•  The following are functions for each terminal.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><img alt="" src="../../../../../images/e5u102zt6002.png" /> e5u102zt6002</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>
+<p>Terminal name</p>
+</th>
+<th>
+<p>Function</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>B+</p>
+</td>
+<td>
+<p>Battery positive voltage</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CAN_L</p>
+</td>
+<td>
+<p>Serial communication Lo terminal</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CAN_H</p>
+</td>
+<td>
+<p>Serial communication Hi terminal</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>GND1</p>
+</td>
+<td>
+<p>Ground (chassis)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>GND2</p>
+</td>
+<td>
+<p>Ground (signal)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

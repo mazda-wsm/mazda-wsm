@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>PID/Data Monitor Inspection [Sj6A-EL] - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/engine/node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-guide/body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#wp1025486">PID/DATA MONITOR INSPECTION [SJ6A-EL]</a></li>
+        <li><a href="#simulation-function-procedure">Simulation Function Procedure</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../left_menu_S07/">Troubleshooting</a> ➭ <a href="../../node_S07_0002/">TRANSMISSION/TRANSAXLE</a> ➭ <a href="./">PID/DATA MONITOR INSPECTION [SJ6A-EL]</a></p>
+<h1 id="wp1025486"><strong>PID/DATA MONITOR INSPECTION [SJ6A-EL]</strong></h1>
+<hr />
+<p>id050208805600</p>
+<p>{: #wp1059783}</p>
+<ol>
+<li>Connect the M-MDS to the DLC-2.{: #wp1065615}</li>
+</ol>
+<p><img alt="" src="../../../../images/D5E502ZW6001b.png" /></p>
+<ol start="2">
+<li id="wp1059812">After the vehicle is identified, select the following items from the initial screen of the M-MDS.</li>
+</ol>
+<p id="wp1059823">• When using the IDS (laptop PC)</p>
+<ol>
+<li id="wp1059883">Select the "Toolbox" tab.
+{: #wp1059837}2. Select "DataLogger".
+{: #wp1059855}3. Select "Modules".
+{: #wp1059869}4. Select "TCM".</li>
+</ol>
+<p id="wp1059897">• When using the PDS (Pocket PC)</p>
+<ol>
+<li>
+<p id="wp1059939">Select "Module Tests".
+{: #wp1059907}2. Select "TCM".
+{: #wp1059925}3. Select "DataLogger".</p>
+</li>
+<li>
+<p id="wp1059953">Select the PID from the PID table.</p>
+</li>
+<li>
+<p id="wp1059963">Verify the PID data according to the directions on the M-MDS screen.</p>
+</li>
+</ol>
+<p><strong><em>*Note</em></strong>*{: #wp1059974}</p>
+<p id="wp1059992">• Perform part inspection for the output device after TCM inspection.
+{: #wp1065523}• The PID/DATA MONITOR function monitors the calculated value of the input/output signals in the TCM. Therefore, if a monitored value of an output device is out of specification, it is necessary to inspect the monitored value of the input device related to the output device control. Since an output device malfunction is not directly indicated as a malfunction of the monitored value for the output device, it is necessary to inspect the output device individually using the simulation function.</p>
+<p>**PID/DATA MONITOR AND RECORD function table</p>
+<p>+-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| <strong>Monitor item (Definition)</strong> {: #wp1060146}                                | <strong>Unit/Condition</strong> {: #wp1060148} | <strong>Condition/Specification</strong> {: #wp1060150}                                                                                                                                                           | <strong>Action</strong> {: #wp1060152}                                                                                                                                                                                                                                                                                                                                                                                                                                         | <strong>TCM terminal</strong> {: #wp1060154} |
++=============================================================================+===================================+======================================================================================================================================================================================================+===================================================================================================================================================================================================================================================================================================================================================================================================================================================================+=================================+
+| BOO TCM {: #wp1060016}  (Brake switch) {: #wp1060297}                       | On/Off {: #wp1060018}             | • Brake pedal depressed: On {: #wp1060074}  • Other: Off {: #wp1060323}                                                                                                                              | Inspect the brake switch. {: #wp1060077}  (See <a href="../../../../workshop-manual/brakes/conventional-brake-system/brake-switch-inspection/id041100801900/#wp1025486">BRAKE SWITCH INSPECTION</a>.) {: #wp1060338}                                                                                                                                                                                                                                                          | N/A {: #wp1060080}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| DTCCNT {: #wp1060181}                                                       | N/A {: #wp1060184}                | Indicates number of DTC {: #wp1060187}                                                                                                                                                               | Check DTC. {: #wp1060190}  (See <a href="../../dtc-table-sj6a-el/id050208800500/#wp1025486">DTC TABLE [SJ6A-EL]</a>.) {: #wp1060381}                                                                                                                                                                                                                                                                                                                                          | N/A {: #wp1060193}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| DWN SW {: #wp1060197}  (Down switch) {: #wp1060407}                         | On/Off {: #wp1060200}             | • Down shift at M range: On {: #wp1060203}  • Other: Off {: #wp1060433}                                                                                                                              | Inspect the selector lever component. {: #wp1060206}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-shift-mechanism/selector-lever-component-inspection/id051400255600/#wp1025486">SELECTOR LEVER COMPONENT INSPECTION</a>.) {: #wp1060448}                                                                                                                                                                                         | 2F {: #wp1060209}               |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| ECT TCM {: #wp1060213}  (ECT) {: #wp1060472}                                | °C {: #wp1060216}                 | Indicates ECT {: #wp1060219}                                                                                                                                                                         | • Inspect the ECT sensor. {: #wp1060222}  (See <a href="../../../../workshop-manual/engine/control-system-l8-lf/engine-coolant-temperature-ect-sensor-inspection-l8-lf/id0140i7802000/#wp1025486">ENGINE COOLANT TEMPERATURE (ECT) SENSOR INSPECTION [L8, LF]</a>.) {: #wp1060502}  • Inspect the PCM. {: #wp1060516}  (See <a href="../../../../workshop-manual/engine/control-system-l8-lf/pcm-inspection-l8-lf/id0140i7802500/#wp1025486">PCM INSPECTION [L8, LF]</a>.) {: #wp1060526} | N/A {: #wp1060225}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| FDPDTC {: #wp1060229}  (FREEZE FRAME DATA) {: #wp1060552}                   | N/A {: #wp1060232}                | Indicates code of FREEZE FRAME DATA {: #wp1060235}                                                                                                                                                   | N/A {: #wp1060238}                                                                                                                                                                                                                                                                                                                                                                                                                                                | N/A {: #wp1060241}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| GEAR_RA {: #wp1060245}  (Gear ratio) {: #wp1060591}                        | N/A {: #wp1060248}                | 1GR: 3.538 {: #wp1060251}  2GR: 2.060 {: #wp1060617}  3GR: 1.404 {: #wp1060627}  4GR: 1.000 {: #wp1060637}  5GR: 0.713 {: #wp1060647}  6GR: 0.582 {: #wp1060657}  • R position: 3.168 {: #wp1060667} | Inspect following PIDs: OSS, SSA, SSB, SSC, SSD, SSE, SSF, SSG, THOP, TSS, VSS {: #wp1060254}                                                                                                                                                                                                                                                                                                                                                                     | N/A {: #wp1060257}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| GEAR_SEL {: #wp1060687}  (Calculated gear range in TCM) {: #wp1060722}     | 1/2/3/4/5/6 {: #wp1060690}        | 1GR: 1 {: #wp1060693}  2GR: 2 {: #wp1060756}  3GR: 3 {: #wp1060766}  4GR: 4 {: #wp1060776}  5GR: 5 {: #wp1060786}  6GR: 6 {: #wp1060796}                                                             | Inspect following PIDs: SSA, SSB, SSC, SSD, SSE, SSF, SSG, THOP, TSS, VSS {: #wp1060696}                                                                                                                                                                                                                                                                                                                                                                          | N/A {: #wp1060699}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| LPS {: #wp1060816}  (Line pressure control solenoid) {: #wp1060849}         | A {: #wp1060819}                  | • D range, 1GR (idle): <strong>996 mA</strong> {: #wp1060822}  • D range, 3GR: <strong>656 mA</strong> {: #wp1060879}  • R position: <strong>719 mA</strong> {: #wp1060895}                                                                 | Inspect the line pressure control solenoid. {: #wp1060825}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/solenoid-valve-inspection-sj6a-el/id051311253200/#wp1025486">SOLENOID VALVE INSPECTION [SJ6A-EL]</a>.) {: #wp1060916}                                                                                                                                                                                             | 1E, 1R {: #wp1060828}           |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| MNL SW {: #wp1060933}  (M range switch) {: #wp1060971}                      | On/Off {: #wp1060936}             | • M range: On {: #wp1060939}  • Other: Off {: #wp1060997}                                                                                                                                            | Inspect the selector lever component. {: #wp1060942}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-shift-mechanism/selector-lever-component-inspection/id051400255600/#wp1025486">SELECTOR LEVER COMPONENT INSPECTION</a>.) {: #wp1061012}                                                                                                                                                                                         | 2G {: #wp1060945}               |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| OSS {: #wp1061029}  (Output shaft speed) {: #wp1061069}                     | RPM {: #wp1061032}                | • Vehicle speed 40 km/h {25 mph}: <strong>3,800 RPM</strong> {: #wp1061035}  • Indicates output shaft speed {: #wp1061105}                                                                                        | Inspect the VSS. {: #wp1061038}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/vehicle-speed-sensor-vss-inspection-sj6a-el/id051311252600/#wp1025486">VEHICLE SPEED SENSOR (VSS) INSPECTION [SJ6A-EL]</a>.) {: #wp1061120}                                                                                                                                                                                                  | 2C, 2D {: #wp1061041}           |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| PNP_TCM {: #wp1061137}  (Park/Neutral) {: #wp1061182}                      | Drive/Neutral {: #wp1061140}      | • P, N position: Neutral {: #wp1061143}  • D, M range or R position: Drive {: #wp1061210}                                                                                                            | Inspect the TR switch. {: #wp1061146}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/transmission-range-tr-switch-inspection-sj6a-el/id051311251300/#wp1025486">TRANSMISSION RANGE (TR) SWITCH INSPECTION [SJ6A-EL]</a>.) {: #wp1061225}                                                                                                                                                                                    | 2K, 2M, 2N, 2O {: #wp1061149}   |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| RPM TCM {: #wp1061242}  (Engine speed) {: #wp1061287}                       | RPM {: #wp1061245}                | • Ignition switch ON: <strong>0 rpm</strong> {: #wp1061248}  • Idle: <strong>700-800 rpm</strong> {: #wp1061317}                                                                                                               | • Inspect the CMP sensor. {: #wp1061251}  (See <a href="../../../../workshop-manual/engine/control-system-l8-lf/camshaft-position-cmp-sensor-inspection-l8-lf/id0140i7801400/#wp1025486">CAMSHAFT POSITION (CMP) SENSOR INSPECTION [L8, LF]</a>.) {: #wp1061348}  • Inspect the PCM. {: #wp1061362}  (See <a href="../../../../workshop-manual/engine/control-system-l8-lf/pcm-inspection-l8-lf/id0140i7802500/#wp1025486">PCM INSPECTION [L8, LF]</a>.) {: #wp1061372}                   | N/A {: #wp1061254}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| SS SW- {: #wp1061391}  (Steering shift switch (down switch)) {: #wp1061443} | On/Off {: #wp1061394}             | M range {: #wp1061397}  • Steering shift down switch on: On {: #wp1061461}  • Other: Off {: #wp1061475}                                                                                              | Inspect the steering shift switch. {: #wp1061400}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-shift-mechanism/steering-shift-switch-inspection/id051400255900/#wp1025486">STEERING SHIFT SWITCH INSPECTION</a>.) {: #wp1061490}                                                                                                                                                                                                  | 2AB, 2AF {: #wp1061403}         |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| SS SW+ {: #wp1061507}  (Steering shift switch (up switch)) {: #wp1061561}   | On/Off {: #wp1061510}             | M range {: #wp1061513}  • Steering shift up switch on: On {: #wp1061579}  • Other: Off {: #wp1061593}                                                                                                | Inspect the steering shift switch. {: #wp1061516}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-shift-mechanism/steering-shift-switch-inspection/id051400255900/#wp1025486">STEERING SHIFT SWITCH INSPECTION</a>.) {: #wp1061608}                                                                                                                                                                                                  | 2AB, 2AF {: #wp1061519}         |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| SSA {: #wp1061625}  (Shift solenoid A) {: #wp1061680}                       | On/Off {: #wp1061628}             | 2GR, 3GR, 4GR, 5GR, 6GR: On {: #wp1061631}  1GR: Off {: #wp1061706}                                                                                                                                  | Inspect the shift solenoid A. {: #wp1061634}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/solenoid-valve-inspection-sj6a-el/id051311253200/#wp1025486">SOLENOID VALVE INSPECTION [SJ6A-EL]</a>.) {: #wp1061721}                                                                                                                                                                                                           | 1AF {: #wp1061637}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| SSB {: #wp1061738}  (Shift solenoid B) {: #wp1061795}                       | On/Off {: #wp1061741}             | 1GR, 2GR, 6GR: On {: #wp1061744}  3GR, 4GR, 5GR: Off {: #wp1061821}                                                                                                                                  | Inspect the shift solenoid B. {: #wp1061747}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/solenoid-valve-inspection-sj6a-el/id051311253200/#wp1025486">SOLENOID VALVE INSPECTION [SJ6A-EL]</a>.) {: #wp1061836}                                                                                                                                                                                                           | 1AB {: #wp1061750}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| SSC {: #wp1061853}  (Shift solenoid C) {: #wp1061912}                       | On/Off {: #wp1061856}             | 1GR, 2GR, 3GR: On {: #wp1061859}  4GR, 5GR, 6GR: Off {: #wp1061938}                                                                                                                                  | Inspect the shift solenoid C. {: #wp1061862}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/solenoid-valve-inspection-sj6a-el/id051311253200/#wp1025486">SOLENOID VALVE INSPECTION [SJ6A-EL]</a>.) {: #wp1061953}                                                                                                                                                                                                           | 1AA {: #wp1061865}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| SSD {: #wp1061970}  (Shift solenoid D) {: #wp1062031}                       | On/Off {: #wp1061973}             | 5GR, 6GR: On {: #wp1061976}  1GR, 2GR, 3GR, 4GR: Off {: #wp1062057}                                                                                                                                  | Inspect the shift solenoid D. {: #wp1061979}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/solenoid-valve-inspection-sj6a-el/id051311253200/#wp1025486">SOLENOID VALVE INSPECTION [SJ6A-EL]</a>.) {: #wp1062072}                                                                                                                                                                                                           | 1S {: #wp1061982}               |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| SSE {: #wp1062089}  (Shift solenoid E) {: #wp1062152}                       | On/Off {: #wp1062092}             | 1GR, 2GR, 3GR, 4GR: On {: #wp1062095}  5GR, 6GR: Off {: #wp1062178}                                                                                                                                  | Inspect the shift solenoid E. {: #wp1062098}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/solenoid-valve-inspection-sj6a-el/id051311253200/#wp1025486">SOLENOID VALVE INSPECTION [SJ6A-EL]</a>.) {: #wp1062193}                                                                                                                                                                                                           | 1V {: #wp1062101}               |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| SSF {: #wp1062210}  (Shift solenoid F) {: #wp1062275}                       | A {: #wp1062213}                  | 5GR, 6GR: <strong>996 mA</strong> {: #wp1062216}  1GR, 2GR, 3GR, 4GR: <strong>199 mA</strong> {: #wp1062305}                                                                                                                   | Inspect the shift solenoid F. {: #wp1062219}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/solenoid-valve-inspection-sj6a-el/id051311253200/#wp1025486">SOLENOID VALVE INSPECTION [SJ6A-EL]</a>.) {: #wp1062326}                                                                                                                                                                                                           | 1O, 1Z {: #wp1062222}           |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| SSG {: #wp1062343}  (Shift solenoid G) {: #wp1062412}                       | A {: #wp1062346}                  | 1GR, 2GR, 3GR, 4GR: <strong>996 mA</strong> {: #wp1062349}  5GR, 6GR: <strong>199 mA</strong> {: #wp1062442}                                                                                                                   | Inspect the shift solenoid G. {: #wp1062352}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/solenoid-valve-inspection-sj6a-el/id051311253200/#wp1025486">SOLENOID VALVE INSPECTION [SJ6A-EL]</a>.) {: #wp1062463}                                                                                                                                                                                                           | 1L, 1Y {: #wp1062355}           |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| TCCC {: #wp1062480}  (TCC solenoid valve) {: #wp1062553}                    | A {: #wp1062483}                  | • TCC on: <strong>996 mA</strong> {: #wp1062486}  • Other: <strong>199 mA</strong> {: #wp1062583}                                                                                                                              | Inspect the TCC control solenoid. {: #wp1062489}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/solenoid-valve-inspection-sj6a-el/id051311253200/#wp1025486">SOLENOID VALVE INSPECTION [SJ6A-EL]</a>.) {: #wp1062604}                                                                                                                                                                                                       | 1D, 1Q {: #wp1062492}           |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| TFT {: #wp1062621}  (ATF temperature) {: #wp1062698}                        | °C {: #wp1062624}                 | • ATF temperature 20 °C {68 °F}: <strong>20</strong> °<strong>C</strong> {: #wp1062627}  • ATF temperature 40 °C {104 °F}: <strong>40</strong> °<strong>C</strong> {: #wp1062739}  • ATF temperature 60 °C {140 °F}: <strong>60</strong> °<strong>C</strong> {: #wp1062765}        | Inspect the TFT sensor. {: #wp1062630}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/transmission-fluid-temperature-tft-sensor-inspection-sj6a-el/id051311710300/#wp1025486">TRANSMISSION FLUID TEMPERATURE (TFT) SENSOR INSPECTION [SJ6A-EL]</a>.) {: #wp1062796}                                                                                                                                                         | 1J, 1M {: #wp1062633}           |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| TFTV {: #wp1062813}  (ATF temperature signal voltage) {: #wp1062895}        | V {: #wp1062816}                  | • ATF temperature 20 °C {68 °F}: <strong>3 V</strong> {: #wp1062819}  • ATF temperature 40 °C {104 °F}: <strong>2.14 V</strong> {: #wp1062933}  • ATF temperature 60 °C {140 °F}: <strong>1.38 V</strong> {: #wp1062957}                    | Inspect the TFT sensor. {: #wp1062822}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/transmission-fluid-temperature-tft-sensor-inspection-sj6a-el/id051311710300/#wp1025486">TRANSMISSION FLUID TEMPERATURE (TFT) SENSOR INSPECTION [SJ6A-EL]</a>.) {: #wp1062986}                                                                                                                                                         | 1J, 1M {: #wp1062825}           |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| THOP {: #wp1063003}  (Throttle position) {: #wp1063090}                     | % {: #wp1063006}                  | • CTP: <strong>20%</strong> {: #wp1063009}  • WOT: <strong>89.8%</strong> {: #wp1063121}                                                                                                                                       | • Inspect the TP sensor. {: #wp1063012}  (See <a href="../../../../workshop-manual/engine/control-system-l8-lf/throttle-position-tp-sensor-inspection-l8-lf/id0140i7802700/#wp1025486">THROTTLE POSITION (TP) SENSOR INSPECTION [L8, LF]</a>.) {: #wp1063151}  • Inspect the PCM. {: #wp1063165}  (See <a href="../../../../workshop-manual/engine/control-system-l8-lf/pcm-inspection-l8-lf/id0140i7802500/#wp1025486">PCM INSPECTION [L8, LF]</a>.) {: #wp1063175}                      | N/A {: #wp1063015}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| TR {: #wp1063194}  (TR switch) {: #wp1063287}                               | R/N/D/P {: #wp1063197}            | • R position: R {: #wp1063200}  • N position: N {: #wp1063317}  • D range: D {: #wp1063327}  • P position: P {: #wp1063337}                                                                          | Inspect the TR switch. {: #wp1063203}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/transmission-range-tr-switch-inspection-sj6a-el/id051311251300/#wp1025486">TRANSMISSION RANGE (TR) SWITCH INSPECTION [SJ6A-EL]</a>.) {: #wp1063352}                                                                                                                                                                                    | 2K, 2M, 2N, 2O {: #wp1063206}   |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| TRD {: #wp1063369}  (TR switch [D range]) {: #wp1063464}                    | On/Off {: #wp1063372}             | • D range: On {: #wp1063375}  • Other ranges and all positions: Off {: #wp1063494}                                                                                                                   | Inspect the TR switch. {: #wp1063378}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/transmission-range-tr-switch-inspection-sj6a-el/id051311251300/#wp1025486">TRANSMISSION RANGE (TR) SWITCH INSPECTION [SJ6A-EL]</a>.) {: #wp1063509}                                                                                                                                                                                    | 2K {: #wp1063381}               |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| TRR {: #wp1063526}  (TR switch [R position]) {: #wp1063623}                 | On/Off {: #wp1063529}             | • R position: On {: #wp1063532}  • Other positions and all ranges: Off {: #wp1063653}                                                                                                                | Inspect the TR switch. {: #wp1063535}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/transmission-range-tr-switch-inspection-sj6a-el/id051311251300/#wp1025486">TRANSMISSION RANGE (TR) SWITCH INSPECTION [SJ6A-EL]</a>.) {: #wp1063668}                                                                                                                                                                                    | 2M {: #wp1063538}               |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| TSS {: #wp1063685}  (Turbine shaft speed) {: #wp1063784}                    | RPM {: #wp1063688}                | • Idle: <strong>700-800 rpm</strong> {: #wp1063691}  • Vehicle speed 40 km/h {25 mph}: <strong>3,800 RPM</strong> {: #wp1063816}                                                                                               | Inspect the turbine sensor. {: #wp1063694}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/turbine-sensor-inspection-sj6a-el/id051311251900/#wp1025486">TURBINE SENSOR INSPECTION [SJ6A-EL]</a>.) {: #wp1063843}                                                                                                                                                                                                             | 2A, 2B {: #wp1063697}           |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| UP SW {: #wp1063860}  (Up switch) {: #wp1063963}                            | On/Off {: #wp1063863}             | • Up shift at M range: On {: #wp1063866}  • Other: Off {: #wp1063989}                                                                                                                                | Inspect the selector lever component. {: #wp1063869}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-shift-mechanism/selector-lever-component-inspection/id051400255600/#wp1025486">SELECTOR LEVER COMPONENT INSPECTION</a>.) {: #wp1064004}                                                                                                                                                                                         | 2J {: #wp1063872}               |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| VPWR_TCM {: #wp1064021}  (Battery voltage) {: #wp1064128}                  | V {: #wp1064024}                  | Ignition switch at ON position: B+ {: #wp1064027}                                                                                                                                                    | • Inspect the ignition switch. {: #wp1064030}  (See <a href="../../../../workshop-manual/body-accessories/power-systems/ignition-switch-inspection/id092100800100/#wp1025486">IGNITION SWITCH INSPECTION</a>.) {: #wp1064158}  • Inspect the battery. {: #wp1064172}  (See <a href="../../../../workshop-manual/engine/charging-system-l8-lf/battery-inspection-l8-lf/id0117a6800600/#wp1025486">BATTERY INSPECTION [L8, LF]</a>.) {: #wp1064182}                                         | 1AD {: #wp1064033}              |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
+| VSS {: #wp1064199}  (Vehicle speed) {: #wp1064308}                          | KPH {: #wp1064202}                | • Vehicle speed 40 km/h {25 mph}: <strong>40 KPH</strong> {: #wp1064205}  • Indicates vehicle speed {: #wp1064344}                                                                                                | Inspect the VSS. {: #wp1064208}  (See <a href="../../../../workshop-manual/transmission-transaxle/automatic-transmission-sj6a-el/vehicle-speed-sensor-vss-inspection-sj6a-el/id051311252600/#wp1025486">VEHICLE SPEED SENSOR (VSS) INSPECTION [SJ6A-EL]</a>.) {: #wp1064359}                                                                                                                                                                                                  | 2C, 2D {: #wp1064211}           |
++-----------------------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+**{: #wp1060006}</p>
+<h2 id="simulation-function-procedure"><strong id="wp1064467">Simulation Function Procedure</strong></h2>
+<ol>
+<li>Connect the M-MDS to the DLC-2.{: #wp1064477}</li>
+</ol>
+<p><img alt="" src="../../../../images/D5E502ZW60012.png" /></p>
+<ol start="2">
+<li id="wp1064528">After the vehicle is identified, select the following items from the initial screen of the M-MDS.</li>
+</ol>
+<p id="wp1064539">• When using the IDS (laptop PC)</p>
+<ol>
+<li id="wp1064599">Select the "Toolbox" tab.
+{: #wp1064553}2. Select "DataLogger".
+{: #wp1064571}3. Select "Modules".
+{: #wp1064585}4. Select "TCM".</li>
+</ol>
+<p id="wp1064613">• When using the PDS (Pocket PC)</p>
+<ol>
+<li>
+<p id="wp1064655">Select "Module Tests".
+{: #wp1064623}2. Select "TCM".
+{: #wp1064641}3. Select "DataLogger".</p>
+</li>
+<li>
+<p id="wp1064669">Select the simulation items from the PID table.</p>
+</li>
+<li>
+<p id="wp1064679">Perform the simulation function, inspect the operations for each parts.</p>
+</li>
+</ol>
+<p id="wp1064689">• If there is no operation sound from the solenoid after the simulation function inspection is performed, it is possible that there is an open or short circuit in the wiring harness, or solenoid, or sticking and operation malfunction.</p>
+<p><strong id="wp1064703">Simulation item table</strong></p>
+<p>X: Available</p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>Simulation item</strong> {: #wp1064871}</p>
+</th>
+<th>
+<p><strong>Applicable component</strong> {: #wp1064873}</p>
+</th>
+<th>
+<p><strong>Unit/Condition</strong> {: #wp1064875}</p>
+</th>
+<th colspan="2">
+<p><strong>Operation</strong> {: #wp1064877}</p>
+</th>
+<th>
+<p><strong>TCM terminal</strong> {: #wp1064881}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<p><strong>IG ON</strong> {: #wp1065035}</p>
+</td>
+<td>
+<p><strong>Idle</strong> {: #wp1065038}</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>LPS {: #wp1064717}</p>
+</td>
+<td>
+<p>Pressure control solenoid {: #wp1064719}</p>
+</td>
+<td>
+<p>A {: #wp1064775}</p>
+</td>
+<td>
+<p>N/A {: #wp1064778}</p>
+</td>
+<td>
+<p>X {: #wp1064781}</p>
+</td>
+<td>
+<p>1E, 1R {: #wp1064784}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SSA {: #wp1064912}</p>
+</td>
+<td>
+<p>Shift solenoid A {: #wp1064915}</p>
+</td>
+<td>
+<p>On/Off {: #wp1064918}</p>
+</td>
+<td>
+<p>N/A {: #wp1064921}</p>
+</td>
+<td>
+<p>X {: #wp1064924}</p>
+</td>
+<td>
+<p>1AF {: #wp1064927}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SSB {: #wp1064931}</p>
+</td>
+<td>
+<p>Shift solenoid B {: #wp1064934}</p>
+</td>
+<td>
+<p>On/Off {: #wp1064937}</p>
+</td>
+<td>
+<p>N/A {: #wp1064940}</p>
+</td>
+<td>
+<p>X {: #wp1064943}</p>
+</td>
+<td>
+<p>1AB {: #wp1064946}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SSC {: #wp1064950}</p>
+</td>
+<td>
+<p>Shift solenoid C {: #wp1064953}</p>
+</td>
+<td>
+<p>On/Off {: #wp1064956}</p>
+</td>
+<td>
+<p>N/A {: #wp1064959}</p>
+</td>
+<td>
+<p>X {: #wp1064962}</p>
+</td>
+<td>
+<p>1AA {: #wp1064965}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SSD {: #wp1064969}</p>
+</td>
+<td>
+<p>Shift solenoid D {: #wp1064972}</p>
+</td>
+<td>
+<p>On/Off {: #wp1064975}</p>
+</td>
+<td>
+<p>N/A {: #wp1064978}</p>
+</td>
+<td>
+<p>X {: #wp1064981}</p>
+</td>
+<td>
+<p>1S {: #wp1064984}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SSE {: #wp1064988}</p>
+</td>
+<td>
+<p>Shift solenoid E {: #wp1064991}</p>
+</td>
+<td>
+<p>On/Off {: #wp1064994}</p>
+</td>
+<td>
+<p>N/A {: #wp1064997}</p>
+</td>
+<td>
+<p>X {: #wp1065000}</p>
+</td>
+<td>
+<p>1V {: #wp1065003}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SSF {: #wp1065007}</p>
+</td>
+<td>
+<p>Shift solenoid F {: #wp1065010}</p>
+</td>
+<td>
+<p>A {: #wp1065013}</p>
+</td>
+<td>
+<p>N/A {: #wp1065016}</p>
+</td>
+<td>
+<p>X {: #wp1065019}</p>
+</td>
+<td>
+<p>1O, 1Z {: #wp1065022}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SSG {: #wp1065316}</p>
+</td>
+<td>
+<p>Shift solenoid G {: #wp1065319}</p>
+</td>
+<td>
+<p>A {: #wp1065322}</p>
+</td>
+<td>
+<p>N/A {: #wp1065325}</p>
+</td>
+<td>
+<p>X {: #wp1065328}</p>
+</td>
+<td>
+<p>1L, 1Y {: #wp1065331}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TCCC {: #wp1065367}</p>
+</td>
+<td>
+<p>TCC solenoid valve {: #wp1065370}</p>
+</td>
+<td>
+<p>A {: #wp1065373}</p>
+</td>
+<td>
+<p>N/A {: #wp1065376}</p>
+</td>
+<td>
+<p>X {: #wp1065379}</p>
+</td>
+<td>
+<p>1D, 1Q {: #wp1065382}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>{: #wp1064713}</p>
+<p><a href="" id="wp1065524"></a></p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

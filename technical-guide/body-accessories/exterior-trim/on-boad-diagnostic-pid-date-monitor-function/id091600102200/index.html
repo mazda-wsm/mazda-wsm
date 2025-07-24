@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>On-Boad Diagnostic PID Date Monitor Function - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../../left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../engine/node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../transmission-transaxle/node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#wp1025486">ON-BOAD DIAGNOSTIC PID DATE MONITOR FUNCTION</a></li>
+        <li><a href="#on-board-diagnostic-function">On-board Diagnostic Function</a></li><li><a href="#piddata-monitor-function">PID/Data Monitor Function</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0056/">BODY &amp; ACCESSORIES</a> ➭ <a href="../../node_S02_0064/">EXTERIOR TRIM</a> ➭ <a href="./">ON-BOAD DIAGNOSTIC PID DATE MONITOR FUNCTION</a></p>
+<h1 id="wp1025486"><strong>ON-BOAD DIAGNOSTIC PID DATE MONITOR FUNCTION</strong></h1>
+<hr />
+<p>id091600102200</p>
+<p>{: #wp1059777}</p>
+<h2 id="on-board-diagnostic-function"><strong id="wp1061854">On-board Diagnostic Function</strong></h2>
+<h3 id="malfunction-detection-function"><strong id="wp1059788">Malfunction detection function</strong></h3>
+<p id="wp1059798">• Detects overall malfunctions in the power retractable hardtop-related parts.</p>
+<h3 id="memory-function"><strong id="wp1059813">Memory function</strong></h3>
+<p id="wp1059823">• Stores malfunctions in the power retractable hardtop-related parts detected by the malfunction detection function, and the stored malfunction contents are not cleared even if the ignition switch is turned to the LOCK position or the negative battery cable is disconnected.</p>
+<p>**DTC table</p>
+<p>+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
+| <strong>DTC</strong> {: #wp1059952}                                             | <strong>Description</strong> {: #wp1059954}                                                                 | <strong>Malfunction indication</strong> {: #wp1059956}                                                                                  |
++====================================================================+================================================================================================+===========================================+================================================================================+
+| <strong>Mazda modular diagnostic system (M-MDS) display</strong> {: #wp1060038} |                                                                                                | <strong>Buzzer sound</strong> {: #wp1060044}           | <strong>Power retractable hardtop indicator light flashing</strong> {: #wp1060047}          |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B1342 {: #wp1059846}                                               | Power retractable hardtop control module internal malfunction {: #wp1059848}                   | None {: #wp1059904}                       | None {: #wp1059907}                                                            |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B1317 {: #wp1059981}                                               | Battery power supply voltage increases (17.5 V or more) {: #wp1059984}                         | Operation reject sound*1 {: #wp1059987}  | Flashing pattern for a power retractable hardtop malfunction*1 {: #wp1059990} |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B1318 {: #wp1059994}                                               | Battery power supply voltage decreases (less than 7.5 V) {: #wp1059997}                        | Operation reject sound*1 {: #wp1060000}  | Flashing pattern for a power retractable hardtop malfunction*1 {: #wp1060003} |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B296D {: #wp1060007}                                               | Hall sensor low power supply voltage {: #wp1060010}                                            | Operation reject sound {: #wp1060013}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060016}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| U0030 {: #wp1060020}                                               | Door glass communication error (during power retractable hardtop operation) {: #wp1060023}     | None {: #wp1060026}                       | Flashing pattern for a power retractable hardtop malfunction {: #wp1060029}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| U0031 {: #wp1060205}                                               | Door glass communication error (during power retractable hardtop not operation) {: #wp1060208} | None {: #wp1060211}                       | Flashing pattern for a power retractable hardtop malfunction {: #wp1060214}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B296A {: #wp1060242}                                               | Roof motor pulse signal error (RH) {: #wp1060245}                                              | Operation reject sound {: #wp1060248}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060251}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| U294B {: #wp1060279}                                               | Roof motor pulse signal error (LH) {: #wp1060282}                                              | Operation reject sound {: #wp1060285}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060288}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B293C {: #wp1060316}                                               | Deck panel motor pulse signal error (RH) {: #wp1060319}                                        | Operation reject sound {: #wp1060322}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060325}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B293B {: #wp1060353}                                               | Deck panel motor pulse signal error (LH) {: #wp1060356}                                        | Operation reject sound {: #wp1060359}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060362}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B293E {: #wp1060390}                                               | Roof motor circuit malfunction (RH) {: #wp1060393}                                             | Operation reject sound {: #wp1060396}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060399}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B293D {: #wp1060427}                                               | Roof motor circuit malfunction (LH) {: #wp1060430}                                             | Operation reject sound {: #wp1060433}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060436}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B294C {: #wp1060464}                                               | Deck panel motor circuit malfunction (RH) {: #wp1060467}                                       | Operation reject sound {: #wp1060470}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060473}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B293F {: #wp1060501}                                               | Deck panel motor circuit malfunction (LH) {: #wp1060504}                                       | Operation reject sound {: #wp1060507}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060510}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B294D {: #wp1060538}                                               | Roof motor opening angle does not match (Pulse count number do not match) {: #wp1060541}       | Operation reject sound {: #wp1060544}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060547}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B294E {: #wp1060575}                                               | Deck panel motor opening angle does not match (Pulse count number do not match) {: #wp1060578} | Operation reject sound {: #wp1060581}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060584}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B294F {: #wp1060612}                                               | Power retractable hardtop/deck panel limit switch malfunction {: #wp1060615}                   | Operation reject sound*2 {: #wp1060618}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060621}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B296B {: #wp1060658}                                               | Top lock switch malfunction {: #wp1060661}                                                     | None {: #wp1060664}                       | Flashing pattern for a power retractable hardtop malfunction {: #wp1060667}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| B296C {: #wp1060696}                                               | Power retractable hardtop switch malfunction {: #wp1060699}                                    | Operation reject sound*2 {: #wp1060702}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060705}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| U0073 {: #wp1060741}                                               | CAN system communication error {: #wp1060744}                                                  | Operation reject sound*2 {: #wp1060747}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060750}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| U0100 {: #wp1060787}                                               | Communication error to PCM {: #wp1060790}                                                      | Operation reject sound*2 {: #wp1060793}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060796}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| U0101 {: #wp1060834}                                               | Communication error to TCM {: #wp1060837}                                                      | Operation reject sound*2 {: #wp1060840}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060843}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
+| U2197 {: #wp1060882}                                               | Vehicle speed signal communication error {: #wp1060885}                                        | Operation reject sound*2 {: #wp1060888}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060891}    |
++--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+**{: #wp1059838}</p>
+<p id="wp1060983">*1 :
+{: #wp1060943}
+No buzzer sound and power retractable hardtop indicator light illumination if the power retractable hardtop operation is inhibited while it is not operating.
+{: #wp1060962}
+*2 :
+{: #wp1060968}
+No buzzer sound except when the power retractable hardtop switch is turned on.</p>
+<h2 id="piddata-monitor-function"><strong id="wp1060989">PID/Data Monitor Function</strong></h2>
+<p id="wp1061001">• The PID/data monitor function is used for optionally selecting input/output signal monitor items preset in the power retractable hardtop control module and reading them out in real-time.</p>
+<p id="wp1061020">• Use the mazda modular diagnostic system (M-MDS) to read the PID/data monitor.</p>
+<p><strong id="wp1061033">PID/data monitor table</strong></p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>PID name (definition)</strong> {: #wp1061149}</p>
+</th>
+<th>
+<p><strong>Data contents</strong> {: #wp1061151}</p>
+</th>
+<th>
+<p><strong>Unit/Operation</strong> {: #wp1061153}</p>
+</th>
+<th>
+<p><strong>Terminal</strong> {: #wp1061155}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>DTC_CNT {: #wp1061043}</p>
+</td>
+<td>
+<p>Number of continuous DTCs {: #wp1061045}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1061101}</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>{: #wp1061104}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>VPWR {: #wp1061178}</p>
+</td>
+<td>
+<p>Module Supply Voltage {: #wp1061181}</p>
+</td>
+<td>
+<p>V {: #wp1061184}</p>
+</td>
+<td>
+<p>1X {: #wp1061187}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>VSS {: #wp1061191}</p>
+</td>
+<td>
+<p>Vehicle speed {: #wp1061194}</p>
+</td>
+<td>
+<p>MPH/KPH {: #wp1061197}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1061200}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>RHT_OP {: #wp1061204}</p>
+</td>
+<td>
+<p>Power Retractable Hardtop Open Position Sensor {: #wp1061207}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061210}</p>
+</td>
+<td>
+<p>1T {: #wp1061213}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RHT_CL {: #wp1061217}</p>
+</td>
+<td>
+<p>Power Retractable Hardtop Closed Position Sensor {: #wp1061220}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061223}</p>
+</td>
+<td>
+<p>1R {: #wp1061226}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>DECK_OP {: #wp1061364}</p>
+</td>
+<td>
+<p>Deck Open Position Sensor {: #wp1061367}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061370}</p>
+</td>
+<td>
+<p>3F {: #wp1061373}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>DECK_CL {: #wp1061401}</p>
+</td>
+<td>
+<p>Deck Close Position Sensor {: #wp1061404}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061407}</p>
+</td>
+<td>
+<p>3O {: #wp1061410}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SW_OP {: #wp1061438}</p>
+</td>
+<td>
+<p>Power Retractable Hardtop Open Switch {: #wp1061441}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061444}</p>
+</td>
+<td>
+<p>1H {: #wp1061447}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SW_CL {: #wp1061475}</p>
+</td>
+<td>
+<p>Power Retractable Hardtop Close Switch {: #wp1061478}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061481}</p>
+</td>
+<td>
+<p>1H {: #wp1061484}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SW_STRIKER {: #wp1061512}</p>
+</td>
+<td>
+<p>Top Lock Switch {: #wp1061515}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061518}</p>
+</td>
+<td>
+<p>1D {: #wp1061521}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SW_TRUNK {: #wp1061549}</p>
+</td>
+<td>
+<p>Trunk Switch {: #wp1061552}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061555}</p>
+</td>
+<td>
+<p>1F {: #wp1061558}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TR_OP_CTL {: #wp1061586}</p>
+</td>
+<td>
+<p>Trunk Opener Control {: #wp1061589}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061592}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1061595}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Indicator {: #wp1061625}</p>
+</td>
+<td>
+<p>Power Retractable Hardtop Indicator Light {: #wp1061628}</p>
+</td>
+<td>
+<p>On/Off {: #wp1061631}</p>
+</td>
+<td>
+<p>2C {: #wp1061634}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="" id="wp1061769"></a></p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

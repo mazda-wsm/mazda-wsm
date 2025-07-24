@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../../../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../../../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Malfunction Detection Function [Sj6A-EL] - Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</title>
+
+
+<link href="../../../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../../../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../../../../css/normalize.css" rel="stylesheet">
+<link href="../../../../../css/terminal.css" rel="stylesheet">
+<link href="../../../../../css/theme.css" rel="stylesheet">
+<link href="../../../../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../../../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../../../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../../../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../../../../..",
+    shortcuts = "{}";
+</script>
+<script src="../../../../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../../../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../../../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../../../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Mazda WSM // Mazda MX-5 (D933-1A-22C_Ver26)</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="0">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../wiring-diagram/left_menu_S04/">Wiring Diagram</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/left_menu_S01/">Workshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/general-information/node_S01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/engine/node_S01_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/suspension/node_S01_0019/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/driveline-axle/node_S01_0027/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/brakes/node_S01_0036/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/transmission-transaxle/node_S01_0047/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/steering/node_S01_0057/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/heater-ventilation-air-conditioning/node_S01_0062/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/restraints/node_S01_0070/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../workshop-manual/body-accessories/node_S01_0076/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../../left_menu_S02/">Technical Guide</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../general-information/node_S02_0000/">﻿General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../engine/node_S02_0002/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../suspension/node_S02_0017/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../driveline-axle/node_S02_0022/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../brakes/node_S02_0028/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../../../node_S02_0035/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../steering/node_S02_0043/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../heater-ventilation-air-conditioning/node_S02_0046/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../restraints/node_S02_0051/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../body-accessories/node_S02_0056/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/left_menu_A01/">L8/LF/L3/L5  [Engine WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/general-information/node_A01_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../l8-lf-l3-l5-engine-wm/engine/node_A01_0002/">Engine</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/left_menu_B23/">P66M-D [MT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/general-information/node_B23_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../p66m-d-mt-wm/transmission-transaxle/node_B23_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/left_menu_B30/">Sj6A-EL [AT WM]</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/general-information/node_B30_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../sj6a-el-at-wm/transmission-transaxle/node_B30_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/left_menu_S05/">Bodyshop Manual</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/general-information/node_S05_0000/">General Information</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../bodyshop-manual/body-accessories/node_S05_0002/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/left_menu_S07/">Troubleshooting</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/engine/node_S07_0000/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/brakes/node_S07_0001/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/transmission-transaxle/node_S07_0002/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/heater-ventilation-air-conditioning/node_S07_0003/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/restraints/node_S07_0004/">Restraints</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../troubleshooting/body-accessories/node_S07_0005/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/left_menu_S08/">Technical Data</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/engine/node_S08_00001/">Engine</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/suspension/node_S08_00002/">Suspension</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/driveline-axle/node_S08_00003/">Driveline/Axle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/brakes/node_S08_00004/">Brakes</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/transmission-transaxle/node_S08_00005/">Transmission/Transaxle</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/steering/node_S08_00006/">Steering</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/heater-ventilation-air-conditioning/node_S08_00007/">Heater, Ventilation & Air Conditioning</a>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../../../../technical-data/body-accessories/node_S08_00008/">Body & Accessories</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#wp1025486">MALFUNCTION DETECTION FUNCTION [SJ6A-EL]</a></li>
+        <li><a href="#malfunction-detection-function">Malfunction Detection Function</a></li><li><a href="#dtc-table">DTC Table</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0035/">TRANSMISSION/TRANSAXLE</a> ➭ <a href="../../node_S02_0037/">ON-BOARD DIAGNOSTIC[SJ6A-EL]</a> ➭ <a href="./">MALFUNCTION DETECTION FUNCTION [SJ6A-EL]</a></p>
+<h1 id="wp1025486"><strong>MALFUNCTION DETECTION FUNCTION [SJ6A-EL]</strong></h1>
+<hr />
+<p>id050208100300</p>
+<p>{: #wp1059780}</p>
+<h2 id="malfunction-detection-function"><strong id="wp1062763">Malfunction Detection Function</strong></h2>
+<p id="wp1059790">• In the malfunction detection function, the TCM detects malfunctions in the automatic transmission while driving.</p>
+<p id="wp1059804">• When vehicle driving conditions correspond with a preset malfunction detection condition, the TCM determines that the automatic transmission has a malfunction and stores the corresponding DTC.</p>
+<p id="wp1059814">• When a malfunction is detected, stored DTCs can be retrieved using the Mazda Modular Diagnostic System (M-MDS) connected to the DLC-2.</p>
+<h2 id="dtc-table"><strong id="wp1059826">DTC Table</strong></h2>
+<p id="wp1059836">X: Available</p>
+<p>-: N/A{: #wp1059846}</p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>DTC No.</strong> {: #wp1060007}</p>
+</th>
+<th>
+<p><strong>Condition</strong> {: #wp1060009}</p>
+</th>
+<th>
+<p><strong>MIL</strong> {: #wp1060011}</p>
+</th>
+<th>
+<p><strong>AT warning light</strong> {: #wp1060013}</p>
+</th>
+<th>
+<p><strong>DC</strong> {: #wp1060015}</p>
+</th>
+<th>
+<p><strong>Memory function</strong> {: #wp1060017}</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>P0601 {: #wp1059853}</p>
+</td>
+<td>
+<p>Flash ROM malfunction {: #wp1059855}</p>
+</td>
+<td>
+<p>X {: #wp1059911}</p>
+</td>
+<td>
+<p>X {: #wp1059914}</p>
+</td>
+<td>
+<p>1 {: #wp1059917}</p>
+</td>
+<td>
+<p>X {: #wp1059920}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0603 {: #wp1060048}</p>
+</td>
+<td>
+<p>EEPROM malfunction {: #wp1060051}</p>
+</td>
+<td>
+<p>X {: #wp1060054}</p>
+</td>
+<td>
+<p>X {: #wp1060057}</p>
+</td>
+<td>
+<p>1 {: #wp1060060}</p>
+</td>
+<td>
+<p>X {: #wp1060063}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0604 {: #wp1060067}</p>
+</td>
+<td>
+<p>RAM malfunction {: #wp1060070}</p>
+</td>
+<td>
+<p>X {: #wp1060073}</p>
+</td>
+<td>
+<p>X {: #wp1060076}</p>
+</td>
+<td>
+<p>1 {: #wp1060079}</p>
+</td>
+<td>
+<p>X {: #wp1060082}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0707 {: #wp1060086}</p>
+</td>
+<td>
+<p>Transmission range (TR) switch circuit low input (short to ground) {: #wp1060089}</p>
+</td>
+<td>
+<p>X {: #wp1060092}</p>
+</td>
+<td>
+<p>X {: #wp1060095}</p>
+</td>
+<td>
+<p>1 {: #wp1060098}</p>
+</td>
+<td>
+<p>X {: #wp1060101}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0708 {: #wp1060105}</p>
+</td>
+<td>
+<p>Transmission range (TR) switch circuit high input (open circuit) {: #wp1060108}</p>
+</td>
+<td>
+<p>X {: #wp1060111}</p>
+</td>
+<td>
+<p>X {: #wp1060114}</p>
+</td>
+<td>
+<p>2 {: #wp1060117}</p>
+</td>
+<td>
+<p>X {: #wp1060120}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0711 {: #wp1060124}</p>
+</td>
+<td>
+<p>Transmission fluid temperature (TFT) sensor malfunction (stuck) {: #wp1060127}</p>
+</td>
+<td>
+<p>X {: #wp1060130}</p>
+</td>
+<td>
+<p>X {: #wp1060133}</p>
+</td>
+<td>
+<p>2 {: #wp1060136}</p>
+</td>
+<td>
+<p>X {: #wp1060139}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0712 {: #wp1060143}</p>
+</td>
+<td>
+<p>Transmission fluid temperature (TFT) sensor circuit malfunction (short to ground) {: #wp1060146}</p>
+</td>
+<td>
+<p>X {: #wp1060149}</p>
+</td>
+<td>
+<p>X {: #wp1060152}</p>
+</td>
+<td>
+<p>1 {: #wp1060155}</p>
+</td>
+<td>
+<p>X {: #wp1060158}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0713 {: #wp1060402}</p>
+</td>
+<td>
+<p>Transmission fluid temperature (TFT) sensor circuit malfunction (short to power/open circuit) {: #wp1060405}</p>
+</td>
+<td>
+<p>X {: #wp1060408}</p>
+</td>
+<td>
+<p>X {: #wp1060411}</p>
+</td>
+<td>
+<p>1 {: #wp1060414}</p>
+</td>
+<td>
+<p>X {: #wp1060417}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0717 {: #wp1060453}</p>
+</td>
+<td>
+<p>Turbine sensor circuit malfunction (open circuit/short circuit) {: #wp1060456}</p>
+</td>
+<td>
+<p>X {: #wp1060459}</p>
+</td>
+<td>
+<p>X {: #wp1060462}</p>
+</td>
+<td>
+<p>1 {: #wp1060465}</p>
+</td>
+<td>
+<p>X {: #wp1060468}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0722 {: #wp1060504}</p>
+</td>
+<td>
+<p>Vehicle speed sensor (VSS) circuit malfunction (open circuit/short circuit) {: #wp1060507}</p>
+</td>
+<td>
+<p>X {: #wp1060510}</p>
+</td>
+<td>
+<p>X {: #wp1060513}</p>
+</td>
+<td>
+<p>1 {: #wp1060516}</p>
+</td>
+<td>
+<p>X {: #wp1060519}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0751 {: #wp1060555}</p>
+</td>
+<td>
+<p>Shift solenoid A malfunction (stuck off) {: #wp1060558}</p>
+</td>
+<td>
+<p>X {: #wp1060561}</p>
+</td>
+<td>
+<p>X {: #wp1060564}</p>
+</td>
+<td>
+<p>2 {: #wp1060567}</p>
+</td>
+<td>
+<p>X {: #wp1060570}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0752 {: #wp1060604}</p>
+</td>
+<td>
+<p>Shift solenoid A malfunction (stuck on) {: #wp1060607}</p>
+</td>
+<td>
+<p>X {: #wp1060610}</p>
+</td>
+<td>
+<p>X {: #wp1060613}</p>
+</td>
+<td>
+<p>2 {: #wp1060616}</p>
+</td>
+<td>
+<p>X {: #wp1060619}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0756 {: #wp1060653}</p>
+</td>
+<td>
+<p>Shift solenoid B malfunction (stuck off) {: #wp1060656}</p>
+</td>
+<td>
+<p>X {: #wp1060659}</p>
+</td>
+<td>
+<p>X {: #wp1060662}</p>
+</td>
+<td>
+<p>2 {: #wp1060665}</p>
+</td>
+<td>
+<p>X {: #wp1060668}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0757 {: #wp1060702}</p>
+</td>
+<td>
+<p>Shift solenoid B malfunction (stuck on) {: #wp1060705}</p>
+</td>
+<td>
+<p>X {: #wp1060708}</p>
+</td>
+<td>
+<p>X {: #wp1060711}</p>
+</td>
+<td>
+<p>2 {: #wp1060714}</p>
+</td>
+<td>
+<p>X {: #wp1060717}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0761 {: #wp1060751}</p>
+</td>
+<td>
+<p>Shift solenoid C malfunction (stuck off) {: #wp1060754}</p>
+</td>
+<td>
+<p>X {: #wp1060757}</p>
+</td>
+<td>
+<p>X {: #wp1060760}</p>
+</td>
+<td>
+<p>2 {: #wp1060763}</p>
+</td>
+<td>
+<p>X {: #wp1060766}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0762 {: #wp1060800}</p>
+</td>
+<td>
+<p>Shift solenoid C malfunction (stuck on) {: #wp1060803}</p>
+</td>
+<td>
+<p>X {: #wp1060806}</p>
+</td>
+<td>
+<p>X {: #wp1060809}</p>
+</td>
+<td>
+<p>2 {: #wp1060812}</p>
+</td>
+<td>
+<p>X {: #wp1060815}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0766 {: #wp1060849}</p>
+</td>
+<td>
+<p>Shift solenoid D malfunction (stuck off) {: #wp1060852}</p>
+</td>
+<td>
+<p>X {: #wp1060855}</p>
+</td>
+<td>
+<p>X {: #wp1060858}</p>
+</td>
+<td>
+<p>2 {: #wp1060861}</p>
+</td>
+<td>
+<p>X {: #wp1060864}</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>Shift solenoid G malfunction (stuck on) {: #wp1060871}</p>
+</td>
+<td>
+<p>X {: #wp1060874}</p>
+</td>
+<td>
+<p>X {: #wp1060877}</p>
+</td>
+<td>
+<p>2 {: #wp1060880}</p>
+</td>
+<td>
+<p>X {: #wp1060883}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0781 {: #wp1060942}</p>
+</td>
+<td>
+<p>1-2 shift valve malfunction {: #wp1060945}</p>
+</td>
+<td>
+<p>X {: #wp1060948}</p>
+</td>
+<td>
+<p>X {: #wp1060951}</p>
+</td>
+<td>
+<p>2 {: #wp1060954}</p>
+</td>
+<td>
+<p>X {: #wp1060957}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0813 {: #wp1060992}</p>
+</td>
+<td>
+<p>Reverse sequence valve malfunction {: #wp1060995}</p>
+</td>
+<td>
+<p>X {: #wp1060998}</p>
+</td>
+<td>
+<p>X {: #wp1061001}</p>
+</td>
+<td>
+<p>2 {: #wp1061004}</p>
+</td>
+<td>
+<p>X {: #wp1061007}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0819 {: #wp1061041}</p>
+</td>
+<td>
+<p>Manual switch/up switch/down switch circuit malfunction (open circuit/short circuit) {: #wp1061044}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1061047}</li>
+</ul>
+</td>
+<td>
+<p>X {: #wp1061050}</p>
+</td>
+<td>
+<p>1 {: #wp1061053}</p>
+</td>
+<td>
+<p>X {: #wp1061056}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0826 {: #wp1061096}</p>
+</td>
+<td>
+<p>Steering shift switch circuit malfunction (open circuit/short to ground) {: #wp1061099}</p>
+</td>
+<td>
+<p>X {: #wp1061102}</p>
+</td>
+<td>
+<p>X {: #wp1061105}</p>
+</td>
+<td>
+<p>1 {: #wp1061108}</p>
+</td>
+<td>
+<p>X {: #wp1061111}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0882 {: #wp1061147}</p>
+</td>
+<td>
+<p>TCM B+ low (less than 9 V) {: #wp1061150}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1061153}</li>
+</ul>
+</td>
+<td>
+<p>X {: #wp1061156}</p>
+</td>
+<td>
+<p>1 {: #wp1061159}</p>
+</td>
+<td>
+<p>X {: #wp1061162}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0883 {: #wp1061198}</p>
+</td>
+<td>
+<p>TCM B+ low (less than 11 V) {: #wp1061201}</p>
+</td>
+<td>
+<ul>
+<li>{: #wp1061204}</li>
+</ul>
+</td>
+<td>
+<p>X {: #wp1061207}</p>
+</td>
+<td>
+<p>1 {: #wp1061210}</p>
+</td>
+<td>
+<p>X {: #wp1061213}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0961 {: #wp1061249}</p>
+</td>
+<td>
+<p>Line pressure control solenoid range/performance (stuck) {: #wp1061252}</p>
+</td>
+<td>
+<p>X {: #wp1061255}</p>
+</td>
+<td>
+<p>X {: #wp1061258}</p>
+</td>
+<td>
+<p>1 {: #wp1061261}</p>
+</td>
+<td>
+<p>X {: #wp1061264}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0962 {: #wp1061300}</p>
+</td>
+<td>
+<p>Line pressure control solenoid circuit malfunction (short to ground/open circuit) {: #wp1061303}</p>
+</td>
+<td>
+<p>X {: #wp1061306}</p>
+</td>
+<td>
+<p>X {: #wp1061309}</p>
+</td>
+<td>
+<p>1 {: #wp1061312}</p>
+</td>
+<td>
+<p>X {: #wp1061315}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0963 {: #wp1061351}</p>
+</td>
+<td>
+<p>Line pressure control solenoid circuit malfunction (short to power) {: #wp1061354}</p>
+</td>
+<td>
+<p>X {: #wp1061357}</p>
+</td>
+<td>
+<p>X {: #wp1061360}</p>
+</td>
+<td>
+<p>1 {: #wp1061363}</p>
+</td>
+<td>
+<p>X {: #wp1061366}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0969 {: #wp1061400}</p>
+</td>
+<td>
+<p>Shift solenoid F range/performance (stuck) {: #wp1061403}</p>
+</td>
+<td>
+<p>X {: #wp1061406}</p>
+</td>
+<td>
+<p>X {: #wp1061409}</p>
+</td>
+<td>
+<p>1 {: #wp1061412}</p>
+</td>
+<td>
+<p>X {: #wp1061415}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0970 {: #wp1061451}</p>
+</td>
+<td>
+<p>Shift solenoid F circuit malfunction (short to ground/open circuit) {: #wp1061454}</p>
+</td>
+<td>
+<p>X {: #wp1061457}</p>
+</td>
+<td>
+<p>X {: #wp1061460}</p>
+</td>
+<td>
+<p>1 {: #wp1061463}</p>
+</td>
+<td>
+<p>X {: #wp1061466}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0971 {: #wp1061502}</p>
+</td>
+<td>
+<p>Shift solenoid F circuit malfunction (short to power) {: #wp1061505}</p>
+</td>
+<td>
+<p>X {: #wp1061508}</p>
+</td>
+<td>
+<p>X {: #wp1061511}</p>
+</td>
+<td>
+<p>1 {: #wp1061514}</p>
+</td>
+<td>
+<p>X {: #wp1061517}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0973 {: #wp1061551}</p>
+</td>
+<td>
+<p>Shift solenoid A circuit malfunction (short to ground) {: #wp1061554}</p>
+</td>
+<td>
+<p>X {: #wp1061557}</p>
+</td>
+<td>
+<p>X {: #wp1061560}</p>
+</td>
+<td>
+<p>1 {: #wp1061563}</p>
+</td>
+<td>
+<p>X {: #wp1061566}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0974 {: #wp1061600}</p>
+</td>
+<td>
+<p>Shift solenoid A circuit malfunction (short to power/open circuit) {: #wp1061603}</p>
+</td>
+<td>
+<p>X {: #wp1061606}</p>
+</td>
+<td>
+<p>X {: #wp1061609}</p>
+</td>
+<td>
+<p>1 {: #wp1061612}</p>
+</td>
+<td>
+<p>X {: #wp1061615}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0976 {: #wp1061651}</p>
+</td>
+<td>
+<p>Shift solenoid B circuit malfunction (short to ground) {: #wp1061654}</p>
+</td>
+<td>
+<p>X {: #wp1061657}</p>
+</td>
+<td>
+<p>X {: #wp1061660}</p>
+</td>
+<td>
+<p>1 {: #wp1061663}</p>
+</td>
+<td>
+<p>X {: #wp1061666}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0977 {: #wp1061700}</p>
+</td>
+<td>
+<p>Shift solenoid B circuit malfunction (short to power/open circuit) {: #wp1061703}</p>
+</td>
+<td>
+<p>X {: #wp1061706}</p>
+</td>
+<td>
+<p>X {: #wp1061709}</p>
+</td>
+<td>
+<p>1 {: #wp1061712}</p>
+</td>
+<td>
+<p>X {: #wp1061715}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0979 {: #wp1061751}</p>
+</td>
+<td>
+<p>Shift solenoid C circuit malfunction (short to ground) {: #wp1061754}</p>
+</td>
+<td>
+<p>X {: #wp1061757}</p>
+</td>
+<td>
+<p>X {: #wp1061760}</p>
+</td>
+<td>
+<p>1 {: #wp1061763}</p>
+</td>
+<td>
+<p>X {: #wp1061766}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0980 {: #wp1061800}</p>
+</td>
+<td>
+<p>Shift solenoid C circuit malfunction (short to power/open circuit) {: #wp1061803}</p>
+</td>
+<td>
+<p>X {: #wp1061806}</p>
+</td>
+<td>
+<p>X {: #wp1061809}</p>
+</td>
+<td>
+<p>1 {: #wp1061812}</p>
+</td>
+<td>
+<p>X {: #wp1061815}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0982 {: #wp1061851}</p>
+</td>
+<td>
+<p>Shift solenoid D circuit malfunction (short to ground) {: #wp1061854}</p>
+</td>
+<td>
+<p>X {: #wp1061857}</p>
+</td>
+<td>
+<p>X {: #wp1061860}</p>
+</td>
+<td>
+<p>1 {: #wp1061863}</p>
+</td>
+<td>
+<p>X {: #wp1061866}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0983 {: #wp1061900}</p>
+</td>
+<td>
+<p>Shift solenoid D circuit malfunction (short to power/open circuit) {: #wp1061903}</p>
+</td>
+<td>
+<p>X {: #wp1061906}</p>
+</td>
+<td>
+<p>X {: #wp1061909}</p>
+</td>
+<td>
+<p>1 {: #wp1061912}</p>
+</td>
+<td>
+<p>X {: #wp1061915}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0985 {: #wp1061951}</p>
+</td>
+<td>
+<p>Shift solenoid E circuit malfunction (short to ground) {: #wp1061954}</p>
+</td>
+<td>
+<p>X {: #wp1061957}</p>
+</td>
+<td>
+<p>X {: #wp1061960}</p>
+</td>
+<td>
+<p>1 {: #wp1061963}</p>
+</td>
+<td>
+<p>X {: #wp1061966}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0986 {: #wp1062000}</p>
+</td>
+<td>
+<p>Shift solenoid E circuit malfunction (short to power/open circuit) {: #wp1062003}</p>
+</td>
+<td>
+<p>X {: #wp1062006}</p>
+</td>
+<td>
+<p>X {: #wp1062009}</p>
+</td>
+<td>
+<p>1 {: #wp1062012}</p>
+</td>
+<td>
+<p>X {: #wp1062015}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2719 {: #wp1062051}</p>
+</td>
+<td>
+<p>Shift solenoid G range/performance (stuck) {: #wp1062054}</p>
+</td>
+<td>
+<p>X {: #wp1062057}</p>
+</td>
+<td>
+<p>X {: #wp1062060}</p>
+</td>
+<td>
+<p>1 {: #wp1062063}</p>
+</td>
+<td>
+<p>X {: #wp1062066}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2720 {: #wp1062102}</p>
+</td>
+<td>
+<p>Shift solenoid G circuit malfunction (short to ground/open circuit) {: #wp1062105}</p>
+</td>
+<td>
+<p>X {: #wp1062108}</p>
+</td>
+<td>
+<p>X {: #wp1062111}</p>
+</td>
+<td>
+<p>1 {: #wp1062114}</p>
+</td>
+<td>
+<p>X {: #wp1062117}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2721 {: #wp1062153}</p>
+</td>
+<td>
+<p>Shift solenoid G circuit malfunction (short to power) {: #wp1062156}</p>
+</td>
+<td>
+<p>X {: #wp1062159}</p>
+</td>
+<td>
+<p>X {: #wp1062162}</p>
+</td>
+<td>
+<p>1 {: #wp1062165}</p>
+</td>
+<td>
+<p>X {: #wp1062168}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2757 {: #wp1062202}</p>
+</td>
+<td>
+<p>Torque converter clutch (TCC) stuck off {: #wp1062205}</p>
+</td>
+<td>
+<p>X {: #wp1062208}</p>
+</td>
+<td>
+<p>X {: #wp1062211}</p>
+</td>
+<td>
+<p>2 {: #wp1062214}</p>
+</td>
+<td>
+<p>X {: #wp1062217}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2758 {: #wp1062251}</p>
+</td>
+<td>
+<p>Torque converter clutch (TCC) stuck on {: #wp1062254}</p>
+</td>
+<td>
+<p>X {: #wp1062257}</p>
+</td>
+<td>
+<p>X {: #wp1062260}</p>
+</td>
+<td>
+<p>2 {: #wp1062263}</p>
+</td>
+<td>
+<p>X {: #wp1062266}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2762 {: #wp1062300}</p>
+</td>
+<td>
+<p>TCC control solenoid range/performance (stuck) {: #wp1062303}</p>
+</td>
+<td>
+<p>X {: #wp1062306}</p>
+</td>
+<td>
+<p>X {: #wp1062309}</p>
+</td>
+<td>
+<p>1 {: #wp1062312}</p>
+</td>
+<td>
+<p>X {: #wp1062315}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2763 {: #wp1062351}</p>
+</td>
+<td>
+<p>TCC control solenoid circuit malfunction (short to power) {: #wp1062354}</p>
+</td>
+<td>
+<p>X {: #wp1062357}</p>
+</td>
+<td>
+<p>X {: #wp1062360}</p>
+</td>
+<td>
+<p>1 {: #wp1062363}</p>
+</td>
+<td>
+<p>X {: #wp1062366}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2764 {: #wp1062400}</p>
+</td>
+<td>
+<p>TCC control solenoid circuit malfunction (short to ground/open circuit) {: #wp1062403}</p>
+</td>
+<td>
+<p>X {: #wp1062406}</p>
+</td>
+<td>
+<p>X {: #wp1062409}</p>
+</td>
+<td>
+<p>1 {: #wp1062412}</p>
+</td>
+<td>
+<p>X {: #wp1062415}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0073 {: #wp1062451}</p>
+</td>
+<td>
+<p>CAN BUS OFF {: #wp1062454}</p>
+</td>
+<td>
+<p>X {: #wp1062457}</p>
+</td>
+<td>
+<p>X {: #wp1062460}</p>
+</td>
+<td>
+<p>1 {: #wp1062463}</p>
+</td>
+<td>
+<p>X {: #wp1062466}</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0100 {: #wp1062500}</p>
+</td>
+<td>
+<p>TCM cannot receive any signals from PCM {: #wp1062503}</p>
+</td>
+<td>
+<p>X {: #wp1062506}</p>
+</td>
+<td>
+<p>X {: #wp1062509}</p>
+</td>
+<td>
+<p>1 {: #wp1062512}</p>
+</td>
+<td>
+<p>X {: #wp1062515}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p id="wp1062579">MIL :
+{: #wp1062551}
+Malfunction Indicator Lamp
+{: #wp1062564}
+DC :
+{: #wp1062570}
+Drive Cycle</p>
+<p><a href="" id="wp1062686"></a></p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>
