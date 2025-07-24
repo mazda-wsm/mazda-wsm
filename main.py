@@ -110,7 +110,8 @@ class WSMMarkdownConverter(TableConverter):
         return title.removeprefix(' ➭ ') + '\n\n' + super().convert(html)
 
 class WSMScraper:
-    def __init__(self, wsm_id="D933-1A-22C_Ver26"):
+    def __init__(self, wsm_cache="wsm", wsm_id="D933-1A-22C_Ver26"):
+        self.output_path = Path(wsm_cache) / Path(wsm_id)
         self.wsm_id = wsm_id
         self.base_uri = f"/wsm-secure/WSM/{self.wsm_id}/"
         self.start_url = "https://mazdamanuals.com.au" + self.base_uri
@@ -149,12 +150,12 @@ class WSMScraper:
                         if not parent[part] or 'INDEX' not in parent[part]:
                             parent[part]["INDEX"] = location + '/' + filename.name
                     content = WSMMarkdownConverter(self.article_map, self.nav, breadcrumbs, filename.name).convert(content).encode("utf-8")
-                    filename = Path(self.wsm_id).joinpath("docs").joinpath(location).joinpath(filename.name).with_suffix(
+                    filename = self.output_path.joinpath("docs").joinpath(location).joinpath(filename.name).with_suffix(
                         ".md")
                 case ".png":
-                    filename = Path(self.wsm_id).joinpath("docs").joinpath("images").joinpath(filename.name).with_suffix(".png")
+                    filename = self.output_path.joinpath("docs").joinpath("images").joinpath(filename.name).with_suffix(".png")
                 case ".pdf":
-                    filename = Path(self.wsm_id).joinpath("docs").joinpath("pdf").joinpath(filename.name).with_suffix(".pdf")
+                    filename = self.output_path.joinpath("docs").joinpath("pdf").joinpath(filename.name).with_suffix(".pdf")
                     self.article_map["javascript:Open()"] = self.article_map[filename.name]
                 case _:
                     raise NotImplementedError(f"Unsupported filename: {filename}")
@@ -178,7 +179,7 @@ class WSMScraper:
             self.md_queue.task_done()
 
     async def download(self, url: httpx.URL) -> (Path, bytes):
-        filename = Path(self.wsm_id).joinpath(url.path.replace(self.base_uri, ''))
+        filename = self.output_path.joinpath(url.path.replace(self.base_uri, ''))
 
         if filename in self.seen:
             return None, None
@@ -284,7 +285,7 @@ class WSMScraper:
                 ]
             }
         }
-        with open(f"{self.wsm_id}/mkdocs.yml", "w") as outfile:
+        with open(self.output_path.joinpath("mkdocs.yml"), "w") as outfile:
             yaml.dump(mkdocs, outfile)
 
 if __name__ == "__main__":
