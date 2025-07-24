@@ -1,7 +1,7 @@
 [project]
-name = "custom-scraper"
+name = "mazda-wsm"
 version = "0.1.0"
-description = "Add your description here"
+description = " Download Workshop Manuals for your Mazda, and serve them as beautiful, searchable websites using MkDocs!"
 requires-python = ">=3.10"
 dependencies = [
     "aiofiles>=24.1.0",
