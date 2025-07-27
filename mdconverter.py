@@ -77,6 +77,7 @@ class TableConverter(MarkdownConverter):
         self._current_row: int = 0
         self._current_col: int = 0
         self._current_table: Grid = Grid()
+        self._inline_id_attributes = False
 
     def convert_table(self, el, text, parent_tags):
         if 'table' in parent_tags or not self._current_table.col_count:
@@ -104,22 +105,39 @@ class TableConverter(MarkdownConverter):
 
             for col in range(self._current_table.col_count):
                 cell = self._current_table.cell(row, col)
+
+                if self._current_table.cell(row, col).rowspan > 1:
+                    border_line_char = ' '
+
+                    if len(bottom_border) > 0 and bottom_border[-1] == '-':
+                        border_limit_left = '+'
+                    else:
+                        border_limit_left = '|'
+                else:
+                    border_line_char = '-'
+                    border_limit_left = '+'
+
                 if not cell.spans_left:
                     data_line     += '|' + cell.text.ljust(column_sizes[col])
                     top_border    += '+' + '-' * column_sizes[col]
-                    bottom_border += '+' + '-' * column_sizes[col]
+
+                    bottom_border += border_limit_left + border_line_char * column_sizes[col]
                 else:
                     data_line   += ' ' * (column_sizes[col] + 1)
                     top_border  += '-' * (column_sizes[col] + 1)
 
                     if row < self._current_table.row_count - 1 and not self._current_table.cell(row + 1, col).spans_left:
-                        bottom_border += '+' + '-' * column_sizes[col]
+                        bottom_border += border_limit_left + border_line_char * column_sizes[col]
                     else:
-                        bottom_border += '-' * (column_sizes[col] + 1)
+                        bottom_border += border_line_char * (column_sizes[col] + 1)
 
             data_line     += '|'
             top_border    += '+'
-            bottom_border += '+'
+
+            if bottom_border[-1] == '-':
+                bottom_border += '+'
+            else:
+                bottom_border += '|'
 
             if row == 0:
                 print(top_border, file=result)
@@ -145,11 +163,14 @@ class TableConverter(MarkdownConverter):
 
         self._current_table.set(self._current_row, self._current_col, Cell(colspan, rowspan, len(text), text))
 
-        for i in range(1, colspan):
-            self._current_table.cell(self._current_row, self._current_col + i).spans_left = True
-
-        for i in range(1, rowspan):
-            self._current_table.cell(self._current_row + i, self._current_col).spans_up = True
+        for col in range(colspan):
+            for row in range(rowspan):
+                if col > 0:
+                    self._current_table.cell(self._current_row + row, self._current_col + col).spans_left = True
+                if row > 0:
+                    self._current_table.cell(self._current_row + row, self._current_col + col).spans_up = True
+                self._current_table.cell(self._current_row + row, self._current_col + col).colspan = colspan - col
+                self._current_table.cell(self._current_row + row, self._current_col + col).rowspan = rowspan - row
 
         self._current_col += colspan
         return text
@@ -165,12 +186,27 @@ class TableConverter(MarkdownConverter):
         self._current_col = 0
         return '|' + text + '\n'
 
+    def convert_b(self, el, text, parent_tags):
+        # Deal with weird cases in HTML when a <b> tag contains a <table> tag
+        children = list(el.children)
+        if len(children) == 1 and isinstance(children[0], NavigableString):
+            return super().convert_b(el, text, parent_tags)
+
+        for child in el.children:
+            if isinstance(child, NavigableString) and len(child.strip()) > 0:
+                bold_text = super().convert_b(el, child.strip(), parent_tags)
+                text = text.replace(child.strip(), bold_text, 1)
+        return text
+
     def convert_a(self, el, text, parent_tags):
         if el.get('href'):
             return super().convert_a(el, text, parent_tags)
         elif name := el.get('name'):
             if not el.next_sibling:
-                return super().convert_a(el, f'{{: #{name}}}', parent_tags)
+                return super().convert_a(el,
+                                         f'{{: #{name}}}' if self._inline_id_attributes else f'[](){{: #{name}}}',
+                                         parent_tags
+                                         )
             else:
                 while el.next_sibling:
                     el = el.next_sibling
