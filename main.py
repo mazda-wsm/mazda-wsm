@@ -178,7 +178,7 @@ class WSMScraper:
         finally:
             self.md_queue.task_done()
 
-    async def download(self, url: httpx.URL) -> (Path, bytes):
+    async def download(self, url: httpx.URL) -> tuple[Path | None, bytes | None]:
         filename = self.output_path.joinpath(url.path.replace(self.base_uri, ''))
 
         if filename in self.seen:
