@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">MANUAL MODE SHIFT CONTROL OPERATION [SJ6A-EL]</a></li>
+        <li><a href="#manual-mode-shift-control-operation-sj6a-el">MANUAL MODE SHIFT CONTROL OPERATION [SJ6A-EL]</a></li>
         <li><a href="#manual-mode-shift">Manual Mode Shift</a></li><li><a href="#shift-diagram">Shift Diagram</a></li>
     </ul>
 </nav>
@@ -1246,179 +1246,165 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0035/">TRANSMISSION/TRANSAXLE</a> ➭ <a href="../../node_S02_0041/">AUTOMATIC TRANSMISSION[SJ6A-EL]</a> ➭ <a href="./">MANUAL MODE SHIFT CONTROL OPERATION [SJ6A-EL]</a></p>
-<h1 id="wp1025486"><strong>MANUAL MODE SHIFT CONTROL OPERATION [SJ6A-EL]</strong></h1>
+<h1 id="manual-mode-shift-control-operation-sj6a-el"><strong>MANUAL MODE SHIFT CONTROL OPERATION [SJ6A-EL]</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id051311326200</p>
-<p>{: #wp1059780}</p>
-<h2 id="manual-mode-shift"><strong id="wp1062965">Manual Mode Shift</strong></h2>
-<p id="wp1059790">• When the selector lever is shifted over from the D to M range position, the M range switch in the selector lever component turns on, sending a manual mode command signal to the TCM which activates the manual mode shift control.</p>
-<p id="wp1059804">• When in manual mode and the selector lever is operated in the back (+) direction, the up switch in the selector lever component is turned on and an up-shift command signal is input to the TCM.</p>
+<p><a href="" id="wp1059780"></a></p>
+<h2 id="manual-mode-shift"><strong>Manual Mode Shift</strong><a href="" id="wp1062965"></a></h2>
+<p>• When the selector lever is shifted over from the D to M range position, the M range switch in the selector lever component turns on, sending a manual mode command signal to the TCM which activates the manual mode shift control.
+<a href="" id="wp1059790"></a></p>
+<p>• When in manual mode and the selector lever is operated in the back (+) direction, the up switch in the selector lever component is turned on and an up-shift command signal is input to the TCM.
+<a href="" id="wp1059804"></a></p>
 <ul>
-<li id="wp1059817">The TCM, triggered by the up-shift command signal, carries out shifting by outputting an operation signal to the shift control solenoid.</li>
+<li>The TCM, triggered by the up-shift command signal, carries out shifting by outputting an operation signal to the shift control solenoid.
+<a href="" id="wp1059817"></a></li>
 </ul>
-<p id="wp1059832">• Conversely, when the selector lever is operated in the forward (-) direction, the down switch in the selector lever component turns on, and a down-shift command signal is input to the TCM.</p>
+<p>• Conversely, when the selector lever is operated in the forward (-) direction, the down switch in the selector lever component turns on, and a down-shift command signal is input to the TCM.
+<a href="" id="wp1059832"></a></p>
 <ul>
-<li id="wp1059845">The TCM, triggered by the down-shift command signal, carries out shifting by outputting an operation signal to the shift control solenoid if the vehicle speed is less than the set speed and the gear position is 2GR or above.</li>
+<li>The TCM, triggered by the down-shift command signal, carries out shifting by outputting an operation signal to the shift control solenoid if the vehicle speed is less than the set speed and the gear position is 2GR or above.
+<a href="" id="wp1059845"></a></li>
 </ul>
-<p id="wp1059860">• The up/down operation of the steering shift switch is the same as the manual operation of the selector lever.</p>
-<p id="wp1059872">• The TCM utilizes a specialized M range automatic shift diagram. Due to this, restriction of manual shift demand and automatic control of downshifting is carried out, reducing load on the AT, preventing engine over-rev and ensuring drive stability.</p>
+<p>• The up/down operation of the steering shift switch is the same as the manual operation of the selector lever.
+<a href="" id="wp1059860"></a></p>
+<p>• The TCM utilizes a specialized M range automatic shift diagram. Due to this, restriction of manual shift demand and automatic control of downshifting is carried out, reducing load on the AT, preventing engine over-rev and ensuring drive stability.
+<a href="" id="wp1059872"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>Condition</strong> <a href="" id="wp1059968"></a>}{: #wp1059883</p>
+<p><strong>Condition</strong> <a href="" id="wp1059968"></a><a href="" id="wp1059883"></a></p>
 </th>
 <th>
-<p><strong>Shift control</strong> {: #wp1059970}</p>
+<p><strong>Shift control</strong> <a href="" id="wp1059970"></a></p>
 </th>
 <th>
-<p><strong>Note</strong> {: #wp1059972}</p>
+<p><strong>Note</strong> <a href="" id="wp1059972"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>1GR→2GR up-shift command, at low speed {: #wp1059886}</p>
+<p>1GR→2GR up-shift command, at low speed <a href="" id="wp1059886"></a></p>
 </td>
-<td>
-<p>• To reduce load on the AT, upshifting is inhibited until vehicle reaches speed possible for upshifting {: #wp1059888}</p>
+<td rowspan="5">
+<p>• To reduce load on the AT, upshifting is inhibited until vehicle reaches speed possible for upshifting <a href="" id="wp1059888"></a></p>
 </td>
-<td>
+<td rowspan="6">
 <ul>
-<li>{: #wp1059944}</li>
+<li><a href="" id="wp1059944"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>2GR→3GR up-shift command, at low speed {: #wp1059991}</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>
-<p>3GR→4GR up-shift command, at low speed {: #wp1060001}</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>
-<p>4GR→5GR up-shift command, at low speed {: #wp1060011}</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>
-<p>5GR→6GR up-shift command, at low speed {: #wp1060042}</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>
-<p>5GR→6GR up-shift command, low ECT {: #wp1060065}</p>
-</td>
-<td>
-<p>• To rapid engine warming-up, upshifting to 6GR is inhibited {: #wp1060068}</p>
-</td>
-<td></td>
-</tr>
-<tr>
-<td>
-<p>6GR→5GR down-shift command, above set speed {: #wp1060124}</p>
-</td>
-<td>
-<p>• To prevent engine over-rev, downshifting is inhibited until vehicle reaches speed possible for downshifting {: #wp1060127}</p>
-</td>
-<td>
-<p>• Gear position indicator light flash to alert driver {: #wp1060130}</p>
+<p>2GR→3GR up-shift command, at low speed <a href="" id="wp1059991"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>5GR→4GR down-shift command, above set speed {: #wp1060170}</p>
+<p>3GR→4GR up-shift command, at low speed <a href="" id="wp1060001"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>4GR→3GR down-shift command, above set speed {: #wp1060160}</p>
+<p>4GR→5GR up-shift command, at low speed <a href="" id="wp1060011"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>3GR→2GR down-shift command, above set speed {: #wp1060150}</p>
+<p>5GR→6GR up-shift command, at low speed <a href="" id="wp1060042"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>2GR→1GR down-shift command, above set speed {: #wp1060140}</p>
+<p>5GR→6GR up-shift command, low ECT <a href="" id="wp1060065"></a></p>
 </td>
-<td></td>
-<td></td>
+<td>
+<p>• To rapid engine warming-up, upshifting to 6GR is inhibited <a href="" id="wp1060068"></a></p>
+</td>
 </tr>
 <tr>
 <td>
-<p>In 6GR deceleration, speed goes below coast-down set speed (deceleration down- shift) {: #wp1060231}</p>
+<p>6GR→5GR down-shift command, above set speed <a href="" id="wp1060124"></a></p>
+</td>
+<td rowspan="5">
+<p>• To prevent engine over-rev, downshifting is inhibited until vehicle reaches speed possible for downshifting <a href="" id="wp1060127"></a></p>
+</td>
+<td rowspan="5">
+<p>• Gear position indicator light flash to alert driver <a href="" id="wp1060130"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5GR→4GR down-shift command, above set speed <a href="" id="wp1060170"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4GR→3GR down-shift command, above set speed <a href="" id="wp1060160"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3GR→2GR down-shift command, above set speed <a href="" id="wp1060150"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2GR→1GR down-shift command, above set speed <a href="" id="wp1060140"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>In 6GR deceleration, speed goes below coast-down set speed (deceleration down- shift) <a href="" id="wp1060231"></a></p>
 </td>
 <td>
-<p>• To assure drive stability, automatically downshifts from 6GR to 5GR {: #wp1060234}</p>
+<p>• To assure drive stability, automatically downshifts from 6GR to 5GR <a href="" id="wp1060234"></a></p>
 </td>
-<td>
+<td rowspan="5">
 <ul>
-<li>{: #wp1060237}</li>
+<li><a href="" id="wp1060237"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>In 5GR deceleration, speed goes below coast-down set speed (deceleration down- shift) {: #wp1060291}</p>
+<p>In 5GR deceleration, speed goes below coast-down set speed (deceleration down- shift) <a href="" id="wp1060291"></a></p>
 </td>
 <td>
-<p>• To assure drive stability, automatically downshifts from 5GR to 4GR {: #wp1060294}</p>
+<p>• To assure drive stability, automatically downshifts from 5GR to 4GR <a href="" id="wp1060294"></a></p>
 </td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>In 4GR deceleration, speed goes below coast-down set speed (deceleration down- shift) {: #wp1060281}</p>
+<p>In 4GR deceleration, speed goes below coast-down set speed (deceleration down- shift) <a href="" id="wp1060281"></a></p>
 </td>
 <td>
-<p>• To assure drive stability, automatically downshifts from 4GR to 3GR {: #wp1060284}</p>
+<p>• To assure drive stability, automatically downshifts from 4GR to 3GR <a href="" id="wp1060284"></a></p>
 </td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>In 3GR deceleration, speed goes below coast-down set speed (deceleration down- shift) {: #wp1060271}</p>
+<p>In 3GR deceleration, speed goes below coast-down set speed (deceleration down- shift) <a href="" id="wp1060271"></a></p>
 </td>
 <td>
-<p>• To assure drive stability, automatically downshifts from 3GR to 2GR {: #wp1060274}</p>
+<p>• To assure drive stability, automatically downshifts from 3GR to 2GR <a href="" id="wp1060274"></a></p>
 </td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>In 2GR deceleration, speed goes below coast-down set speed (deceleration down- shift) {: #wp1060261}</p>
+<p>In 2GR deceleration, speed goes below coast-down set speed (deceleration down- shift) <a href="" id="wp1060261"></a></p>
 </td>
 <td>
-<p>• To assure drive stability, automatically downshifts from 2GR to 1GR {: #wp1060264}</p>
+<p>• To assure drive stability, automatically downshifts from 2GR to 1GR <a href="" id="wp1060264"></a></p>
 </td>
-<td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="shift-diagram"><strong id="wp1060388">Shift Diagram</strong></h2>
-<p><img alt="" id="wp1060398" src="../../../../../images/D5E513ZT6003.png" /></p>
+<h2 id="shift-diagram"><strong>Shift Diagram</strong><a href="" id="wp1060388"></a></h2>
+<p><img alt="" src="../../../../../images/D5E513ZT6003.png" /><a href="" id="wp1060398"></a></p>
 <p><a href="" id="wp1062730"></a></p>
 </section>
 

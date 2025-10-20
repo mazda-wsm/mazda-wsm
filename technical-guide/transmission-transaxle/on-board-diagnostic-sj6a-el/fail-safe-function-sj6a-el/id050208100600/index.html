@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">FAIL-SAFE FUNCTION [SJ6A-EL]</a></li>
+        <li><a href="#fail-safe-function-sj6a-el">FAIL-SAFE FUNCTION [SJ6A-EL]</a></li>
         <li><a href="#emergency-mode">Emergency Mode</a></li>
     </ul>
 </nav>
@@ -1246,797 +1246,793 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0035/">TRANSMISSION/TRANSAXLE</a> ➭ <a href="../../node_S02_0037/">ON-BOARD DIAGNOSTIC[SJ6A-EL]</a> ➭ <a href="./">FAIL-SAFE FUNCTION [SJ6A-EL]</a></p>
-<h1 id="wp1025486"><strong>FAIL-SAFE FUNCTION [SJ6A-EL]</strong></h1>
+<h1 id="fail-safe-function-sj6a-el"><strong>FAIL-SAFE FUNCTION [SJ6A-EL]</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id050208100600</p>
-<p>{: #wp1059782}</p>
-<p id="wp1065405">• In the fail-safe function, minimum vehicle drivability is obtained by changing the signals that are determined to be malfunctions by the malfunction detection function to the preset values, and limiting TCM control.</p>
+<p><a href="" id="wp1059782"></a></p>
+<p>• In the fail-safe function, minimum vehicle drivability is obtained by changing the signals that are determined to be malfunctions by the malfunction detection function to the preset values, and limiting TCM control.
+<a href="" id="wp1065405"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>DTC No.</strong> <a href="" id="wp1059906"></a>}{: #wp1059797</p>
+<p><strong>DTC No.</strong> <a href="" id="wp1059906"></a><a href="" id="wp1059797"></a></p>
 </th>
 <th>
-<p><strong>On-board diagnostic function</strong> {: #wp1059908}</p>
+<p><strong>On-board diagnostic function</strong> <a href="" id="wp1059908"></a></p>
 </th>
 <th>
-<p><strong>Detection condition</strong> {: #wp1059910}</p>
+<p><strong>Detection condition</strong> <a href="" id="wp1059910"></a></p>
 </th>
 <th>
-<p><strong>Fail-safe</strong> {: #wp1059912}</p>
+<p><strong>Fail-safe</strong> <a href="" id="wp1059912"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>P0601 {: #wp1059800}</p>
+<p>P0601 <a href="" id="wp1059800"></a></p>
 </td>
 <td>
-<p>Flash ROM malfunction {: #wp1059802}</p>
+<p>Flash ROM malfunction <a href="" id="wp1059802"></a></p>
 </td>
 <td>
-<p>• Flash ROM (in TCM) internal circuit malfunction is detected. {: #wp1059858}</p>
+<p>• Flash ROM (in TCM) internal circuit malfunction is detected. <a href="" id="wp1059858"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1059861}  • Inhibits self learning control {: #wp1060047}  • Inhibits driver adaptive shift control {: #wp1060057}  • Inhibits TCC control {: #wp1060067}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0603 {: #wp1059935}</p>
-</td>
-<td>
-<p>EEPROM malfunction {: #wp1059938}</p>
-</td>
-<td>
-<p>• Different numeric values for EEPRROM and RAM (in TCM) are detected. {: #wp1059941}</p>
-</td>
-<td>
-<p>N/A {: #wp1059944}</p>
+<p>• Emergency mode <a href="" id="wp1059861"></a>  • Inhibits self learning control <a href="" id="wp1060047"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1060057"></a>  • Inhibits TCC control <a href="" id="wp1060067"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0604 {: #wp1059948}</p>
+<p>P0603 <a href="" id="wp1059935"></a></p>
 </td>
 <td>
-<p>RAM malfunction {: #wp1059951}</p>
+<p>EEPROM malfunction <a href="" id="wp1059938"></a></p>
 </td>
 <td>
-<p>• RAM (in TCM) read/write error is detected. {: #wp1059954}</p>
+<p>• Different numeric values for EEPRROM and RAM (in TCM) are detected. <a href="" id="wp1059941"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1059957}  • Inhibits self learning control {: #wp1060145}  • Inhibits driver adaptive shift control {: #wp1060155}  • Inhibits TCC control {: #wp1060165}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0707 {: #wp1059961}</p>
-</td>
-<td>
-<p>Transmission range (TR) switch circuit low input (short to ground) {: #wp1059964}</p>
-</td>
-<td>
-<p>• TR switch position voltage input to TCM is <strong>less than 0.127 V</strong> when ignition switch is at ON position. {: #wp1059967}</p>
-</td>
-<td>
-<p>• D range is determined when there is no TR switch signal input. {: #wp1059970}  • Inhibits slope mode control {: #wp1060220}</p>
+<p>N/A <a href="" id="wp1059944"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0708 {: #wp1059974}</p>
+<p>P0604 <a href="" id="wp1059948"></a></p>
 </td>
 <td>
-<p>Transmission range (TR) switch circuit high input (open circuit) {: #wp1059977}</p>
+<p>RAM malfunction <a href="" id="wp1059951"></a></p>
 </td>
 <td>
-<p>• Vehicle speed is <strong>30 km/h {18.6 mph} or more</strong>, and no range signal is input from the TR switch. {: #wp1059980}</p>
+<p>• RAM (in TCM) read/write error is detected. <a href="" id="wp1059954"></a></p>
 </td>
 <td>
-<p>• D range is determined when there is no TR switch signal input. {: #wp1059983}  • Inhibits slope mode control {: #wp1060281}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0711 {: #wp1060289}</p>
-</td>
-<td>
-<p>Transmission fluid temperature (TFT) sensor malfunction (stuck) {: #wp1060292}</p>
-</td>
-<td>
-<p>• Change in ATF temperature cannot be detected for <strong>10 min or more</strong> when driving in D range. {: #wp1060295}</p>
-</td>
-<td>
-<p>• Fixes ATF temperature value at <strong>80</strong> °<strong>C {176</strong> °<strong>F}</strong> {: #wp1060298}  • Inhibits slope mode control {: #wp1060366}  • Inhibits self learning control {: #wp1060376}</p>
+<p>• Emergency mode <a href="" id="wp1059957"></a>  • Inhibits self learning control <a href="" id="wp1060145"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1060155"></a>  • Inhibits TCC control <a href="" id="wp1060165"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0712 {: #wp1060384}</p>
+<p>P0707 <a href="" id="wp1059961"></a></p>
 </td>
 <td>
-<p>Transmission fluid temperature (TFT) sensor circuit malfunction (short to ground) {: #wp1060387}</p>
+<p>Transmission range (TR) switch circuit low input (short to ground) <a href="" id="wp1059964"></a></p>
 </td>
 <td>
-<p>• TCM detects ATF temperature of <strong>200</strong> °<strong>C {392</strong> °<strong>F} or more</strong>. {: #wp1060390}</p>
+<p>• TR switch position voltage input to TCM is <strong>less than 0.127 V</strong> when ignition switch is at ON position. <a href="" id="wp1059967"></a></p>
 </td>
 <td>
-<p>• Fixes ATF temperature value at <strong>80</strong> °<strong>C {176</strong> °<strong>F}</strong> {: #wp1060393}  • Inhibits slope mode control {: #wp1060472}  • Inhibits self learning control {: #wp1060482}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0713 {: #wp1060490}</p>
-</td>
-<td>
-<p>Transmission fluid temperature (TFT) sensor circuit malfunction (short to power/open circuit) {: #wp1060493}</p>
-</td>
-<td>
-<p>• TCM detects ATF temperature of <strong>less than -43</strong> °<strong>C {-45.4</strong> °<strong>F}</strong> when engine is warmed-up and running. {: #wp1060496}</p>
-</td>
-<td>
-<p>• Fixes ATF temperature value at <strong>80</strong> °<strong>C {176</strong> °<strong>F}</strong> {: #wp1060499}  • Inhibits slope mode control {: #wp1060585}  • Inhibits self learning control {: #wp1060595}</p>
+<p>• D range is determined when there is no TR switch signal input. <a href="" id="wp1059970"></a>  • Inhibits slope mode control <a href="" id="wp1060220"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0717 {: #wp1060603}</p>
+<p>P0708 <a href="" id="wp1059974"></a></p>
 </td>
 <td>
-<p>Turbine sensor circuit malfunction (open circuit/short circuit) {: #wp1060606}</p>
+<p>Transmission range (TR) switch circuit high input (open circuit) <a href="" id="wp1059977"></a></p>
 </td>
 <td>
-<p>• Turbine speed signal is not input during vehicle speed signal <strong>12 pulse</strong> period when driving in D range. {: #wp1060609}</p>
+<p>• Vehicle speed is <strong>30 km/h {18.6 mph} or more</strong>, and no range signal is input from the TR switch. <a href="" id="wp1059980"></a></p>
 </td>
 <td>
-<p>• Substitutes vehicle speed signal for turbine speed signal. {: #wp1060612}  • Inhibits 5GR and 6GR {: #wp1060678}  • Inhibits self learning control {: #wp1060688}  • Inhibits driver adaptive shift control {: #wp1060698}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0722 {: #wp1060706}</p>
-</td>
-<td>
-<p>Vehicle speed sensor (VSS) circuit malfunction (open circuit/short circuit) {: #wp1060709}</p>
-</td>
-<td>
-<p>• Vehicle speed signal is not input during turbine speed signal <strong>12 pulse</strong> period when driving in D range. {: #wp1060712}</p>
-</td>
-<td>
-<p>• Substitutes turbine speed signal for vehicle speed signal. {: #wp1060715}  • Inhibits 5GR and 6GR {: #wp1060783}  • Inhibits self learning control {: #wp1060793}  • Inhibits driver adaptive shift control {: #wp1060803}</p>
+<p>• D range is determined when there is no TR switch signal input. <a href="" id="wp1059983"></a>  • Inhibits slope mode control <a href="" id="wp1060281"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0751 {: #wp1060811}</p>
+<p>P0711 <a href="" id="wp1060289"></a></p>
 </td>
 <td>
-<p>Shift solenoid A malfunction (stuck off) {: #wp1060814}</p>
+<p>Transmission fluid temperature (TFT) sensor malfunction (stuck) <a href="" id="wp1060292"></a></p>
 </td>
 <td>
-<p>• TCM detects that shift solenoid A does not change from off when engine is running {: #wp1060817}</p>
+<p>• Change in ATF temperature cannot be detected for <strong>10 min or more</strong> when driving in D range. <a href="" id="wp1060295"></a></p>
 </td>
 <td>
-<p>• Inhibits 4GR, 5GR and 6GR {: #wp1060820}  • Inhibits 1GR and 2GR (manual mode) {: #wp1060879}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0752 {: #wp1060887}</p>
-</td>
-<td>
-<p>Shift solenoid A malfunction (stuck on) {: #wp1060890}</p>
-</td>
-<td>
-<p>• TCM detects that shift solenoid A does not change from on when engine is running {: #wp1060893}</p>
-</td>
-<td>
-<p>N/A {: #wp1060896}</p>
+<p>• Fixes ATF temperature value at <strong>80</strong> °<strong>C {176</strong> °<strong>F}</strong> <a href="" id="wp1060298"></a>  • Inhibits slope mode control <a href="" id="wp1060366"></a>  • Inhibits self learning control <a href="" id="wp1060376"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0756 {: #wp1060947}</p>
+<p>P0712 <a href="" id="wp1060384"></a></p>
 </td>
 <td>
-<p>Shift solenoid B malfunction (stuck off) {: #wp1060950}</p>
+<p>Transmission fluid temperature (TFT) sensor circuit malfunction (short to ground) <a href="" id="wp1060387"></a></p>
 </td>
 <td>
-<p>• TCM detects that shift solenoid B does not change from off when engine is running {: #wp1060953}</p>
+<p>• TCM detects ATF temperature of <strong>200</strong> °<strong>C {392</strong> °<strong>F} or more</strong>. <a href="" id="wp1060390"></a></p>
 </td>
 <td>
-<p>N/A {: #wp1060956}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0757 {: #wp1061007}</p>
-</td>
-<td>
-<p>Shift solenoid B malfunction (stuck on) {: #wp1061010}</p>
-</td>
-<td>
-<p>• TCM detects that shift solenoid B does not change from on when engine is running {: #wp1061013}</p>
-</td>
-<td>
-<p>N/A {: #wp1061016}</p>
+<p>• Fixes ATF temperature value at <strong>80</strong> °<strong>C {176</strong> °<strong>F}</strong> <a href="" id="wp1060393"></a>  • Inhibits slope mode control <a href="" id="wp1060472"></a>  • Inhibits self learning control <a href="" id="wp1060482"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0761 {: #wp1061067}</p>
+<p>P0713 <a href="" id="wp1060490"></a></p>
 </td>
 <td>
-<p>Shift solenoid C malfunction (stuck off) {: #wp1061070}</p>
+<p>Transmission fluid temperature (TFT) sensor circuit malfunction (short to power/open circuit) <a href="" id="wp1060493"></a></p>
 </td>
 <td>
-<p>• TMC detects that shift solenoid C does not change from off when engine is running {: #wp1061073}</p>
+<p>• TCM detects ATF temperature of <strong>less than -43</strong> °<strong>C {-45.4</strong> °<strong>F}</strong> when engine is warmed-up and running. <a href="" id="wp1060496"></a></p>
 </td>
 <td>
-<p>N/A {: #wp1061076}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0762 {: #wp1061127}</p>
-</td>
-<td>
-<p>Shift solenoid C malfunction (stuck on) {: #wp1061130}</p>
-</td>
-<td>
-<p>• TMC detects that shift solenoid C doe not change from on when engine is running {: #wp1061133}</p>
-</td>
-<td>
-<p>• Inhibits 4GR, 5GR and 6GR {: #wp1061136}</p>
+<p>• Fixes ATF temperature value at <strong>80</strong> °<strong>C {176</strong> °<strong>F}</strong> <a href="" id="wp1060499"></a>  • Inhibits slope mode control <a href="" id="wp1060585"></a>  • Inhibits self learning control <a href="" id="wp1060595"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0766 {: #wp1061193}</p>
+<p>P0717 <a href="" id="wp1060603"></a></p>
 </td>
 <td>
-<p>Shift solenoid D malfunction (stuck off) {: #wp1061196}</p>
+<p>Turbine sensor circuit malfunction (open circuit/short circuit) <a href="" id="wp1060606"></a></p>
 </td>
 <td>
-<p>• TCM detects that shift solenoid D does not change from off when engine is running {: #wp1061199}</p>
+<p>• Turbine speed signal is not input during vehicle speed signal <strong>12 pulse</strong> period when driving in D range. <a href="" id="wp1060609"></a></p>
 </td>
 <td>
-<p>• Inhibits 4GR, 5GR and 6GR {: #wp1061202}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td>
-<p>Shift solenoid G malfunction (stuck on) {: #wp1061226}</p>
-</td>
-<td>
-<p>• TCM detects that shift solenoid G does not change from on when engine is running {: #wp1061229}</p>
-</td>
-<td>
-<p>• Inhibits 4GR, 5GR and 6GR {: #wp1061232}</p>
+<p>• Substitutes vehicle speed signal for turbine speed signal. <a href="" id="wp1060612"></a>  • Inhibits 5GR and 6GR <a href="" id="wp1060678"></a>  • Inhibits self learning control <a href="" id="wp1060688"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1060698"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0781 {: #wp1061337}</p>
+<p>P0722 <a href="" id="wp1060706"></a></p>
 </td>
 <td>
-<p>1-2 shift valve malfunction {: #wp1061340}</p>
+<p>Vehicle speed sensor (VSS) circuit malfunction (open circuit/short circuit) <a href="" id="wp1060709"></a></p>
 </td>
 <td>
-<p>• TCM detects 1-2 shift valve malfunction. {: #wp1061343}</p>
+<p>• Vehicle speed signal is not input during turbine speed signal <strong>12 pulse</strong> period when driving in D range. <a href="" id="wp1060712"></a></p>
 </td>
 <td>
-<p>• Inhibits 4GR, 5GR and 6GR {: #wp1061346}  • Inhibits 1GR and 2GR (manual mode) {: #wp1061408}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0813 {: #wp1061416}</p>
-</td>
-<td>
-<p>Reverse sequence valve malfunction {: #wp1061419}</p>
-</td>
-<td>
-<p>• TCM detects reverse sequence valve malfunction. {: #wp1061422}</p>
-</td>
-<td>
-<p>• Inhibits 6GR {: #wp1061425}</p>
+<p>• Substitutes turbine speed signal for vehicle speed signal. <a href="" id="wp1060715"></a>  • Inhibits 5GR and 6GR <a href="" id="wp1060783"></a>  • Inhibits self learning control <a href="" id="wp1060793"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1060803"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0819 {: #wp1061482}</p>
+<p>P0751 <a href="" id="wp1060811"></a></p>
 </td>
 <td>
-<p>Manual switch/up switch/down switch circuit malfunction (open circuit/short circuit) {: #wp1061485}</p>
+<p>Shift solenoid A malfunction (stuck off) <a href="" id="wp1060814"></a></p>
 </td>
 <td>
-<p><strong id="wp1061488">M range switch circuit malfunction</strong>  • M range switch remains on for <strong>2 s or more</strong> except in D range. {: #wp1061603}</p>
+<p>• TCM detects that shift solenoid A does not change from off when engine is running <a href="" id="wp1060817"></a></p>
 </td>
 <td>
-<p>• Inhibits manual mode control {: #wp1061491}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>
-<p><strong id="wp1061518">Up switch or down switch circuit malfunction</strong>- Up or down switch remains on for }  • When all of the following conditions are met: {: #wp1061644}  - M range switch off. {: #wp1061654}- Except D range {: #wp1061668<strong>10 s or more</strong>. {: #wp1061678}</p>
-</td>
-<td>
-<p>• Inhibits manual mode control using selector lever {: #wp1061521}</p>
+<p>• Inhibits 4GR, 5GR and 6GR <a href="" id="wp1060820"></a>  • Inhibits 1GR and 2GR (manual mode) <a href="" id="wp1060879"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0826 {: #wp1061708}</p>
+<p>P0752 <a href="" id="wp1060887"></a></p>
 </td>
 <td>
-<p>Steering shift switch circuit malfunction (open circuit/short to ground) {: #wp1061711}</p>
+<p>Shift solenoid A malfunction (stuck on) <a href="" id="wp1060890"></a></p>
 </td>
 <td>
-<p>• TCM detects short circuit or short to ground in steering shift switch circuit when engine is running. {: #wp1061714}</p>
+<p>• TCM detects that shift solenoid A does not change from on when engine is running <a href="" id="wp1060893"></a></p>
 </td>
 <td>
-<p>• Inhibits manual mode control {: #wp1061717}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0882 {: #wp1061780}</p>
-</td>
-<td>
-<p>TCM B+ low (less than 9 V) {: #wp1061783}</p>
-</td>
-<td>
-<p>• Voltage of <strong>less than 9 V</strong> detected at TCM terminals 1AD when engine is running. {: #wp1061786}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1061789}  • Inhibits self learning control {: #wp1061863}  • Inhibits driver adaptive shift control {: #wp1061873}  • Inhibits TCC control {: #wp1061883}</p>
+<p>N/A <a href="" id="wp1060896"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0883 {: #wp1061891}</p>
+<p>P0756 <a href="" id="wp1060947"></a></p>
 </td>
 <td>
-<p>TCM B+ low (less than 11 V) {: #wp1061894}</p>
+<p>Shift solenoid B malfunction (stuck off) <a href="" id="wp1060950"></a></p>
 </td>
 <td>
-<p>• Voltage of <strong>less than 11 V</strong> detected at TCM terminals 1AD when engine is running. {: #wp1061897}</p>
+<p>• TCM detects that shift solenoid B does not change from off when engine is running <a href="" id="wp1060953"></a></p>
 </td>
 <td>
-<p>• Inhibits self learning control {: #wp1061900}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0961 {: #wp1061974}</p>
-</td>
-<td>
-<p>Line pressure control solenoid range/performance (stuck) {: #wp1061977}</p>
-</td>
-<td>
-<p>• Feedback current corresponding to solenoid current command value is irregular when engine is running. {: #wp1061980}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1061983}  • Inhibits self learning control {: #wp1062052}  • Inhibits driver adaptive shift control {: #wp1062062}  • Inhibits TCC control {: #wp1062072}</p>
+<p>N/A <a href="" id="wp1060956"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0962 {: #wp1062080}</p>
+<p>P0757 <a href="" id="wp1061007"></a></p>
 </td>
 <td>
-<p>Line pressure control solenoid circuit malfunction (short to ground/open circuit) {: #wp1062083}</p>
+<p>Shift solenoid B malfunction (stuck on) <a href="" id="wp1061010"></a></p>
 </td>
 <td>
-<p>• Open or short circuit in line pressure control solenoid signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1062086}</p>
+<p>• TCM detects that shift solenoid B does not change from on when engine is running <a href="" id="wp1061013"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1062089}  • Inhibits self learning control {: #wp1062158}  • Inhibits driver adaptive shift control {: #wp1062168}  • Inhibits TCC control {: #wp1062178}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0963 {: #wp1062186}</p>
-</td>
-<td>
-<p>Line pressure control solenoid circuit malfunction (short to power) {: #wp1062189}</p>
-</td>
-<td>
-<p>• Short circuit in line pressure control solenoid signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1062192}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1062195}  • Inhibits self learning control {: #wp1062262}  • Inhibits driver adaptive shift control {: #wp1062272}  • Inhibits TCC control {: #wp1062282}</p>
+<p>N/A <a href="" id="wp1061016"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0969 {: #wp1062290}</p>
+<p>P0761 <a href="" id="wp1061067"></a></p>
 </td>
 <td>
-<p>Shift solenoid F range/performance (stuck) {: #wp1062293}</p>
+<p>Shift solenoid C malfunction (stuck off) <a href="" id="wp1061070"></a></p>
 </td>
 <td>
-<p>• Feedback current corresponding to solenoid current command value is irregular when engine is running. {: #wp1062296}</p>
+<p>• TMC detects that shift solenoid C does not change from off when engine is running <a href="" id="wp1061073"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1062299}  • Inhibits self learning control {: #wp1062368}  • Inhibits driver adaptive shift control {: #wp1062378}  • Inhibits TCC control {: #wp1062388}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0970 {: #wp1062396}</p>
-</td>
-<td>
-<p>Shift solenoid F circuit malfunction (short to ground/open circuit) {: #wp1062399}</p>
-</td>
-<td>
-<p>• Open or short circuit in shift solenoid F signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1062402}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1062405}  • Inhibits self learning control {: #wp1062474}  • Inhibits driver adaptive shift control {: #wp1062484}  • Inhibits TCC control {: #wp1062494}</p>
+<p>N/A <a href="" id="wp1061076"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0971 {: #wp1062502}</p>
+<p>P0762 <a href="" id="wp1061127"></a></p>
 </td>
 <td>
-<p>Shift solenoid F circuit malfunction (short to power) {: #wp1062505}</p>
+<p>Shift solenoid C malfunction (stuck on) <a href="" id="wp1061130"></a></p>
 </td>
 <td>
-<p>• Short circuit in shift solenoid F signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1062508}</p>
+<p>• TMC detects that shift solenoid C doe not change from on when engine is running <a href="" id="wp1061133"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1062511}  • Inhibits N-D shift pressure control {: #wp1062578}  • Inhibits self learning control {: #wp1062590}  • Inhibits driver adaptive shift control {: #wp1062600}  • Inhibits TCC control {: #wp1062610}</p>
+<p>• Inhibits 4GR, 5GR and 6GR <a href="" id="wp1061136"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>P0766 <a href="" id="wp1061193"></a></p>
+</td>
+<td>
+<p>Shift solenoid D malfunction (stuck off) <a href="" id="wp1061196"></a></p>
+</td>
+<td>
+<p>• TCM detects that shift solenoid D does not change from off when engine is running <a href="" id="wp1061199"></a></p>
+</td>
+<td>
+<p>• Inhibits 4GR, 5GR and 6GR <a href="" id="wp1061202"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0973 {: #wp1062618}</p>
+<p>Shift solenoid G malfunction (stuck on) <a href="" id="wp1061226"></a></p>
 </td>
 <td>
-<p>Shift solenoid A circuit malfunction (short to ground) {: #wp1062621}</p>
+<p>• TCM detects that shift solenoid G does not change from on when engine is running <a href="" id="wp1061229"></a></p>
 </td>
 <td>
-<p>• Short to ground in shift solenoid A signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1062624}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1062627}  • Inhibits self learning control {: #wp1062694}  • Inhibits driver adaptive shift control {: #wp1062704}  • Inhibits TCC control {: #wp1062714}</p>
+<p>• Inhibits 4GR, 5GR and 6GR <a href="" id="wp1061232"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0974 {: #wp1062722}</p>
+<p>P0781 <a href="" id="wp1061337"></a></p>
 </td>
 <td>
-<p>Shift solenoid A circuit malfunction (short to power/open circuit) {: #wp1062725}</p>
+<p>1-2 shift valve malfunction <a href="" id="wp1061340"></a></p>
 </td>
 <td>
-<p>• Open or short circuit in shift solenoid A signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1062728}</p>
+<p>• TCM detects 1-2 shift valve malfunction. <a href="" id="wp1061343"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1062731}  • Inhibits self learning control {: #wp1062800}  • Inhibits driver adaptive shift control {: #wp1062810}  • Inhibits TCC control {: #wp1062820}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0976 {: #wp1062828}</p>
-</td>
-<td>
-<p>Shift solenoid B circuit malfunction (short to ground) {: #wp1062831}</p>
-</td>
-<td>
-<p>• Short to ground in shift solenoid B signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1062834}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1062837}  • Inhibits self learning control {: #wp1062904}  • Inhibits driver adaptive shift control {: #wp1062914}  • Inhibits TCC control {: #wp1062924}</p>
+<p>• Inhibits 4GR, 5GR and 6GR <a href="" id="wp1061346"></a>  • Inhibits 1GR and 2GR (manual mode) <a href="" id="wp1061408"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0977 {: #wp1062932}</p>
+<p>P0813 <a href="" id="wp1061416"></a></p>
 </td>
 <td>
-<p>Shift solenoid B circuit malfunction (short to power/open circuit) {: #wp1062935}</p>
+<p>Reverse sequence valve malfunction <a href="" id="wp1061419"></a></p>
 </td>
 <td>
-<p>• Open or short circuit in shift solenoid B signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1062938}</p>
+<p>• TCM detects reverse sequence valve malfunction. <a href="" id="wp1061422"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1062941}  • Inhibits self learning control {: #wp1063010}  • Inhibits driver adaptive shift control {: #wp1063020}  • Inhibits TCC control {: #wp1063030}</p>
+<p>• Inhibits 6GR <a href="" id="wp1061425"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>P0819 <a href="" id="wp1061482"></a></p>
+</td>
+<td rowspan="2">
+<p>Manual switch/up switch/down switch circuit malfunction (open circuit/short circuit) <a href="" id="wp1061485"></a></p>
+</td>
+<td>
+<p><strong>M range switch circuit malfunction</strong><a href="" id="wp1061488"></a>  • M range switch remains on for <strong>2 s or more</strong> except in D range. <a href="" id="wp1061603"></a></p>
+</td>
+<td>
+<p>• Inhibits manual mode control <a href="" id="wp1061491"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0979 {: #wp1063038}</p>
+<p><strong>Up switch or down switch circuit malfunction</strong><a href="" id="wp1061518"></a>  • When all of the following conditions are met: <a href="" id="wp1061644"></a>  - M range switch off. <a href="" id="wp1061654"></a>- Except D range <a href="" id="wp1061668"></a>- Up or down switch remains on for <strong>10 s or more</strong>. <a href="" id="wp1061678"></a></p>
 </td>
 <td>
-<p>Shift solenoid C circuit malfunction (short to ground) {: #wp1063041}</p>
-</td>
-<td>
-<p>• Short to ground in shift solenoid C signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1063044}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1063047}  • Inhibits self learning control {: #wp1063114}  • Inhibits driver adaptive shift control {: #wp1063124}  • Inhibits TCC control {: #wp1063134}</p>
+<p>• Inhibits manual mode control using selector lever <a href="" id="wp1061521"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0980 {: #wp1063142}</p>
+<p>P0826 <a href="" id="wp1061708"></a></p>
 </td>
 <td>
-<p>Shift solenoid C circuit malfunction (short to power/open circuit) {: #wp1063145}</p>
+<p>Steering shift switch circuit malfunction (open circuit/short to ground) <a href="" id="wp1061711"></a></p>
 </td>
 <td>
-<p>• Open or short circuit in shift solenoid C signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1063148}</p>
+<p>• TCM detects short circuit or short to ground in steering shift switch circuit when engine is running. <a href="" id="wp1061714"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1063151}  • Inhibits self learning control {: #wp1063220}  • Inhibits driver adaptive shift control {: #wp1063230}  • Inhibits TCC control {: #wp1063240}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0982 {: #wp1063248}</p>
-</td>
-<td>
-<p>Shift solenoid D circuit malfunction (short to ground) {: #wp1063251}</p>
-</td>
-<td>
-<p>• Short to ground in shift solenoid D signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1063254}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1063257}  • Inhibits self learning control {: #wp1063324}  • Inhibits driver adaptive shift control {: #wp1063334}  • Inhibits TCC control {: #wp1063344}</p>
+<p>• Inhibits manual mode control <a href="" id="wp1061717"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0983 {: #wp1063352}</p>
+<p>P0882 <a href="" id="wp1061780"></a></p>
 </td>
 <td>
-<p>Shift solenoid D circuit malfunction (short to power/open circuit) {: #wp1063355}</p>
+<p>TCM B+ low (less than 9 V) <a href="" id="wp1061783"></a></p>
 </td>
 <td>
-<p>• Open or short circuit in shift solenoid D signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1063358}</p>
+<p>• Voltage of <strong>less than 9 V</strong> detected at TCM terminals 1AD when engine is running. <a href="" id="wp1061786"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1063361}  • Inhibits self learning control {: #wp1063430}  • Inhibits driver adaptive shift control {: #wp1063440}  • Inhibits TCC control {: #wp1063450}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P0985 {: #wp1063458}</p>
-</td>
-<td>
-<p>Shift solenoid E circuit malfunction (short to ground) {: #wp1063461}</p>
-</td>
-<td>
-<p>• Short to ground in shift solenoid E signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1063464}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1063467}  • Inhibits self learning control {: #wp1063534}  • Inhibits driver adaptive shift control {: #wp1063544}  • Inhibits TCC control {: #wp1063554}</p>
+<p>• Emergency mode <a href="" id="wp1061789"></a>  • Inhibits self learning control <a href="" id="wp1061863"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1061873"></a>  • Inhibits TCC control <a href="" id="wp1061883"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P0986 {: #wp1063562}</p>
+<p>P0883 <a href="" id="wp1061891"></a></p>
 </td>
 <td>
-<p>Shift solenoid E circuit malfunction (short to power/open circuit) {: #wp1063565}</p>
+<p>TCM B+ low (less than 11 V) <a href="" id="wp1061894"></a></p>
 </td>
 <td>
-<p>• Open or short circuit in shift solenoid E signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1063568}</p>
+<p>• Voltage of <strong>less than 11 V</strong> detected at TCM terminals 1AD when engine is running. <a href="" id="wp1061897"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1063571}  • Inhibits self learning control {: #wp1063640}  • Inhibits driver adaptive shift control {: #wp1063650}  • Inhibits TCC control {: #wp1063660}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P2719 {: #wp1063668}</p>
-</td>
-<td>
-<p>Shift solenoid G range/performance (stuck) {: #wp1063671}</p>
-</td>
-<td>
-<p>• Feedback current corresponding to solenoid current command value is irregular when engine is running. {: #wp1063674}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1063677}  • Inhibits self learning control {: #wp1063746}  • Inhibits driver adaptive shift control {: #wp1063756}  • Inhibits TCC control {: #wp1063766}</p>
+<p>• Inhibits self learning control <a href="" id="wp1061900"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P2720 {: #wp1063774}</p>
+<p>P0961 <a href="" id="wp1061974"></a></p>
 </td>
 <td>
-<p>Shift solenoid G circuit malfunction (short to ground/open circuit) {: #wp1063777}</p>
+<p>Line pressure control solenoid range/performance (stuck) <a href="" id="wp1061977"></a></p>
 </td>
 <td>
-<p>• Open or short circuit in shift solenoid G signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1063780}</p>
+<p>• Feedback current corresponding to solenoid current command value is irregular when engine is running. <a href="" id="wp1061980"></a></p>
 </td>
 <td>
-<p>• Emergency mode {: #wp1063783}  • Inhibits self learning control {: #wp1063852}  • Inhibits driver adaptive shift control {: #wp1063862}  • Inhibits TCC control {: #wp1063872}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P2721 {: #wp1063880}</p>
-</td>
-<td>
-<p>Shift solenoid G circuit malfunction (short to power) {: #wp1063883}</p>
-</td>
-<td>
-<p>• Short circuit in shift solenoid G signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1063886}</p>
-</td>
-<td>
-<p>• Emergency mode {: #wp1063889}  • Inhibits self learning control {: #wp1063956}  • Inhibits driver adaptive shift control {: #wp1063966}  • Inhibits TCC control {: #wp1063976}</p>
+<p>• Emergency mode <a href="" id="wp1061983"></a>  • Inhibits self learning control <a href="" id="wp1062052"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1062062"></a>  • Inhibits TCC control <a href="" id="wp1062072"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P2757 {: #wp1063984}</p>
+<p>P0962 <a href="" id="wp1062080"></a></p>
 </td>
 <td>
-<p>Torque converter clutch (TCC) stuck off {: #wp1063987}</p>
+<p>Line pressure control solenoid circuit malfunction (short to ground/open circuit) <a href="" id="wp1062083"></a></p>
 </td>
 <td>
-<p>• TCM detects that TCC control solenoid does not change from on when engine is running {: #wp1063990}</p>
+<p>• Open or short circuit in line pressure control solenoid signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1062086"></a></p>
 </td>
 <td>
-<p>• Inhibits acceleration from 2GR {: #wp1063993}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P2758 {: #wp1064058}</p>
-</td>
-<td>
-<p>Torque converter clutch (TCC) stuck on {: #wp1064061}</p>
-</td>
-<td>
-<p>• TCM detects that TCC control solenoid does not change from off when engine is running {: #wp1064064}</p>
-</td>
-<td>
-<p>N/A {: #wp1064067}</p>
+<p>• Emergency mode <a href="" id="wp1062089"></a>  • Inhibits self learning control <a href="" id="wp1062158"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1062168"></a>  • Inhibits TCC control <a href="" id="wp1062178"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P2762 {: #wp1064126}</p>
+<p>P0963 <a href="" id="wp1062186"></a></p>
 </td>
 <td>
-<p>TCC control solenoid range/performance (stuck) {: #wp1064129}</p>
+<p>Line pressure control solenoid circuit malfunction (short to power) <a href="" id="wp1062189"></a></p>
 </td>
 <td>
-<p>• Feedback current corresponding to solenoid current command value is irregular when engine is running. {: #wp1064132}</p>
+<p>• Short circuit in line pressure control solenoid signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1062192"></a></p>
 </td>
 <td>
-<p>• Inhibits acceleration from 2GR {: #wp1064135}  • Inhibits TCC control {: #wp1064204}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>P2763 {: #wp1064212}</p>
-</td>
-<td>
-<p>TCC control solenoid circuit malfunction (short to power) {: #wp1064215}</p>
-</td>
-<td>
-<p>• Short circuit in TCC control solenoid signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1064218}</p>
-</td>
-<td>
-<p>• Inhibits acceleration from 2GR {: #wp1064221}  • Inhibits TCC control {: #wp1064288}</p>
+<p>• Emergency mode <a href="" id="wp1062195"></a>  • Inhibits self learning control <a href="" id="wp1062262"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1062272"></a>  • Inhibits TCC control <a href="" id="wp1062282"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>P2764 {: #wp1064296}</p>
+<p>P0969 <a href="" id="wp1062290"></a></p>
 </td>
 <td>
-<p>TCC control solenoid circuit malfunction (short to ground/open circuit) {: #wp1064299}</p>
+<p>Shift solenoid F range/performance (stuck) <a href="" id="wp1062293"></a></p>
 </td>
 <td>
-<p>• Open or short circuit in TCC control solenoid signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). {: #wp1064302}</p>
+<p>• Feedback current corresponding to solenoid current command value is irregular when engine is running. <a href="" id="wp1062296"></a></p>
 </td>
 <td>
-<p>• Inhibits acceleration from 2GR {: #wp1064305}  • Inhibits TCC control {: #wp1064374}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>U0073 {: #wp1064382}</p>
-</td>
-<td>
-<p>CAN BUS OFF {: #wp1064385}</p>
-</td>
-<td>
-<p>• Bus off error is detected. {: #wp1064388}</p>
-</td>
-<td>
-<p>• Inhibits self learning control {: #wp1064391}  • Inhibits driver adaptive shift control {: #wp1064458}  • Inhibits TCC control {: #wp1064468}  • Inhibits 5GR, 6GR {: #wp1064478}</p>
+<p>• Emergency mode <a href="" id="wp1062299"></a>  • Inhibits self learning control <a href="" id="wp1062368"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1062378"></a>  • Inhibits TCC control <a href="" id="wp1062388"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>U0100 {: #wp1064486}</p>
+<p>P0970 <a href="" id="wp1062396"></a></p>
 </td>
 <td>
-<p>TCM cannot receive any signals from PCM {: #wp1064489}</p>
+<p>Shift solenoid F circuit malfunction (short to ground/open circuit) <a href="" id="wp1062399"></a></p>
 </td>
 <td>
-<p>• Communication error is detected between TCM and PCM. {: #wp1064492}</p>
+<p>• Open or short circuit in shift solenoid F signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1062402"></a></p>
 </td>
 <td>
-<p>• Inhibits self learning control {: #wp1064495}  • Inhibits driver adaptive shift control {: #wp1064562}  • Inhibits TCC control {: #wp1064572}  • Inhibits 5GR, 6GR {: #wp1064582}</p>
+<p>• Emergency mode <a href="" id="wp1062405"></a>  • Inhibits self learning control <a href="" id="wp1062474"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1062484"></a>  • Inhibits TCC control <a href="" id="wp1062494"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0971 <a href="" id="wp1062502"></a></p>
+</td>
+<td>
+<p>Shift solenoid F circuit malfunction (short to power) <a href="" id="wp1062505"></a></p>
+</td>
+<td>
+<p>• Short circuit in shift solenoid F signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1062508"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1062511"></a>  • Inhibits N-D shift pressure control <a href="" id="wp1062578"></a>  • Inhibits self learning control <a href="" id="wp1062590"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1062600"></a>  • Inhibits TCC control <a href="" id="wp1062610"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0973 <a href="" id="wp1062618"></a></p>
+</td>
+<td>
+<p>Shift solenoid A circuit malfunction (short to ground) <a href="" id="wp1062621"></a></p>
+</td>
+<td>
+<p>• Short to ground in shift solenoid A signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1062624"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1062627"></a>  • Inhibits self learning control <a href="" id="wp1062694"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1062704"></a>  • Inhibits TCC control <a href="" id="wp1062714"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0974 <a href="" id="wp1062722"></a></p>
+</td>
+<td>
+<p>Shift solenoid A circuit malfunction (short to power/open circuit) <a href="" id="wp1062725"></a></p>
+</td>
+<td>
+<p>• Open or short circuit in shift solenoid A signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1062728"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1062731"></a>  • Inhibits self learning control <a href="" id="wp1062800"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1062810"></a>  • Inhibits TCC control <a href="" id="wp1062820"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0976 <a href="" id="wp1062828"></a></p>
+</td>
+<td>
+<p>Shift solenoid B circuit malfunction (short to ground) <a href="" id="wp1062831"></a></p>
+</td>
+<td>
+<p>• Short to ground in shift solenoid B signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1062834"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1062837"></a>  • Inhibits self learning control <a href="" id="wp1062904"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1062914"></a>  • Inhibits TCC control <a href="" id="wp1062924"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0977 <a href="" id="wp1062932"></a></p>
+</td>
+<td>
+<p>Shift solenoid B circuit malfunction (short to power/open circuit) <a href="" id="wp1062935"></a></p>
+</td>
+<td>
+<p>• Open or short circuit in shift solenoid B signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1062938"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1062941"></a>  • Inhibits self learning control <a href="" id="wp1063010"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063020"></a>  • Inhibits TCC control <a href="" id="wp1063030"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0979 <a href="" id="wp1063038"></a></p>
+</td>
+<td>
+<p>Shift solenoid C circuit malfunction (short to ground) <a href="" id="wp1063041"></a></p>
+</td>
+<td>
+<p>• Short to ground in shift solenoid C signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1063044"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1063047"></a>  • Inhibits self learning control <a href="" id="wp1063114"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063124"></a>  • Inhibits TCC control <a href="" id="wp1063134"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0980 <a href="" id="wp1063142"></a></p>
+</td>
+<td>
+<p>Shift solenoid C circuit malfunction (short to power/open circuit) <a href="" id="wp1063145"></a></p>
+</td>
+<td>
+<p>• Open or short circuit in shift solenoid C signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1063148"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1063151"></a>  • Inhibits self learning control <a href="" id="wp1063220"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063230"></a>  • Inhibits TCC control <a href="" id="wp1063240"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0982 <a href="" id="wp1063248"></a></p>
+</td>
+<td>
+<p>Shift solenoid D circuit malfunction (short to ground) <a href="" id="wp1063251"></a></p>
+</td>
+<td>
+<p>• Short to ground in shift solenoid D signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1063254"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1063257"></a>  • Inhibits self learning control <a href="" id="wp1063324"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063334"></a>  • Inhibits TCC control <a href="" id="wp1063344"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0983 <a href="" id="wp1063352"></a></p>
+</td>
+<td>
+<p>Shift solenoid D circuit malfunction (short to power/open circuit) <a href="" id="wp1063355"></a></p>
+</td>
+<td>
+<p>• Open or short circuit in shift solenoid D signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1063358"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1063361"></a>  • Inhibits self learning control <a href="" id="wp1063430"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063440"></a>  • Inhibits TCC control <a href="" id="wp1063450"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0985 <a href="" id="wp1063458"></a></p>
+</td>
+<td>
+<p>Shift solenoid E circuit malfunction (short to ground) <a href="" id="wp1063461"></a></p>
+</td>
+<td>
+<p>• Short to ground in shift solenoid E signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1063464"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1063467"></a>  • Inhibits self learning control <a href="" id="wp1063534"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063544"></a>  • Inhibits TCC control <a href="" id="wp1063554"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P0986 <a href="" id="wp1063562"></a></p>
+</td>
+<td>
+<p>Shift solenoid E circuit malfunction (short to power/open circuit) <a href="" id="wp1063565"></a></p>
+</td>
+<td>
+<p>• Open or short circuit in shift solenoid E signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1063568"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1063571"></a>  • Inhibits self learning control <a href="" id="wp1063640"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063650"></a>  • Inhibits TCC control <a href="" id="wp1063660"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2719 <a href="" id="wp1063668"></a></p>
+</td>
+<td>
+<p>Shift solenoid G range/performance (stuck) <a href="" id="wp1063671"></a></p>
+</td>
+<td>
+<p>• Feedback current corresponding to solenoid current command value is irregular when engine is running. <a href="" id="wp1063674"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1063677"></a>  • Inhibits self learning control <a href="" id="wp1063746"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063756"></a>  • Inhibits TCC control <a href="" id="wp1063766"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2720 <a href="" id="wp1063774"></a></p>
+</td>
+<td>
+<p>Shift solenoid G circuit malfunction (short to ground/open circuit) <a href="" id="wp1063777"></a></p>
+</td>
+<td>
+<p>• Open or short circuit in shift solenoid G signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1063780"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1063783"></a>  • Inhibits self learning control <a href="" id="wp1063852"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063862"></a>  • Inhibits TCC control <a href="" id="wp1063872"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2721 <a href="" id="wp1063880"></a></p>
+</td>
+<td>
+<p>Shift solenoid G circuit malfunction (short to power) <a href="" id="wp1063883"></a></p>
+</td>
+<td>
+<p>• Short circuit in shift solenoid G signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1063886"></a></p>
+</td>
+<td>
+<p>• Emergency mode <a href="" id="wp1063889"></a>  • Inhibits self learning control <a href="" id="wp1063956"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1063966"></a>  • Inhibits TCC control <a href="" id="wp1063976"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2757 <a href="" id="wp1063984"></a></p>
+</td>
+<td>
+<p>Torque converter clutch (TCC) stuck off <a href="" id="wp1063987"></a></p>
+</td>
+<td>
+<p>• TCM detects that TCC control solenoid does not change from on when engine is running <a href="" id="wp1063990"></a></p>
+</td>
+<td>
+<p>• Inhibits acceleration from 2GR <a href="" id="wp1063993"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2758 <a href="" id="wp1064058"></a></p>
+</td>
+<td>
+<p>Torque converter clutch (TCC) stuck on <a href="" id="wp1064061"></a></p>
+</td>
+<td>
+<p>• TCM detects that TCC control solenoid does not change from off when engine is running <a href="" id="wp1064064"></a></p>
+</td>
+<td>
+<p>N/A <a href="" id="wp1064067"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2762 <a href="" id="wp1064126"></a></p>
+</td>
+<td>
+<p>TCC control solenoid range/performance (stuck) <a href="" id="wp1064129"></a></p>
+</td>
+<td>
+<p>• Feedback current corresponding to solenoid current command value is irregular when engine is running. <a href="" id="wp1064132"></a></p>
+</td>
+<td>
+<p>• Inhibits acceleration from 2GR <a href="" id="wp1064135"></a>  • Inhibits TCC control <a href="" id="wp1064204"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2763 <a href="" id="wp1064212"></a></p>
+</td>
+<td>
+<p>TCC control solenoid circuit malfunction (short to power) <a href="" id="wp1064215"></a></p>
+</td>
+<td>
+<p>• Short circuit in TCC control solenoid signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1064218"></a></p>
+</td>
+<td>
+<p>• Inhibits acceleration from 2GR <a href="" id="wp1064221"></a>  • Inhibits TCC control <a href="" id="wp1064288"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>P2764 <a href="" id="wp1064296"></a></p>
+</td>
+<td>
+<p>TCC control solenoid circuit malfunction (short to ground/open circuit) <a href="" id="wp1064299"></a></p>
+</td>
+<td>
+<p>• Open or short circuit in TCC control solenoid signal system (while TCM monitors solenoid output voltage, the voltage that differs from the signal output by CPU in TCM is detected). <a href="" id="wp1064302"></a></p>
+</td>
+<td>
+<p>• Inhibits acceleration from 2GR <a href="" id="wp1064305"></a>  • Inhibits TCC control <a href="" id="wp1064374"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0073 <a href="" id="wp1064382"></a></p>
+</td>
+<td>
+<p>CAN BUS OFF <a href="" id="wp1064385"></a></p>
+</td>
+<td>
+<p>• Bus off error is detected. <a href="" id="wp1064388"></a></p>
+</td>
+<td>
+<p>• Inhibits self learning control <a href="" id="wp1064391"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1064458"></a>  • Inhibits TCC control <a href="" id="wp1064468"></a>  • Inhibits 5GR, 6GR <a href="" id="wp1064478"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0100 <a href="" id="wp1064486"></a></p>
+</td>
+<td>
+<p>TCM cannot receive any signals from PCM <a href="" id="wp1064489"></a></p>
+</td>
+<td>
+<p>• Communication error is detected between TCM and PCM. <a href="" id="wp1064492"></a></p>
+</td>
+<td>
+<p>• Inhibits self learning control <a href="" id="wp1064495"></a>  • Inhibits driver adaptive shift control <a href="" id="wp1064562"></a>  • Inhibits TCC control <a href="" id="wp1064572"></a>  • Inhibits 5GR, 6GR <a href="" id="wp1064582"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<h2 id="emergency-mode"><strong id="wp1064617">Emergency Mode</strong></h2>
-<p id="wp1064627">• Emergency mode shifts as follows when in D range or R position.</p>
+<h2 id="emergency-mode"><strong>Emergency Mode</strong><a href="" id="wp1064617"></a></h2>
+<p>• Emergency mode shifts as follows when in D range or R position.
+<a href="" id="wp1064627"></a></p>
 <table>
-<thead>
-<tr>
-<th>
-<p><strong>Condition</strong> <a href="" id="wp1064846"></a>}{: #wp1064641</p>
-</th>
-<th colspan="7">
-<p><strong>Selector lever position</strong> {: #wp1064848}</p>
-</th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td></td>
+<td rowspan="2">
+<p><strong>Condition</strong> <a href="" id="wp1064846"></a><a href="" id="wp1064641"></a></p>
+</td>
+<td colspan="7">
+<p><strong>Selector lever position</strong> <a href="" id="wp1064848"></a></p>
+</td>
+</tr>
+<tr>
 <td colspan="6">
-<p><strong>D range</strong> {: #wp1065102}</p>
+<p><strong>D range</strong> <a href="" id="wp1065102"></a></p>
 </td>
 <td>
-<p><strong>R position</strong> {: #wp1065120}</p>
+<p><strong>R position</strong> <a href="" id="wp1065120"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Normal shifting {: #wp1064644}</p>
+<p>Normal shifting <a href="" id="wp1064644"></a></p>
 </td>
 <td>
-<p>1GR {: #wp1064646}</p>
+<p>1GR <a href="" id="wp1064646"></a></p>
 </td>
 <td>
-<p>2GR {: #wp1064702}</p>
+<p>2GR <a href="" id="wp1064702"></a></p>
 </td>
 <td>
-<p>3GR {: #wp1064705}</p>
+<p>3GR <a href="" id="wp1064705"></a></p>
 </td>
 <td>
-<p>4GR {: #wp1064708}</p>
+<p>4GR <a href="" id="wp1064708"></a></p>
 </td>
 <td>
-<p>5GR {: #wp1064711}</p>
+<p>5GR <a href="" id="wp1064711"></a></p>
 </td>
 <td>
-<p>6GR {: #wp1064714}</p>
+<p>6GR <a href="" id="wp1064714"></a></p>
 </td>
 <td>
-<p>Reverse {: #wp1064717}</p>
+<p>Reverse <a href="" id="wp1064717"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>When there is any malfunction in shift solenoids A, B, C, D, E, F, G, line pressure, or TCC control solenoid {: #wp1064899}</p>
+<p>When there is any malfunction in shift solenoids A, B, C, D, E, F, G, line pressure, or TCC control solenoid <a href="" id="wp1064899"></a></p>
 </td>
 <td colspan="6">
-<p>4GR {: #wp1064902}</p>
+<p>4GR <a href="" id="wp1064902"></a></p>
 </td>
 <td>
-<p>Reverse {: #wp1064920}</p>
+<p>Reverse <a href="" id="wp1064920"></a></p>
 </td>
 </tr>
 </tbody>

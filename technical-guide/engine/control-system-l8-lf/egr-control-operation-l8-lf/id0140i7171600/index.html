@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">EGR CONTROL OPERATION [L8, LF]</a></li>
+        <li><a href="#egr-control-operation-l8-lf">EGR CONTROL OPERATION [L8, LF]</a></li>
         <li><a href="#stepping-motor-operation-principles">Stepping Motor Operation Principles</a></li><li><a href="#control-outline">Control Outline</a></li><li><a href="#target-egr-valve-position">Target EGR Valve Position</a></li><li><a href="#inhibition-conditions">Inhibition Conditions</a></li>
     </ul>
 </nav>
@@ -1246,470 +1246,477 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0002/">ENGINE</a> ➭ <a href="../../node_S02_0016/">CONTROL SYSTEM[L8, LF]</a> ➭ <a href="./">EGR CONTROL OPERATION [L8, LF]</a></p>
-<h1 id="wp1025486"><strong>EGR CONTROL OPERATION [L8, LF]</strong></h1>
+<h1 id="egr-control-operation-l8-lf"><strong>EGR CONTROL OPERATION [L8, LF]</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id0140i7171600</p>
-<p>{: #wp1059779}</p>
-<h2 id="stepping-motor-operation-principles"><strong id="wp1062852">Stepping Motor Operation Principles</strong></h2>
-<p id="wp1059789">• The PCM opens/closes the EGR valve by controlling the amount of stepping motor rotation (step number).</p>
-<p id="wp1059805">• The stepping motor operates by the combination of coils No.1-4, according to the stepping motor step number.</p>
-<p><strong id="wp1059817">Energization condition for each coil</strong></p>
-<p>ON: Energization, OFF: Non-energization{: #wp1059827}</p>
+<p><a href="" id="wp1059779"></a></p>
+<h2 id="stepping-motor-operation-principles"><strong>Stepping Motor Operation Principles</strong><a href="" id="wp1062852"></a></h2>
+<p>• The PCM opens/closes the EGR valve by controlling the amount of stepping motor rotation (step number).
+<a href="" id="wp1059789"></a></p>
+<p>• The stepping motor operates by the combination of coils No.1-4, according to the stepping motor step number.
+<a href="" id="wp1059805"></a></p>
+<p><strong>Energization condition for each coil</strong><a href="" id="wp1059817"></a></p>
+<p>ON: Energization, OFF: Non-energization<a href="" id="wp1059827"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>When current step number divided by eight</strong> {: #wp1060058}</p>
+<p><strong>When current step number divided by eight</strong> <a href="" id="wp1060058"></a></p>
 </th>
 <th>
-<p><strong>0</strong> {: #wp1060060}</p>
+<p><strong>0</strong> <a href="" id="wp1060060"></a></p>
 </th>
 <th>
-<p><strong>1</strong> {: #wp1060062}</p>
+<p><strong>1</strong> <a href="" id="wp1060062"></a></p>
 </th>
 <th>
-<p><strong>2</strong> {: #wp1060064}</p>
+<p><strong>2</strong> <a href="" id="wp1060064"></a></p>
 </th>
 <th>
-<p><strong>3</strong> {: #wp1060066}</p>
+<p><strong>3</strong> <a href="" id="wp1060066"></a></p>
 </th>
 <th>
-<p><strong>4</strong> {: #wp1060068}</p>
+<p><strong>4</strong> <a href="" id="wp1060068"></a></p>
 </th>
 <th>
-<p><strong>5</strong> {: #wp1060070}</p>
+<p><strong>5</strong> <a href="" id="wp1060070"></a></p>
 </th>
 <th>
-<p><strong>6</strong> {: #wp1060072}</p>
+<p><strong>6</strong> <a href="" id="wp1060072"></a></p>
 </th>
 <th>
-<p><strong>7</strong> {: #wp1060074}</p>
+<p><strong>7</strong> <a href="" id="wp1060074"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Coil No.1 {: #wp1059832}</p>
+<p>Coil No.1 <a href="" id="wp1059832"></a></p>
 </td>
 <td>
-<p>ON {: #wp1059834}</p>
+<p>ON <a href="" id="wp1059834"></a></p>
 </td>
 <td>
-<p>ON {: #wp1059890}</p>
+<p>ON <a href="" id="wp1059890"></a></p>
 </td>
 <td>
-<p>ON {: #wp1059893}</p>
+<p>ON <a href="" id="wp1059893"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1059896}</p>
+<p>OFF <a href="" id="wp1059896"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1059899}</p>
+<p>OFF <a href="" id="wp1059899"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1059902}</p>
+<p>OFF <a href="" id="wp1059902"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1059905}</p>
+<p>OFF <a href="" id="wp1059905"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1059908}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Coil No.2 {: #wp1060117}</p>
-</td>
-<td>
-<p>OFF {: #wp1060120}</p>
-</td>
-<td>
-<p>OFF {: #wp1060123}</p>
-</td>
-<td>
-<p>OFF {: #wp1060126}</p>
-</td>
-<td>
-<p>OFF {: #wp1060129}</p>
-</td>
-<td>
-<p>ON {: #wp1060132}</p>
-</td>
-<td>
-<p>ON {: #wp1060135}</p>
-</td>
-<td>
-<p>ON {: #wp1060138}</p>
-</td>
-<td>
-<p>OFF {: #wp1060141}</p>
+<p>OFF <a href="" id="wp1059908"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Coil No.3 {: #wp1060145}</p>
+<p>Coil No.2 <a href="" id="wp1060117"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060148}</p>
+<p>OFF <a href="" id="wp1060120"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060151}</p>
+<p>OFF <a href="" id="wp1060123"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060154}</p>
+<p>OFF <a href="" id="wp1060126"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060157}</p>
+<p>OFF <a href="" id="wp1060129"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060160}</p>
+<p>ON <a href="" id="wp1060132"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060163}</p>
+<p>ON <a href="" id="wp1060135"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060166}</p>
+<p>ON <a href="" id="wp1060138"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060169}</p>
+<p>OFF <a href="" id="wp1060141"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Coil No.4 {: #wp1060173}</p>
+<p>Coil No.3 <a href="" id="wp1060145"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060176}</p>
+<p>OFF <a href="" id="wp1060148"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060179}</p>
+<p>OFF <a href="" id="wp1060151"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060182}</p>
+<p>ON <a href="" id="wp1060154"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060185}</p>
+<p>ON <a href="" id="wp1060157"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060188}</p>
+<p>ON <a href="" id="wp1060160"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060191}</p>
+<p>OFF <a href="" id="wp1060163"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060194}</p>
+<p>OFF <a href="" id="wp1060166"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060197}</p>
+<p>OFF <a href="" id="wp1060169"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Coil No.4 <a href="" id="wp1060173"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060176"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060179"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060182"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060185"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060188"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060191"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060194"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060197"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<p><strong id="wp1060596">Example of energization condition for each coil and step number</strong></p>
-<p>ON: Energization, OFF Non-energization{: #wp1060606}</p>
+<p><strong>Example of energization condition for each coil and step number</strong><a href="" id="wp1060596"></a></p>
+<p>ON: Energization, OFF Non-energization<a href="" id="wp1060606"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>Step number</strong> {: #wp1060957}</p>
+<p><strong>Step number</strong> <a href="" id="wp1060957"></a></p>
 </th>
 <th>
-<p><strong>0</strong> {: #wp1060959}</p>
+<p><strong>0</strong> <a href="" id="wp1060959"></a></p>
 </th>
 <th>
-<p><strong>1</strong> {: #wp1060961}</p>
+<p><strong>1</strong> <a href="" id="wp1060961"></a></p>
 </th>
 <th>
-<p><strong>2</strong> {: #wp1060963}</p>
+<p><strong>2</strong> <a href="" id="wp1060963"></a></p>
 </th>
 <th>
-<p><strong>3</strong> {: #wp1060965}</p>
+<p><strong>3</strong> <a href="" id="wp1060965"></a></p>
 </th>
 <th>
-<p><strong>4</strong> {: #wp1060967}</p>
+<p><strong>4</strong> <a href="" id="wp1060967"></a></p>
 </th>
 <th>
-<p><strong>5</strong> {: #wp1060969}</p>
+<p><strong>5</strong> <a href="" id="wp1060969"></a></p>
 </th>
 <th>
-<p><strong>6</strong> {: #wp1060971}</p>
+<p><strong>6</strong> <a href="" id="wp1060971"></a></p>
 </th>
 <th>
-<p><strong>7</strong> {: #wp1060973}</p>
+<p><strong>7</strong> <a href="" id="wp1060973"></a></p>
 </th>
 <th>
-<p><strong>8</strong> {: #wp1060975}</p>
+<p><strong>8</strong> <a href="" id="wp1060975"></a></p>
 </th>
 <th>
-<p><strong>9</strong> {: #wp1060977}</p>
+<p><strong>9</strong> <a href="" id="wp1060977"></a></p>
 </th>
 <th>
-<p><strong>10</strong> {: #wp1060979}</p>
+<p><strong>10</strong> <a href="" id="wp1060979"></a></p>
 </th>
 <th>
-<p><strong>30</strong> {: #wp1060981}</p>
+<p><strong>30</strong> <a href="" id="wp1060981"></a></p>
 </th>
 <th>
-<p><strong>52</strong> {: #wp1060983}</p>
+<p><strong>52</strong> <a href="" id="wp1060983"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Coil No.1 {: #wp1060611}</p>
+<p>Coil No.1 <a href="" id="wp1060611"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060613}</p>
+<p>ON <a href="" id="wp1060613"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060669}</p>
+<p>ON <a href="" id="wp1060669"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060672}</p>
+<p>ON <a href="" id="wp1060672"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060675}</p>
+<p>OFF <a href="" id="wp1060675"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060678}</p>
+<p>OFF <a href="" id="wp1060678"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060681}</p>
+<p>OFF <a href="" id="wp1060681"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060684}</p>
+<p>OFF <a href="" id="wp1060684"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060687}</p>
+<p>OFF <a href="" id="wp1060687"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060690}</p>
+<p>ON <a href="" id="wp1060690"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060693}</p>
+<p>ON <a href="" id="wp1060693"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060696}</p>
+<p>ON <a href="" id="wp1060696"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060699}</p>
+<p>OFF <a href="" id="wp1060699"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060702}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Coil No.2 {: #wp1061046}</p>
-</td>
-<td>
-<p>OFF {: #wp1061049}</p>
-</td>
-<td>
-<p>OFF {: #wp1061052}</p>
-</td>
-<td>
-<p>OFF {: #wp1061055}</p>
-</td>
-<td>
-<p>OFF {: #wp1061058}</p>
-</td>
-<td>
-<p>ON {: #wp1061061}</p>
-</td>
-<td>
-<p>ON {: #wp1061064}</p>
-</td>
-<td>
-<p>ON {: #wp1061067}</p>
-</td>
-<td>
-<p>OFF {: #wp1061070}</p>
-</td>
-<td>
-<p>OFF {: #wp1061073}</p>
-</td>
-<td>
-<p>OFF {: #wp1061076}</p>
-</td>
-<td>
-<p>OFF {: #wp1061079}</p>
-</td>
-<td>
-<p>ON {: #wp1061082}</p>
-</td>
-<td>
-<p>ON {: #wp1061085}</p>
+<p>OFF <a href="" id="wp1060702"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Coil No.3 {: #wp1061089}</p>
+<p>Coil No.2 <a href="" id="wp1061046"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061092}</p>
+<p>OFF <a href="" id="wp1061049"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061095}</p>
+<p>OFF <a href="" id="wp1061052"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061098}</p>
+<p>OFF <a href="" id="wp1061055"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061101}</p>
+<p>OFF <a href="" id="wp1061058"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061104}</p>
+<p>ON <a href="" id="wp1061061"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061107}</p>
+<p>ON <a href="" id="wp1061064"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061110}</p>
+<p>ON <a href="" id="wp1061067"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061113}</p>
+<p>OFF <a href="" id="wp1061070"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061116}</p>
+<p>OFF <a href="" id="wp1061073"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061119}</p>
+<p>OFF <a href="" id="wp1061076"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061122}</p>
+<p>OFF <a href="" id="wp1061079"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061125}</p>
+<p>ON <a href="" id="wp1061082"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061128}</p>
+<p>ON <a href="" id="wp1061085"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Coil No.4 {: #wp1061132}</p>
+<p>Coil No.3 <a href="" id="wp1061089"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061135}</p>
+<p>OFF <a href="" id="wp1061092"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061138}</p>
+<p>OFF <a href="" id="wp1061095"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061141}</p>
+<p>ON <a href="" id="wp1061098"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061144}</p>
+<p>ON <a href="" id="wp1061101"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061147}</p>
+<p>ON <a href="" id="wp1061104"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061150}</p>
+<p>OFF <a href="" id="wp1061107"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061153}</p>
+<p>OFF <a href="" id="wp1061110"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061156}</p>
+<p>OFF <a href="" id="wp1061113"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061159}</p>
+<p>OFF <a href="" id="wp1061116"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061162}</p>
+<p>OFF <a href="" id="wp1061119"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061165}</p>
+<p>ON <a href="" id="wp1061122"></a></p>
 </td>
 <td>
-<p>ON {: #wp1061168}</p>
+<p>OFF <a href="" id="wp1061125"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1061171}</p>
+<p>ON <a href="" id="wp1061128"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Coil No.4 <a href="" id="wp1061132"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1061135"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1061138"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1061141"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1061144"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1061147"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1061150"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1061153"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1061156"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1061159"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1061162"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1061165"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1061168"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1061171"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<p id="wp1062000">• The energization condition of stepping motor coils No.1-4 can be verified by verifying the step number from "SEGRP" on the PID/data monitor function of the Mazda Modular Diagnostic System (M-MDS).</p>
-<h2 id="control-outline"><strong id="wp1062023">Control Outline</strong></h2>
-<p id="wp1062033">• The PCM constantly calculates the optimum target EGR valve position according to the engine operation conditions and controls the EGR stepping motor step number so that the current EGR valve position is close to the target.</p>
-<p id="wp1062047">• If the current EGR valve position is smaller than the target EGR position (deviation is a positive number), the PCM increases the stepping motor step number and opens the EGR valve. If larger (deviation is a negative number), the PCM decreases the stepping motor step number and closes the EGR valve. Step numbers are increased or decreased by one step at a time.</p>
-<h2 id="target-egr-valve-position"><strong id="wp1062057">Target EGR Valve Position</strong></h2>
-<p id="wp1062067">• The PCM determines the value to increase or decrease the EGR valve opening angle according to the engine operation conditions. The PCM determines the target EGR valve position through each correction based on the basic EGR valve position that is set according to the engine speed and load.</p>
-<p><strong id="wp1062081">Target EGR valve position determination table</strong></p>
+<p>• The energization condition of stepping motor coils No.1-4 can be verified by verifying the step number from "SEGRP" on the PID/data monitor function of the Mazda Modular Diagnostic System (M-MDS).
+<a href="" id="wp1062000"></a></p>
+<h2 id="control-outline"><strong>Control Outline</strong><a href="" id="wp1062023"></a></h2>
+<p>• The PCM constantly calculates the optimum target EGR valve position according to the engine operation conditions and controls the EGR stepping motor step number so that the current EGR valve position is close to the target.
+<a href="" id="wp1062033"></a></p>
+<p>• If the current EGR valve position is smaller than the target EGR position (deviation is a positive number), the PCM increases the stepping motor step number and opens the EGR valve. If larger (deviation is a negative number), the PCM decreases the stepping motor step number and closes the EGR valve. Step numbers are increased or decreased by one step at a time.
+<a href="" id="wp1062047"></a></p>
+<h2 id="target-egr-valve-position"><strong>Target EGR Valve Position</strong><a href="" id="wp1062057"></a></h2>
+<p>• The PCM determines the value to increase or decrease the EGR valve opening angle according to the engine operation conditions. The PCM determines the target EGR valve position through each correction based on the basic EGR valve position that is set according to the engine speed and load.
+<a href="" id="wp1062067"></a></p>
+<p><strong>Target EGR valve position determination table</strong><a href="" id="wp1062081"></a></p>
 <table>
 <thead>
 <tr>
 <th colspan="2">
-<p><strong>Contents</strong> {: #wp1062171}</p>
+<p><strong>Contents</strong> <a href="" id="wp1062171"></a></p>
 </th>
 <th>
-<p><strong>Method for calculating or determining the EGR valve position and correction</strong> {: #wp1062175}</p>
+<p><strong>Method for calculating or determining the EGR valve position and correction</strong> <a href="" id="wp1062175"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td colspan="2">
-<p>Basic EGR valve position {: #wp1062089}</p>
+<p>Basic EGR valve position <a href="" id="wp1062089"></a></p>
 </td>
 <td>
-<p>Within steps 0-52 in the stepping motor determined as follows: {: #wp1062147}  • When the engine speed is 1,200-4,200 rpm and the charging efficiency*1 is within 12.5-75%, the engine speed and charging efficiency are determined to be at basic position {: #wp1062248}</p>
+<p>Within steps 0-52 in the stepping motor determined as follows: <a href="" id="wp1062147"></a>  • When the engine speed is 1,200-4,200 rpm and the charging efficiency*1 is within 12.5-75%, the engine speed and charging efficiency are determined to be at basic position <a href="" id="wp1062248"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p>Correction *2 <a href="" id="wp1062194"></a></p>
+</td>
+<td>
+<p>Engine coolant temperature correction <a href="" id="wp1062197"></a></p>
+</td>
+<td>
+<p>Purpose: Improved driveability <a href="" id="wp1062200"></a> <strong>Engine coolant temperature is 50-55 °C {122-131 °F}</strong><a href="" id="wp1062302"></a>  • The step number is restricted between 0-50% of the basic EGR valve position (low engine coolant temperature-low step number) according to the engine coolant temperature. <a href="" id="wp1062323"></a> <strong>Engine coolant temperature is 55-65 °C {131-149 °F}</strong><a href="" id="wp1062339"></a>  • The step number is restricted between 50-100% of the basic EGR valve position (low engine coolant temperature→low step number) according to the engine coolant temperature. <a href="" id="wp1062360"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Correction *2 {: #wp1062194}</p>
+<p>Intake air temperature correction <a href="" id="wp1062207"></a></p>
 </td>
 <td>
-<p>Engine coolant temperature correction {: #wp1062197}</p>
-</td>
-<td>
-<p>Purpose: Improved driveability {: #wp1062200} <strong id="wp1062302">Engine coolant temperature is 50-55 °C {122-131 °F}</strong> }  • The step number is restricted between 0-50% of the basic EGR valve position (low engine coolant temperature-low step number) according to the engine coolant temperature. {: #wp1062323<strong id="wp1062339">Engine coolant temperature is 55-65 °C {131-149 °F}</strong>}  • The step number is restricted between 50-100% of the basic EGR valve position (low engine coolant temperature→low step number) according to the engine coolant temperature. {: #wp1062360</p>
+<p>Purpose: Improved driveability <a href="" id="wp1062210"></a> <strong>Intake air temperature is 50 °C {122 °F} or less</strong><a href="" id="wp1062384"></a>  • Step number is restricted to 100% of the basic EGR valve position (basic EGR valve position = step number) <a href="" id="wp1062402"></a> <strong>Intake air temperature is 50 °C {122 °F} or more</strong><a href="" id="wp1062416"></a>  • Step number is restricted between 40-100% of basic EGR valve position (low intake air temperature→large step number) <a href="" id="wp1062434"></a></p>
 </td>
 </tr>
 <tr>
-<td></td>
 <td>
-<p>Intake air temperature correction {: #wp1062207}</p>
+<p>Acceleration/deceleration correction <a href="" id="wp1062217"></a></p>
 </td>
 <td>
-<p>Purpose: Improved driveability {: #wp1062210} <strong id="wp1062384">Intake air temperature is 50 °C {122 °F} or less</strong> }  • Step number is restricted to 100% of the basic EGR valve position (basic EGR valve position = step number) {: #wp1062402<strong id="wp1062416">Intake air temperature is 50 °C {122 °F} or more</strong>}  • Step number is restricted between 40-100% of basic EGR valve position (low intake air temperature→large step number) {: #wp1062434</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td>
-<p>Acceleration/deceleration correction {: #wp1062217}</p>
-</td>
-<td>
-<p>Purpose: Improved driveability {: #wp1062220} <strong id="wp1062460">During acceleration/deceleration, when the throttle valve opening angle fluctuation rate is the set value or more</strong>}  • During acceleration→step number is restricted to 20% of basic EGR valve position {: #wp1062472}  • During deceleration→step number is restricted to 0% of basic EGR valve position {: #wp1062484</p>
+<p>Purpose: Improved driveability <a href="" id="wp1062220"></a> <strong>During acceleration/deceleration, when the throttle valve opening angle fluctuation rate is the set value or more</strong><a href="" id="wp1062460"></a>  • During acceleration→step number is restricted to 20% of basic EGR valve position <a href="" id="wp1062472"></a>  • During deceleration→step number is restricted to 0% of basic EGR valve position <a href="" id="wp1062484"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<p id="wp1062539">*1 :
-{: #wp1062499}
+<p>*1 :
+<a href="" id="wp1062499"></a>
 The charging efficiency is the ratio of the actual amount of intake air to the maximum air charging amount (mass volume) of the cylinder. This value increases proportionately to the increase in engine load.
-{: #wp1062518}
+<a href="" id="wp1062518"></a>
 *2 :
-{: #wp1062524}
-The correction is to restrict the basic EGR valve position value. Except for the above conditions and inhibition conditions, the correction value is 100%, and the target EGR valve position equals the EGR valve position value.</p>
-<h2 id="inhibition-conditions"><strong id="wp1062547">Inhibition Conditions</strong></h2>
-<p id="wp1062557">• To improve driveability and ensure exhaust emission performance, the EGR valve closes when any of the following conditions are met.</p>
+<a href="" id="wp1062524"></a>
+The correction is to restrict the basic EGR valve position value. Except for the above conditions and inhibition conditions, the correction value is 100%, and the target EGR valve position equals the EGR valve position value.
+<a href="" id="wp1062539"></a></p>
+<h2 id="inhibition-conditions"><strong>Inhibition Conditions</strong><a href="" id="wp1062547"></a></h2>
+<p>• To improve driveability and ensure exhaust emission performance, the EGR valve closes when any of the following conditions are met.
+<a href="" id="wp1062557"></a></p>
 <ul>
-<li id="wp1062656">When throttle valve is fully closed
-{: #wp1062571}- When vehicle is stopped
-{: #wp1062585}- When the fuel injection control is in the high volume increase zone
-{: #wp1062595}- The engine coolant temperature is 50 °C {122 °F} or less
-{: #wp1062605}- During deceleration
-{: #wp1062623}- Engine speed is less than 1,200 rpm or more than 4,200 rpm
-{: #wp1062633}- Charging efficiency is less than 12.5% or more than 75%
-{: #wp1062643}- During traction control</li>
+<li>When throttle valve is fully closed
+<a href="" id="wp1062571"></a>- When vehicle is stopped
+<a href="" id="wp1062585"></a>- When the fuel injection control is in the high volume increase zone
+<a href="" id="wp1062595"></a> or less
+}- The engine coolant temperature is 50 °C {122 °F<a href="" id="wp1062605"></a>- During deceleration
+<a href="" id="wp1062623"></a>- Engine speed is less than 1,200 rpm or more than 4,200 rpm
+<a href="" id="wp1062633"></a>- Charging efficiency is less than 12.5% or more than 75%
+<a href="" id="wp1062643"></a>- During traction control
+<a href="" id="wp1062656"></a></li>
 </ul>
 <p><a href="" id="wp1062771"></a></p>
 </section>

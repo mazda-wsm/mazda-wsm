@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">ELECTRICAL FAN CONTROL OPERATION [L8, LF]</a></li>
+        <li><a href="#electrical-fan-control-operation-l8-lf">ELECTRICAL FAN CONTROL OPERATION [L8, LF]</a></li>
         
     </ul>
 </nav>
@@ -1246,258 +1246,227 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0002/">ENGINE</a> ➭ <a href="../../node_S02_0016/">CONTROL SYSTEM[L8, LF]</a> ➭ <a href="./">ELECTRICAL FAN CONTROL OPERATION [L8, LF]</a></p>
-<h1 id="wp1025486"><strong>ELECTRICAL FAN CONTROL OPERATION [L8, LF]</strong></h1>
+<h1 id="electrical-fan-control-operation-l8-lf"><strong>ELECTRICAL FAN CONTROL OPERATION [L8, LF]</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id0140i7104000</p>
-<p>{: #wp1059779}</p>
-<p id="wp1063953">• The cooling fan may keep operating for a few seconds or minutes after the ignition switch is turned off depending on the engine coolant temperature.</p>
-<p id="wp1059793">• When the operation conditions are met for each function, the PCM sends an operation signal to cooling fan relay No.1 or No.2/No.3 to operate the cooling fan motors.</p>
-<p id="wp1059805">• The rotation speed of the cooling fan motor is switched between three levels according to a combination of the cooling fan relays.</p>
-<p id="wp1059815">• The cooling fan motor operation switches in the order of stop, low speed, middle speed, and high speed, taking 3 s for each operation while regular-driving cooling.</p>
-<p><strong id="wp1059826">Operation Conditions</strong></p>
+<p><a href="" id="wp1059779"></a></p>
+<p>• The cooling fan may keep operating for a few seconds or minutes after the ignition switch is turned off depending on the engine coolant temperature.
+<a href="" id="wp1063953"></a></p>
+<p>• When the operation conditions are met for each function, the PCM sends an operation signal to cooling fan relay No.1 or No.2/No.3 to operate the cooling fan motors.
+<a href="" id="wp1059793"></a></p>
+<p>• The rotation speed of the cooling fan motor is switched between three levels according to a combination of the cooling fan relays.
+<a href="" id="wp1059805"></a></p>
+<p>• The cooling fan motor operation switches in the order of stop, low speed, middle speed, and high speed, taking 3 s for each operation while regular-driving cooling.
+<a href="" id="wp1059815"></a></p>
+<p><strong>Operation Conditions</strong><a href="" id="wp1059826"></a></p>
 <table>
-<thead>
-<tr>
-<th>
-<p><strong>Function</strong> {: #wp1060084}</p>
-</th>
-<th colspan="4">
-<p><strong>Operation condition</strong> {: #wp1060086}</p>
-</th>
-<th colspan="2">
-<p><strong>Cooling fan motor rotation speed</strong> {: #wp1060094}</p>
-</th>
-<th colspan="3">
-<p><strong>Cooling fan relay</strong> {: #wp1060098}</p>
-</th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td></td>
-<td>
-<p><strong>ECT</strong> {: #wp1060462}</p>
-</td>
-<td>
-<p><strong>A/C amplifier</strong> {: #wp1060465}  <strong>(A/C switch)</strong> {: #wp1060524}</p>
-</td>
-<td>
-<p><strong>Refrigerant pressure switch</strong> {: #wp1060468}  <strong>(high, low)</strong> {: #wp1060542}</p>
-</td>
-<td>
-<p><strong>Vehicle speed</strong> {: #wp1060471}</p>
-</td>
-<td></td>
-<td>
-<p><strong>No.1</strong> {: #wp1060480}</p>
-</td>
-<td>
-<p><strong>No.2</strong> {: #wp1060483}</p>
-</td>
-<td>
-<p><strong>No.3</strong> {: #wp1060486}</p>
-</td>
-<td></td>
-</tr>
-<tr>
-<td>
-<p>Regular-driving cooling {: #wp1059834}</p>
-</td>
-<td>
-<p>Less than 100 °C {212 °F} {: #wp1059836}</p>
-</td>
-<td>
-<p>OFF {: #wp1059892}</p>
-</td>
-<td colspan="2">
-<ul>
-<li>{: #wp1059895}</li>
-</ul>
-</td>
-<td colspan="2">
-<p>Stop {: #wp1059901}</p>
-</td>
-<td colspan="3">
-<p>OFF {: #wp1059907}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>
-<p>ON {: #wp1060155}</p>
-</td>
-<td>
-<p>OFF {: #wp1060158}</p>
-</td>
-<td>
-<p>More than 70 km/h {44 mph} {: #wp1060161}</p>
-</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>
-<p>45 -70 km/h {28-43 mph} {: #wp1060192}</p>
-</td>
-<td colspan="2">
-<p>Low {: #wp1060195}</p>
-</td>
-<td>
-<p>ON {: #wp1060201}</p>
-</td>
-<td>
-<p>OFF {: #wp1060204}</p>
-</td>
-<td>
-<p>OFF {: #wp1060207}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>
-<p>Less than 45 km/h {27 mph} {: #wp1060223}</p>
-</td>
-<td colspan="2">
-<p>Middle {: #wp1060226}</p>
-</td>
-<td>
-<p>ON {: #wp1060232}</p>
-</td>
-<td>
-<p>OFF {: #wp1060235}</p>
-</td>
-<td>
-<p>ON {: #wp1060238}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>
-<p>ON {: #wp1060251}</p>
-</td>
-<td>
-<ul>
-<li>{: #wp1060254}</li>
-</ul>
-</td>
-<td colspan="2">
-<p>High {: #wp1060257}</p>
-</td>
-<td colspan="3">
-<p>ON {: #wp1060263}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td>
-<p>100-108 °C {213-226.4 °F} {: #wp1060276}</p>
-</td>
-<td>
-<p>OFF {: #wp1060279}</p>
-</td>
-<td colspan="2">
-<ul>
-<li>{: #wp1060282}</li>
-</ul>
-</td>
-<td colspan="2">
-<p>Middle {: #wp1060288}</p>
-</td>
-<td>
-<p>ON {: #wp1060294}</p>
-</td>
-<td>
-<p>OFF {: #wp1060297}</p>
-</td>
-<td>
-<p>ON {: #wp1060300}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>
-<p>ON {: #wp1060310}</p>
-</td>
-<td></td>
-<td colspan="2">
-<p>High {: #wp1060319}</p>
-</td>
-<td colspan="3">
-<p>ON {: #wp1060325}</p>
-</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>
-<p>More than 108 °C {227 °F} {: #wp1060338}</p>
-</td>
-<td colspan="3">
-<ul>
-<li>{: #wp1060341}</li>
-</ul>
-</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>
-<p>After-cooling {: #wp1060366}</p>
+<td rowspan="2">
+<p><strong>Function</strong> <a href="" id="wp1060084"></a></p>
 </td>
 <td colspan="4">
-<p>• When all the following conditions are met: {: #wp1060369}  - Ignition switch: OFF {: #wp1060826}- Estimated maximum engine coolant temperature is high after engine stop {: #wp1060840}</p>
+<p><strong>Operation condition</strong> <a href="" id="wp1060086"></a></p>
 </td>
-<td colspan="2">
-<p>Low {: #wp1060381}</p>
+<td rowspan="2">
+<p><strong>Cooling fan motor rotation speed</strong> <a href="" id="wp1060094"></a></p>
 </td>
-<td>
-<p>ON {: #wp1060387}</p>
-</td>
-<td>
-<p>OFF {: #wp1060390}</p>
-</td>
-<td>
-<p>OFF {: #wp1060393}</p>
+<td colspan="3">
+<p><strong>Cooling fan relay</strong> <a href="" id="wp1060098"></a></p>
 </td>
 </tr>
 <tr>
-<td></td>
-<td colspan="4">
-<p>• When all the following conditions are met: {: #wp1060400}  - Estimated maximum engine coolant temperature is the specified value or more even when operating at low rotation speed. {: #wp1060885}</p>
+<td>
+<p><strong>ECT</strong> <a href="" id="wp1060462"></a></p>
+</td>
+<td>
+<p><strong>A/C amplifier</strong> <a href="" id="wp1060465"></a>  <strong>(A/C switch)</strong> <a href="" id="wp1060524"></a></p>
+</td>
+<td>
+<p><strong>Refrigerant pressure switch</strong> <a href="" id="wp1060468"></a>  <strong>(high, low)</strong> <a href="" id="wp1060542"></a></p>
+</td>
+<td>
+<p><strong>Vehicle speed</strong> <a href="" id="wp1060471"></a></p>
+</td>
+<td>
+<p><strong>No.1</strong> <a href="" id="wp1060480"></a></p>
+</td>
+<td>
+<p><strong>No.2</strong> <a href="" id="wp1060483"></a></p>
+</td>
+<td>
+<p><strong>No.3</strong> <a href="" id="wp1060486"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="8">
+<p>Regular-driving cooling <a href="" id="wp1059834"></a></p>
+</td>
+<td rowspan="5">
+<p>Less than 100 °C {212 °F} <a href="" id="wp1059836"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1059892"></a></p>
 </td>
 <td colspan="2">
-<p>Middle {: #wp1060412}</p>
+<ul>
+<li><a href="" id="wp1059895"></a></li>
+</ul>
+</td>
+<td rowspan="2">
+<p>Stop <a href="" id="wp1059901"></a></p>
+</td>
+<td colspan="3" rowspan="2">
+<p>OFF <a href="" id="wp1059907"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="4">
+<p>ON <a href="" id="wp1060155"></a></p>
+</td>
+<td rowspan="3">
+<p>OFF <a href="" id="wp1060158"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060418}</p>
+<p>More than 70 km/h {44 mph} <a href="" id="wp1060161"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>45 -70 km/h {28-43 mph} <a href="" id="wp1060192"></a></p>
 </td>
 <td>
-<p>OFF {: #wp1060421}</p>
+<p>Low <a href="" id="wp1060195"></a></p>
 </td>
 <td>
-<p>ON {: #wp1060424}</p>
+<p>ON <a href="" id="wp1060201"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060204"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060207"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Less than 45 km/h {27 mph} <a href="" id="wp1060223"></a></p>
+</td>
+<td>
+<p>Middle <a href="" id="wp1060226"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060232"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060235"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060238"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ON <a href="" id="wp1060251"></a></p>
+</td>
+<td>
+<ul>
+<li><a href="" id="wp1060254"></a></li>
+</ul>
+</td>
+<td>
+<p>High <a href="" id="wp1060257"></a></p>
+</td>
+<td colspan="3">
+<p>ON <a href="" id="wp1060263"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>100-108 °C {213-226.4 °F} <a href="" id="wp1060276"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060279"></a></p>
+</td>
+<td colspan="2" rowspan="2">
+<ul>
+<li><a href="" id="wp1060282"></a></li>
+</ul>
+</td>
+<td>
+<p>Middle <a href="" id="wp1060288"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060294"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060297"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060300"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ON <a href="" id="wp1060310"></a></p>
+</td>
+<td rowspan="2">
+<p>High <a href="" id="wp1060319"></a></p>
+</td>
+<td colspan="3" rowspan="2">
+<p>ON <a href="" id="wp1060325"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>More than 108 °C {227 °F} <a href="" id="wp1060338"></a></p>
+</td>
+<td colspan="3">
+<ul>
+<li><a href="" id="wp1060341"></a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>After-cooling <a href="" id="wp1060366"></a></p>
+</td>
+<td colspan="4">
+<p>• When all the following conditions are met: <a href="" id="wp1060369"></a>  - Ignition switch: OFF <a href="" id="wp1060826"></a>- Estimated maximum engine coolant temperature is high after engine stop <a href="" id="wp1060840"></a></p>
+</td>
+<td>
+<p>Low <a href="" id="wp1060381"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060387"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060390"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060393"></a></p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>• When all the following conditions are met: <a href="" id="wp1060400"></a>  - Estimated maximum engine coolant temperature is the specified value or more even when operating at low rotation speed. <a href="" id="wp1060885"></a></p>
+</td>
+<td>
+<p>Middle <a href="" id="wp1060412"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060418"></a></p>
+</td>
+<td>
+<p>OFF <a href="" id="wp1060421"></a></p>
+</td>
+<td>
+<p>ON <a href="" id="wp1060424"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<p><img alt="" id="wp1060922" src="../../../../../images/E5U140ZN5855.png" /></p>
+<p><img alt="" src="../../../../../images/E5U140ZN5855.png" /><a href="" id="wp1060922"></a></p>
 <p><a href="" id="wp1063658"></a></p>
 </section>
 

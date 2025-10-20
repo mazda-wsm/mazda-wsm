@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">DTC P0125 [L8, LF]</a></li>
+        <li><a href="#dtc-p0125-l8-lf">DTC P0125 [L8, LF]</a></li>
         
     </ul>
 </nav>
@@ -1246,246 +1246,230 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S01/">Workshop Manual</a> ➭ <a href="../../../node_S01_0002/">ENGINE</a> ➭ <a href="../../node_S01_0003/">ON-BOARD DIAGNOSTIC[L8, LF]</a> ➭ <a href="./">DTC P0125 [L8, LF]</a></p>
-<h1 id="wp1025486"><strong>DTC P0125 [L8, LF]</strong></h1>
+<h1 id="dtc-p0125-l8-lf"><strong>DTC P0125 [L8, LF]</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id0102b1804400</p>
-<p>{: #wp1059779}</p>
+<p><a href="" id="wp1059779"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>DTC P0125</strong> <a href="" id="wp1059840"></a>}{: #wp1061376</p>
+<p><strong>DTC P0125</strong> <a href="" id="wp1059840"></a><a href="" id="wp1061376"></a></p>
 </th>
 <th>
-<p><strong>Excessive time to enter closed loop fuel control</strong> {: #wp1059842}</p>
+<p><strong>Excessive time to enter closed loop fuel control</strong> <a href="" id="wp1059842"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>DETECTION CONDITION</strong> {: #wp1059782}</p>
+<p><strong>DETECTION CONDITION</strong> <a href="" id="wp1059782"></a></p>
 </td>
 <td>
-<p>• The PCM monitors the ECT sensor signal at PCM terminal 2AH after engine is started while the engine is cold. If the engine coolant temperature does not reach the expected temperature for specified period, the PCM determines that it has taken an excessive amount of time for the engine coolant temperature to reach the temperature necessary to start closed-loop fuel control. {: #wp1059784} <strong id="wp1059906">Diagnostic support note</strong>}  • This is a continuous monitor (Engine cooling system). {: #wp1059916}  • The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM. {: #wp1059926}  • PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle. {: #wp1059936}  • FREEZE FRAME DATA is available. {: #wp1059946}  • The DTC is stored in the PCM memory. {: #wp1059956</p>
+<p>• The PCM monitors the ECT sensor signal at PCM terminal 2AH after engine is started while the engine is cold. If the engine coolant temperature does not reach the expected temperature for specified period, the PCM determines that it has taken an excessive amount of time for the engine coolant temperature to reach the temperature necessary to start closed-loop fuel control. <a href="" id="wp1059784"></a> <strong>Diagnostic support note</strong><a href="" id="wp1059906"></a>  • This is a continuous monitor (Engine cooling system). <a href="" id="wp1059916"></a>  • The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM. <a href="" id="wp1059926"></a>  • PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle. <a href="" id="wp1059936"></a>  • FREEZE FRAME DATA is available. <a href="" id="wp1059946"></a>  • The DTC is stored in the PCM memory. <a href="" id="wp1059956"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p><strong>POSSIBLE CAUSE</strong> {: #wp1059857}</p>
+<p><strong>POSSIBLE CAUSE</strong> <a href="" id="wp1059857"></a></p>
 </td>
 <td>
-<p>• ECT sensor malfunction {: #wp1059860}  • Cooling system malfunction {: #wp1059988}  • Poor connection of connectors {: #wp1059998}  • PCM malfunction {: #wp1060008}</p>
+<p>• ECT sensor malfunction <a href="" id="wp1059860"></a>  • Cooling system malfunction <a href="" id="wp1059988"></a>  • Poor connection of connectors <a href="" id="wp1059998"></a>  • PCM malfunction <a href="" id="wp1060008"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<p><strong id="wp1060018">Diagnostic procedure</strong></p>
+<p><strong>Diagnostic procedure</strong><a href="" id="wp1060018"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>STEP</strong> {: #wp1060132}</p>
+<p><strong>STEP</strong> <a href="" id="wp1060132"></a></p>
 </th>
 <th colspan="2">
-<p><strong>INSPECTION</strong> {: #wp1060134}</p>
+<p><strong>INSPECTION</strong> <a href="" id="wp1060134"></a></p>
 </th>
 <th>
-<p><strong>ACTION</strong> {: #wp1060138}</p>
+<p><strong>ACTION</strong> <a href="" id="wp1060138"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>
-<p>1 {: #wp1060026}</p>
+<td rowspan="2">
+<p>1 <a href="" id="wp1060026"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>VERIFY FREEZE FRAME DATA AND DIAGNOSTIC MONITORING TEST RESULTS HAVE BEEN RECORDED</strong><a href="" id="wp1060028"></a>  • Have FREEZE FRAME DATA been recorded? <a href="" id="wp1060240"></a></p>
 </td>
 <td>
-<p><strong id="wp1060028">VERIFY FREEZE FRAME DATA AND DIAGNOSTIC MONITORING TEST RESULTS HAVE BEEN RECORDED</strong>}  • Have FREEZE FRAME DATA been recorded? {: #wp1060240</p>
+<p>Yes <a href="" id="wp1060084"></a></p>
 </td>
 <td>
-<p>Yes {: #wp1060084}</p>
-</td>
-<td>
-<p>Go to the next step. {: #wp1060087}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1060167}</p>
-</td>
-<td>
-<p>Record the FREEZE FRAME DATA on the repair order, then go to the next step. {: #wp1060170}</p>
+<p>Go to the next step. <a href="" id="wp1060087"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>2 {: #wp1060174}</p>
+<p>No <a href="" id="wp1060167"></a></p>
 </td>
 <td>
-<p><strong id="wp1060177">VERIFY RELATED SERVICE INFORMATION AVAILABILITY</strong>}  • Verify related Service Information availability. {: #wp1060284}  • Is any related Service Information available? {: #wp1060298</p>
-</td>
-<td>
-<p>Yes {: #wp1060180}</p>
-</td>
-<td>
-<p>Perform repair or diagnosis according to the available Service Information. {: #wp1060183}  • If the vehicle is not repaired, go to the next step. {: #wp1060318}</p>
+<p>Record the FREEZE FRAME DATA on the repair order, then go to the next step. <a href="" id="wp1060170"></a></p>
 </td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1060193}</p>
+<td rowspan="2">
+<p>2 <a href="" id="wp1060174"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>VERIFY RELATED SERVICE INFORMATION AVAILABILITY</strong><a href="" id="wp1060177"></a>  • Verify related Service Information availability. <a href="" id="wp1060284"></a>  • Is any related Service Information available? <a href="" id="wp1060298"></a></p>
 </td>
 <td>
-<p>Go to the next step. {: #wp1060196}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>3 {: #wp1060200}</p>
+<p>Yes <a href="" id="wp1060180"></a></p>
 </td>
 <td>
-<p><strong id="wp1060203">VERIFY CURRENT INPUT SIGNAL STATUS: IS CONCERN INTERMITTENT OR CONSTANT</strong>  • Is ECT PID }  • Start the engine. {: #wp1060365}  • Warm up the engine completely. {: #wp1060379}  • Access ECT PID using the M-MDS. {: #wp1060389<strong>above 60</strong> °<strong>C {140</strong> °<strong>F}</strong>? {: #wp1060400}</p>
-</td>
-<td>
-<p>Yes {: #wp1060206}</p>
-</td>
-<td>
-<p>Intermittent concern exists. Go to INTERMITTENT CONCERNS TROUBLESHOOTING procedure. {: #wp1060209}  (See <a href="../../../symptom-troubleshooting-engine-control-system-l8-lf/intermittent-concern-troubleshooting-l8-lf/id0103a0800400/#wp1025486">INTERMITTENT CONCERN TROUBLESHOOTING [L8, LF]</a>.) {: #wp1060436}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1060346}</p>
-</td>
-<td>
-<p>Go to the next step. {: #wp1060349}</p>
+<p>Perform repair or diagnosis according to the available Service Information. <a href="" id="wp1060183"></a>  • If the vehicle is not repaired, go to the next step. <a href="" id="wp1060318"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>4 {: #wp1060458}</p>
+<p>No <a href="" id="wp1060193"></a></p>
 </td>
 <td>
-<p><strong id="wp1060461">INSPECT POOR CONNECTION OF ECT SENSOR CONNECTOR</strong>}  • Turn the ignition switch off. {: #wp1060512}  • Disconnect the ECT sensor connector. {: #wp1060526}  • Inspect for poor connection (such as damaged/pulled-out pins, corrosion). {: #wp1060536}  • Is there any malfunction? {: #wp1060549</p>
-</td>
-<td>
-<p>Yes {: #wp1060464}</p>
-</td>
-<td>
-<p>Repair or replace the terminal, then go to Step 7. {: #wp1060467}</p>
+<p>Go to the next step. <a href="" id="wp1060196"></a></p>
 </td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1060481}</p>
+<td rowspan="2">
+<p>3 <a href="" id="wp1060200"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>VERIFY CURRENT INPUT SIGNAL STATUS: IS CONCERN INTERMITTENT OR CONSTANT</strong><a href="" id="wp1060203"></a>  • Start the engine. <a href="" id="wp1060365"></a>  • Warm up the engine completely. <a href="" id="wp1060379"></a>  • Access ECT PID using the M-MDS. <a href="" id="wp1060389"></a>  • Is ECT PID <strong>above 60</strong> °<strong>C {140</strong> °<strong>F}</strong>? <a href="" id="wp1060400"></a></p>
 </td>
 <td>
-<p>Go to the next step. {: #wp1060484}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>5 {: #wp1060577}</p>
+<p>Yes <a href="" id="wp1060206"></a></p>
 </td>
 <td>
-<p><strong id="wp1060580">INSPECT ECT SENSOR</strong>  (See }  • Inspect the ECT sensor. {: #wp1060631<a href="../../../control-system-l8-lf/engine-coolant-temperature-ect-sensor-inspection-l8-lf/id0140i7802000/#wp1025486">ENGINE COOLANT TEMPERATURE (ECT) SENSOR INSPECTION [L8, LF]</a>.) {: #wp1060645}  • Is it normal? {: #wp1060659}</p>
-</td>
-<td>
-<p>Yes {: #wp1060583}</p>
-</td>
-<td>
-<p>Go to the next step. {: #wp1060586}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1060600}</p>
-</td>
-<td>
-<p>Replace the ECT sensor, then go to Step 7. {: #wp1060603}  (See <a href="../../../control-system-l8-lf/engine-coolant-temperature-ect-sensor-removal-installation-l8-lf/id0140i7801900/#wp1025486">ENGINE COOLANT TEMPERATURE (ECT) SENSOR REMOVAL/INSTALLATION [L8, LF]</a>.) {: #wp1060689}</p>
+<p>Intermittent concern exists. Go to INTERMITTENT CONCERNS TROUBLESHOOTING procedure. <a href="" id="wp1060209"></a>  (See <a href="../../../symptom-troubleshooting-engine-control-system-l8-lf/intermittent-concern-troubleshooting-l8-lf/id0103a0800400/#wp1025486">INTERMITTENT CONCERN TROUBLESHOOTING [L8, LF]</a>.) <a href="" id="wp1060436"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>6 {: #wp1060701}</p>
+<p>No <a href="" id="wp1060346"></a></p>
 </td>
 <td>
-<p><strong id="wp1060704">INSPECT POOR CONNECTION OF PCM CONNECTOR</strong>}  • Disconnect the PCM connector. {: #wp1060771}  • Inspect for poor connection (such as damaged/pulled-out pins, corrosion). {: #wp1060785}  • Is there any malfunction? {: #wp1060798</p>
-</td>
-<td>
-<p>Yes {: #wp1060707}</p>
-</td>
-<td>
-<p>Repair or replace the terminal, then go to the next step. {: #wp1060710}</p>
+<p>Go to the next step. <a href="" id="wp1060349"></a></p>
 </td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1060728}</p>
+<td rowspan="2">
+<p>4 <a href="" id="wp1060458"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>INSPECT POOR CONNECTION OF ECT SENSOR CONNECTOR</strong><a href="" id="wp1060461"></a>  • Turn the ignition switch off. <a href="" id="wp1060512"></a>  • Disconnect the ECT sensor connector. <a href="" id="wp1060526"></a>  • Inspect for poor connection (such as damaged/pulled-out pins, corrosion). <a href="" id="wp1060536"></a>  • Is there any malfunction? <a href="" id="wp1060549"></a></p>
 </td>
 <td>
-<p>Go to the next step. {: #wp1060731}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>7 {: #wp1060826}</p>
+<p>Yes <a href="" id="wp1060464"></a></p>
 </td>
 <td>
-<p><strong id="wp1060829">VERIFY TROUBLESHOOTING OF DTC P0125 COMPLETED</strong>  • Wait until ECT PID }  • Make sure to reconnect all disconnected connectors. {: #wp1060896}  • Clear the DTC from the PCM memory using the M-MDS. {: #wp1060910}  • Turn the ignition switch to the ON position (Engine off). {: #wp1060921}  • Access ECT PID using the M-MDS. {: #wp1060931<strong>below 8</strong> °<strong>C {46</strong> °<strong>F}</strong>. {: #wp1060942}  • Start the engine and warm it up completely. {: #wp1060968}  • Is the PENDING CODE for this DTC present? {: #wp1060978}</p>
-</td>
-<td>
-<p>Yes {: #wp1060832}</p>
-</td>
-<td>
-<p>Replace the PCM, then go to the next step. {: #wp1060835}  (See <a href="../../../control-system-l8-lf/pcm-removal-installation-l8-lf/id0140i7802400/#wp1025486">PCM REMOVAL/INSTALLATION [L8, LF]</a>.) {: #wp1060998}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1060853}</p>
-</td>
-<td>
-<p>Go to the next step. {: #wp1060856}</p>
+<p>Repair or replace the terminal, then go to Step 7. <a href="" id="wp1060467"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>8 {: #wp1061020}</p>
+<p>No <a href="" id="wp1060481"></a></p>
 </td>
 <td>
-<p><strong id="wp1061023">VERIFY AFTER REPAIR PROCEDURE</strong>  (See }  • Perform the "AFTER REPAIR PROCEDURE". {: #wp1061106<a href="../../after-repair-procedure-l8-lf/id0102b1801100/#wp1025486">AFTER REPAIR PROCEDURE [L8, LF]</a>.) {: #wp1061124}  • Are any DTC present? {: #wp1061138}</p>
-</td>
-<td>
-<p>Yes {: #wp1061026}</p>
-</td>
-<td>
-<p>Go to the applicable DTC troubleshooting. {: #wp1061029}  (See <a href="../../dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.) {: #wp1061158}</p>
+<p>Go to the next step. <a href="" id="wp1060484"></a></p>
 </td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1061051}</p>
+<td rowspan="2">
+<p>5 <a href="" id="wp1060577"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>INSPECT ECT SENSOR</strong><a href="" id="wp1060580"></a>  • Inspect the ECT sensor. <a href="" id="wp1060631"></a>  (See <a href="../../../control-system-l8-lf/engine-coolant-temperature-ect-sensor-inspection-l8-lf/id0140i7802000/#wp1025486">ENGINE COOLANT TEMPERATURE (ECT) SENSOR INSPECTION [L8, LF]</a>.) <a href="" id="wp1060645"></a>  • Is it normal? <a href="" id="wp1060659"></a></p>
 </td>
 <td>
-<p>Troubleshooting completed. {: #wp1061054}</p>
+<p>Yes <a href="" id="wp1060583"></a></p>
+</td>
+<td>
+<p>Go to the next step. <a href="" id="wp1060586"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>No <a href="" id="wp1060600"></a></p>
+</td>
+<td>
+<p>Replace the ECT sensor, then go to Step 7. <a href="" id="wp1060603"></a>  (See <a href="../../../control-system-l8-lf/engine-coolant-temperature-ect-sensor-removal-installation-l8-lf/id0140i7801900/#wp1025486">ENGINE COOLANT TEMPERATURE (ECT) SENSOR REMOVAL/INSTALLATION [L8, LF]</a>.) <a href="" id="wp1060689"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>6 <a href="" id="wp1060701"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>INSPECT POOR CONNECTION OF PCM CONNECTOR</strong><a href="" id="wp1060704"></a>  • Disconnect the PCM connector. <a href="" id="wp1060771"></a>  • Inspect for poor connection (such as damaged/pulled-out pins, corrosion). <a href="" id="wp1060785"></a>  • Is there any malfunction? <a href="" id="wp1060798"></a></p>
+</td>
+<td>
+<p>Yes <a href="" id="wp1060707"></a></p>
+</td>
+<td>
+<p>Repair or replace the terminal, then go to the next step. <a href="" id="wp1060710"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>No <a href="" id="wp1060728"></a></p>
+</td>
+<td>
+<p>Go to the next step. <a href="" id="wp1060731"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>7 <a href="" id="wp1060826"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>VERIFY TROUBLESHOOTING OF DTC P0125 COMPLETED</strong><a href="" id="wp1060829"></a>  • Make sure to reconnect all disconnected connectors. <a href="" id="wp1060896"></a>  • Clear the DTC from the PCM memory using the M-MDS. <a href="" id="wp1060910"></a>  • Turn the ignition switch to the ON position (Engine off). <a href="" id="wp1060921"></a>  • Access ECT PID using the M-MDS. <a href="" id="wp1060931"></a>  • Wait until ECT PID <strong>below 8</strong> °<strong>C {46</strong> °<strong>F}</strong>. <a href="" id="wp1060942"></a>  • Start the engine and warm it up completely. <a href="" id="wp1060968"></a>  • Is the PENDING CODE for this DTC present? <a href="" id="wp1060978"></a></p>
+</td>
+<td>
+<p>Yes <a href="" id="wp1060832"></a></p>
+</td>
+<td>
+<p>Replace the PCM, then go to the next step. <a href="" id="wp1060835"></a>  (See <a href="../../../control-system-l8-lf/pcm-removal-installation-l8-lf/id0140i7802400/#wp1025486">PCM REMOVAL/INSTALLATION [L8, LF]</a>.) <a href="" id="wp1060998"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>No <a href="" id="wp1060853"></a></p>
+</td>
+<td>
+<p>Go to the next step. <a href="" id="wp1060856"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>8 <a href="" id="wp1061020"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>VERIFY AFTER REPAIR PROCEDURE</strong><a href="" id="wp1061023"></a>  • Perform the "AFTER REPAIR PROCEDURE". <a href="" id="wp1061106"></a>  (See <a href="../../after-repair-procedure-l8-lf/id0102b1801100/#wp1025486">AFTER REPAIR PROCEDURE [L8, LF]</a>.) <a href="" id="wp1061124"></a>  • Are any DTC present? <a href="" id="wp1061138"></a></p>
+</td>
+<td>
+<p>Yes <a href="" id="wp1061026"></a></p>
+</td>
+<td>
+<p>Go to the applicable DTC troubleshooting. <a href="" id="wp1061029"></a>  (See <a href="../../dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.) <a href="" id="wp1061158"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>No <a href="" id="wp1061051"></a></p>
+</td>
+<td>
+<p>Troubleshooting completed. <a href="" id="wp1061054"></a></p>
 </td>
 </tr>
 </tbody>

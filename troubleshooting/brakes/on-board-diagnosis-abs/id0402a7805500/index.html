@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">ON-BOARD DIAGNOSIS [ABS]</a></li>
+        <li><a href="#on-board-diagnosis-abs">ON-BOARD DIAGNOSIS [ABS]</a></li>
         <li><a href="#on-board-diagnostic-obd-test-description">On-Board Diagnostic (OBD) Test Description</a></li><li><a href="#reading-dtcs-procedure">Reading DTCs Procedure</a></li><li><a href="#clearing-dtcs-procedures">Clearing DTCs Procedures</a></li><li><a href="#piddata-monitor-and-record-procedure">PID/Data Monitor and Record Procedure</a></li><li><a href="#active-command-modes-procedure">Active Command Modes Procedure</a></li><li><a href="#dtc-table">DTC Table</a></li><li><a href="#piddata-monitor-table">PID/DATA Monitor Table</a></li><li><a href="#active-command-modes-table">Active Command Modes Table</a></li>
     </ul>
 </nav>
@@ -1246,1050 +1246,1073 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../left_menu_S07/">Troubleshooting</a> ➭ <a href="../../node_S07_0001/">BRAKES</a> ➭ <a href="./">ON-BOARD DIAGNOSIS [ABS]</a></p>
-<h1 id="wp1025486"><strong>ON-BOARD DIAGNOSIS [ABS]</strong></h1>
+<h1 id="on-board-diagnosis-abs"><strong>ON-BOARD DIAGNOSIS [ABS]</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id0402a7805500</p>
-<p>{: #wp1059781}</p>
-<h2 id="on-board-diagnostic-obd-test-description"><strong id="wp1066260">On-Board Diagnostic (OBD) Test Description</strong></h2>
-<p id="wp1059792">• The OBD test inspects the integrity and function of the ABS and outputs the results when requested by the specific tests.</p>
-<p id="wp1059806">• On-board diagnostic test also:</p>
+<p><a href="" id="wp1059781"></a></p>
+<h2 id="on-board-diagnostic-obd-test-description"><strong>On-Board Diagnostic (OBD) Test Description</strong><a href="" id="wp1066260"></a></h2>
+<p>• The OBD test inspects the integrity and function of the ABS and outputs the results when requested by the specific tests.
+<a href="" id="wp1059792"></a></p>
+<p>• On-board diagnostic test also:
+<a href="" id="wp1059806"></a></p>
 <ul>
-<li id="wp1059831">Provides a quick inspection of the ABS usually performed at the start of each diagnostic procedure.
-{: #wp1059817}- Provides verification after repairs to ensure that no other faults occurred during service.</li>
+<li>Provides a quick inspection of the ABS usually performed at the start of each diagnostic procedure.
+<a href="" id="wp1059817"></a>- Provides verification after repairs to ensure that no other faults occurred during service.
+<a href="" id="wp1059831"></a></li>
 </ul>
-<p id="wp1059841">• The OBD test is divided into 3 tests:</p>
+<p>• The OBD test is divided into 3 tests:
+<a href="" id="wp1059841"></a></p>
 <ul>
-<li id="wp1059851">Read/clear diagnostic results, PID monitor and record and active command modes.</li>
+<li>Read/clear diagnostic results, PID monitor and record and active command modes.
+<a href="" id="wp1059851"></a></li>
 </ul>
-<h3 id="readclear-diagnostic-results"><strong id="wp1059867">Read/clear diagnostic results</strong></h3>
-<p id="wp1059879">• This function allows you to read or clear DTCs in the ABS HU/CM memory.</p>
-<h3 id="piddata-monitor-and-record"><strong id="wp1059895">PID/Data monitor and record</strong></h3>
-<p id="wp1059907">• This function allows you to access certain data values, input signals, calculated values, and system status information.</p>
-<h3 id="active-command-modes"><strong id="wp1059921">Active command modes</strong></h3>
-<p id="wp1059931">• This function allows you to control devices through the M-MDS.</p>
-<h2 id="reading-dtcs-procedure"><strong id="wp1059946">Reading DTCs Procedure</strong></h2>
+<h3 id="readclear-diagnostic-results"><strong>Read/clear diagnostic results</strong><a href="" id="wp1059867"></a></h3>
+<p>• This function allows you to read or clear DTCs in the ABS HU/CM memory.
+<a href="" id="wp1059879"></a></p>
+<h3 id="piddata-monitor-and-record"><strong>PID/Data monitor and record</strong><a href="" id="wp1059895"></a></h3>
+<p>• This function allows you to access certain data values, input signals, calculated values, and system status information.
+<a href="" id="wp1059907"></a></p>
+<h3 id="active-command-modes"><strong>Active command modes</strong><a href="" id="wp1059921"></a></h3>
+<p>• This function allows you to control devices through the M-MDS.
+<a href="" id="wp1059931"></a></p>
+<h2 id="reading-dtcs-procedure"><strong>Reading DTCs Procedure</strong><a href="" id="wp1059946"></a></h2>
 <ol>
-<li>Connect the M-MDS to the vehicle DLC-2 connector.{: #wp1059956}</li>
+<li>Connect the M-MDS to the vehicle DLC-2 connector.<a href="" id="wp1059956"></a></li>
 </ol>
 <p><img alt="" src="../../../../images/E5U402AW5001.png" /></p>
 <ol start="2">
-<li id="wp1059985">After the vehicle is identified, select the following items from the initial screen of the M-MDS.</li>
+<li>After the vehicle is identified, select the following items from the initial screen of the M-MDS.
+<a href="" id="wp1059985"></a></li>
 </ol>
-<p id="wp1059996">• When using the IDS (laptop PC)</p>
+<p>• When using the IDS (laptop PC)
+<a href="" id="wp1059996"></a></p>
 <ol>
-<li id="wp1060056">Select the "Toolbox" tab.
-{: #wp1060010}2. Select "Self Test".
-{: #wp1060028}3. Select "Modules".
-{: #wp1060042}4. Select "ABS".</li>
+<li>Select the "Toolbox" tab.
+<a href="" id="wp1060010"></a>2. Select "Self Test".
+<a href="" id="wp1060028"></a>3. Select "Modules".
+<a href="" id="wp1060042"></a>4. Select "ABS".
+<a href="" id="wp1060056"></a></li>
 </ol>
-<p id="wp1060070">• When using the PDS (Pocket PC)</p>
+<p>• When using the PDS (Pocket PC)
+<a href="" id="wp1060070"></a></p>
 <ol>
 <li>
-<p id="wp1060112">Select "Module Tests".
-{: #wp1060080}2. Select "ABS".
-{: #wp1060098}3. Select "Self Test".</p>
+<p>Select "Module Tests".
+<a href="" id="wp1060080"></a>2. Select "ABS".
+<a href="" id="wp1060098"></a>3. Select "Self Test".
+<a href="" id="wp1060112"></a></p>
 </li>
 <li>
-<p id="wp1060126">Verify the DTC according to the directions on the screen.</p>
+<p>Verify the DTC according to the directions on the screen.
+<a href="" id="wp1060126"></a></p>
 </li>
 </ol>
-<p id="wp1060136">• If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection.</p>
+<p>• If any DTCs are displayed, perform troubleshooting according to the corresponding DTC inspection.
+<a href="" id="wp1060136"></a></p>
 <ol start="4">
-<li id="wp1060150">After completion of repairs, clear all DTCs stored in the ABS. (See <a href="./#wp1060168">Clearing DTCs Procedures</a>.)</li>
+<li>After completion of repairs, clear all DTCs stored in the ABS. (See <a href="./#wp1060168">Clearing DTCs Procedures</a>.)
+<a href="" id="wp1060150"></a></li>
 </ol>
-<h2 id="clearing-dtcs-procedures"><strong id="wp1060168">Clearing DTCs Procedures</strong></h2>
+<h2 id="clearing-dtcs-procedures"><strong>Clearing DTCs Procedures</strong><a href="" id="wp1060168"></a></h2>
 <ol>
-<li>Connect the M-MDS to the vehicle DLC-2 connector.{: #wp1060178}</li>
+<li>Connect the M-MDS to the vehicle DLC-2 connector.<a href="" id="wp1060178"></a></li>
 </ol>
 <p><img alt="" src="../../../../images/E5U402AW50012.png" /></p>
 <ol start="2">
-<li id="wp1060207">After the vehicle is identified, select the following items from the initial screen of the M-MDS.</li>
+<li>After the vehicle is identified, select the following items from the initial screen of the M-MDS.
+<a href="" id="wp1060207"></a></li>
 </ol>
-<p id="wp1060218">• When using the IDS (laptop PC)</p>
+<p>• When using the IDS (laptop PC)
+<a href="" id="wp1060218"></a></p>
 <ol>
-<li id="wp1060278">Select the "Toolbox" tab.
-{: #wp1060232}2. Select "Self Test".
-{: #wp1060250}3. Select "Modules".
-{: #wp1060264}4. Select "ABS".</li>
+<li>Select the "Toolbox" tab.
+<a href="" id="wp1060232"></a>2. Select "Self Test".
+<a href="" id="wp1060250"></a>3. Select "Modules".
+<a href="" id="wp1060264"></a>4. Select "ABS".
+<a href="" id="wp1060278"></a></li>
 </ol>
-<p id="wp1060292">• When using the PDS (Pocket PC)</p>
+<p>• When using the PDS (Pocket PC)
+<a href="" id="wp1060292"></a></p>
 <ol>
 <li>
-<p id="wp1060334">Select "Module Tests".
-{: #wp1060302}2. Select "ABS".
-{: #wp1060320}3. Select "Self Test".</p>
+<p>Select "Module Tests".
+<a href="" id="wp1060302"></a>2. Select "ABS".
+<a href="" id="wp1060320"></a>3. Select "Self Test".
+<a href="" id="wp1060334"></a></p>
 </li>
 <li>
-<p id="wp1060348">Verify the DTC according to the directions on the screen.</p>
+<p>Verify the DTC according to the directions on the screen.
+<a href="" id="wp1060348"></a></p>
 </li>
 <li>
-<p id="wp1060358">Press the clear button on the DTC screen to clear the DTC.</p>
+<p>Press the clear button on the DTC screen to clear the DTC.
+<a href="" id="wp1060358"></a></p>
 </li>
 <li>
-<p id="wp1060368">Verify that no DTCs are displayed.</p>
+<p>Verify that no DTCs are displayed.
+<a href="" id="wp1060368"></a></p>
 </li>
 </ol>
-<h2 id="piddata-monitor-and-record-procedure"><strong id="wp1060378">PID/Data Monitor and Record Procedure</strong></h2>
+<h2 id="piddata-monitor-and-record-procedure"><strong>PID/Data Monitor and Record Procedure</strong><a href="" id="wp1060378"></a></h2>
 <ol>
-<li>Connect the M-MDS to the vehicle DLC-2 connector.{: #wp1060390}</li>
+<li>Connect the M-MDS to the vehicle DLC-2 connector.<a href="" id="wp1060390"></a></li>
 </ol>
 <p><img alt="" src="../../../../images/E5U402AW50013.png" /></p>
 <ol start="2">
-<li id="wp1060419">After the vehicle is identified, select the following items from the initial screen of the M-MDS.</li>
+<li>After the vehicle is identified, select the following items from the initial screen of the M-MDS.
+<a href="" id="wp1060419"></a></li>
 </ol>
-<p id="wp1060430">• When using the IDS (laptop PC)</p>
+<p>• When using the IDS (laptop PC)
+<a href="" id="wp1060430"></a></p>
 <ol>
-<li id="wp1060490">Select the "Toolbox" tab.
-{: #wp1060444}2. Select "DataLogger".
-{: #wp1060462}3. Select "Modules".
-{: #wp1060476}4. Select "ABS".</li>
+<li>Select the "Toolbox" tab.
+<a href="" id="wp1060444"></a>2. Select "DataLogger".
+<a href="" id="wp1060462"></a>3. Select "Modules".
+<a href="" id="wp1060476"></a>4. Select "ABS".
+<a href="" id="wp1060490"></a></li>
 </ol>
-<p id="wp1060504">• When using the PDS (Pocket PC)</p>
+<p>• When using the PDS (Pocket PC)
+<a href="" id="wp1060504"></a></p>
 <ol>
 <li>
-<p id="wp1060546">Select "Module Tests".
-{: #wp1060514}2. Select "ABS".
-{: #wp1060532}3. Select "DataLogger".</p>
+<p>Select "Module Tests".
+<a href="" id="wp1060514"></a>2. Select "ABS".
+<a href="" id="wp1060532"></a>3. Select "DataLogger".
+<a href="" id="wp1060546"></a></p>
 </li>
 <li>
-<p id="wp1060560">Select the applicable PID from the PID table.</p>
+<p>Select the applicable PID from the PID table.
+<a href="" id="wp1060560"></a></p>
 </li>
 <li>
-<p id="wp1060570">Verify the PID data according to the directions on the screen.</p>
+<p>Verify the PID data according to the directions on the screen.
+<a href="" id="wp1060570"></a></p>
 </li>
 </ol>
-<p><strong><em>*Note</em></strong>*{: #wp1060580}</p>
-<p id="wp1066131">•  The PID/Data monitor function is used for monitoring the calculated value. Therefore, if the monitored value of the output parts is not within the specification, inspection of the monitored value of input parts corresponding to applicable output part control is necessary. In addition, because the system does not display output part malfunction as abnormality in the monitored value, it is necessary to inspect the output part individually using a active command modes function.</p>
-<h2 id="active-command-modes-procedure"><strong id="wp1060600">Active Command Modes Procedure</strong></h2>
+<p><strong>Note</strong>
+<a href="" id="wp1060580"></a></p>
+<p>•  The PID/Data monitor function is used for monitoring the calculated value. Therefore, if the monitored value of the output parts is not within the specification, inspection of the monitored value of input parts corresponding to applicable output part control is necessary. In addition, because the system does not display output part malfunction as abnormality in the monitored value, it is necessary to inspect the output part individually using a active command modes function.
+<a href="" id="wp1066131"></a></p>
+<h2 id="active-command-modes-procedure"><strong>Active Command Modes Procedure</strong><a href="" id="wp1060600"></a></h2>
 <ol>
-<li>Connect the M-MDS to the vehicle DLC-2 connector.{: #wp1060610}</li>
+<li>Connect the M-MDS to the vehicle DLC-2 connector.<a href="" id="wp1060610"></a></li>
 </ol>
 <p><img alt="" src="../../../../images/E5U402AW50014.png" /></p>
 <ol start="2">
-<li id="wp1060649">After the vehicle is identified, select the following items from the initial screen of the M-MDS.</li>
+<li>After the vehicle is identified, select the following items from the initial screen of the M-MDS.
+<a href="" id="wp1060649"></a></li>
 </ol>
-<p id="wp1060660">• When using the IDS (laptop PC)</p>
+<p>• When using the IDS (laptop PC)
+<a href="" id="wp1060660"></a></p>
 <ol>
-<li id="wp1060720">Select the "Toolbox" tab.
-{: #wp1060674}2. Select "DataLogger".
-{: #wp1060692}3. Select "Modules".
-{: #wp1060706}4. Select "ABS".</li>
+<li>Select the "Toolbox" tab.
+<a href="" id="wp1060674"></a>2. Select "DataLogger".
+<a href="" id="wp1060692"></a>3. Select "Modules".
+<a href="" id="wp1060706"></a>4. Select "ABS".
+<a href="" id="wp1060720"></a></li>
 </ol>
-<p id="wp1060734">• When using the PDS (Pocket PC)</p>
+<p>• When using the PDS (Pocket PC)
+<a href="" id="wp1060734"></a></p>
 <ol>
 <li>
-<p id="wp1060776">Select "Module Tests".
-{: #wp1060744}2. Select "ABS".
-{: #wp1060762}3. Select "DataLogger".</p>
+<p>Select "Module Tests".
+<a href="" id="wp1060744"></a>2. Select "ABS".
+<a href="" id="wp1060762"></a>3. Select "DataLogger".
+<a href="" id="wp1060776"></a></p>
 </li>
 <li>
-<p id="wp1060790">Select the active command modes from the PID table.</p>
+<p>Select the active command modes from the PID table.
+<a href="" id="wp1060790"></a></p>
 </li>
 <li>
-<p id="wp1060800">Perform the active command modes, inspect the operations for each parts.</p>
+<p>Perform the active command modes, inspect the operations for each parts.
+<a href="" id="wp1060800"></a></p>
 </li>
 </ol>
-<p id="wp1060810">• If there is no operation sound from the relay, motor, and solenoid after the active command mode inspection is performed, it is possible that there is an open or short circuit in the wiring harness, relay, motor or solenoid, or sticking and operation malfunction.</p>
-<h2 id="dtc-table"><strong id="wp1060824">DTC Table</strong></h2>
+<p>• If there is no operation sound from the relay, motor, and solenoid after the active command mode inspection is performed, it is possible that there is an open or short circuit in the wiring harness, relay, motor or solenoid, or sticking and operation malfunction.
+<a href="" id="wp1060810"></a></p>
+<h2 id="dtc-table"><strong>DTC Table</strong><a href="" id="wp1060824"></a></h2>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>DTC</strong> <a href="" id="wp1060919"></a>}{: #wp1060834</p>
+<p><strong>DTC</strong> <a href="" id="wp1060919"></a><a href="" id="wp1060834"></a></p>
 </th>
-<th>
-<p><strong>System malfunction location</strong> {: #wp1060921}</p>
+<th rowspan="2">
+<p><strong>System malfunction location</strong> <a href="" id="wp1060921"></a></p>
 </th>
-<th>
-<p><strong>Page</strong> {: #wp1060923}</p>
+<th rowspan="2">
+<p><strong>Page</strong> <a href="" id="wp1060923"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>M-MDS</strong> {: #wp1060977}</p>
-</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>
-<p>B1317 {: #wp1060837}</p>
-</td>
-<td>
-<p>Power supply system {: #wp1060839}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-b1317-b1318-abs/id0402a7800300/#wp1025486">DTC B1317, B1318 [ABS]</a>.) {: #wp1060895}</p>
+<p><strong>M-MDS</strong> <a href="" id="wp1060977"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>B1318 {: #wp1060942}</p>
+<p>B1317 <a href="" id="wp1060837"></a></p>
 </td>
 <td>
-<p>Power supply system {: #wp1060945}</p>
+<p>Power supply system <a href="" id="wp1060839"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-b1317-b1318-abs/id0402a7800300/#wp1025486">DTC B1317, B1318 [ABS]</a>.) {: #wp1060948}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>B1342 {: #wp1060952}</p>
-</td>
-<td>
-<p>ABS HU/CM system {: #wp1060955}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-b1342-abs/id0402a7809000/#wp1025486">DTC B1342 [ABS]</a>.) {: #wp1060958}</p>
+<p>(See <a href="../../dtc-b1317-b1318-abs/id0402a7800300/#wp1025486">DTC B1317, B1318 [ABS]</a>.) <a href="" id="wp1060895"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>B1484 {: #wp1060962}</p>
+<p>B1318 <a href="" id="wp1060942"></a></p>
 </td>
 <td>
-<p>Brake switch system {: #wp1060965}</p>
+<p>Power supply system <a href="" id="wp1060945"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-b1484-abs/id0402a7805400/#wp1025486">DTC B1484 [ABS]</a>.) {: #wp1060968}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>B2477 {: #wp1061097}</p>
-</td>
-<td>
-<p>ABS HU/CM configuration {: #wp1061100}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-b2477-abs/id0402a7805600/#wp1025486">DTC B2477 [ABS]</a>.) {: #wp1061103}</p>
+<p>(See <a href="../../dtc-b1317-b1318-abs/id0402a7800300/#wp1025486">DTC B1317, B1318 [ABS]</a>.) <a href="" id="wp1060948"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1095 {: #wp1061140}</p>
+<p>B1342 <a href="" id="wp1060952"></a></p>
 </td>
 <td>
-<p>Pump motor, motor relay system {: #wp1061143}</p>
+<p>ABS HU/CM system <a href="" id="wp1060955"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1095-c1096-abs/id0402a7805900/#wp1025486">DTC C1095, C1096 [ABS]</a>.) {: #wp1061146}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1096 {: #wp1061183}</p>
-</td>
-<td>
-<p>Pump motor, motor relay system {: #wp1061186}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1095-c1096-abs/id0402a7805900/#wp1025486">DTC C1095, C1096 [ABS]</a>.) {: #wp1061189}</p>
+<p>(See <a href="../../dtc-b1342-abs/id0402a7809000/#wp1025486">DTC B1342 [ABS]</a>.) <a href="" id="wp1060958"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1141 {: #wp1061228}</p>
+<p>B1484 <a href="" id="wp1060962"></a></p>
 </td>
 <td>
-<p>LF ABS sensor rotor system {: #wp1061231}</p>
+<p>Brake switch system <a href="" id="wp1060965"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-abs/id0402a7801000/#wp1025486">DTC C1141, C1142, C1143, C1144 [ABS]</a>.) {: #wp1061234}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1142 {: #wp1061275}</p>
-</td>
-<td>
-<p>RF ABS sensor rotor system {: #wp1061278}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-abs/id0402a7801000/#wp1025486">DTC C1141, C1142, C1143, C1144 [ABS]</a>.) {: #wp1061281}</p>
+<p>(See <a href="../../dtc-b1484-abs/id0402a7805400/#wp1025486">DTC B1484 [ABS]</a>.) <a href="" id="wp1060968"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1143 {: #wp1061324}</p>
+<p>B2477 <a href="" id="wp1061097"></a></p>
 </td>
 <td>
-<p>LR ABS sensor rotor system {: #wp1061327}</p>
+<p>ABS HU/CM configuration <a href="" id="wp1061100"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-abs/id0402a7801000/#wp1025486">DTC C1141, C1142, C1143, C1144 [ABS]</a>.) {: #wp1061330}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1144 {: #wp1061375}</p>
-</td>
-<td>
-<p>RR ABS sensor rotor system {: #wp1061378}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-abs/id0402a7801000/#wp1025486">DTC C1141, C1142, C1143, C1144 [ABS]</a>.) {: #wp1061381}</p>
+<p>(See <a href="../../dtc-b2477-abs/id0402a7805600/#wp1025486">DTC B2477 [ABS]</a>.) <a href="" id="wp1061103"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1145 {: #wp1061428}</p>
+<p>C1095 <a href="" id="wp1061140"></a></p>
 </td>
 <td>
-<p>RF ABS wheel-speed sensor system {: #wp1061431}</p>
+<p>Pump motor, motor relay system <a href="" id="wp1061143"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-abs/id0402a7801100/#wp1025486">DTC C1145, C1155, C1165, C1175 [ABS]</a>.) {: #wp1061434}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1148 {: #wp1061484}</p>
-</td>
-<td>
-<p>RF ABS wheel-speed sensor system {: #wp1061487}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-abs/id0402a7801200/#wp1025486">DTC C1148, C1158, C1168, C1178 [ABS]</a>.) {: #wp1061490}</p>
+<p>(See <a href="../../dtc-c1095-c1096-abs/id0402a7805900/#wp1025486">DTC C1095, C1096 [ABS]</a>.) <a href="" id="wp1061146"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1155 {: #wp1061542}</p>
+<p>C1096 <a href="" id="wp1061183"></a></p>
 </td>
 <td>
-<p>LF ABS wheel-speed sensor system {: #wp1061545}</p>
+<p>Pump motor, motor relay system <a href="" id="wp1061186"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-abs/id0402a7801100/#wp1025486">DTC C1145, C1155, C1165, C1175 [ABS]</a>.) {: #wp1061548}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1158 {: #wp1061602}</p>
-</td>
-<td>
-<p>LF ABS wheel-speed sensor system {: #wp1061605}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-abs/id0402a7801200/#wp1025486">DTC C1148, C1158, C1168, C1178 [ABS]</a>.) {: #wp1061608}</p>
+<p>(See <a href="../../dtc-c1095-c1096-abs/id0402a7805900/#wp1025486">DTC C1095, C1096 [ABS]</a>.) <a href="" id="wp1061189"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1165 {: #wp1061664}</p>
+<p>C1141 <a href="" id="wp1061228"></a></p>
 </td>
 <td>
-<p>RR ABS wheel-speed sensor system {: #wp1061667}</p>
+<p>LF ABS sensor rotor system <a href="" id="wp1061231"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-abs/id0402a7801100/#wp1025486">DTC C1145, C1155, C1165, C1175 [ABS]</a>.) {: #wp1061670}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1168 {: #wp1061728}</p>
-</td>
-<td>
-<p>RR ABS wheel-speed sensor system {: #wp1061731}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-abs/id0402a7801200/#wp1025486">DTC C1148, C1158, C1168, C1178 [ABS]</a>.) {: #wp1061734}</p>
+<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-abs/id0402a7801000/#wp1025486">DTC C1141, C1142, C1143, C1144 [ABS]</a>.) <a href="" id="wp1061234"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1175 {: #wp1061794}</p>
+<p>C1142 <a href="" id="wp1061275"></a></p>
 </td>
 <td>
-<p>LR ABS wheel-speed sensor system {: #wp1061797}</p>
+<p>RF ABS sensor rotor system <a href="" id="wp1061278"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-abs/id0402a7801100/#wp1025486">DTC C1145, C1155, C1165, C1175 [ABS]</a>.) {: #wp1061800}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1178 {: #wp1061862}</p>
-</td>
-<td>
-<p>LR ABS wheel-speed sensor system {: #wp1061865}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-abs/id0402a7801200/#wp1025486">DTC C1148, C1158, C1168, C1178 [ABS]</a>.) {: #wp1061868}</p>
+<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-abs/id0402a7801000/#wp1025486">DTC C1141, C1142, C1143, C1144 [ABS]</a>.) <a href="" id="wp1061281"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1186 {: #wp1061932}</p>
+<p>C1143 <a href="" id="wp1061324"></a></p>
 </td>
 <td>
-<p>Fail-safe relay system {: #wp1061935}</p>
+<p>LR ABS sensor rotor system <a href="" id="wp1061327"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1186-c1266-abs/id0402a7806100/#wp1025486">DTC C1186, C1266 [ABS]</a>.) {: #wp1061938}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1194 {: #wp1062004}</p>
-</td>
-<td>
-<p>LF outlet solenoid valve system {: #wp1062007}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) {: #wp1062010}</p>
+<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-abs/id0402a7801000/#wp1025486">DTC C1141, C1142, C1143, C1144 [ABS]</a>.) <a href="" id="wp1061330"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1198 {: #wp1062077}</p>
+<p>C1144 <a href="" id="wp1061375"></a></p>
 </td>
 <td>
-<p>LF inlet solenoid valve system {: #wp1062080}</p>
+<p>RR ABS sensor rotor system <a href="" id="wp1061378"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) {: #wp1062083}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1210 {: #wp1062152}</p>
-</td>
-<td>
-<p>RF outlet solenoid valve system {: #wp1062155}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) {: #wp1062158}</p>
+<p>(See <a href="../../dtc-c1141-c1142-c1143-c1144-abs/id0402a7801000/#wp1025486">DTC C1141, C1142, C1143, C1144 [ABS]</a>.) <a href="" id="wp1061381"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1214 {: #wp1062229}</p>
+<p>C1145 <a href="" id="wp1061428"></a></p>
 </td>
 <td>
-<p>RF inlet solenoid valve system {: #wp1062232}</p>
+<p>RF ABS wheel-speed sensor system <a href="" id="wp1061431"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) {: #wp1062235}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1233 {: #wp1062308}</p>
-</td>
-<td>
-<p>LF ABS wheel-speed sensor/ABS sensor rotor system {: #wp1062311}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-abs/id0402a7805800/#wp1025486">DTC C1233, C1234, C1235, C1236 [ABS]</a>.) {: #wp1062314}</p>
+<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-abs/id0402a7801100/#wp1025486">DTC C1145, C1155, C1165, C1175 [ABS]</a>.) <a href="" id="wp1061434"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1234 {: #wp1062392}</p>
+<p>C1148 <a href="" id="wp1061484"></a></p>
 </td>
 <td>
-<p>RF ABS wheel-speed sensor/ABS sensor rotor system {: #wp1062395}</p>
+<p>RF ABS wheel-speed sensor system <a href="" id="wp1061487"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-abs/id0402a7805800/#wp1025486">DTC C1233, C1234, C1235, C1236 [ABS]</a>.) {: #wp1062398}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1235 {: #wp1062478}</p>
-</td>
-<td>
-<p>RR ABS wheel-speed sensor/ABS sensor rotor system {: #wp1062481}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-abs/id0402a7805800/#wp1025486">DTC C1233, C1234, C1235, C1236 [ABS]</a>.) {: #wp1062484}</p>
+<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-abs/id0402a7801200/#wp1025486">DTC C1148, C1158, C1168, C1178 [ABS]</a>.) <a href="" id="wp1061490"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1236 {: #wp1062566}</p>
+<p>C1155 <a href="" id="wp1061542"></a></p>
 </td>
 <td>
-<p>LR ABS wheel-speed sensor/ABS sensor rotor system {: #wp1062569}</p>
+<p>LF ABS wheel-speed sensor system <a href="" id="wp1061545"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-abs/id0402a7805800/#wp1025486">DTC C1233, C1234, C1235, C1236 [ABS]</a>.) {: #wp1062572}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1242 {: #wp1062656}</p>
-</td>
-<td>
-<p>LR outlet solenoid valve system {: #wp1062659}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) {: #wp1062662}</p>
+<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-abs/id0402a7801100/#wp1025486">DTC C1145, C1155, C1165, C1175 [ABS]</a>.) <a href="" id="wp1061548"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1246 {: #wp1062745}</p>
+<p>C1158 <a href="" id="wp1061602"></a></p>
 </td>
 <td>
-<p>RR outlet solenoid valve system {: #wp1062748}</p>
+<p>LF ABS wheel-speed sensor system <a href="" id="wp1061605"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) {: #wp1062751}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1250 {: #wp1062836}</p>
-</td>
-<td>
-<p>LR inlet solenoid valve system {: #wp1062839}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) {: #wp1062842}</p>
+<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-abs/id0402a7801200/#wp1025486">DTC C1148, C1158, C1168, C1178 [ABS]</a>.) <a href="" id="wp1061608"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1254 {: #wp1062929}</p>
+<p>C1165 <a href="" id="wp1061664"></a></p>
 </td>
 <td>
-<p>RR inlet solenoid valve system {: #wp1062932}</p>
+<p>RR ABS wheel-speed sensor system <a href="" id="wp1061667"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) {: #wp1062935}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>C1266 {: #wp1063024}</p>
-</td>
-<td>
-<p>Fail-safe relay system {: #wp1063027}</p>
-</td>
-<td>
-<p>(See <a href="../../dtc-c1186-c1266-abs/id0402a7806100/#wp1025486">DTC C1186, C1266 [ABS]</a>.) {: #wp1063030}</p>
+<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-abs/id0402a7801100/#wp1025486">DTC C1145, C1155, C1165, C1175 [ABS]</a>.) <a href="" id="wp1061670"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>C1805 {: #wp1063122}</p>
+<p>C1168 <a href="" id="wp1061728"></a></p>
 </td>
 <td>
-<p>Incorrect ABS HU/CM installed {: #wp1063125}</p>
+<p>RR ABS wheel-speed sensor system <a href="" id="wp1061731"></a></p>
 </td>
 <td>
-<p>(See <a href="../../dtc-c1805-abs/id0402a7802100/#wp1025486">DTC C1805 [ABS]</a>.) {: #wp1063128}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>U0073 {: #wp1063223}</p>
-</td>
-<td>
-<p>CAN system communication error {: #wp1063226}</p>
-</td>
-<td>
-<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/#wp1025486">MULTIPLEX COMMUNICATION SYSTEM</a>.) {: #wp1063229}</p>
+<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-abs/id0402a7801200/#wp1025486">DTC C1148, C1158, C1168, C1178 [ABS]</a>.) <a href="" id="wp1061734"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>U1900 {: #wp1063324}</p>
+<p>C1175 <a href="" id="wp1061794"></a></p>
 </td>
 <td>
-<p>Communication error to other module {: #wp1063327}</p>
+<p>LR ABS wheel-speed sensor system <a href="" id="wp1061797"></a></p>
 </td>
 <td>
-<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/#wp1025486">MULTIPLEX COMMUNICATION SYSTEM</a>.) {: #wp1063330}</p>
+<p>(See <a href="../../dtc-c1145-c1155-c1165-c1175-abs/id0402a7801100/#wp1025486">DTC C1145, C1155, C1165, C1175 [ABS]</a>.) <a href="" id="wp1061800"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>U2023 {: #wp1063427}</p>
+<p>C1178 <a href="" id="wp1061862"></a></p>
 </td>
 <td>
-<p>Abnormal message from PCM {: #wp1063430}</p>
+<p>LR ABS wheel-speed sensor system <a href="" id="wp1061865"></a></p>
 </td>
 <td>
-<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/#wp1025486">MULTIPLEX COMMUNICATION SYSTEM</a>.) {: #wp1063433}</p>
+<p>(See <a href="../../dtc-c1148-c1158-c1168-c1178-abs/id0402a7801200/#wp1025486">DTC C1148, C1158, C1168, C1178 [ABS]</a>.) <a href="" id="wp1061868"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1186 <a href="" id="wp1061932"></a></p>
+</td>
+<td>
+<p>Fail-safe relay system <a href="" id="wp1061935"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1186-c1266-abs/id0402a7806100/#wp1025486">DTC C1186, C1266 [ABS]</a>.) <a href="" id="wp1061938"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1194 <a href="" id="wp1062004"></a></p>
+</td>
+<td>
+<p>LF outlet solenoid valve system <a href="" id="wp1062007"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) <a href="" id="wp1062010"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1198 <a href="" id="wp1062077"></a></p>
+</td>
+<td>
+<p>LF inlet solenoid valve system <a href="" id="wp1062080"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) <a href="" id="wp1062083"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1210 <a href="" id="wp1062152"></a></p>
+</td>
+<td>
+<p>RF outlet solenoid valve system <a href="" id="wp1062155"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) <a href="" id="wp1062158"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1214 <a href="" id="wp1062229"></a></p>
+</td>
+<td>
+<p>RF inlet solenoid valve system <a href="" id="wp1062232"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) <a href="" id="wp1062235"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1233 <a href="" id="wp1062308"></a></p>
+</td>
+<td>
+<p>LF ABS wheel-speed sensor/ABS sensor rotor system <a href="" id="wp1062311"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-abs/id0402a7805800/#wp1025486">DTC C1233, C1234, C1235, C1236 [ABS]</a>.) <a href="" id="wp1062314"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1234 <a href="" id="wp1062392"></a></p>
+</td>
+<td>
+<p>RF ABS wheel-speed sensor/ABS sensor rotor system <a href="" id="wp1062395"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-abs/id0402a7805800/#wp1025486">DTC C1233, C1234, C1235, C1236 [ABS]</a>.) <a href="" id="wp1062398"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1235 <a href="" id="wp1062478"></a></p>
+</td>
+<td>
+<p>RR ABS wheel-speed sensor/ABS sensor rotor system <a href="" id="wp1062481"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-abs/id0402a7805800/#wp1025486">DTC C1233, C1234, C1235, C1236 [ABS]</a>.) <a href="" id="wp1062484"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1236 <a href="" id="wp1062566"></a></p>
+</td>
+<td>
+<p>LR ABS wheel-speed sensor/ABS sensor rotor system <a href="" id="wp1062569"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1233-c1234-c1235-c1236-abs/id0402a7805800/#wp1025486">DTC C1233, C1234, C1235, C1236 [ABS]</a>.) <a href="" id="wp1062572"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1242 <a href="" id="wp1062656"></a></p>
+</td>
+<td>
+<p>LR outlet solenoid valve system <a href="" id="wp1062659"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) <a href="" id="wp1062662"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1246 <a href="" id="wp1062745"></a></p>
+</td>
+<td>
+<p>RR outlet solenoid valve system <a href="" id="wp1062748"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) <a href="" id="wp1062751"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1250 <a href="" id="wp1062836"></a></p>
+</td>
+<td>
+<p>LR inlet solenoid valve system <a href="" id="wp1062839"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) <a href="" id="wp1062842"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1254 <a href="" id="wp1062929"></a></p>
+</td>
+<td>
+<p>RR inlet solenoid valve system <a href="" id="wp1062932"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1194-c1198-c1210-c1214-c1242-c1246-c1250-c1254-abs/id0402a7874300/#wp1025486">DTC C1194, C1198, C1210, C1214, C1242, C1246, C1250, C1254 [ABS]</a>.) <a href="" id="wp1062935"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1266 <a href="" id="wp1063024"></a></p>
+</td>
+<td>
+<p>Fail-safe relay system <a href="" id="wp1063027"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1186-c1266-abs/id0402a7806100/#wp1025486">DTC C1186, C1266 [ABS]</a>.) <a href="" id="wp1063030"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>C1805 <a href="" id="wp1063122"></a></p>
+</td>
+<td>
+<p>Incorrect ABS HU/CM installed <a href="" id="wp1063125"></a></p>
+</td>
+<td>
+<p>(See <a href="../../dtc-c1805-abs/id0402a7802100/#wp1025486">DTC C1805 [ABS]</a>.) <a href="" id="wp1063128"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0073 <a href="" id="wp1063223"></a></p>
+</td>
+<td>
+<p>CAN system communication error <a href="" id="wp1063226"></a></p>
+</td>
+<td>
+<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/#wp1025486">MULTIPLEX COMMUNICATION SYSTEM</a>.) <a href="" id="wp1063229"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U1900 <a href="" id="wp1063324"></a></p>
+</td>
+<td>
+<p>Communication error to other module <a href="" id="wp1063327"></a></p>
+</td>
+<td>
+<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/#wp1025486">MULTIPLEX COMMUNICATION SYSTEM</a>.) <a href="" id="wp1063330"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U2023 <a href="" id="wp1063427"></a></p>
+</td>
+<td>
+<p>Abnormal message from PCM <a href="" id="wp1063430"></a></p>
+</td>
+<td>
+<p>(See <a href="../../../body-accessories/multiplex-communication-system/id090200830400/#wp1025486">MULTIPLEX COMMUNICATION SYSTEM</a>.) <a href="" id="wp1063433"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<h2 id="piddata-monitor-table"><strong id="wp1063608">PID/DATA Monitor Table</strong></h2>
+<h2 id="piddata-monitor-table"><strong>PID/DATA Monitor Table</strong><a href="" id="wp1063608"></a></h2>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>PID name</strong> <a href="" id="wp1063753"></a>  }{: #wp1063620<strong>(definition)</strong> {: #wp1063875}</p>
+<p><strong>PID name</strong> <a href="" id="wp1063753"></a><a href="" id="wp1063620"></a>  <strong>(definition)</strong> <a href="" id="wp1063875"></a></p>
 </th>
 <th>
-<p><strong>Unit/Condition</strong> {: #wp1063755}</p>
+<p><strong>Unit/Condition</strong> <a href="" id="wp1063755"></a></p>
 </th>
 <th>
-<p><strong>Operation condition (reference)</strong> {: #wp1063757}</p>
+<p><strong>Operation condition (reference)</strong> <a href="" id="wp1063757"></a></p>
 </th>
 <th>
-<p><strong>Action</strong> {: #wp1063759}</p>
+<p><strong>Action</strong> <a href="" id="wp1063759"></a></p>
 </th>
 <th>
-<p><strong>ABS HU/CM terminal</strong> {: #wp1063761}</p>
+<p><strong>ABS HU/CM terminal</strong> <a href="" id="wp1063761"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>ABS_VOLT {: #wp1063623}  (System battery voltage value) {: #wp1063912}</p>
+<p>ABS_VOLT <a href="" id="wp1063623"></a>  (System battery voltage value) <a href="" id="wp1063912"></a></p>
 </td>
 <td>
-<p>V {: #wp1063625}</p>
+<p>V <a href="" id="wp1063625"></a></p>
 </td>
 <td>
-<p>• Ignition switch at ON: <strong>Approx. 12.2 V</strong> {: #wp1063681}  • Idling: <strong>Approx. 14.1 V</strong> {: #wp1063945}</p>
+<p>• Ignition switch at ON: <strong>Approx. 12.2 V</strong> <a href="" id="wp1063681"></a>  • Idling: <strong>Approx. 14.1 V</strong> <a href="" id="wp1063945"></a></p>
 </td>
 <td>
-<p>Inspect the power supply circuit. {: #wp1063684}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-system-inspection/id041300800200/#wp1025486">ABS SYSTEM INSPECTION</a>.) {: #wp1063966}</p>
+<p>Inspect the power supply circuit. <a href="" id="wp1063684"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-system-inspection/id041300800200/#wp1025486">ABS SYSTEM INSPECTION</a>.) <a href="" id="wp1063966"></a></p>
 </td>
 <td>
-<p>J {: #wp1063687}</p>
+<p>J <a href="" id="wp1063687"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSLF_I {: #wp1063788}  (Left front inlet solenoid valve output state) {: #wp1063992}</p>
+<p>ABSLF_I <a href="" id="wp1063788"></a>  (Left front inlet solenoid valve output state) <a href="" id="wp1063992"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1063791}</p>
+<p>On/Off <a href="" id="wp1063791"></a></p>
 </td>
 <td>
-<p>• Solenoid valve activated: On {: #wp1063794}  • Solenoid valve not activated: Off {: #wp1064018}</p>
+<p>• Solenoid valve activated: On <a href="" id="wp1063794"></a>  • Solenoid valve not activated: Off <a href="" id="wp1064018"></a></p>
 </td>
 <td>
-<p>Inspect the ABS HU/CM. {: #wp1063797}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1064035}</p>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1063797"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1064035"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1063800}</li>
+<li><a href="" id="wp1063800"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSLF_O {: #wp1063804}  (Left front outlet solenoid valve output state) {: #wp1064061}</p>
+<p>ABSLF_O <a href="" id="wp1063804"></a>  (Left front outlet solenoid valve output state) <a href="" id="wp1064061"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1063807}</p>
+<p>On/Off <a href="" id="wp1063807"></a></p>
 </td>
 <td>
-<p>• Solenoid valve activated: On {: #wp1063810}  • Solenoid valve not activated: Off {: #wp1064087}</p>
+<p>• Solenoid valve activated: On <a href="" id="wp1063810"></a>  • Solenoid valve not activated: Off <a href="" id="wp1064087"></a></p>
 </td>
 <td>
-<p>Inspect the ABS HU/CM. {: #wp1063813}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1064104}</p>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1063813"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1064104"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1063816}</li>
+<li><a href="" id="wp1063816"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSLR_I {: #wp1063820}  (Left rear inlet solenoid valve output state) {: #wp1064130}</p>
+<p>ABSLR_I <a href="" id="wp1063820"></a>  (Left rear inlet solenoid valve output state) <a href="" id="wp1064130"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1063823}</p>
+<p>On/Off <a href="" id="wp1063823"></a></p>
 </td>
 <td>
-<p>• Solenoid valve activated: On {: #wp1063826}  • Solenoid valve not activated: Off {: #wp1064156}</p>
+<p>• Solenoid valve activated: On <a href="" id="wp1063826"></a>  • Solenoid valve not activated: Off <a href="" id="wp1064156"></a></p>
 </td>
 <td>
-<p>Inspect the ABS HU/CM. {: #wp1063829}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1064173}</p>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1063829"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1064173"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1063832}</li>
+<li><a href="" id="wp1063832"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSLR_O {: #wp1063836}  (Left rear outlet solenoid valve output state) {: #wp1064199}</p>
+<p>ABSLR_O <a href="" id="wp1063836"></a>  (Left rear outlet solenoid valve output state) <a href="" id="wp1064199"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1063839}</p>
+<p>On/Off <a href="" id="wp1063839"></a></p>
 </td>
 <td>
-<p>• Solenoid valve activated: On {: #wp1063842}  • Solenoid valve not activated: Off {: #wp1064225}</p>
+<p>• Solenoid valve activated: On <a href="" id="wp1063842"></a>  • Solenoid valve not activated: Off <a href="" id="wp1064225"></a></p>
 </td>
 <td>
-<p>Inspect the ABS HU/CM. {: #wp1063845}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1064242}</p>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1063845"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1064242"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1063848}</li>
+<li><a href="" id="wp1063848"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSPMPRLY {: #wp1063852}  (Motor relay output state) {: #wp1064266}</p>
+<p>ABSPMPRLY <a href="" id="wp1063852"></a>  (Motor relay output state) <a href="" id="wp1064266"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1063855}</p>
+<p>On/Off <a href="" id="wp1063855"></a></p>
 </td>
 <td>
-<p>• Relay activated: On {: #wp1063858}  • Relay not activated: Off {: #wp1064292}</p>
+<p>• Relay activated: On <a href="" id="wp1063858"></a>  • Relay not activated: Off <a href="" id="wp1064292"></a></p>
 </td>
 <td>
-<p>Inspect the ABS HU/CM. {: #wp1063861}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1064309}</p>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1063861"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1064309"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1063864}</li>
+<li><a href="" id="wp1063864"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSRF_I {: #wp1064326}  (Right front inlet solenoid valve output state) {: #wp1064366}</p>
+<p>ABSRF_I <a href="" id="wp1064326"></a>  (Right front inlet solenoid valve output state) <a href="" id="wp1064366"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1064329}</p>
+<p>On/Off <a href="" id="wp1064329"></a></p>
 </td>
 <td>
-<p>• Solenoid valve activated: On {: #wp1064332}  • Solenoid valve not activated: Off {: #wp1064392}</p>
+<p>• Solenoid valve activated: On <a href="" id="wp1064332"></a>  • Solenoid valve not activated: Off <a href="" id="wp1064392"></a></p>
 </td>
 <td>
-<p>Inspect the ABS HU/CM. {: #wp1064335}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1064409}</p>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1064335"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1064409"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1064338}</li>
+<li><a href="" id="wp1064338"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSRF_O {: #wp1064426}  (Right front outlet solenoid valve output state) {: #wp1064468}</p>
+<p>ABSRF_O <a href="" id="wp1064426"></a>  (Right front outlet solenoid valve output state) <a href="" id="wp1064468"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1064429}</p>
+<p>On/Off <a href="" id="wp1064429"></a></p>
 </td>
 <td>
-<p>• Solenoid valve activated: On {: #wp1064432}  • Solenoid valve not activated: Off {: #wp1064494}</p>
+<p>• Solenoid valve activated: On <a href="" id="wp1064432"></a>  • Solenoid valve not activated: Off <a href="" id="wp1064494"></a></p>
 </td>
 <td>
-<p>Inspect the ABS HU/CM. {: #wp1064435}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1064511}</p>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1064435"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1064511"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1064438}</li>
+<li><a href="" id="wp1064438"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSRR_I {: #wp1064528}  (Right rear inlet solenoid valve output state) {: #wp1064572}</p>
+<p>ABSRR_I <a href="" id="wp1064528"></a>  (Right rear inlet solenoid valve output state) <a href="" id="wp1064572"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1064531}</p>
+<p>On/Off <a href="" id="wp1064531"></a></p>
 </td>
 <td>
-<p>• Solenoid valve activated: On {: #wp1064534}  • Solenoid valve not activated: Off {: #wp1064598}</p>
+<p>• Solenoid valve activated: On <a href="" id="wp1064534"></a>  • Solenoid valve not activated: Off <a href="" id="wp1064598"></a></p>
 </td>
 <td>
-<p>Inspect the ABS HU/CM. {: #wp1064537}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1064615}</p>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1064537"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1064615"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1064540}</li>
+<li><a href="" id="wp1064540"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSRR_O {: #wp1064632}  (Right rear outlet solenoid valve output state) {: #wp1064678}</p>
+<p>ABSRR_O <a href="" id="wp1064632"></a>  (Right rear outlet solenoid valve output state) <a href="" id="wp1064678"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1064635}</p>
+<p>On/Off <a href="" id="wp1064635"></a></p>
 </td>
 <td>
-<p>• Solenoid valve activated: On {: #wp1064638}  • Solenoid valve not activated: Off {: #wp1064704}</p>
+<p>• Solenoid valve activated: On <a href="" id="wp1064638"></a>  • Solenoid valve not activated: Off <a href="" id="wp1064704"></a></p>
 </td>
 <td>
-<p>Inspect the ABS HU/CM. {: #wp1064641}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1064721}</p>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1064641"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1064721"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1064644}</li>
+<li><a href="" id="wp1064644"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ABSVLVRLY {: #wp1064738}  (Fail-safe relay output state) {: #wp1064784}</p>
+<p>ABSVLVRLY <a href="" id="wp1064738"></a>  (Fail-safe relay output state) <a href="" id="wp1064784"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1064741}</p>
+<p>On/Off <a href="" id="wp1064741"></a></p>
 </td>
 <td>
-<p>• Fail-safe relay is {: #wp1064744}  activated: On {: #wp1064812}  • Fail-safe relay is deactivated: Off {: #wp1064818}</p>
+<p>• Fail-safe relay is <a href="" id="wp1064744"></a>  activated: On <a href="" id="wp1064812"></a>  • Fail-safe relay is deactivated: Off <a href="" id="wp1064818"></a></p>
 </td>
 <td>
-<p>Inspect ABS HU/CM. {: #wp1064747}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>) {: #wp1064836}</p>
+<p>Inspect ABS HU/CM. <a href="" id="wp1064747"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>) <a href="" id="wp1064836"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1064750}</li>
+<li><a href="" id="wp1064750"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>BOO_ABS {: #wp1064853}  (Brake pedal switch input) {: #wp1064903}</p>
+<p>BOO_ABS <a href="" id="wp1064853"></a>  (Brake pedal switch input) <a href="" id="wp1064903"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1064856}</p>
+<p>On/Off <a href="" id="wp1064856"></a></p>
 </td>
 <td>
-<p>• Brake pedal depressed: On {: #wp1064859}  • Brake pedal released: Off {: #wp1064929}</p>
+<p>• Brake pedal depressed: On <a href="" id="wp1064859"></a>  • Brake pedal released: Off <a href="" id="wp1064929"></a></p>
 </td>
 <td>
-<p>Inspect the brake switch. {: #wp1064862}</p>
+<p>Inspect the brake switch. <a href="" id="wp1064862"></a></p>
 </td>
 <td>
-<p>N {: #wp1064865}</p>
+<p>N <a href="" id="wp1064865"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>CCNTABS {: #wp1064947}  (Number of continuous codes) {: #wp1064995}</p>
+<p>CCNTABS <a href="" id="wp1064947"></a>  (Number of continuous codes) <a href="" id="wp1064995"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1064950}</li>
+<li><a href="" id="wp1064950"></a></li>
 </ul>
 </td>
 <td>
-<p>• DTCs detected: {: #wp1064953}  <strong>1-255</strong> {: #wp1065019}  • No DTCs detected: <strong>0</strong> {: #wp1065031}</p>
+<p>• DTCs detected: <a href="" id="wp1064953"></a>  <strong>1-255</strong> <a href="" id="wp1065019"></a>  • No DTCs detected: <strong>0</strong> <a href="" id="wp1065031"></a></p>
 </td>
 <td>
-<p>Perform the DTC inspection. {: #wp1064956}</p>
-</td>
-<td>
-<ul>
-<li>{: #wp1064959}</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-<p>LF_WSPD {: #wp1065055}  (Left front ABS wheel-speed sensor input) {: #wp1065106}</p>
-</td>
-<td>
-<p>KPH, MPH {: #wp1065058}</p>
-</td>
-<td>
-<p>• Vehicle stopped: <strong>0 KPH, 0 MPH</strong> {: #wp1065061}  • Vehicle running: Vehicle speed {: #wp1065137}</p>
-</td>
-<td>
-<p>Inspect the ABS wheel-speed sensor. {: #wp1065064}</p>
-</td>
-<td>
-<p>E, F {: #wp1065067}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>LR_WSPD {: #wp1065156}  (Left rear ABS wheel-speed sensor input) {: #wp1065208}</p>
-</td>
-<td>
-<p>KPH, MPH {: #wp1065159}</p>
-</td>
-<td>
-<p>• Vehicle stopped: <strong>0 KPH, 0 MPH</strong> {: #wp1065162}  • Vehicle running: Vehicle speed {: #wp1065239}</p>
-</td>
-<td>
-<p>Inspect the ABS wheel-speed sensor. {: #wp1065165}</p>
-</td>
-<td>
-<p>G, H {: #wp1065168}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>PMP_MOTOR {: #wp1065258}  (Pump motor output state) {: #wp1065311}</p>
-</td>
-<td>
-<p>On/Off {: #wp1065261}</p>
-</td>
-<td>
-<p>• Pump motor activated: On {: #wp1065264}  • Pump motor not activated: Off {: #wp1065337}</p>
-</td>
-<td>
-<p>Inspect the ABS HU/CM. {: #wp1065267}  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) {: #wp1065354}</p>
+<p>Perform the DTC inspection. <a href="" id="wp1064956"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1065270}</li>
+<li><a href="" id="wp1064959"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>RF_WSPD {: #wp1065371}  (Right front ABS wheel-speed sensor input) {: #wp1065426}</p>
+<p>LF_WSPD <a href="" id="wp1065055"></a>  (Left front ABS wheel-speed sensor input) <a href="" id="wp1065106"></a></p>
 </td>
 <td>
-<p>KPH, MPH {: #wp1065374}</p>
+<p>KPH, MPH <a href="" id="wp1065058"></a></p>
 </td>
 <td>
-<p>• Vehicle stopped: <strong>0 KPH, 0 MPH</strong> {: #wp1065377}  • Vehicle running: Vehicle speed {: #wp1065457}</p>
+<p>• Vehicle stopped: <strong>0 KPH, 0 MPH</strong> <a href="" id="wp1065061"></a>  • Vehicle running: Vehicle speed <a href="" id="wp1065137"></a></p>
 </td>
 <td>
-<p>Inspect the ABS wheel-speed sensor. {: #wp1065380}</p>
+<p>Inspect the ABS wheel-speed sensor. <a href="" id="wp1065064"></a></p>
 </td>
 <td>
-<p>M, O {: #wp1065383}</p>
+<p>E, F <a href="" id="wp1065067"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>RR_WSPD {: #wp1065476}  (Right rear ABS wheel-speed sensor input) {: #wp1065532}</p>
+<p>LR_WSPD <a href="" id="wp1065156"></a>  (Left rear ABS wheel-speed sensor input) <a href="" id="wp1065208"></a></p>
 </td>
 <td>
-<p>KPH, MPH {: #wp1065479}</p>
+<p>KPH, MPH <a href="" id="wp1065159"></a></p>
 </td>
 <td>
-<p>• Vehicle stopped: <strong>0 KPH, 0 MPH</strong> {: #wp1065482}  • Vehicle running: Vehicle speed {: #wp1065563}</p>
+<p>• Vehicle stopped: <strong>0 KPH, 0 MPH</strong> <a href="" id="wp1065162"></a>  • Vehicle running: Vehicle speed <a href="" id="wp1065239"></a></p>
 </td>
 <td>
-<p>Inspect the ABS wheel-speed sensor. {: #wp1065485}</p>
+<p>Inspect the ABS wheel-speed sensor. <a href="" id="wp1065165"></a></p>
 </td>
 <td>
-<p>I, L {: #wp1065488}</p>
+<p>G, H <a href="" id="wp1065168"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PMP_MOTOR <a href="" id="wp1065258"></a>  (Pump motor output state) <a href="" id="wp1065311"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1065261"></a></p>
+</td>
+<td>
+<p>• Pump motor activated: On <a href="" id="wp1065264"></a>  • Pump motor not activated: Off <a href="" id="wp1065337"></a></p>
+</td>
+<td>
+<p>Inspect the ABS HU/CM. <a href="" id="wp1065267"></a>  (See <a href="../../../../workshop-manual/brakes/antilock-brake-system/abs-hu-cm-inspection/id041300801000/#wp1025486">ABS HU/CM INSPECTION</a>.) <a href="" id="wp1065354"></a></p>
+</td>
+<td>
+<ul>
+<li><a href="" id="wp1065270"></a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>RF_WSPD <a href="" id="wp1065371"></a>  (Right front ABS wheel-speed sensor input) <a href="" id="wp1065426"></a></p>
+</td>
+<td>
+<p>KPH, MPH <a href="" id="wp1065374"></a></p>
+</td>
+<td>
+<p>• Vehicle stopped: <strong>0 KPH, 0 MPH</strong> <a href="" id="wp1065377"></a>  • Vehicle running: Vehicle speed <a href="" id="wp1065457"></a></p>
+</td>
+<td>
+<p>Inspect the ABS wheel-speed sensor. <a href="" id="wp1065380"></a></p>
+</td>
+<td>
+<p>M, O <a href="" id="wp1065383"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RR_WSPD <a href="" id="wp1065476"></a>  (Right rear ABS wheel-speed sensor input) <a href="" id="wp1065532"></a></p>
+</td>
+<td>
+<p>KPH, MPH <a href="" id="wp1065479"></a></p>
+</td>
+<td>
+<p>• Vehicle stopped: <strong>0 KPH, 0 MPH</strong> <a href="" id="wp1065482"></a>  • Vehicle running: Vehicle speed <a href="" id="wp1065563"></a></p>
+</td>
+<td>
+<p>Inspect the ABS wheel-speed sensor. <a href="" id="wp1065485"></a></p>
+</td>
+<td>
+<p>I, L <a href="" id="wp1065488"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<h2 id="active-command-modes-table"><strong id="wp1065616">Active Command Modes Table</strong></h2>
+<h2 id="active-command-modes-table"><strong>Active Command Modes Table</strong><a href="" id="wp1065616"></a></h2>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>Command name</strong> <a href="" id="wp1065735"></a>}{: #wp1065626</p>
+<p><strong>Command name</strong> <a href="" id="wp1065735"></a><a href="" id="wp1065626"></a></p>
 </th>
 <th>
-<p><strong>Output part</strong> {: #wp1065737}</p>
+<p><strong>Output part</strong> <a href="" id="wp1065737"></a></p>
 </th>
 <th>
-<p><strong>Operation</strong> {: #wp1065739}</p>
+<p><strong>Operation</strong> <a href="" id="wp1065739"></a></p>
 </th>
 <th>
-<p><strong>Operating condition</strong> {: #wp1065741}</p>
+<p><strong>Operating condition</strong> <a href="" id="wp1065741"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>LF_INLET {: #wp1065629}</p>
+<p>LF_INLET <a href="" id="wp1065629"></a></p>
 </td>
 <td>
-<p>LF inlet solenoid valve {: #wp1065631}</p>
+<p>LF inlet solenoid valve <a href="" id="wp1065631"></a></p>
 </td>
-<td>
-<p>On/Off {: #wp1065687}</p>
+<td rowspan="9">
+<p>On/Off <a href="" id="wp1065687"></a></p>
 </td>
-<td>
-<p>Ignition switch at ON {: #wp1065690}</p>
+<td rowspan="9">
+<p>Ignition switch at ON <a href="" id="wp1065690"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>LF_OUTLET {: #wp1065764}</p>
+<p>LF_OUTLET <a href="" id="wp1065764"></a></p>
 </td>
 <td>
-<p>LF outlet solenoid valve {: #wp1065767}</p>
+<p>LF outlet solenoid valve <a href="" id="wp1065767"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>LR_INLET {: #wp1065777}</p>
+<p>LR_INLET <a href="" id="wp1065777"></a></p>
 </td>
 <td>
-<p>LR inlet solenoid valve {: #wp1065780}</p>
+<p>LR inlet solenoid valve <a href="" id="wp1065780"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>LR_OUTLET {: #wp1065790}</p>
+<p>LR_OUTLET <a href="" id="wp1065790"></a></p>
 </td>
 <td>
-<p>LR outlet solenoid valve {: #wp1065793}</p>
+<p>LR outlet solenoid valve <a href="" id="wp1065793"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>PMP_MOTOR {: #wp1065803}</p>
+<p>PMP_MOTOR <a href="" id="wp1065803"></a></p>
 </td>
 <td>
-<p>Pump motor {: #wp1065806}</p>
+<p>Pump motor <a href="" id="wp1065806"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>RF_INLET {: #wp1065887}</p>
+<p>RF_INLET <a href="" id="wp1065887"></a></p>
 </td>
 <td>
-<p>RF inlet solenoid valve {: #wp1065890}</p>
+<p>RF inlet solenoid valve <a href="" id="wp1065890"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>RF_OUTLET {: #wp1065874}</p>
+<p>RF_OUTLET <a href="" id="wp1065874"></a></p>
 </td>
 <td>
-<p>RF outlet solenoid valve {: #wp1065877}</p>
+<p>RF outlet solenoid valve <a href="" id="wp1065877"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>RR_INLET {: #wp1065861}</p>
+<p>RR_INLET <a href="" id="wp1065861"></a></p>
 </td>
 <td>
-<p>RR inlet solenoid valve {: #wp1065864}</p>
+<p>RR inlet solenoid valve <a href="" id="wp1065864"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>
-<p>RR_OUTLET {: #wp1065848}</p>
+<p>RR_OUTLET <a href="" id="wp1065848"></a></p>
 </td>
 <td>
-<p>RR outlet solenoid valve {: #wp1065851}</p>
+<p>RR outlet solenoid valve <a href="" id="wp1065851"></a></p>
 </td>
-<td></td>
-<td></td>
 </tr>
 </tbody>
 </table>

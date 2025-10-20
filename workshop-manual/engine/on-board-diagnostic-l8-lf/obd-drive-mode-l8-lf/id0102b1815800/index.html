@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">OBD DRIVE MODE [L8, LF]</a></li>
+        <li><a href="#obd-drive-mode-l8-lf">OBD DRIVE MODE [L8, LF]</a></li>
         <li><a href="#pcm-adaptive-memory-production-drive-mode">PCM Adaptive Memory Production Drive Mode</a></li><li><a href="#af-sensor-heater-ho2s-heater-af-sensor-ho2s-and-twc-repair-verification-drive-mode">A/F Sensor Heater, HO2S Heater, A/F Sensor, HO2S, and TWC Repair Verification Drive Mode</a></li>
     </ul>
 </nav>
@@ -1246,87 +1246,111 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S01/">Workshop Manual</a> ➭ <a href="../../../node_S01_0002/">ENGINE</a> ➭ <a href="../../node_S01_0003/">ON-BOARD DIAGNOSTIC[L8, LF]</a> ➭ <a href="./">OBD DRIVE MODE [L8, LF]</a></p>
-<h1 id="wp1025486"><strong>OBD DRIVE MODE [L8, LF]</strong></h1>
+<h1 id="obd-drive-mode-l8-lf"><strong>OBD DRIVE MODE [L8, LF]</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id0102b1815800</p>
-<p>{: #wp1058563}</p>
-<p id="wp1059860">• Performing the Drive Mode inspects the OBD system for proper operation. The Drive Mode must be performed to ensure that no additional DTCs are present.</p>
-<p id="wp1058577">• During Drive Mode, the following systems are inspected:</p>
+<p><a href="" id="wp1058563"></a></p>
+<p>• Performing the Drive Mode inspects the OBD system for proper operation. The Drive Mode must be performed to ensure that no additional DTCs are present.
+<a href="" id="wp1059860"></a></p>
+<p>• During Drive Mode, the following systems are inspected:
+<a href="" id="wp1058577"></a></p>
 <ul>
-<li id="wp1058635">A/F sensor
-{: #wp1058587}- HO2S
-{: #wp1058603}- HO2S heater
-{: #wp1058613}- A/F sensor heater
-{: #wp1058623}- TWC</li>
+<li>A/F sensor
+<a href="" id="wp1058587"></a>- HO2S
+<a href="" id="wp1058603"></a>- HO2S heater
+<a href="" id="wp1058613"></a>- A/F sensor heater
+<a href="" id="wp1058623"></a>- TWC
+<a href="" id="wp1058635"></a></li>
 </ul>
-<p><strong id="wp1058645">Caution</strong></p>
-<p id="wp1058663">• While performing the Drive Mode, always operate the vehicle in a safe and lawful manner.
-{: #wp1059625}• When the M-MDS is used to observe or monitor system conditions while driving, be sure to have another technician with you, or record the data in the M-MDS using the PID/DATA MONITOR AND RECORD function and inspect later.</p>
-<p><strong><em>*Note</em></strong>*{: #wp1058677}</p>
-<p id="wp1058696">• Vehicle speed and engine speed detected by the PCM may differ from that indicated by the speedometer and tachometer. Use the M-MDS to monitor vehicle speed.
-{: #wp1059626}• If the OBD system inspection is not completed during the Drive Mode, the following causes are considered:</p>
+<p><strong>Caution</strong><a href="" id="wp1058645"></a></p>
+<p>• While performing the Drive Mode, always operate the vehicle in a safe and lawful manner.
+<a href="" id="wp1059625"></a>• When the M-MDS is used to observe or monitor system conditions while driving, be sure to have another technician with you, or record the data in the M-MDS using the PID/DATA MONITOR AND RECORD function and inspect later.
+<a href="" id="wp1058663"></a></p>
+<p><strong>Note</strong>
+<a href="" id="wp1058677"></a></p>
+<p>• Vehicle speed and engine speed detected by the PCM may differ from that indicated by the speedometer and tachometer. Use the M-MDS to monitor vehicle speed.
+<a href="" id="wp1059626"></a>• If the OBD system inspection is not completed during the Drive Mode, the following causes are considered:
+<a href="" id="wp1058696"></a></p>
 <ul>
-<li id="wp1058720">The OBD system detects the malfunction.
-{: #wp1058706}- The Drive Mode procedure is not completed correctly.</li>
+<li>The OBD system detects the malfunction.
+<a href="" id="wp1058706"></a>- The Drive Mode procedure is not completed correctly.
+<a href="" id="wp1058720"></a></li>
 </ul>
-<p id="wp1058740">• Disconnecting the battery will reset the memory. Do not disconnect the battery during and after Drive Mode.
-{: #wp1058730}• The M-MDS can be used at anytime through the course of Drive Mode to monitor the completion condition. Monitoring can be done by viewing the ON-BOARD SYSTEM READINESS menu.</p>
-<h2 id="pcm-adaptive-memory-production-drive-mode"><strong id="wp1058753">PCM Adaptive Memory Production Drive Mode</strong></h2>
-<p><strong><em>*Note</em></strong>*{: #wp1058763}</p>
-<p id="wp1058791">• The PCM adaptive memory condition can be confirmed with RFCFLAG PID.
-{: #wp1059627}• If the RFCFLAG PID is ON, the PCM adaptive memory procedure drive mode is not necessary, because the PCM already has adaptive memory.
-{: #wp1058781}• If the RFCFLAG PID is OFF, the PCM adaptive memory procedure drive should be performed before A/F sensor heater, HO2S heater, A/F sensor, HO2S, and TWC repair verification drive mode.</p>
+<p>• Disconnecting the battery will reset the memory. Do not disconnect the battery during and after Drive Mode.
+<a href="" id="wp1058730"></a>• The M-MDS can be used at anytime through the course of Drive Mode to monitor the completion condition. Monitoring can be done by viewing the ON-BOARD SYSTEM READINESS menu.
+<a href="" id="wp1058740"></a></p>
+<h2 id="pcm-adaptive-memory-production-drive-mode"><strong>PCM Adaptive Memory Production Drive Mode</strong><a href="" id="wp1058753"></a></h2>
+<p><strong>Note</strong>
+<a href="" id="wp1058763"></a></p>
+<p>• The PCM adaptive memory condition can be confirmed with RFCFLAG PID.
+<a href="" id="wp1059627"></a>• If the RFCFLAG PID is ON, the PCM adaptive memory procedure drive mode is not necessary, because the PCM already has adaptive memory.
+<a href="" id="wp1058781"></a>• If the RFCFLAG PID is OFF, the PCM adaptive memory procedure drive should be performed before A/F sensor heater, HO2S heater, A/F sensor, HO2S, and TWC repair verification drive mode.
+<a href="" id="wp1058791"></a></p>
 <ol>
 <li>
-<p id="wp1058805">Start the engine and warm it up completely.</p>
+<p>Start the engine and warm it up completely.
+<a href="" id="wp1058805"></a></p>
 </li>
 <li>
-<p id="wp1058815">Verify the following conditions and correct if necessary:</p>
+<p>Verify the following conditions and correct if necessary:
+<a href="" id="wp1058815"></a></p>
 </li>
 </ol>
-<p id="wp1058825">• All accessory loads (A/C, headlights, blower fan, rear window defroster) are off.</p>
+<p>• All accessory loads (A/C, headlights, blower fan, rear window defroster) are off.
+<a href="" id="wp1058825"></a></p>
 <ol start="3">
-<li>Perform no load racing at the engine speed shown in the graph, then idle the engine for more than <strong>60 s</strong> after the cooling fan has stopped. If possible, monitor RPM PID for engine speed during this procedure.{: #wp1058841}</li>
+<li>Perform no load racing at the engine speed shown in the graph, then idle the engine for more than <strong>60 s</strong> after the cooling fan has stopped. If possible, monitor RPM PID for engine speed during this procedure.<a href="" id="wp1058841"></a></li>
 </ol>
 <p><img alt="" src="../../../../../images/D5E102ZL8H01.png" /></p>
 <ol start="4">
 <li>
-<p id="wp1058877">Turn ignition switch off then to the ON position again.</p>
+<p>Turn ignition switch off then to the ON position again.
+<a href="" id="wp1058877"></a></p>
 </li>
 <li>
-<p id="wp1058887">Access the RFCFLAG PID to confirm the PCM adaptive memory conditions. If the RFCFLAG PID is ON, the PCM adaptive memory procedure drive is completed.</p>
+<p>Access the RFCFLAG PID to confirm the PCM adaptive memory conditions. If the RFCFLAG PID is ON, the PCM adaptive memory procedure drive is completed.
+<a href="" id="wp1058887"></a></p>
 </li>
 <li>
-<p id="wp1058897">If the RFCFLAG PID is still OFF, go back to Step 1.</p>
+<p>If the RFCFLAG PID is still OFF, go back to Step 1.
+<a href="" id="wp1058897"></a></p>
 </li>
 </ol>
-<h2 id="af-sensor-heater-ho2s-heater-af-sensor-ho2s-and-twc-repair-verification-drive-mode"><strong id="wp1058907">A/F Sensor Heater, HO2S Heater, A/F Sensor, HO2S, and TWC Repair Verification Drive Mode</strong></h2>
+<h2 id="af-sensor-heater-ho2s-heater-af-sensor-ho2s-and-twc-repair-verification-drive-mode"><strong>A/F Sensor Heater, HO2S Heater, A/F Sensor, HO2S, and TWC Repair Verification Drive Mode</strong><a href="" id="wp1058907"></a></h2>
 <ol>
 <li>
-<p id="wp1058921">Access the RFCFLAG PID to confirm PCM adaptive memory condition. If RFCFLAG PID is OFF, perform the PCM adaptive memory procedure drive first.</p>
+<p>Access the RFCFLAG PID to confirm PCM adaptive memory condition. If RFCFLAG PID is OFF, perform the PCM adaptive memory procedure drive first.
+<a href="" id="wp1058921"></a></p>
 </li>
 <li>
-<p id="wp1058931">If RFCFLAG PID is ON, start the engine and warm it up completely.</p>
+<p>If RFCFLAG PID is ON, start the engine and warm it up completely.
+<a href="" id="wp1058931"></a></p>
 </li>
 <li>
-<p id="wp1058941">Verify all accessory loads (A/C, headlights, blower fan, rear window defroster) are off.</p>
+<p>Verify all accessory loads (A/C, headlights, blower fan, rear window defroster) are off.
+<a href="" id="wp1058941"></a></p>
 </li>
 <li>
-<p>Drive the vehicle as shown in the graph. The driving conditions before driving at constant speed are not specified.{: #wp1058953}</p>
+<p>Drive the vehicle as shown in the graph. The driving conditions before driving at constant speed are not specified.<a href="" id="wp1058953"></a></p>
 </li>
 </ol>
 <p><img alt="" src="../../../../../images/D5E102ZL8H022.png" /></p>
 <ol start="5">
-<li id="wp1058980">Stop the vehicle and access ON BOARD SYSTEM READINESS menu of GENERIC OBD FUNCTION to verify the OBD monitoring status.</li>
+<li>Stop the vehicle and access ON BOARD SYSTEM READINESS menu of GENERIC OBD FUNCTION to verify the OBD monitoring status.
+<a href="" id="wp1058980"></a></li>
 </ol>
-<p id="wp1059005">• If completed, the OBD monitoring status items change from non-completed to completed.
-{: #wp1058990}• If not completed, turn the ignition switch off then repeat from Step 4.</p>
+<p>• If completed, the OBD monitoring status items change from non-completed to completed.
+<a href="" id="wp1058990"></a>• If not completed, turn the ignition switch off then repeat from Step 4.
+<a href="" id="wp1059005"></a></p>
 <ol start="6">
-<li id="wp1059015">Access DIAGNOSTIC MONITORING TEST RESULTS menu of GENERIC OBD FUNCTIONS to verify the monitor results.</li>
+<li>Access DIAGNOSTIC MONITORING TEST RESULTS menu of GENERIC OBD FUNCTIONS to verify the monitor results.
+<a href="" id="wp1059015"></a></li>
 </ol>
-<p id="wp1059025">• If detected values are not within the specification, repair has not been completed.</p>
+<p>• If detected values are not within the specification, repair has not been completed.
+<a href="" id="wp1059025"></a></p>
 <ol start="7">
-<li id="wp1059039">Verify no DTCs are available.</li>
+<li>Verify no DTCs are available.
+<a href="" id="wp1059039"></a></li>
 </ol>
 <p><a href="" id="wp1059628"></a></p>
 </section>

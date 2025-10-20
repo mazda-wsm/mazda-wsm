@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">DYNAMIC STABILITY CONTROL (DSC) CONSTRUCTION</a></li>
+        <li><a href="#dynamic-stability-control-dsc-construction">DYNAMIC STABILITY CONTROL (DSC) CONSTRUCTION</a></li>
         
     </ul>
 </nav>
@@ -1246,93 +1246,94 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0028/">BRAKES</a> ➭ <a href="../../node_S02_0034/">DYNAMIC STABILITY CONTROL</a> ➭ <a href="./">DYNAMIC STABILITY CONTROL (DSC) CONSTRUCTION</a></p>
-<h1 id="wp1025486"><strong>DYNAMIC STABILITY CONTROL (DSC) CONSTRUCTION</strong></h1>
+<h1 id="dynamic-stability-control-dsc-construction"><strong>DYNAMIC STABILITY CONTROL (DSC) CONSTRUCTION</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id041500100500</p>
-<p>{: #wp1059776}</p>
-<p id="wp1060326">• The DSC system consists of the following parts. While each part has a regular function in other systems, only the function during DSC control is listed.</p>
+<p><a href="" id="wp1059776"></a></p>
+<p>• The DSC system consists of the following parts. While each part has a regular function in other systems, only the function during DSC control is listed.
+<a href="" id="wp1060326"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>Part name</strong> <a href="" id="wp1059851"></a>}{: #wp1059790</p>
+<p><strong>Part name</strong> <a href="" id="wp1059851"></a><a href="" id="wp1059790"></a></p>
 </th>
 <th>
-<p><strong>Function</strong> {: #wp1059853}</p>
+<p><strong>Function</strong> <a href="" id="wp1059853"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>DSC HU/CM {: #wp1059793}</p>
+<p>DSC HU/CM <a href="" id="wp1059793"></a></p>
 </td>
 <td>
-<p>• Makes calculations using input signals from each sensor, controls brake fluid pressure to each wheel, and actuates each function (ABS, EBD, TCS and DSC) of the DSC system. {: #wp1059795}  • Outputs the torque reduction request signal, vehicle speed signal and DSC system warning control data via CAN lines. {: #wp1059914}  • Controls the on-board diagnostic system and fail-safe function when there is a malfunction in the DSC system. {: #wp1059924}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>PCM {: #wp1059868}</p>
-</td>
-<td>
-<p>• Controls engine output based on signals from the DSC HU/CM. {: #wp1059871}  • Transmits engine speed, tire and shift position data via CAN communication to the DSC HU/CM. {: #wp1059956}</p>
+<p>• Makes calculations using input signals from each sensor, controls brake fluid pressure to each wheel, and actuates each function (ABS, EBD, TCS and DSC) of the DSC system. <a href="" id="wp1059795"></a>  • Outputs the torque reduction request signal, vehicle speed signal and DSC system warning control data via CAN lines. <a href="" id="wp1059914"></a>  • Controls the on-board diagnostic system and fail-safe function when there is a malfunction in the DSC system. <a href="" id="wp1059924"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>DSC indicator light {: #wp1059875}</p>
+<p>PCM <a href="" id="wp1059868"></a></p>
 </td>
 <td>
-<p>• Informs the driver that the DSC is operating (vehicle sideslip occurring). {: #wp1059878}  • Informs the driver that the TCS is operating (drive wheel is spinning). {: #wp1059986}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>DSC OFF switch {: #wp1059994}</p>
-</td>
-<td>
-<p>• Transmits driver intention to release DSC control to the DSC HU/CM. {: #wp1059997}</p>
+<p>• Controls engine output based on signals from the DSC HU/CM. <a href="" id="wp1059871"></a>  • Transmits engine speed, tire and shift position data via CAN communication to the DSC HU/CM. <a href="" id="wp1059956"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>DSC OFF light {: #wp1060021}</p>
+<p>DSC indicator light <a href="" id="wp1059875"></a></p>
 </td>
 <td>
-<p>• Informs driver that DSC control has been released due to DSC OFF switch operation. {: #wp1060024}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Wheel speed sensor {: #wp1060046}</p>
-</td>
-<td>
-<p>• Detects the rotation condition of each wheel and transmits it to the DSC HU/CM. {: #wp1060049}</p>
+<p>• Informs the driver that the DSC is operating (vehicle sideslip occurring). <a href="" id="wp1059878"></a>  • Informs the driver that the TCS is operating (drive wheel is spinning). <a href="" id="wp1059986"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Combined sensor {: #wp1060073}</p>
+<p>DSC OFF switch <a href="" id="wp1059994"></a></p>
 </td>
 <td>
-<p>• Detects the lateral-G (vehicle speed increase) and the yaw rate (vehicle turning angle) of the vehicle and transmits them to the DSC HU/CM. {: #wp1060076}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Brake fluid pressure sensor {: #wp1060101}</p>
-</td>
-<td>
-<p>• Detects the fluid pressure from the master cylinder and transmits it to the DSC HU/CM. {: #wp1060104}</p>
+<p>• Transmits driver intention to release DSC control to the DSC HU/CM. <a href="" id="wp1059997"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Steering angle sensor {: #wp1060128}</p>
+<p>DSC OFF light <a href="" id="wp1060021"></a></p>
 </td>
 <td>
-<p>• Transmits the steering angle and steering angle sensor condition via CAN lines to the DSC HU/CM. {: #wp1060131}</p>
+<p>• Informs driver that DSC control has been released due to DSC OFF switch operation. <a href="" id="wp1060024"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Wheel speed sensor <a href="" id="wp1060046"></a></p>
+</td>
+<td>
+<p>• Detects the rotation condition of each wheel and transmits it to the DSC HU/CM. <a href="" id="wp1060049"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Combined sensor <a href="" id="wp1060073"></a></p>
+</td>
+<td>
+<p>• Detects the lateral-G (vehicle speed increase) and the yaw rate (vehicle turning angle) of the vehicle and transmits them to the DSC HU/CM. <a href="" id="wp1060076"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Brake fluid pressure sensor <a href="" id="wp1060101"></a></p>
+</td>
+<td>
+<p>• Detects the fluid pressure from the master cylinder and transmits it to the DSC HU/CM. <a href="" id="wp1060104"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Steering angle sensor <a href="" id="wp1060128"></a></p>
+</td>
+<td>
+<p>• Transmits the steering angle and steering angle sensor condition via CAN lines to the DSC HU/CM. <a href="" id="wp1060131"></a></p>
 </td>
 </tr>
 </tbody>

@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">ON-BOAD DIAGNOSTIC PID DATE MONITOR FUNCTION</a></li>
+        <li><a href="#on-boad-diagnostic-pid-date-monitor-function">ON-BOAD DIAGNOSTIC PID DATE MONITOR FUNCTION</a></li>
         <li><a href="#on-board-diagnostic-function">On-board Diagnostic Function</a></li><li><a href="#piddata-monitor-function">PID/Data Monitor Function</a></li>
     </ul>
 </nav>
@@ -1246,284 +1246,589 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0056/">BODY &amp; ACCESSORIES</a> ➭ <a href="../../node_S02_0064/">EXTERIOR TRIM</a> ➭ <a href="./">ON-BOAD DIAGNOSTIC PID DATE MONITOR FUNCTION</a></p>
-<h1 id="wp1025486"><strong>ON-BOAD DIAGNOSTIC PID DATE MONITOR FUNCTION</strong></h1>
+<h1 id="on-boad-diagnostic-pid-date-monitor-function"><strong>ON-BOAD DIAGNOSTIC PID DATE MONITOR FUNCTION</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id091600102200</p>
-<p>{: #wp1059777}</p>
-<h2 id="on-board-diagnostic-function"><strong id="wp1061854">On-board Diagnostic Function</strong></h2>
-<h3 id="malfunction-detection-function"><strong id="wp1059788">Malfunction detection function</strong></h3>
-<p id="wp1059798">• Detects overall malfunctions in the power retractable hardtop-related parts.</p>
-<h3 id="memory-function"><strong id="wp1059813">Memory function</strong></h3>
-<p id="wp1059823">• Stores malfunctions in the power retractable hardtop-related parts detected by the malfunction detection function, and the stored malfunction contents are not cleared even if the ignition switch is turned to the LOCK position or the negative battery cable is disconnected.</p>
-<p>**DTC table</p>
-<p>+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
-| <strong>DTC</strong> {: #wp1059952}                                             | <strong>Description</strong> {: #wp1059954}                                                                 | <strong>Malfunction indication</strong> {: #wp1059956}                                                                                  |
-+====================================================================+================================================================================================+===========================================+================================================================================+
-| <strong>Mazda modular diagnostic system (M-MDS) display</strong> {: #wp1060038} |                                                                                                | <strong>Buzzer sound</strong> {: #wp1060044}           | <strong>Power retractable hardtop indicator light flashing</strong> {: #wp1060047}          |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B1342 {: #wp1059846}                                               | Power retractable hardtop control module internal malfunction {: #wp1059848}                   | None {: #wp1059904}                       | None {: #wp1059907}                                                            |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B1317 {: #wp1059981}                                               | Battery power supply voltage increases (17.5 V or more) {: #wp1059984}                         | Operation reject sound*1 {: #wp1059987}  | Flashing pattern for a power retractable hardtop malfunction*1 {: #wp1059990} |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B1318 {: #wp1059994}                                               | Battery power supply voltage decreases (less than 7.5 V) {: #wp1059997}                        | Operation reject sound*1 {: #wp1060000}  | Flashing pattern for a power retractable hardtop malfunction*1 {: #wp1060003} |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B296D {: #wp1060007}                                               | Hall sensor low power supply voltage {: #wp1060010}                                            | Operation reject sound {: #wp1060013}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060016}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| U0030 {: #wp1060020}                                               | Door glass communication error (during power retractable hardtop operation) {: #wp1060023}     | None {: #wp1060026}                       | Flashing pattern for a power retractable hardtop malfunction {: #wp1060029}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| U0031 {: #wp1060205}                                               | Door glass communication error (during power retractable hardtop not operation) {: #wp1060208} | None {: #wp1060211}                       | Flashing pattern for a power retractable hardtop malfunction {: #wp1060214}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B296A {: #wp1060242}                                               | Roof motor pulse signal error (RH) {: #wp1060245}                                              | Operation reject sound {: #wp1060248}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060251}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| U294B {: #wp1060279}                                               | Roof motor pulse signal error (LH) {: #wp1060282}                                              | Operation reject sound {: #wp1060285}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060288}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B293C {: #wp1060316}                                               | Deck panel motor pulse signal error (RH) {: #wp1060319}                                        | Operation reject sound {: #wp1060322}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060325}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B293B {: #wp1060353}                                               | Deck panel motor pulse signal error (LH) {: #wp1060356}                                        | Operation reject sound {: #wp1060359}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060362}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B293E {: #wp1060390}                                               | Roof motor circuit malfunction (RH) {: #wp1060393}                                             | Operation reject sound {: #wp1060396}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060399}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B293D {: #wp1060427}                                               | Roof motor circuit malfunction (LH) {: #wp1060430}                                             | Operation reject sound {: #wp1060433}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060436}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B294C {: #wp1060464}                                               | Deck panel motor circuit malfunction (RH) {: #wp1060467}                                       | Operation reject sound {: #wp1060470}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060473}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B293F {: #wp1060501}                                               | Deck panel motor circuit malfunction (LH) {: #wp1060504}                                       | Operation reject sound {: #wp1060507}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060510}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B294D {: #wp1060538}                                               | Roof motor opening angle does not match (Pulse count number do not match) {: #wp1060541}       | Operation reject sound {: #wp1060544}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060547}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B294E {: #wp1060575}                                               | Deck panel motor opening angle does not match (Pulse count number do not match) {: #wp1060578} | Operation reject sound {: #wp1060581}     | Flashing pattern for a power retractable hardtop malfunction {: #wp1060584}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B294F {: #wp1060612}                                               | Power retractable hardtop/deck panel limit switch malfunction {: #wp1060615}                   | Operation reject sound*2 {: #wp1060618}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060621}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B296B {: #wp1060658}                                               | Top lock switch malfunction {: #wp1060661}                                                     | None {: #wp1060664}                       | Flashing pattern for a power retractable hardtop malfunction {: #wp1060667}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| B296C {: #wp1060696}                                               | Power retractable hardtop switch malfunction {: #wp1060699}                                    | Operation reject sound*2 {: #wp1060702}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060705}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| U0073 {: #wp1060741}                                               | CAN system communication error {: #wp1060744}                                                  | Operation reject sound*2 {: #wp1060747}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060750}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| U0100 {: #wp1060787}                                               | Communication error to PCM {: #wp1060790}                                                      | Operation reject sound*2 {: #wp1060793}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060796}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| U0101 {: #wp1060834}                                               | Communication error to TCM {: #wp1060837}                                                      | Operation reject sound*2 {: #wp1060840}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060843}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+
-| U2197 {: #wp1060882}                                               | Vehicle speed signal communication error {: #wp1060885}                                        | Operation reject sound*2 {: #wp1060888}  | Flashing pattern for a power retractable hardtop malfunction {: #wp1060891}    |
-+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------------------------------+--------------------------------------------------------------------------------+**{: #wp1059838}</p>
-<p id="wp1060983">*1 :
-{: #wp1060943}
-No buzzer sound and power retractable hardtop indicator light illumination if the power retractable hardtop operation is inhibited while it is not operating.
-{: #wp1060962}
-*2 :
-{: #wp1060968}
-No buzzer sound except when the power retractable hardtop switch is turned on.</p>
-<h2 id="piddata-monitor-function"><strong id="wp1060989">PID/Data Monitor Function</strong></h2>
-<p id="wp1061001">• The PID/data monitor function is used for optionally selecting input/output signal monitor items preset in the power retractable hardtop control module and reading them out in real-time.</p>
-<p id="wp1061020">• Use the mazda modular diagnostic system (M-MDS) to read the PID/data monitor.</p>
-<p><strong id="wp1061033">PID/data monitor table</strong></p>
+<p><a href="" id="wp1059777"></a></p>
+<h2 id="on-board-diagnostic-function"><strong>On-board Diagnostic Function</strong><a href="" id="wp1061854"></a></h2>
+<h3 id="malfunction-detection-function"><strong>Malfunction detection function</strong><a href="" id="wp1059788"></a></h3>
+<p>• Detects overall malfunctions in the power retractable hardtop-related parts.
+<a href="" id="wp1059798"></a></p>
+<h3 id="memory-function"><strong>Memory function</strong><a href="" id="wp1059813"></a></h3>
+<p>• Stores malfunctions in the power retractable hardtop-related parts detected by the malfunction detection function, and the stored malfunction contents are not cleared even if the ignition switch is turned to the LOCK position or the negative battery cable is disconnected.
+<a href="" id="wp1059823"></a></p>
+<p><strong>DTC table</strong></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>PID name (definition)</strong> {: #wp1061149}</p>
+<p><strong>DTC</strong> <a href="" id="wp1059952"></a></p>
 </th>
-<th>
-<p><strong>Data contents</strong> {: #wp1061151}</p>
+<th rowspan="2">
+<p><strong>Description</strong> <a href="" id="wp1059954"></a></p>
 </th>
-<th>
-<p><strong>Unit/Operation</strong> {: #wp1061153}</p>
-</th>
-<th>
-<p><strong>Terminal</strong> {: #wp1061155}</p>
+<th colspan="2">
+<p><strong>Malfunction indication</strong> <a href="" id="wp1059956"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>DTC_CNT {: #wp1061043}</p>
+<p><strong>Mazda modular diagnostic system (M-MDS) display</strong> <a href="" id="wp1060038"></a></p>
 </td>
 <td>
-<p>Number of continuous DTCs {: #wp1061045}</p>
+<p><strong>Buzzer sound</strong> <a href="" id="wp1060044"></a></p>
+</td>
+<td>
+<p><strong>Power retractable hardtop indicator light flashing</strong> <a href="" id="wp1060047"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B1342 <a href="" id="wp1059846"></a></p>
+</td>
+<td>
+<p>Power retractable hardtop control module internal malfunction <a href="" id="wp1059848"></a></p>
+</td>
+<td>
+<p>None <a href="" id="wp1059904"></a></p>
+</td>
+<td>
+<p>None <a href="" id="wp1059907"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B1317 <a href="" id="wp1059981"></a></p>
+</td>
+<td>
+<p>Battery power supply voltage increases (17.5 V or more) <a href="" id="wp1059984"></a></p>
+</td>
+<td>
+<p>Operation reject sound*1 <a href="" id="wp1059987"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction*1 <a href="" id="wp1059990"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B1318 <a href="" id="wp1059994"></a></p>
+</td>
+<td>
+<p>Battery power supply voltage decreases (less than 7.5 V) <a href="" id="wp1059997"></a></p>
+</td>
+<td>
+<p>Operation reject sound*1 <a href="" id="wp1060000"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction*1 <a href="" id="wp1060003"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B296D <a href="" id="wp1060007"></a></p>
+</td>
+<td>
+<p>Hall sensor low power supply voltage <a href="" id="wp1060010"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060013"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060016"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0030 <a href="" id="wp1060020"></a></p>
+</td>
+<td>
+<p>Door glass communication error (during power retractable hardtop operation) <a href="" id="wp1060023"></a></p>
+</td>
+<td>
+<p>None <a href="" id="wp1060026"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060029"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0031 <a href="" id="wp1060205"></a></p>
+</td>
+<td>
+<p>Door glass communication error (during power retractable hardtop not operation) <a href="" id="wp1060208"></a></p>
+</td>
+<td>
+<p>None <a href="" id="wp1060211"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060214"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B296A <a href="" id="wp1060242"></a></p>
+</td>
+<td>
+<p>Roof motor pulse signal error (RH) <a href="" id="wp1060245"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060248"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060251"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U294B <a href="" id="wp1060279"></a></p>
+</td>
+<td>
+<p>Roof motor pulse signal error (LH) <a href="" id="wp1060282"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060285"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060288"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B293C <a href="" id="wp1060316"></a></p>
+</td>
+<td>
+<p>Deck panel motor pulse signal error (RH) <a href="" id="wp1060319"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060322"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060325"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B293B <a href="" id="wp1060353"></a></p>
+</td>
+<td>
+<p>Deck panel motor pulse signal error (LH) <a href="" id="wp1060356"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060359"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060362"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B293E <a href="" id="wp1060390"></a></p>
+</td>
+<td>
+<p>Roof motor circuit malfunction (RH) <a href="" id="wp1060393"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060396"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060399"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B293D <a href="" id="wp1060427"></a></p>
+</td>
+<td>
+<p>Roof motor circuit malfunction (LH) <a href="" id="wp1060430"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060433"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060436"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B294C <a href="" id="wp1060464"></a></p>
+</td>
+<td>
+<p>Deck panel motor circuit malfunction (RH) <a href="" id="wp1060467"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060470"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060473"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B293F <a href="" id="wp1060501"></a></p>
+</td>
+<td>
+<p>Deck panel motor circuit malfunction (LH) <a href="" id="wp1060504"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060507"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060510"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B294D <a href="" id="wp1060538"></a></p>
+</td>
+<td>
+<p>Roof motor opening angle does not match (Pulse count number do not match) <a href="" id="wp1060541"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060544"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060547"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B294E <a href="" id="wp1060575"></a></p>
+</td>
+<td>
+<p>Deck panel motor opening angle does not match (Pulse count number do not match) <a href="" id="wp1060578"></a></p>
+</td>
+<td>
+<p>Operation reject sound <a href="" id="wp1060581"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060584"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B294F <a href="" id="wp1060612"></a></p>
+</td>
+<td>
+<p>Power retractable hardtop/deck panel limit switch malfunction <a href="" id="wp1060615"></a></p>
+</td>
+<td>
+<p>Operation reject sound*2 <a href="" id="wp1060618"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060621"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B296B <a href="" id="wp1060658"></a></p>
+</td>
+<td>
+<p>Top lock switch malfunction <a href="" id="wp1060661"></a></p>
+</td>
+<td>
+<p>None <a href="" id="wp1060664"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060667"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B296C <a href="" id="wp1060696"></a></p>
+</td>
+<td>
+<p>Power retractable hardtop switch malfunction <a href="" id="wp1060699"></a></p>
+</td>
+<td>
+<p>Operation reject sound*2 <a href="" id="wp1060702"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060705"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0073 <a href="" id="wp1060741"></a></p>
+</td>
+<td>
+<p>CAN system communication error <a href="" id="wp1060744"></a></p>
+</td>
+<td>
+<p>Operation reject sound*2 <a href="" id="wp1060747"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060750"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0100 <a href="" id="wp1060787"></a></p>
+</td>
+<td>
+<p>Communication error to PCM <a href="" id="wp1060790"></a></p>
+</td>
+<td>
+<p>Operation reject sound*2 <a href="" id="wp1060793"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060796"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U0101 <a href="" id="wp1060834"></a></p>
+</td>
+<td>
+<p>Communication error to TCM <a href="" id="wp1060837"></a></p>
+</td>
+<td>
+<p>Operation reject sound*2 <a href="" id="wp1060840"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060843"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>U2197 <a href="" id="wp1060882"></a></p>
+</td>
+<td>
+<p>Vehicle speed signal communication error <a href="" id="wp1060885"></a></p>
+</td>
+<td>
+<p>Operation reject sound*2 <a href="" id="wp1060888"></a></p>
+</td>
+<td>
+<p>Flashing pattern for a power retractable hardtop malfunction <a href="" id="wp1060891"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="" id="wp1059838"></a></p>
+<p>*1 :
+<a href="" id="wp1060943"></a>
+No buzzer sound and power retractable hardtop indicator light illumination if the power retractable hardtop operation is inhibited while it is not operating.
+<a href="" id="wp1060962"></a>
+*2 :
+<a href="" id="wp1060968"></a>
+No buzzer sound except when the power retractable hardtop switch is turned on.
+<a href="" id="wp1060983"></a></p>
+<h2 id="piddata-monitor-function"><strong>PID/Data Monitor Function</strong><a href="" id="wp1060989"></a></h2>
+<p>• The PID/data monitor function is used for optionally selecting input/output signal monitor items preset in the power retractable hardtop control module and reading them out in real-time.
+<a href="" id="wp1061001"></a></p>
+<p>• Use the mazda modular diagnostic system (M-MDS) to read the PID/data monitor.
+<a href="" id="wp1061020"></a></p>
+<p><strong>PID/data monitor table</strong><a href="" id="wp1061033"></a></p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>PID name (definition)</strong> <a href="" id="wp1061149"></a></p>
+</th>
+<th>
+<p><strong>Data contents</strong> <a href="" id="wp1061151"></a></p>
+</th>
+<th>
+<p><strong>Unit/Operation</strong> <a href="" id="wp1061153"></a></p>
+</th>
+<th>
+<p><strong>Terminal</strong> <a href="" id="wp1061155"></a></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>DTC_CNT <a href="" id="wp1061043"></a></p>
+</td>
+<td>
+<p>Number of continuous DTCs <a href="" id="wp1061045"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1061101}</li>
+<li><a href="" id="wp1061101"></a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li>{: #wp1061104}</li>
+<li><a href="" id="wp1061104"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>VPWR {: #wp1061178}</p>
+<p>VPWR <a href="" id="wp1061178"></a></p>
 </td>
 <td>
-<p>Module Supply Voltage {: #wp1061181}</p>
+<p>Module Supply Voltage <a href="" id="wp1061181"></a></p>
 </td>
 <td>
-<p>V {: #wp1061184}</p>
+<p>V <a href="" id="wp1061184"></a></p>
 </td>
 <td>
-<p>1X {: #wp1061187}</p>
+<p>1X <a href="" id="wp1061187"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>VSS {: #wp1061191}</p>
+<p>VSS <a href="" id="wp1061191"></a></p>
 </td>
 <td>
-<p>Vehicle speed {: #wp1061194}</p>
+<p>Vehicle speed <a href="" id="wp1061194"></a></p>
 </td>
 <td>
-<p>MPH/KPH {: #wp1061197}</p>
+<p>MPH/KPH <a href="" id="wp1061197"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1061200}</li>
+<li><a href="" id="wp1061200"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>RHT_OP {: #wp1061204}</p>
+<p>RHT_OP <a href="" id="wp1061204"></a></p>
 </td>
 <td>
-<p>Power Retractable Hardtop Open Position Sensor {: #wp1061207}</p>
+<p>Power Retractable Hardtop Open Position Sensor <a href="" id="wp1061207"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061210}</p>
+<p>On/Off <a href="" id="wp1061210"></a></p>
 </td>
 <td>
-<p>1T {: #wp1061213}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>RHT_CL {: #wp1061217}</p>
-</td>
-<td>
-<p>Power Retractable Hardtop Closed Position Sensor {: #wp1061220}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061223}</p>
-</td>
-<td>
-<p>1R {: #wp1061226}</p>
+<p>1T <a href="" id="wp1061213"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>DECK_OP {: #wp1061364}</p>
+<p>RHT_CL <a href="" id="wp1061217"></a></p>
 </td>
 <td>
-<p>Deck Open Position Sensor {: #wp1061367}</p>
+<p>Power Retractable Hardtop Closed Position Sensor <a href="" id="wp1061220"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061370}</p>
+<p>On/Off <a href="" id="wp1061223"></a></p>
 </td>
 <td>
-<p>3F {: #wp1061373}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>DECK_CL {: #wp1061401}</p>
-</td>
-<td>
-<p>Deck Close Position Sensor {: #wp1061404}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061407}</p>
-</td>
-<td>
-<p>3O {: #wp1061410}</p>
+<p>1R <a href="" id="wp1061226"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>SW_OP {: #wp1061438}</p>
+<p>DECK_OP <a href="" id="wp1061364"></a></p>
 </td>
 <td>
-<p>Power Retractable Hardtop Open Switch {: #wp1061441}</p>
+<p>Deck Open Position Sensor <a href="" id="wp1061367"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061444}</p>
+<p>On/Off <a href="" id="wp1061370"></a></p>
 </td>
 <td>
-<p>1H {: #wp1061447}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>SW_CL {: #wp1061475}</p>
-</td>
-<td>
-<p>Power Retractable Hardtop Close Switch {: #wp1061478}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061481}</p>
-</td>
-<td>
-<p>1H {: #wp1061484}</p>
+<p>3F <a href="" id="wp1061373"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>SW_STRIKER {: #wp1061512}</p>
+<p>DECK_CL <a href="" id="wp1061401"></a></p>
 </td>
 <td>
-<p>Top Lock Switch {: #wp1061515}</p>
+<p>Deck Close Position Sensor <a href="" id="wp1061404"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061518}</p>
+<p>On/Off <a href="" id="wp1061407"></a></p>
 </td>
 <td>
-<p>1D {: #wp1061521}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>SW_TRUNK {: #wp1061549}</p>
-</td>
-<td>
-<p>Trunk Switch {: #wp1061552}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061555}</p>
-</td>
-<td>
-<p>1F {: #wp1061558}</p>
+<p>3O <a href="" id="wp1061410"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>TR_OP_CTL {: #wp1061586}</p>
+<p>SW_OP <a href="" id="wp1061438"></a></p>
 </td>
 <td>
-<p>Trunk Opener Control {: #wp1061589}</p>
+<p>Power Retractable Hardtop Open Switch <a href="" id="wp1061441"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061592}</p>
+<p>On/Off <a href="" id="wp1061444"></a></p>
+</td>
+<td>
+<p>1H <a href="" id="wp1061447"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SW_CL <a href="" id="wp1061475"></a></p>
+</td>
+<td>
+<p>Power Retractable Hardtop Close Switch <a href="" id="wp1061478"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061481"></a></p>
+</td>
+<td>
+<p>1H <a href="" id="wp1061484"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SW_STRIKER <a href="" id="wp1061512"></a></p>
+</td>
+<td>
+<p>Top Lock Switch <a href="" id="wp1061515"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061518"></a></p>
+</td>
+<td>
+<p>1D <a href="" id="wp1061521"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SW_TRUNK <a href="" id="wp1061549"></a></p>
+</td>
+<td>
+<p>Trunk Switch <a href="" id="wp1061552"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061555"></a></p>
+</td>
+<td>
+<p>1F <a href="" id="wp1061558"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TR_OP_CTL <a href="" id="wp1061586"></a></p>
+</td>
+<td>
+<p>Trunk Opener Control <a href="" id="wp1061589"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061592"></a></p>
 </td>
 <td>
 <ul>
-<li>{: #wp1061595}</li>
+<li><a href="" id="wp1061595"></a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>Indicator {: #wp1061625}</p>
+<p>Indicator <a href="" id="wp1061625"></a></p>
 </td>
 <td>
-<p>Power Retractable Hardtop Indicator Light {: #wp1061628}</p>
+<p>Power Retractable Hardtop Indicator Light <a href="" id="wp1061628"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061631}</p>
+<p>On/Off <a href="" id="wp1061631"></a></p>
 </td>
 <td>
-<p>2C {: #wp1061634}</p>
+<p>2C <a href="" id="wp1061634"></a></p>
 </td>
 </tr>
 </tbody>

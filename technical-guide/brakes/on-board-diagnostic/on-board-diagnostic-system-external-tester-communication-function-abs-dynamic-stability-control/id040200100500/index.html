@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">ON-BOARD DIAGNOSTIC SYSTEM EXTERNAL TESTER COMMUNICATION FUNCTION (ABS, DYNAMIC STABILITY CONTROL)</a></li>
+        <li><a href="#on-board-diagnostic-system-external-tester-communication-function-abs-dynamic-stability-control">ON-BOARD DIAGNOSTIC SYSTEM EXTERNAL TESTER COMMUNICATION FUNCTION (ABS, DYNAMIC STABILITY CONTROL)</a></li>
         <li><a href="#connections-and-communication-contents">Connections and Communication Contents</a></li><li><a href="#serial-communication">Serial communication</a></li>
     </ul>
 </nav>
@@ -1246,125 +1246,125 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0028/">BRAKES</a> ➭ <a href="../../node_S02_0030/">ON-BOARD DIAGNOSTIC</a> ➭ <a href="./">ON-BOARD DIAGNOSTIC SYSTEM EXTERNAL TESTER COMMUNICATION FUNCTION (ABS, DYNAMIC STABILITY CONTROL)</a></p>
-<h1 id="wp1025486"><strong>ON-BOARD DIAGNOSTIC SYSTEM EXTERNAL TESTER COMMUNICATION FUNCTION (ABS, DYNAMIC STABILITY CONTROL)</strong></h1>
+<h1 id="on-board-diagnostic-system-external-tester-communication-function-abs-dynamic-stability-control"><strong>ON-BOARD DIAGNOSTIC SYSTEM EXTERNAL TESTER COMMUNICATION FUNCTION (ABS, DYNAMIC STABILITY CONTROL)</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id040200100500</p>
-<p>{: #wp1059778}</p>
-<p id="wp1060523">• The external tester communication function enables communication of diagnostic data (DTC read-outs, input/output signal read-outs, and operation of input/output parts) between the ABS HU/CM or the DSC HU/CM and an external tester.</p>
-<h2 id="connections-and-communication-contents"><strong id="wp1059802">Connections and Communication Contents</strong></h2>
+<p><a href="" id="wp1059778"></a></p>
+<p>• The external tester communication function enables communication of diagnostic data (DTC read-outs, input/output signal read-outs, and operation of input/output parts) between the ABS HU/CM or the DSC HU/CM and an external tester.
+<a href="" id="wp1060523"></a></p>
+<h2 id="connections-and-communication-contents"><strong>Connections and Communication Contents</strong><a href="" id="wp1059802"></a></h2>
 <table>
-<thead>
-<tr>
-<th>
-<p><a href="" id="wp1059897"></a></p>
-</th>
-<th colspan="2">
-<p><strong>External tester</strong> <a href="" id="wp1059899"></a>}{: #wp1059812</p>
-</th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td></td>
+<td rowspan="3">
+<p><a href="" id="wp1059897"></a></p>
+</td>
 <td colspan="2">
-<p><strong>Mazda Modular Diagnostic System (M-MDS)</strong> {: #wp1059963}</p>
+<p><strong>External tester</strong> <a href="" id="wp1059899"></a><a href="" id="wp1059812"></a></p>
 </td>
 </tr>
 <tr>
-<td></td>
-<td>
-<p><strong>Connection</strong> {: #wp1059953}</p>
-</td>
-<td>
-<p><strong>Communication method</strong> {: #wp1059956}</p>
+<td colspan="2">
+<p><strong>Mazda Modular Diagnostic System (M-MDS)</strong> <a href="" id="wp1059963"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>On-board diagnostic (malfunction detection) function {: #wp1059815}</p>
+<p><strong>Connection</strong> <a href="" id="wp1059953"></a></p>
 </td>
 <td>
-<p>Input/output: CAN_H (HS), CAN_L (HS) {: #wp1059817}</p>
-</td>
-<td>
-<p>Serial communication {: #wp1059873}</p>
+<p><strong>Communication method</strong> <a href="" id="wp1059956"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>PID/DATA monitor function {: #wp1059920}</p>
+<p>On-board diagnostic (malfunction detection) function <a href="" id="wp1059815"></a></p>
 </td>
 <td>
-<p>Input/output: CAN_H (HS), CAN_L (HS) {: #wp1059923}</p>
+<p>Input/output: CAN_H (HS), CAN_L (HS) <a href="" id="wp1059817"></a></p>
 </td>
 <td>
-<p>Serial communication {: #wp1059926}</p>
+<p>Serial communication <a href="" id="wp1059873"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Active command modes function {: #wp1059930}</p>
+<p>PID/DATA monitor function <a href="" id="wp1059920"></a></p>
 </td>
 <td>
-<p>Input/output: CAN_H (HS), CAN_L (HS) {: #wp1059933}</p>
+<p>Input/output: CAN_H (HS), CAN_L (HS) <a href="" id="wp1059923"></a></p>
 </td>
 <td>
-<p>Serial communication {: #wp1059936}</p>
+<p>Serial communication <a href="" id="wp1059926"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Active command modes function <a href="" id="wp1059930"></a></p>
+</td>
+<td>
+<p>Input/output: CAN_H (HS), CAN_L (HS) <a href="" id="wp1059933"></a></p>
+</td>
+<td>
+<p>Serial communication <a href="" id="wp1059936"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<h2 id="serial-communication"><strong id="wp1060059">Serial communication</strong></h2>
-<p id="wp1060069">• Serial communication (two-way communication) allows for multiple data to be sent and received instantly along the same line.</p>
-<p id="wp1060084">• By connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2, diagnostic data can be sent and received between the Mazda Modular Diagnostic System (M-MDS) and the ABS HU/CM or DSC HU/CM using the CAN_H and CAN_L terminals (within the DLC-2).</p>
-<p id="wp1060106">• The ABS HU/CM or DSC HU/CM receives the command signals of the malfunction detection function, PID/data monitor function, and the active command modes function from the Mazda Modular Diagnostic System (M-MDS), and sends DTCs and data regarding the operating condition and status of each input/output part to the Mazda Modular Diagnostic System (M-MDS).</p>
-<p><img alt="" id="wp1060126" src="../../../../../images/E5U402AW5001.png" /></p>
+<h2 id="serial-communication"><strong>Serial communication</strong><a href="" id="wp1060059"></a></h2>
+<p>• Serial communication (two-way communication) allows for multiple data to be sent and received instantly along the same line.
+<a href="" id="wp1060069"></a></p>
+<p>• By connecting the Mazda Modular Diagnostic System (M-MDS) to the DLC-2, diagnostic data can be sent and received between the Mazda Modular Diagnostic System (M-MDS) and the ABS HU/CM or DSC HU/CM using the CAN_H and CAN_L terminals (within the DLC-2).
+<a href="" id="wp1060084"></a></p>
+<p>• The ABS HU/CM or DSC HU/CM receives the command signals of the malfunction detection function, PID/data monitor function, and the active command modes function from the Mazda Modular Diagnostic System (M-MDS), and sends DTCs and data regarding the operating condition and status of each input/output part to the Mazda Modular Diagnostic System (M-MDS).
+<a href="" id="wp1060106"></a></p>
+<p><img alt="" src="../../../../../images/E5U402AW5001.png" /><a href="" id="wp1060126"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>Diagnostic function name</strong> <a href="" id="wp1060230"></a>}{: #wp1060145</p>
+<p><strong>Diagnostic function name</strong> <a href="" id="wp1060230"></a><a href="" id="wp1060145"></a></p>
 </th>
 <th>
-<p><strong>Signal received</strong> {: #wp1060232}</p>
+<p><strong>Signal received</strong> <a href="" id="wp1060232"></a></p>
 </th>
 <th>
-<p><strong>Signal sent</strong> {: #wp1060234}</p>
+<p><strong>Signal sent</strong> <a href="" id="wp1060234"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Malfunction detection function {: #wp1060148}</p>
+<p>Malfunction detection function <a href="" id="wp1060148"></a></p>
 </td>
 <td>
-<p>DTC verification signal {: #wp1060150}</p>
+<p>DTC verification signal <a href="" id="wp1060150"></a></p>
 </td>
 <td>
-<p>DTC {: #wp1060206}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>PID/data monitor function {: #wp1060253}</p>
-</td>
-<td>
-<p>Command signal to read selected monitor item {: #wp1060256}</p>
-</td>
-<td>
-<p>Monitored data for requested monitor item {: #wp1060259}</p>
+<p>DTC <a href="" id="wp1060206"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Active command modes function {: #wp1060263}</p>
+<p>PID/data monitor function <a href="" id="wp1060253"></a></p>
 </td>
 <td>
-<p>Operation command signal for selected active command modes item {: #wp1060266}</p>
+<p>Command signal to read selected monitor item <a href="" id="wp1060256"></a></p>
 </td>
 <td>
-<p>Input/output part name {: #wp1060269}</p>
+<p>Monitored data for requested monitor item <a href="" id="wp1060259"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Active command modes function <a href="" id="wp1060263"></a></p>
+</td>
+<td>
+<p>Operation command signal for selected active command modes item <a href="" id="wp1060266"></a></p>
+</td>
+<td>
+<p>Input/output part name <a href="" id="wp1060269"></a></p>
 </td>
 </tr>
 </tbody>

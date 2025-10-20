@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">DTC P0602 [L8, LF]</a></li>
+        <li><a href="#dtc-p0602-l8-lf">DTC P0602 [L8, LF]</a></li>
         
     </ul>
 </nav>
@@ -1246,150 +1246,142 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S01/">Workshop Manual</a> ➭ <a href="../../../node_S01_0002/">ENGINE</a> ➭ <a href="../../node_S01_0003/">ON-BOARD DIAGNOSTIC[L8, LF]</a> ➭ <a href="./">DTC P0602 [L8, LF]</a></p>
-<h1 id="wp1025486"><strong>DTC P0602 [L8, LF]</strong></h1>
+<h1 id="dtc-p0602-l8-lf"><strong>DTC P0602 [L8, LF]</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id0102b1809200</p>
-<p>{: #wp1058563}</p>
+<p><a href="" id="wp1058563"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>DTC P0602</strong> <a href="" id="wp1058624"></a>}{: #wp1059582</p>
+<p><strong>DTC P0602</strong> <a href="" id="wp1058624"></a><a href="" id="wp1059582"></a></p>
 </th>
 <th>
-<p><strong>PCM programming error</strong> {: #wp1058626}</p>
+<p><strong>PCM programming error</strong> <a href="" id="wp1058626"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>DETECTION CONDITION</strong> {: #wp1058566}</p>
+<p><strong>DETECTION CONDITION</strong> <a href="" id="wp1058566"></a></p>
 </td>
 <td>
-<p>• No configuration data in the PCM {: #wp1058568}  <strong><em>*Note</em></strong><em>{: #wp1058689}  • If the "PCM CONFIGURATION" is successful, the PCM stores DTC P0602 and illuminates the MIL (system is normal). Clear DTC P0602 using the M-MDS after the "PCM CONFIGURATION". {: #wp1059506}• The MIL goes out after three drive cycles with no failure (DTCs remain in PCM). {: #wp1058716} </em><em>Diagnostic support note</em>*{: #wp1058726}  • This is a continuous monitor (CCM). {: #wp1058736}  • The MIL illuminates if the PCM detects the above malfunction condition during the first drive cycle. {: #wp1058746}  • PENDING CODE is available if the PCM detects the above malfunction condition. {: #wp1058756}  • FREEZE FRAME DATA is available. {: #wp1058766}  • The DTC is stored in the PCM memory. {: #wp1058776}</p>
+<p>• No configuration data in the PCM <a href="" id="wp1058568"></a>  <strong>Note</strong> <a href="" id="wp1058689"></a>  • If the "PCM CONFIGURATION" is successful, the PCM stores DTC P0602 and illuminates the MIL (system is normal). Clear DTC P0602 using the M-MDS after the "PCM CONFIGURATION". <a href="" id="wp1059506"></a>• The MIL goes out after three drive cycles with no failure (DTCs remain in PCM). <a href="" id="wp1058716"></a> <strong>Diagnostic support note</strong><a href="" id="wp1058726"></a>  • This is a continuous monitor (CCM). <a href="" id="wp1058736"></a>  • The MIL illuminates if the PCM detects the above malfunction condition during the first drive cycle. <a href="" id="wp1058746"></a>  • PENDING CODE is available if the PCM detects the above malfunction condition. <a href="" id="wp1058756"></a>  • FREEZE FRAME DATA is available. <a href="" id="wp1058766"></a>  • The DTC is stored in the PCM memory. <a href="" id="wp1058776"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p><strong>POSSIBLE CAUSE</strong> {: #wp1058641}</p>
+<p><strong>POSSIBLE CAUSE</strong> <a href="" id="wp1058641"></a></p>
 </td>
 <td>
-<p>• Configuration has not been completed {: #wp1058644}  • PCM malfunction {: #wp1058808}</p>
+<p>• Configuration has not been completed <a href="" id="wp1058644"></a>  • PCM malfunction <a href="" id="wp1058808"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<p><strong id="wp1058818">Diagnostic procedure</strong></p>
+<p><strong>Diagnostic procedure</strong><a href="" id="wp1058818"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>STEP</strong> {: #wp1058932}</p>
+<p><strong>STEP</strong> <a href="" id="wp1058932"></a></p>
 </th>
 <th colspan="2">
-<p><strong>INSPECTION</strong> {: #wp1058934}</p>
+<p><strong>INSPECTION</strong> <a href="" id="wp1058934"></a></p>
 </th>
 <th>
-<p><strong>ACTION</strong> {: #wp1058938}</p>
+<p><strong>ACTION</strong> <a href="" id="wp1058938"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>
-<p>1 {: #wp1058826}</p>
+<td rowspan="2">
+<p>1 <a href="" id="wp1058826"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>VERIFY FREEZE FRAME DATA HAS BEEN RECORDED</strong><a href="" id="wp1058828"></a>  • Have FREEZE FRAME DATA been recorded? <a href="" id="wp1059040"></a></p>
 </td>
 <td>
-<p><strong id="wp1058828">VERIFY FREEZE FRAME DATA HAS BEEN RECORDED</strong>}  • Have FREEZE FRAME DATA been recorded? {: #wp1059040</p>
+<p>Yes <a href="" id="wp1058884"></a></p>
 </td>
 <td>
-<p>Yes {: #wp1058884}</p>
-</td>
-<td>
-<p>Go to the next step. {: #wp1058887}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1058967}</p>
-</td>
-<td>
-<p>Record the FREEZE FRAME DATA on the repair order, then go to the next step. {: #wp1058970}</p>
+<p>Go to the next step. <a href="" id="wp1058887"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>2 {: #wp1058974}</p>
+<p>No <a href="" id="wp1058967"></a></p>
 </td>
 <td>
-<p><strong id="wp1058977">VERIFY RELATED SERVICE INFORMATION AVAILABILITY</strong>}  • Verify related Service Information availability. {: #wp1059084}  • Is any related Service Information available? {: #wp1059098</p>
-</td>
-<td>
-<p>Yes {: #wp1058980}</p>
-</td>
-<td>
-<p>Perform repair or diagnosis according to the available Service Information. {: #wp1058983}  • If the vehicle is not repaired, go to the next step. {: #wp1059118}</p>
+<p>Record the FREEZE FRAME DATA on the repair order, then go to the next step. <a href="" id="wp1058970"></a></p>
 </td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1058993}</p>
+<td rowspan="2">
+<p>2 <a href="" id="wp1058974"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>VERIFY RELATED SERVICE INFORMATION AVAILABILITY</strong><a href="" id="wp1058977"></a>  • Verify related Service Information availability. <a href="" id="wp1059084"></a>  • Is any related Service Information available? <a href="" id="wp1059098"></a></p>
 </td>
 <td>
-<p>Go to the next step. {: #wp1058996}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>3 {: #wp1059000}</p>
+<p>Yes <a href="" id="wp1058980"></a></p>
 </td>
 <td>
-<p><strong id="wp1059003">VERIFY TROUBLESHOOTING OF DTC P0602 COMPLETED</strong>  (See }  • Make sure to reconnect all disconnected connectors. {: #wp1059165}  • Turn the ignition switch to the ON position (Engine off). {: #wp1059179}  • Clear the DTC from the PCM memory using the M-MDS. {: #wp1059189}  • Perform the A/F sensor heater, HO2S heater, A/F sensor, HO2S, and TWC Repair Verification Drive Mode. {: #wp1059200<a href="../../obd-drive-mode-l8-lf/id0102b1815800/#wp1025486">OBD DRIVE MODE [L8, LF]</a>.) {: #wp1059214}  • Is the same DTC present? {: #wp1059228}</p>
-</td>
-<td>
-<p>Yes {: #wp1059006}</p>
-</td>
-<td>
-<p>Replace the PCM, then go to the next step. {: #wp1059009}  (See <a href="../../../control-system-l8-lf/pcm-removal-installation-l8-lf/id0140i7802400/#wp1025486">PCM REMOVAL/INSTALLATION [L8, LF]</a>.) {: #wp1059248}</p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1059146}</p>
-</td>
-<td>
-<p>Go to the next step. {: #wp1059149}</p>
+<p>Perform repair or diagnosis according to the available Service Information. <a href="" id="wp1058983"></a>  • If the vehicle is not repaired, go to the next step. <a href="" id="wp1059118"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>4 {: #wp1059270}</p>
+<p>No <a href="" id="wp1058993"></a></p>
 </td>
 <td>
-<p><strong id="wp1059273">VERIFY AFTER REPAIR PROCEDURE</strong>  (See }  • Perform the "AFTER REPAIR PROCEDURE". {: #wp1059324<a href="../../after-repair-procedure-l8-lf/id0102b1801100/#wp1025486">AFTER REPAIR PROCEDURE [L8, LF]</a>.) {: #wp1059342}  • Is any DTC present? {: #wp1059356}</p>
-</td>
-<td>
-<p>Yes {: #wp1059276}</p>
-</td>
-<td>
-<p>Go to the applicable DTC troubleshooting. {: #wp1059279}  (See <a href="../../dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.) {: #wp1059376}</p>
+<p>Go to the next step. <a href="" id="wp1058996"></a></p>
 </td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>
-<p>No {: #wp1059293}</p>
+<td rowspan="2">
+<p>3 <a href="" id="wp1059000"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>VERIFY TROUBLESHOOTING OF DTC P0602 COMPLETED</strong><a href="" id="wp1059003"></a>  • Make sure to reconnect all disconnected connectors. <a href="" id="wp1059165"></a>  • Turn the ignition switch to the ON position (Engine off). <a href="" id="wp1059179"></a>  • Clear the DTC from the PCM memory using the M-MDS. <a href="" id="wp1059189"></a>  • Perform the A/F sensor heater, HO2S heater, A/F sensor, HO2S, and TWC Repair Verification Drive Mode. <a href="" id="wp1059200"></a>  (See <a href="../../obd-drive-mode-l8-lf/id0102b1815800/#wp1025486">OBD DRIVE MODE [L8, LF]</a>.) <a href="" id="wp1059214"></a>  • Is the same DTC present? <a href="" id="wp1059228"></a></p>
 </td>
 <td>
-<p>Troubleshooting completed. {: #wp1059296}</p>
+<p>Yes <a href="" id="wp1059006"></a></p>
+</td>
+<td>
+<p>Replace the PCM, then go to the next step. <a href="" id="wp1059009"></a>  (See <a href="../../../control-system-l8-lf/pcm-removal-installation-l8-lf/id0140i7802400/#wp1025486">PCM REMOVAL/INSTALLATION [L8, LF]</a>.) <a href="" id="wp1059248"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>No <a href="" id="wp1059146"></a></p>
+</td>
+<td>
+<p>Go to the next step. <a href="" id="wp1059149"></a></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>4 <a href="" id="wp1059270"></a></p>
+</td>
+<td rowspan="2">
+<p><strong>VERIFY AFTER REPAIR PROCEDURE</strong><a href="" id="wp1059273"></a>  • Perform the "AFTER REPAIR PROCEDURE". <a href="" id="wp1059324"></a>  (See <a href="../../after-repair-procedure-l8-lf/id0102b1801100/#wp1025486">AFTER REPAIR PROCEDURE [L8, LF]</a>.) <a href="" id="wp1059342"></a>  • Is any DTC present? <a href="" id="wp1059356"></a></p>
+</td>
+<td>
+<p>Yes <a href="" id="wp1059276"></a></p>
+</td>
+<td>
+<p>Go to the applicable DTC troubleshooting. <a href="" id="wp1059279"></a>  (See <a href="../../dtc-table-l8-lf/id0102b1545200/#wp1025486">DTC TABLE [L8, LF]</a>.) <a href="" id="wp1059376"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>No <a href="" id="wp1059293"></a></p>
+</td>
+<td>
+<p>Troubleshooting completed. <a href="" id="wp1059296"></a></p>
 </td>
 </tr>
 </tbody>

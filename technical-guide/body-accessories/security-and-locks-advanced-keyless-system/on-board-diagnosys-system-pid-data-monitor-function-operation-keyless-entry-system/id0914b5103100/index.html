@@ -1238,7 +1238,7 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#wp1025486">ON-BOARD DIAGNOSYS SYSTEM PID DATA/MONITOR FUNCTION OPERATION (KEYLESS ENTRY SYSTEM)</a></li>
+        <li><a href="#on-board-diagnosys-system-pid-datamonitor-function-operation-keyless-entry-system">ON-BOARD DIAGNOSYS SYSTEM PID DATA/MONITOR FUNCTION OPERATION (KEYLESS ENTRY SYSTEM)</a></li>
         <li><a href="#on-board-diagnostic-function">On-board Diagnostic Function</a></li><li><a href="#piddata-monitor-function">PID/data monitor function</a></li><li><a href="#simulation-function">Simulation Function</a></li>
     </ul>
 </nav>
@@ -1246,710 +1246,883 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <p><a href="../../../../left_menu_S02/">Technical Guide</a> ➭ <a href="../../../node_S02_0056/">BODY &amp; ACCESSORIES</a> ➭ <a href="../../node_S02_0062/">SECURITY AND LOCKS[ADVANCED KEYLESS SYSTEM]</a> ➭ <a href="./">ON-BOARD DIAGNOSYS SYSTEM PID DATA/MONITOR FUNCTION OPERATION (KEYLESS ENTRY SYSTEM)</a></p>
-<h1 id="wp1025486"><strong>ON-BOARD DIAGNOSYS SYSTEM PID DATA/MONITOR FUNCTION OPERATION (KEYLESS ENTRY SYSTEM)</strong></h1>
+<h1 id="on-board-diagnosys-system-pid-datamonitor-function-operation-keyless-entry-system"><strong>ON-BOARD DIAGNOSYS SYSTEM PID DATA/MONITOR FUNCTION OPERATION (KEYLESS ENTRY SYSTEM)</strong> <a href="" id="wp1025486"></a></h1>
 <hr />
 <p>id0914b5103100</p>
-<p>{: #wp1059779}</p>
-<h2 id="on-board-diagnostic-function"><strong id="wp1062591">On-board Diagnostic Function</strong></h2>
-<h3 id="malfunction-detection-function"><strong id="wp1059790">Malfunction detection function</strong></h3>
-<p id="wp1059800">• Detects overall malfunctions in the keyless entry system-related parts.</p>
-<h3 id="display-function"><strong id="wp1059815">Display function</strong></h3>
-<p id="wp1059825">• If any malfunction is detected, the keyless warning light (red) in the instrument cluster illuminates to inform the driver of a system malfunction.</p>
-<h3 id="memory-function"><strong id="wp1059839">Memory function</strong></h3>
-<p id="wp1059849">• Stores malfunctions in the keyless entry system-related parts detected by the malfunction detection function, and the stored malfunction contents are not cleared even if the ignition switch is turned to the LOCK position or the negative battery cable is disconnected.</p>
-<p>**DTC table</p>
-<p>+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| <strong>DTC</strong> {: #wp1059930}                                             | <strong>System malfunction location</strong> {: #wp1059932}                                |
-+====================================================================+===============================================================================+
-| <strong>Mazda Modular Diagnostic System (M-MDS) display</strong> {: #wp1059966} |                                                                               |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1342 {: #wp1059872}                                               | Keyless control module internal malfunction {: #wp1059874}                    |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1134 {: #wp1059947}                                               | Unprogrammed card key {: #wp1059950}                                          |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B2477 {: #wp1059954}                                               | Configuration error {: #wp1059957}                                            |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1317 {: #wp1060014}                                               | Keyless control module power supply voltage increases. {: #wp1060017}         |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1318 {: #wp1060031}                                               | Keyless control module power supply voltage decreases {: #wp1060034}          |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B2170 {: #wp1060048}                                               | Push switch (Steering lock unit) {: #wp1060051}                               |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1126 {: #wp1060065}                                               | Steering lock unit internal malfunction {: #wp1060068}                        |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| U0236 {: #wp1060082}                                               | Steering lock unit communication system {: #wp1060085}                        |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1093 {: #wp1060099}                                               | Steering lock unit communication error {: #wp1060102}                         |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| U0214 {: #wp1060116}                                               | Keyless receiver {: #wp1060119}                                               |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1133 {: #wp1060133}                                               | Keyless antenna (exterior, RF) {: #wp1060136}                                 |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1132 {: #wp1060150}                                               | Keyless antenna (exterior, LF) {: #wp1060153}                                 |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1127 {: #wp1060167}                                               | Keyless antenna (Interior, trunk) {: #wp1060170}                              |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1128 {: #wp1060184}                                               | Keyless antenna (Interior, rear) {: #wp1060187}                               |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1131 {: #wp1060201}                                               | Keyless antenna (exterior, rear) {: #wp1060204}                               |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1129 {: #wp1060218}                                               | Keyless antenna (Interior, middle) {: #wp1060221}                             |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B112A {: #wp1060235}                                               | Keyless antenna (Interior, front) {: #wp1060238}                              |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| U0323 {: #wp1060252}                                               | Communication error to instrument cluster {: #wp1060255}                      |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| U0100 {: #wp1060269}                                               | Communication error to PCM {: #wp1060272}                                     |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| U0073 {: #wp1060286}                                               | Control module communication error {: #wp1060289}                             |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| U0207 {: #wp1060303}                                               | Abnormal message from power retractable hardtop control module {: #wp1060306} |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| U2023 {: #wp1060320}                                               | Error signal from CAN related module {: #wp1060323}                           |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1681* {: #wp1060337}                                             | No detected communication with the coil antenna. {: #wp1060340}               |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B2103* {: #wp1060360}                                             | Coil malfunction {: #wp1060363}                                               |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+
-| B1213* {: #wp1060384}                                             | Only one key ID number is programmed. {: #wp1060387}                          |
-+--------------------------------------------------------------------+-------------------------------------------------------------------------------+**{: #wp1059864}</p>
-<p id="wp1060427">* :
-{: #wp1060414}
-With immobilizer system</p>
-<h2 id="piddata-monitor-function"><strong id="wp1060433">PID/data monitor function</strong></h2>
-<p id="wp1060445">• The PID/data monitor function is used for optionally selecting input/output signal monitor items preset in the keyless control module and reading them out in real-time.</p>
-<p id="wp1060464">• Use the Mazda Modular Diagnostic System (M-MDS) to read the PID/data monitor.</p>
-<p><strong id="wp1060477">PID/data monitor table</strong></p>
+<p><a href="" id="wp1059779"></a></p>
+<h2 id="on-board-diagnostic-function"><strong>On-board Diagnostic Function</strong><a href="" id="wp1062591"></a></h2>
+<h3 id="malfunction-detection-function"><strong>Malfunction detection function</strong><a href="" id="wp1059790"></a></h3>
+<p>• Detects overall malfunctions in the keyless entry system-related parts.
+<a href="" id="wp1059800"></a></p>
+<h3 id="display-function"><strong>Display function</strong><a href="" id="wp1059815"></a></h3>
+<p>• If any malfunction is detected, the keyless warning light (red) in the instrument cluster illuminates to inform the driver of a system malfunction.
+<a href="" id="wp1059825"></a></p>
+<h3 id="memory-function"><strong>Memory function</strong><a href="" id="wp1059839"></a></h3>
+<p>• Stores malfunctions in the keyless entry system-related parts detected by the malfunction detection function, and the stored malfunction contents are not cleared even if the ignition switch is turned to the LOCK position or the negative battery cable is disconnected.
+<a href="" id="wp1059849"></a></p>
+<p><strong>DTC table</strong></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>PID name (definition)</strong> {: #wp1060593}</p>
+<p><strong>DTC</strong> <a href="" id="wp1059930"></a></p>
 </th>
-<th>
-<p><strong>Data contents</strong> {: #wp1060595}</p>
-</th>
-<th>
-<p><strong>Unit/Operation</strong> {: #wp1060597}</p>
-</th>
-<th>
-<p><strong>Terminal</strong> {: #wp1060599}</p>
+<th rowspan="2">
+<p><strong>System malfunction location</strong> <a href="" id="wp1059932"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>DTC_CNT {: #wp1060487}</p>
-</td>
-<td>
-<p>Number of continuous DTCs {: #wp1060489}</p>
-</td>
-<td>
-<ul>
-<li>{: #wp1060545}</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>{: #wp1060548}</li>
-</ul>
+<p><strong>Mazda Modular Diagnostic System (M-MDS) display</strong> <a href="" id="wp1059966"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>RPM {: #wp1060622}</p>
+<p>B1342 <a href="" id="wp1059872"></a></p>
 </td>
 <td>
-<p>Engine speed {: #wp1060625}</p>
-</td>
-<td>
-<p>RPM {: #wp1060628}</p>
-</td>
-<td>
-<p>4Z, 4AA {: #wp1060631}</p>
+<p>Keyless control module internal malfunction <a href="" id="wp1059874"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>VSS {: #wp1060635}</p>
+<p>B1134 <a href="" id="wp1059947"></a></p>
 </td>
 <td>
-<p>Vehicle speed {: #wp1060638}</p>
-</td>
-<td>
-<p>KPH {: #wp1060641}</p>
-</td>
-<td>
-<p>4Z, 4AA {: #wp1060644}</p>
+<p>Unprogrammed card key <a href="" id="wp1059950"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>VPWR {: #wp1060648}</p>
+<p>B2477 <a href="" id="wp1059954"></a></p>
 </td>
 <td>
-<p>Supply voltage {: #wp1060651}</p>
-</td>
-<td>
-<p>V {: #wp1060654}</p>
-</td>
-<td>
-<p>1F {: #wp1060657}</p>
+<p>Configuration error <a href="" id="wp1059957"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>NUMCARD {: #wp1060661}</p>
+<p>B1317 <a href="" id="wp1060014"></a></p>
 </td>
 <td>
-<p>Number of programmed card keys {: #wp1060664}</p>
-</td>
-<td>
-<ul>
-<li>{: #wp1060667}</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>{: #wp1060670}</li>
-</ul>
+<p>Keyless control module power supply voltage increases. <a href="" id="wp1060017"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>NUMKEY* {: #wp1060798}</p>
+<p>B1318 <a href="" id="wp1060031"></a></p>
 </td>
 <td>
-<p>Number of programmed key ID numbers {: #wp1060801}</p>
-</td>
-<td>
-<ul>
-<li>{: #wp1060804}</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>{: #wp1060807}</li>
-</ul>
+<p>Keyless control module power supply voltage decreases <a href="" id="wp1060034"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>DRSW_D {: #wp1060837}</p>
+<p>B2170 <a href="" id="wp1060048"></a></p>
 </td>
 <td>
-<p>Door switch (driver's door) {: #wp1060840}</p>
-</td>
-<td>
-<p>CLOSE/OPEN {: #wp1060843}</p>
-</td>
-<td>
-<p>4T {: #wp1060846}</p>
+<p>Push switch (Steering lock unit) <a href="" id="wp1060051"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>DRSW_P {: #wp1060877}</p>
+<p>B1126 <a href="" id="wp1060065"></a></p>
 </td>
 <td>
-<p>Door switch (passenger's door) {: #wp1060880}</p>
-</td>
-<td>
-<p>CLOSE/OPEN {: #wp1060883}</p>
-</td>
-<td>
-<p>4Q {: #wp1060886}</p>
+<p>Steering lock unit internal malfunction <a href="" id="wp1060068"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>REQ_SW_R {: #wp1060917}</p>
+<p>U0236 <a href="" id="wp1060082"></a></p>
 </td>
 <td>
-<p>Request switch (right side door) {: #wp1060920}</p>
-</td>
-<td>
-<p>On/Off {: #wp1060923}</p>
-</td>
-<td>
-<p>4H {: #wp1060926}</p>
+<p>Steering lock unit communication system <a href="" id="wp1060085"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>REQ_SW_L {: #wp1060957}</p>
+<p>B1093 <a href="" id="wp1060099"></a></p>
 </td>
 <td>
-<p>Request switch (left side door) {: #wp1060960}</p>
-</td>
-<td>
-<p>On/Off {: #wp1060963}</p>
-</td>
-<td>
-<p>4J {: #wp1060966}</p>
+<p>Steering lock unit communication error <a href="" id="wp1060102"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>REQ_SW_BK {: #wp1060997}</p>
+<p>U0214 <a href="" id="wp1060116"></a></p>
 </td>
 <td>
-<p>Request switch (trunk lid) {: #wp1061000}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061003}</p>
-</td>
-<td>
-<p>4L {: #wp1061006}</p>
+<p>Keyless receiver <a href="" id="wp1060119"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>LOCK_SW_D {: #wp1061037}</p>
+<p>B1133 <a href="" id="wp1060133"></a></p>
 </td>
 <td>
-<p>Door lock-link switch (driver's side) {: #wp1061040}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061043}</p>
-</td>
-<td>
-<p>4I, 4E {: #wp1061046}</p>
+<p>Keyless antenna (exterior, RF) <a href="" id="wp1060136"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>CLS_LOCK {: #wp1061080}</p>
+<p>B1132 <a href="" id="wp1060150"></a></p>
 </td>
 <td>
-<p>Door lock switch (lock) {: #wp1061083}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061086}</p>
-</td>
-<td>
-<p>4B {: #wp1061089}</p>
+<p>Keyless antenna (exterior, LF) <a href="" id="wp1060153"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>CLS_UNLOCK {: #wp1061118}</p>
+<p>B1127 <a href="" id="wp1060167"></a></p>
 </td>
 <td>
-<p>Door lock switch (unlock) {: #wp1061121}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061124}</p>
-</td>
-<td>
-<p>4B {: #wp1061127}</p>
+<p>Keyless antenna (Interior, trunk) <a href="" id="wp1060170"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>KCS_LOCK {: #wp1061156}</p>
+<p>B1128 <a href="" id="wp1060184"></a></p>
 </td>
 <td>
-<p>Key cylinder switch (lock) {: #wp1061159}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061162}</p>
-</td>
-<td>
-<p>4G {: #wp1061165}</p>
+<p>Keyless antenna (Interior, rear) <a href="" id="wp1060187"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>KCS_UNLOCK {: #wp1061194}</p>
+<p>B1131 <a href="" id="wp1060201"></a></p>
 </td>
 <td>
-<p>Key cylinder switch (unlock) {: #wp1061197}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061200}</p>
-</td>
-<td>
-<p>4G {: #wp1061203}</p>
+<p>Keyless antenna (exterior, rear) <a href="" id="wp1060204"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>IMMOBI {: #wp1061232}</p>
+<p>B1129 <a href="" id="wp1060218"></a></p>
 </td>
 <td>
-<p>Immobilizer system equipped or not {: #wp1061235}</p>
-</td>
-<td>
-<p>On*/Off {: #wp1061238}</p>
-</td>
-<td>
-<ul>
-<li>{: #wp1061241}</li>
-</ul>
+<p>Keyless antenna (Interior, middle) <a href="" id="wp1060221"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>TR/LG_SW {: #wp1061276}</p>
+<p>B112A <a href="" id="wp1060235"></a></p>
 </td>
 <td>
-<p>Trunk compartment light switch {: #wp1061279}</p>
-</td>
-<td>
-<p>CLOSE/OPEN {: #wp1061282}</p>
-</td>
-<td>
-<p>3Z {: #wp1061285}</p>
+<p>Keyless antenna (Interior, front) <a href="" id="wp1060238"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>IG_KEY_IN {: #wp1061318}</p>
+<p>U0323 <a href="" id="wp1060252"></a></p>
 </td>
 <td>
-<p>Key reminder switch {: #wp1061321}</p>
-</td>
-<td>
-<p>Key-In/Key-Out {: #wp1061324}</p>
-</td>
-<td>
-<p>3O {: #wp1061327}</p>
+<p>Communication error to instrument cluster <a href="" id="wp1060255"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>IG_SW_ST {: #wp1061362}</p>
+<p>U0100 <a href="" id="wp1060269"></a></p>
 </td>
 <td>
-<p>Ignition switch (Push switch) {: #wp1061365}</p>
-</td>
-<td>
-<p>Pushed/Not Pushed {: #wp1061368}</p>
-</td>
-<td>
-<p>3N {: #wp1061371}</p>
+<p>Communication error to PCM <a href="" id="wp1060272"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>BUZZER {: #wp1061404}</p>
+<p>U0073 <a href="" id="wp1060286"></a></p>
 </td>
 <td>
-<p>Keyless buzzer {: #wp1061407}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061410}</p>
-</td>
-<td>
-<p>4Y {: #wp1061413}</p>
+<p>Control module communication error <a href="" id="wp1060289"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>PWR_IG1 {: #wp1061442}</p>
+<p>U0207 <a href="" id="wp1060303"></a></p>
 </td>
 <td>
-<p>Power supply (IG1) {: #wp1061445}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061448}</p>
-</td>
-<td>
-<p>3B {: #wp1061451}</p>
+<p>Abnormal message from power retractable hardtop control module <a href="" id="wp1060306"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>PWR_ACC {: #wp1061482}</p>
+<p>U2023 <a href="" id="wp1060320"></a></p>
 </td>
 <td>
-<p>Power supply (ACC) {: #wp1061485}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061488}</p>
-</td>
-<td>
-<p>3I {: #wp1061491}</p>
+<p>Error signal from CAN related module <a href="" id="wp1060323"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>HOOD_SW {: #wp1061522}</p>
+<p>B1681* <a href="" id="wp1060337"></a></p>
 </td>
 <td>
-<p>Hood latch switch {: #wp1061525}</p>
-</td>
-<td>
-<p>CLOSE/OPEN {: #wp1061528}</p>
-</td>
-<td>
-<p>4V {: #wp1061531}</p>
+<p>No detected communication with the coil antenna. <a href="" id="wp1060340"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>LOCK_SW_P {: #wp1061562}</p>
+<p>B2103* <a href="" id="wp1060360"></a></p>
 </td>
 <td>
-<p>Door lock-link switch (passenger's side) {: #wp1061565}</p>
+<p>Coil malfunction <a href="" id="wp1060363"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>B1213* <a href="" id="wp1060384"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061568}</p>
-</td>
-<td>
-<p>4R {: #wp1061571}</p>
+<p>Only one key ID number is programmed. <a href="" id="wp1060387"></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<p id="wp1061625">* :
-{: #wp1061612}
-Vehicles with immobilizer system</p>
-<h2 id="simulation-function"><strong id="wp1061631">Simulation Function</strong></h2>
-<p id="wp1061641">• The simulation function is used for optionally selecting simulation items of output parts preset in the keyless control module, and to operate them regardless of control.</p>
-<p><strong id="wp1061655">ACTIVE COMMAND MODE TABLE</strong></p>
+<p><a href="" id="wp1059864"></a></p>
+<p>* :
+<a href="" id="wp1060414"></a>
+With immobilizer system
+<a href="" id="wp1060427"></a></p>
+<h2 id="piddata-monitor-function"><strong>PID/data monitor function</strong><a href="" id="wp1060433"></a></h2>
+<p>• The PID/data monitor function is used for optionally selecting input/output signal monitor items preset in the keyless control module and reading them out in real-time.
+<a href="" id="wp1060445"></a></p>
+<p>• Use the Mazda Modular Diagnostic System (M-MDS) to read the PID/data monitor.
+<a href="" id="wp1060464"></a></p>
+<p><strong>PID/data monitor table</strong><a href="" id="wp1060477"></a></p>
 <table>
 <thead>
 <tr>
 <th>
-<p><strong>Command name</strong> {: #wp1061769}</p>
+<p><strong>PID name (definition)</strong> <a href="" id="wp1060593"></a></p>
 </th>
 <th>
-<p><strong>Output part name</strong> {: #wp1061771}</p>
+<p><strong>Data contents</strong> <a href="" id="wp1060595"></a></p>
 </th>
 <th>
-<p><strong>Unit/Operation</strong> {: #wp1061773}</p>
+<p><strong>Unit/Operation</strong> <a href="" id="wp1060597"></a></p>
 </th>
 <th>
-<p><strong>Terminal</strong> {: #wp1061775}</p>
+<p><strong>Terminal</strong> <a href="" id="wp1060599"></a></p>
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>BZR_OUT {: #wp1061663}</p>
+<p>DTC_CNT <a href="" id="wp1060487"></a></p>
 </td>
 <td>
-<p>Keyless beeper {: #wp1061665}</p>
+<p>Number of continuous DTCs <a href="" id="wp1060489"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061721}</p>
+<ul>
+<li><a href="" id="wp1060545"></a></li>
+</ul>
 </td>
 <td>
-<p>4Y {: #wp1061724}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>BZR_INN {: #wp1061798}</p>
-</td>
-<td>
-<p>Interior buzzer (Instrument cluster) {: #wp1061801}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061804}</p>
-</td>
-<td>
-<p>4Z, 4AA {: #wp1061807}</p>
+<ul>
+<li><a href="" id="wp1060548"></a></li>
+</ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>LNP_RED {: #wp1061811}</p>
+<p>RPM <a href="" id="wp1060622"></a></p>
 </td>
 <td>
-<p>Keyless warning light (red) {: #wp1061814}</p>
+<p>Engine speed <a href="" id="wp1060625"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061817}</p>
+<p>RPM <a href="" id="wp1060628"></a></p>
 </td>
 <td>
-<p>4Z, 4AA {: #wp1061820}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>LNP_GREEN {: #wp1061824}</p>
-</td>
-<td>
-<p>Keyless indicator light (green) {: #wp1061827}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061830}</p>
-</td>
-<td>
-<p>4Z, 4AA {: #wp1061833}</p>
+<p>4Z, 4AA <a href="" id="wp1060631"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>HAZARD {: #wp1061837}</p>
+<p>VSS <a href="" id="wp1060635"></a></p>
 </td>
 <td>
-<p>Hazard warning light {: #wp1061840}</p>
+<p>Vehicle speed <a href="" id="wp1060638"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1061843}</p>
+<p>KPH <a href="" id="wp1060641"></a></p>
 </td>
 <td>
-<p>4N {: #wp1061846}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>HORN {: #wp1061990}</p>
-</td>
-<td>
-<p>Horn {: #wp1061993}</p>
-</td>
-<td>
-<p>On/Off {: #wp1061996}</p>
-</td>
-<td>
-<p>4U {: #wp1061999}</p>
+<p>4Z, 4AA <a href="" id="wp1060644"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>ANT_RF {: #wp1062025}</p>
+<p>VPWR <a href="" id="wp1060648"></a></p>
 </td>
 <td>
-<p>Keyless antenna (exterior, RF) {: #wp1062028}</p>
+<p>Supply voltage <a href="" id="wp1060651"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1062031}</p>
+<p>V <a href="" id="wp1060654"></a></p>
 </td>
 <td>
-<p>2A, 2B {: #wp1062034}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ANT_LF {: #wp1062062}</p>
-</td>
-<td>
-<p>Keyless antenna (exterior, LF) {: #wp1062065}</p>
-</td>
-<td>
-<p>On/Off {: #wp1062068}</p>
-</td>
-<td>
-<p>2C, 2D {: #wp1062071}</p>
+<p>1F <a href="" id="wp1060657"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>ANT_BK {: #wp1062099}</p>
+<p>NUMCARD <a href="" id="wp1060661"></a></p>
 </td>
 <td>
-<p>Keyless antenna (exterior, rear) {: #wp1062102}</p>
+<p>Number of programmed card keys <a href="" id="wp1060664"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1062105}</p>
+<ul>
+<li><a href="" id="wp1060667"></a></li>
+</ul>
 </td>
 <td>
-<p>2E, 2F {: #wp1062108}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ANT_INN1 {: #wp1062136}</p>
-</td>
-<td>
-<p>Keyless antenna (Interior, trunk) {: #wp1062139}</p>
-</td>
-<td>
-<p>On/Off {: #wp1062142}</p>
-</td>
-<td>
-<p>2G, 2H {: #wp1062145}</p>
+<ul>
+<li><a href="" id="wp1060670"></a></li>
+</ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ANT_INN2 {: #wp1062173}</p>
+<p>NUMKEY* <a href="" id="wp1060798"></a></p>
 </td>
 <td>
-<p>Keyless antenna (Interior rear) {: #wp1062176}</p>
+<p>Number of programmed key ID numbers <a href="" id="wp1060801"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1062179}</p>
+<ul>
+<li><a href="" id="wp1060804"></a></li>
+</ul>
 </td>
 <td>
-<p>2I, 2J {: #wp1062182}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ANT_INN3 {: #wp1062210}</p>
-</td>
-<td>
-<p>Keyless antenna (Interior, middle) {: #wp1062213}</p>
-</td>
-<td>
-<p>On/Off {: #wp1062216}</p>
-</td>
-<td>
-<p>2K, 2L {: #wp1062219}</p>
+<ul>
+<li><a href="" id="wp1060807"></a></li>
+</ul>
 </td>
 </tr>
 <tr>
 <td>
-<p>ANT_INN4 {: #wp1062247}</p>
+<p>DRSW_D <a href="" id="wp1060837"></a></p>
 </td>
 <td>
-<p>Keyless antenna (Interior, front) {: #wp1062250}</p>
+<p>Door switch (driver's door) <a href="" id="wp1060840"></a></p>
 </td>
 <td>
-<p>On/Off {: #wp1062253}</p>
+<p>CLOSE/OPEN <a href="" id="wp1060843"></a></p>
 </td>
 <td>
-<p>3G, 3H {: #wp1062256}</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>DR_LOCK {: #wp1062284}</p>
-</td>
-<td>
-<p>All doors lock {: #wp1062287}</p>
-</td>
-<td>
-<p>Off/Lock {: #wp1062290}</p>
-</td>
-<td>
-<p>1A, 1C {: #wp1062293}</p>
+<p>4T <a href="" id="wp1060846"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>DR_UNLOCK {: #wp1062321}</p>
+<p>DRSW_P <a href="" id="wp1060877"></a></p>
 </td>
 <td>
-<p>All doors unlock {: #wp1062324}</p>
+<p>Door switch (passenger's door) <a href="" id="wp1060880"></a></p>
 </td>
 <td>
-<p>Off/Unlock {: #wp1062327}</p>
+<p>CLOSE/OPEN <a href="" id="wp1060883"></a></p>
 </td>
 <td>
-<p>1A, 1C {: #wp1062330}</p>
+<p>4Q <a href="" id="wp1060886"></a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>SUPERLOCK {: #wp1062358}</p>
+<p>REQ_SW_R <a href="" id="wp1060917"></a></p>
 </td>
 <td>
-<p>All doors lock {: #wp1062361}</p>
+<p>Request switch (right side door) <a href="" id="wp1060920"></a></p>
 </td>
 <td>
-<p>Off/Lock {: #wp1062364}</p>
+<p>On/Off <a href="" id="wp1060923"></a></p>
 </td>
 <td>
-<p>1A, 1D {: #wp1062367}</p>
+<p>4H <a href="" id="wp1060926"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>REQ_SW_L <a href="" id="wp1060957"></a></p>
+</td>
+<td>
+<p>Request switch (left side door) <a href="" id="wp1060960"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1060963"></a></p>
+</td>
+<td>
+<p>4J <a href="" id="wp1060966"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>REQ_SW_BK <a href="" id="wp1060997"></a></p>
+</td>
+<td>
+<p>Request switch (trunk lid) <a href="" id="wp1061000"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061003"></a></p>
+</td>
+<td>
+<p>4L <a href="" id="wp1061006"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LOCK_SW_D <a href="" id="wp1061037"></a></p>
+</td>
+<td>
+<p>Door lock-link switch (driver's side) <a href="" id="wp1061040"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061043"></a></p>
+</td>
+<td>
+<p>4I, 4E <a href="" id="wp1061046"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CLS_LOCK <a href="" id="wp1061080"></a></p>
+</td>
+<td>
+<p>Door lock switch (lock) <a href="" id="wp1061083"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061086"></a></p>
+</td>
+<td>
+<p>4B <a href="" id="wp1061089"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CLS_UNLOCK <a href="" id="wp1061118"></a></p>
+</td>
+<td>
+<p>Door lock switch (unlock) <a href="" id="wp1061121"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061124"></a></p>
+</td>
+<td>
+<p>4B <a href="" id="wp1061127"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>KCS_LOCK <a href="" id="wp1061156"></a></p>
+</td>
+<td>
+<p>Key cylinder switch (lock) <a href="" id="wp1061159"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061162"></a></p>
+</td>
+<td>
+<p>4G <a href="" id="wp1061165"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>KCS_UNLOCK <a href="" id="wp1061194"></a></p>
+</td>
+<td>
+<p>Key cylinder switch (unlock) <a href="" id="wp1061197"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061200"></a></p>
+</td>
+<td>
+<p>4G <a href="" id="wp1061203"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IMMOBI <a href="" id="wp1061232"></a></p>
+</td>
+<td>
+<p>Immobilizer system equipped or not <a href="" id="wp1061235"></a></p>
+</td>
+<td>
+<p>On*/Off <a href="" id="wp1061238"></a></p>
+</td>
+<td>
+<ul>
+<li><a href="" id="wp1061241"></a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>TR/LG_SW <a href="" id="wp1061276"></a></p>
+</td>
+<td>
+<p>Trunk compartment light switch <a href="" id="wp1061279"></a></p>
+</td>
+<td>
+<p>CLOSE/OPEN <a href="" id="wp1061282"></a></p>
+</td>
+<td>
+<p>3Z <a href="" id="wp1061285"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IG_KEY_IN <a href="" id="wp1061318"></a></p>
+</td>
+<td>
+<p>Key reminder switch <a href="" id="wp1061321"></a></p>
+</td>
+<td>
+<p>Key-In/Key-Out <a href="" id="wp1061324"></a></p>
+</td>
+<td>
+<p>3O <a href="" id="wp1061327"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IG_SW_ST <a href="" id="wp1061362"></a></p>
+</td>
+<td>
+<p>Ignition switch (Push switch) <a href="" id="wp1061365"></a></p>
+</td>
+<td>
+<p>Pushed/Not Pushed <a href="" id="wp1061368"></a></p>
+</td>
+<td>
+<p>3N <a href="" id="wp1061371"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>BUZZER <a href="" id="wp1061404"></a></p>
+</td>
+<td>
+<p>Keyless buzzer <a href="" id="wp1061407"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061410"></a></p>
+</td>
+<td>
+<p>4Y <a href="" id="wp1061413"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PWR_IG1 <a href="" id="wp1061442"></a></p>
+</td>
+<td>
+<p>Power supply (IG1) <a href="" id="wp1061445"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061448"></a></p>
+</td>
+<td>
+<p>3B <a href="" id="wp1061451"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PWR_ACC <a href="" id="wp1061482"></a></p>
+</td>
+<td>
+<p>Power supply (ACC) <a href="" id="wp1061485"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061488"></a></p>
+</td>
+<td>
+<p>3I <a href="" id="wp1061491"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HOOD_SW <a href="" id="wp1061522"></a></p>
+</td>
+<td>
+<p>Hood latch switch <a href="" id="wp1061525"></a></p>
+</td>
+<td>
+<p>CLOSE/OPEN <a href="" id="wp1061528"></a></p>
+</td>
+<td>
+<p>4V <a href="" id="wp1061531"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LOCK_SW_P <a href="" id="wp1061562"></a></p>
+</td>
+<td>
+<p>Door lock-link switch (passenger's side) <a href="" id="wp1061565"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061568"></a></p>
+</td>
+<td>
+<p>4R <a href="" id="wp1061571"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>* :
+<a href="" id="wp1061612"></a>
+Vehicles with immobilizer system
+<a href="" id="wp1061625"></a></p>
+<h2 id="simulation-function"><strong>Simulation Function</strong><a href="" id="wp1061631"></a></h2>
+<p>• The simulation function is used for optionally selecting simulation items of output parts preset in the keyless control module, and to operate them regardless of control.
+<a href="" id="wp1061641"></a></p>
+<p><strong>ACTIVE COMMAND MODE TABLE</strong><a href="" id="wp1061655"></a></p>
+<table>
+<thead>
+<tr>
+<th>
+<p><strong>Command name</strong> <a href="" id="wp1061769"></a></p>
+</th>
+<th>
+<p><strong>Output part name</strong> <a href="" id="wp1061771"></a></p>
+</th>
+<th>
+<p><strong>Unit/Operation</strong> <a href="" id="wp1061773"></a></p>
+</th>
+<th>
+<p><strong>Terminal</strong> <a href="" id="wp1061775"></a></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>BZR_OUT <a href="" id="wp1061663"></a></p>
+</td>
+<td>
+<p>Keyless beeper <a href="" id="wp1061665"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061721"></a></p>
+</td>
+<td>
+<p>4Y <a href="" id="wp1061724"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>BZR_INN <a href="" id="wp1061798"></a></p>
+</td>
+<td>
+<p>Interior buzzer (Instrument cluster) <a href="" id="wp1061801"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061804"></a></p>
+</td>
+<td>
+<p>4Z, 4AA <a href="" id="wp1061807"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LNP_RED <a href="" id="wp1061811"></a></p>
+</td>
+<td>
+<p>Keyless warning light (red) <a href="" id="wp1061814"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061817"></a></p>
+</td>
+<td>
+<p>4Z, 4AA <a href="" id="wp1061820"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LNP_GREEN <a href="" id="wp1061824"></a></p>
+</td>
+<td>
+<p>Keyless indicator light (green) <a href="" id="wp1061827"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061830"></a></p>
+</td>
+<td>
+<p>4Z, 4AA <a href="" id="wp1061833"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HAZARD <a href="" id="wp1061837"></a></p>
+</td>
+<td>
+<p>Hazard warning light <a href="" id="wp1061840"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061843"></a></p>
+</td>
+<td>
+<p>4N <a href="" id="wp1061846"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HORN <a href="" id="wp1061990"></a></p>
+</td>
+<td>
+<p>Horn <a href="" id="wp1061993"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1061996"></a></p>
+</td>
+<td>
+<p>4U <a href="" id="wp1061999"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ANT_RF <a href="" id="wp1062025"></a></p>
+</td>
+<td>
+<p>Keyless antenna (exterior, RF) <a href="" id="wp1062028"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1062031"></a></p>
+</td>
+<td>
+<p>2A, 2B <a href="" id="wp1062034"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ANT_LF <a href="" id="wp1062062"></a></p>
+</td>
+<td>
+<p>Keyless antenna (exterior, LF) <a href="" id="wp1062065"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1062068"></a></p>
+</td>
+<td>
+<p>2C, 2D <a href="" id="wp1062071"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ANT_BK <a href="" id="wp1062099"></a></p>
+</td>
+<td>
+<p>Keyless antenna (exterior, rear) <a href="" id="wp1062102"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1062105"></a></p>
+</td>
+<td>
+<p>2E, 2F <a href="" id="wp1062108"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ANT_INN1 <a href="" id="wp1062136"></a></p>
+</td>
+<td>
+<p>Keyless antenna (Interior, trunk) <a href="" id="wp1062139"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1062142"></a></p>
+</td>
+<td>
+<p>2G, 2H <a href="" id="wp1062145"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ANT_INN2 <a href="" id="wp1062173"></a></p>
+</td>
+<td>
+<p>Keyless antenna (Interior rear) <a href="" id="wp1062176"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1062179"></a></p>
+</td>
+<td>
+<p>2I, 2J <a href="" id="wp1062182"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ANT_INN3 <a href="" id="wp1062210"></a></p>
+</td>
+<td>
+<p>Keyless antenna (Interior, middle) <a href="" id="wp1062213"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1062216"></a></p>
+</td>
+<td>
+<p>2K, 2L <a href="" id="wp1062219"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ANT_INN4 <a href="" id="wp1062247"></a></p>
+</td>
+<td>
+<p>Keyless antenna (Interior, front) <a href="" id="wp1062250"></a></p>
+</td>
+<td>
+<p>On/Off <a href="" id="wp1062253"></a></p>
+</td>
+<td>
+<p>3G, 3H <a href="" id="wp1062256"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>DR_LOCK <a href="" id="wp1062284"></a></p>
+</td>
+<td>
+<p>All doors lock <a href="" id="wp1062287"></a></p>
+</td>
+<td>
+<p>Off/Lock <a href="" id="wp1062290"></a></p>
+</td>
+<td>
+<p>1A, 1C <a href="" id="wp1062293"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>DR_UNLOCK <a href="" id="wp1062321"></a></p>
+</td>
+<td>
+<p>All doors unlock <a href="" id="wp1062324"></a></p>
+</td>
+<td>
+<p>Off/Unlock <a href="" id="wp1062327"></a></p>
+</td>
+<td>
+<p>1A, 1C <a href="" id="wp1062330"></a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SUPERLOCK <a href="" id="wp1062358"></a></p>
+</td>
+<td>
+<p>All doors lock <a href="" id="wp1062361"></a></p>
+</td>
+<td>
+<p>Off/Lock <a href="" id="wp1062364"></a></p>
+</td>
+<td>
+<p>1A, 1D <a href="" id="wp1062367"></a></p>
 </td>
 </tr>
 </tbody>
